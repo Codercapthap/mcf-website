@@ -1,5 +1,5 @@
 import { Link, styled, Typography } from "@mui/material";
-import Colors from "@/Colors";
+import Colors from "@/styles/Colors";
 
 export const CustomizedButton = styled(Link)`
   padding: 12px 24px;
@@ -20,5 +20,6 @@ export const CustomizedTypography = styled(Typography)`
   background-color: ${Colors.backgroundText};
   color: ${Colors.textWhite};
   font-size: 3.5vw;
-  padding: 0 24px;
+  padding: 0 20px;
+  line-height: normal;
 `;

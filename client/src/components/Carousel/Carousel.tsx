@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { CustomizedButton, CustomizedTypography } from "@/styles/Component";
 import { ImageSliderType } from "@/shared/type";
+import { useRef } from "react";
 
 type Props = {
   images: Array<ImageSliderType>;
@@ -10,28 +11,159 @@ type Props = {
 
 const Carousel = ({ images }: Props) => {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
+  const [isPause, setisPause] = useState<boolean>(false);
+  const refCarouselDiv: Array<React.MutableRefObject<any>> = [];
+  const refTypo1: Array<React.MutableRefObject<any>> = [];
+  const refTypo2: Array<React.MutableRefObject<any>> = [];
+  const refButton: Array<React.MutableRefObject<any>> = [];
+  const refPauseButton: React.MutableRefObject<any> = useRef<any>();
+  const refPlayButton: React.MutableRefObject<any> = useRef<any>();
+
   const slideToNextImage = () => {
-    if (currentIndex === 2) {
-      return setCurrentIndex(0);
-    }
-    return setCurrentIndex(currentIndex + 1);
+    setCurrentIndex((prev) => (prev + 1) % 3);
+
+    const newIndex = (currentIndex + 1) % images.length;
+    const newNextIndex =
+      (((currentIndex - 1) % images.length) + images.length) % images.length;
+    console.log(currentIndex);
+    // carouseldiv handle motion
+    refCarouselDiv[currentIndex].current.style.visibility = "hidden";
+    refCarouselDiv[currentIndex].current.style.left = "-100vw";
+    refCarouselDiv[newIndex].current.style.left = "0";
+    refCarouselDiv[newNextIndex].current.style.left = "100vw";
+    refCarouselDiv[newIndex].current.style.visibility = "visible";
+
+    // typo1 handle motion
+    refTypo1[currentIndex].current.style.opacity = 0;
+    refTypo1[newIndex].current.style.left = images[newIndex].typoLeft;
+    refTypo1[
+      newIndex
+    ].current.style.right = `calc(${images[newIndex].typoRight} + 7vw + 2vw`;
+    refTypo1[
+      newNextIndex
+    ].current.style.left = `calc(${images[newNextIndex].typoLeft} + 5vw`;
+    refTypo1[
+      newNextIndex
+    ].current.style.right = `calc(${images[newNextIndex].typoRight} + 7vw + 2vw - 5vw`;
+    refTypo1[newIndex].current.style.opacity = 1;
+    // typo2 handle motion
+    refTypo2[currentIndex].current.style.opacity = 0;
+    refTypo2[
+      newIndex
+    ].current.style.left = `calc(${images[newIndex].typoLeft} + 7vw`;
+    refTypo2[
+      newIndex
+    ].current.style.right = `calc(${images[newIndex].typoRight} + 2vw`;
+    refTypo2[
+      newNextIndex
+    ].current.style.left = `calc(${images[newNextIndex].typoLeft} + 7vw + 5vw`;
+    refTypo2[
+      newNextIndex
+    ].current.style.right = `calc(${images[newNextIndex].typoRight} + 2vw - 5vw`;
+    refTypo2[newIndex].current.style.opacity = 1;
+    // button handle motion
+    refButton[currentIndex].current.style.opacity = 0;
+    refButton[
+      newIndex
+    ].current.style.left = `calc(${images[newIndex].typoLeft} + 7vw`;
+    refButton[
+      newIndex
+    ].current.style.right = `calc(${images[newIndex].typoRight}`;
+    refButton[
+      newNextIndex
+    ].current.style.left = `calc(${images[newNextIndex].typoLeft} + 7vw + 5vw`;
+    refButton[
+      newNextIndex
+    ].current.style.right = `calc(${images[newNextIndex].typoRight} - 5vw`;
+    refButton[newIndex].current.style.opacity = 1;
   };
+
   const slideToPreviousImage = () => {
-    if (currentIndex === 0) {
-      return setCurrentIndex(2);
-    }
-    return setCurrentIndex(currentIndex - 1);
+    setCurrentIndex((prev) => (((prev - 1) % 3) + 3) % 3);
+    const newPrevIndex = (currentIndex + 1) % images.length;
+    const newIndex =
+      (((currentIndex - 1) % images.length) + images.length) % images.length;
+    // carouselDiv handle motion
+    console.log(currentIndex);
+    refCarouselDiv[currentIndex].current.style.visibility = "hidden";
+    refCarouselDiv[currentIndex].current.style.left = "100vw";
+    refCarouselDiv[newPrevIndex].current.style.left = "-100vw";
+    refCarouselDiv[newIndex].current.style.left = "0";
+    refCarouselDiv[newIndex].current.style.visibility = "visible";
+
+    // typo1 handle motion
+    refTypo1[currentIndex].current.style.opacity = 0;
+    refTypo1[newIndex].current.style.left = images[newIndex].typoLeft;
+    refTypo1[
+      newIndex
+    ].current.style.right = `calc(${images[newIndex].typoRight} + 7vw + 2vw`;
+    refTypo1[
+      currentIndex
+    ].current.style.left = `calc(${images[currentIndex].typoLeft} + 5vw`;
+    refTypo1[
+      currentIndex
+    ].current.style.right = `calc(${images[currentIndex].typoRight} + 7vw + 2vw - 5vw`;
+    refTypo1[newIndex].current.style.opacity = 1;
+    // typo2 handle motion
+    refTypo2[currentIndex].current.style.opacity = 0;
+    refTypo2[
+      newIndex
+    ].current.style.left = `calc(${images[newIndex].typoLeft} + 7vw`;
+    refTypo2[
+      newIndex
+    ].current.style.right = `calc(${images[newIndex].typoRight} + 2vw`;
+    refTypo2[
+      currentIndex
+    ].current.style.left = `calc(${images[currentIndex].typoLeft} + 7vw + 5vw`;
+    refTypo2[
+      currentIndex
+    ].current.style.right = `calc(${images[currentIndex].typoRight} + 2vw - 5vw`;
+    refTypo2[newIndex].current.style.opacity = 1;
+    // button handle motion
+    refButton[currentIndex].current.style.opacity = 0;
+    refButton[
+      newIndex
+    ].current.style.left = `calc(${images[newIndex].typoLeft} + 7vw`;
+    refButton[
+      newIndex
+    ].current.style.right = `calc(${images[newIndex].typoRight}`;
+    refButton[
+      currentIndex
+    ].current.style.left = `calc(${images[currentIndex].typoLeft} + 7vw + 5vw`;
+    refButton[
+      currentIndex
+    ].current.style.right = `calc(${images[currentIndex].typoRight} - 5vw`;
+    refButton[newIndex].current.style.opacity = 1;
   };
 
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     slideToNextImage();
-  //   }, 3000);
+  // auto slide to next image
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (!isPause) {
+        slideToNextImage();
+      }
+    }, 3000);
 
-  //   return () => {
-  //     clearInterval(interval);
-  //   };
-  // }, []);
+    return () => {
+      clearInterval(interval);
+    };
+  }, [currentIndex, isPause]);
+
+  // set for the first slide
+  useEffect(() => {
+    refCarouselDiv[0].current.style.left = "0";
+    refCarouselDiv[0].current.style.visibility = "visible";
+    refCarouselDiv[1].current.style.left = "100vw";
+    refCarouselDiv[2].current.style.left = "-100vw";
+  }, []);
+
+  // create ref for each elements
+  images.forEach(() => {
+    refCarouselDiv.push(useRef<any>());
+    refTypo1.push(useRef<any>());
+    refTypo2.push(useRef<any>());
+    refButton.push(useRef<any>());
+  });
 
   return (
     <Box
@@ -41,40 +173,80 @@ const Carousel = ({ images }: Props) => {
       sx={{ ":hover .arrow_icon": { opacity: 1 } }}
     >
       {/* IMAGES SESSION */}
-      <Box position="relative" overflow="hidden">
-        <Box
-          component="img"
-          width="100%"
-          height="auto"
-          maxHeight="617px"
-          src={images[0].src}
-        ></Box>
-        <CustomizedTypography
-          left={images[0].typoLeft}
-          right={images[0].typoRight}
-          bottom={images[0].typoBottom}
-          top={images[0].typoTop}
-        >
-          {images[0].typo1}
-        </CustomizedTypography>
-        <CustomizedTypography
-          left={`calc(${images[0].typoLeft} + 100px)`}
-          right={`calc(${images[0].typoRight} + 100px)`}
-          bottom={`calc(${images[0].typoBottom} - 6.5vw)`}
-          top={`calc(${images[0].typoTop} + 6.5vw)`}
-        >
-          {images[0].typo2}
-        </CustomizedTypography>
-        <CustomizedButton
-          component={Link}
-          to={images[0].link}
-          top={`calc(${images[0].typoTop} + 6.5vw + 6.5vw)`}
-          left={`calc(${images[0].typoLeft} + 100px + 32px)`}
-          right={`calc(${images[0].typoRight} - 32px)`}
-          bottom={`calc(${images[0].typoBottom} - 6.5vw - 6.5vw)`}
-        >
-          Find more
-        </CustomizedButton>
+      <Box
+        position="relative"
+        overflow="hidden"
+        height="50vw"
+        maxHeight="617px"
+      >
+        {images.map((image: ImageSliderType, index: number) => {
+          return (
+            <>
+              <Box
+                ref={refCarouselDiv[index]}
+                component="div"
+                position="absolute"
+                width="100%"
+                height="100%"
+                maxHeight="617px"
+                visibility="hidden"
+                sx={{
+                  top: 0,
+                  left: "100vw",
+                  transition: "1s",
+                }}
+              >
+                <Box
+                  component="img"
+                  width="100%"
+                  height="100%"
+                  src={image.src}
+                ></Box>
+                <CustomizedTypography
+                  ref={refTypo1[index]}
+                  left={image.typoLeft}
+                  right={`calc(${image.typoRight} + 7vw + 2vw)`}
+                  bottom={`calc(${image.typoBottom} + 5.5vw + 38px + 1vw)`}
+                  top={image.typoTop}
+                  sx={{
+                    transition: "0.5s",
+                    transitionDelay: "1s",
+                  }}
+                >
+                  {image.typo1}
+                </CustomizedTypography>
+                <CustomizedTypography
+                  ref={refTypo2[index]}
+                  left={`calc(${image.typoLeft} + 7vw)`}
+                  right={`calc(${image.typoRight} + 2vw)`}
+                  bottom={`calc(${image.typoBottom} + 38px + 1vw)`}
+                  top={`calc(${image.typoTop} + 5.5vw)`}
+                  sx={{
+                    transition: "0.5s",
+                    transitionDelay: ".8s",
+                  }}
+                >
+                  {image.typo2}
+                </CustomizedTypography>
+                <CustomizedButton
+                  ref={refButton[index]}
+                  component={Link}
+                  to={image.link}
+                  top={`calc(${image.typoTop} + 5.5vw + 5.5vw)`}
+                  left={`calc(${image.typoLeft} + 7vw)`}
+                  right={image.typoRight}
+                  bottom={image.typoBottom}
+                  sx={{
+                    transition: "0.5s",
+                    transitionDelay: "1s",
+                  }}
+                >
+                  Find more
+                </CustomizedButton>
+              </Box>
+            </>
+          );
+        })}
       </Box>
 
       {/* ARROWS SESSION */}
@@ -93,6 +265,9 @@ const Carousel = ({ images }: Props) => {
           transform: "translate(0, -50%)",
           cursor: "pointer",
         }}
+        onClick={() => {
+          slideToPreviousImage();
+        }}
       ></Box>
 
       <Box
@@ -110,6 +285,9 @@ const Carousel = ({ images }: Props) => {
           transform: "translate(0, -50%)",
           cursor: "pointer",
         }}
+        onClick={() => {
+          slideToNextImage();
+        }}
       ></Box>
 
       {/* INDICATORS SESSION */}
@@ -124,13 +302,19 @@ const Carousel = ({ images }: Props) => {
           component="span"
           width="20px"
           height="20px"
+          ref={refPlayButton}
           sx={{
             cursor: "pointer",
             backgroundImage: "url('/images/skin.png')",
-            backgroundPosition: "-300px 0",
+            backgroundPosition: "-300px -75px",
             ":hover": {
               backgroundPosition: "-300px -75px",
             },
+          }}
+          onClick={() => {
+            setisPause(false);
+            refPauseButton.current.style.backgroundPosition = "-450px 0";
+            refPlayButton.current.style.backgroundPosition = "-300px -75px";
           }}
         ></Box>
         {images.map((image: ImageSliderType, index: number) => {
@@ -148,7 +332,23 @@ const Carousel = ({ images }: Props) => {
                 ":hover": { backgroundPosition: "-75px -150px" },
                 ":hover .carousel_indicator": {
                   visibility: "visible",
+                  opacity: 1,
                 },
+              }}
+              onClick={() => {
+                console.log(currentIndex + "in function");
+                console.log(((currentIndex + 1) % 3) + "in function");
+                console.log(
+                  ((((currentIndex - 1) % 3) + 3) % 3) + "in function"
+                );
+                console.log(index + "in function");
+
+                if ((currentIndex + 1) % 3 === index) {
+                  slideToNextImage();
+                } else if ((((currentIndex - 1) % 3) + 3) % 3 === index) {
+                  console.log("go to prev");
+                  slideToPreviousImage();
+                }
               }}
             >
               <Box
@@ -159,7 +359,9 @@ const Carousel = ({ images }: Props) => {
                 sx={{
                   backgroundColor: "white",
                   transform: "translate(-42%, 0)",
+                  opacity: 0,
                   visibility: "hidden",
+                  transition: "0.5s",
                   "::before": {
                     content: '""',
                     position: "absolute",
@@ -193,6 +395,12 @@ const Carousel = ({ images }: Props) => {
             ":hover": {
               backgroundPosition: "-450px -75px",
             },
+          }}
+          ref={refPauseButton}
+          onClick={() => {
+            setisPause(true);
+            refPauseButton.current.style.backgroundPosition = "-450px -75px";
+            refPlayButton.current.style.backgroundPosition = "-300px 0";
           }}
         ></Box>
       </Box>

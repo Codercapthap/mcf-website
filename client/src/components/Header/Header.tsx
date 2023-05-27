@@ -5,7 +5,7 @@ import {
   List,
   ListItemButton,
 } from "@mui/material";
-import Colors from "@/Colors";
+import Colors from "@/styles/Colors";
 import { pages, PageType } from "@/shared/type.ts";
 import SearchIcon from "@mui/icons-material/Search";
 import { Link } from "react-router-dom";
