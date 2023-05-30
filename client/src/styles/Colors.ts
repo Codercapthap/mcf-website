@@ -7,6 +7,7 @@ const Colors = {
   text2: "#343434",
   textPrimary: "rgb(52, 52, 52)",
   textWhite: "#fff",
+  selection: "#8c8c7e",
   backgroundText: "rgba(0, 71, 14, 0.28)",
 };
 

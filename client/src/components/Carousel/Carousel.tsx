@@ -1,9 +1,9 @@
 import { Box } from "@mui/material";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import { CustomizedButton, CustomizedTypography } from "@/styles/Component";
+import { CustomizedButton, CustomizedTypography } from "@/styles/Components";
 import { ImageSliderType } from "@/shared/type";
-import { useRef } from "react";
+import theme from "@/styles/Theme";
 
 type Props = {
   images: Array<ImageSliderType>;
@@ -170,7 +170,13 @@ const Carousel = ({ images }: Props) => {
       width="100%"
       overflow="hidden"
       position="relative"
-      sx={{ ":hover .arrow_icon": { opacity: 1 } }}
+      paddingTop="98px"
+      sx={{
+        ":hover .arrow_icon": { opacity: 1 },
+        [theme.breakpoints.down("laptop")]: {
+          paddingTop: "0",
+        },
+      }}
     >
       {/* IMAGES SESSION */}
       <Box
@@ -181,7 +187,7 @@ const Carousel = ({ images }: Props) => {
       >
         {images.map((image: ImageSliderType, index: number) => {
           return (
-            <>
+            <Box key={image.src}>
               <Box
                 ref={refCarouselDiv[index]}
                 component="div"
@@ -244,7 +250,7 @@ const Carousel = ({ images }: Props) => {
                   Find more
                 </CustomizedButton>
               </Box>
-            </>
+            </Box>
           );
         })}
       </Box>
@@ -336,17 +342,9 @@ const Carousel = ({ images }: Props) => {
                 },
               }}
               onClick={() => {
-                console.log(currentIndex + "in function");
-                console.log(((currentIndex + 1) % 3) + "in function");
-                console.log(
-                  ((((currentIndex - 1) % 3) + 3) % 3) + "in function"
-                );
-                console.log(index + "in function");
-
                 if ((currentIndex + 1) % 3 === index) {
                   slideToNextImage();
                 } else if ((((currentIndex - 1) % 3) + 3) % 3 === index) {
-                  console.log("go to prev");
                   slideToPreviousImage();
                 }
               }}
