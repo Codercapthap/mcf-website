@@ -5,7 +5,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { AnimatePresence } from "framer-motion";
-import { PageType, pages } from "@/shared";
+import { PageType, mainPages } from "@/shared";
 import Search from "@/components/Search";
 import { theme } from "@/styles";
 import "./Header.scss";
@@ -205,7 +205,7 @@ function Header({}: Props) {
             },
           }}
         >
-          {pages.map((page: PageType) => {
+          {mainPages.map((page: PageType) => {
             return (
               <ListItem
                 className="header-nav-item"

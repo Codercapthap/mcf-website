@@ -147,6 +147,7 @@ const CardTemplate = ({ projectsProp, type }: Props) => {
             leaveAnimation="accordionHorizontal"
             typeName="ul"
             paddingLeft={0}
+            className="cards-container"
             sx={{
               [theme.breakpoints.down("desktop")]: {
                 gridTemplateColumns: "repeat(3, 4fr)",
