@@ -18,6 +18,7 @@ const Footer = () => {
           fontWeight="700"
           color="rgba(255,255,255,.6)"
           letterSpacing=".1em"
+          padding={0}
         >
           MCF © 2020 | ALL RIGHTS RESERVED
         </Box>
