@@ -1,40 +1,56 @@
-import { Box, useMediaQuery, ListItem, List } from "@mui/material";
-import Colors from "@/styles/Colors";
-import { pages, PageType } from "@/shared/type.ts";
-import SearchIcon from "@mui/icons-material/Search";
-import { Link } from "react-router-dom";
-import Search from "@/components/Search/Search";
 import { useState, useEffect } from "react";
-import { AnimatePresence } from "framer-motion";
+import { Link, useLocation } from "react-router-dom";
+import { Box, useMediaQuery, ListItem, List } from "@mui/material";
+import SearchIcon from "@mui/icons-material/Search";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import theme from "@/styles/Theme";
+import { AnimatePresence } from "framer-motion";
+import { PageType, pages } from "@/shared";
+import Search from "@/components/Search";
+import { theme } from "@/styles";
+import "./Header.scss";
 type Props = {};
 
 function Header({}: Props) {
   const isMediumScreenAndBelow = useMediaQuery("(max-width: 1024px)");
   const isMobileScreens = useMediaQuery("(max-width: 768px)");
   const [toggleModal, setToggleModal] = useState(false);
-  const [isActive, setIsActive] = useState(false);
+  const [isShowingNavbar, setIsShowingNavbar] = useState(false);
+  const [active, setActive] = useState("");
+  const { pathname } = useLocation();
   const [scrollY, setScrollY] = useState(0);
 
+  // Get Scroll Position
   const changeScrollY = () => {
     setScrollY(window.scrollY);
   };
   useEffect(() => {
     window.addEventListener("scroll", changeScrollY);
-    console.log(scrollY);
     return () => {
       window.removeEventListener("scroll", changeScrollY);
     };
   }, [scrollY]);
+
+  useEffect(() => {
+    const currentTag = pathname
+      .split("-")
+      .map((value, index) => {
+        if (index === 0) {
+          return value.substring(1);
+        } else {
+          return value;
+        }
+      })
+      .join(" ");
+    setActive(currentTag);
+  }, [pathname]);
 
   return (
     <Box
       width="100%"
       height={isMobileScreens ? "unset" : scrollY >= 98 ? "70px" : "98px"}
       boxShadow="0 2px 3px 0 rgba(0,0,0,.1)"
-      position="fixed"
+      position={!isMediumScreenAndBelow && scrollY >= 98 ? "fixed" : "relative"}
       marginTop={
         isMediumScreenAndBelow
           ? "unset"
@@ -67,7 +83,7 @@ function Header({}: Props) {
         boxSizing="border-box"
         sx={{
           [theme.breakpoints.down("desktop")]: {
-            maxWidth: "980px",
+            maxWidth: "1024px",
           },
           [theme.breakpoints.down("tablet")]: {
             textAlign: "center",
@@ -89,7 +105,7 @@ function Header({}: Props) {
           <Link to="/">
             <Box
               component="img"
-              src="/images/logo_72px.png"
+              src="/images/icons/logo_72px.png"
               height="auto"
               width="auto"
               maxHeight="100%"
@@ -124,21 +140,18 @@ function Header({}: Props) {
               }}
             >
               <Box
-                component={isActive ? CloseIcon : MenuIcon}
+                component={isShowingNavbar ? CloseIcon : MenuIcon}
+                className="header-icon"
                 sx={{
-                  color: Colors.text1,
-                  textAlign: "center",
-                  cursor: "pointer",
+                  color: "var(--text-grey)",
                   padding: "12px",
-                  ":hover": {
-                    backgroundColor: Colors.button1,
-                  },
                   border: `1px solid #e8e8e8`,
-                  borderRadius: "50%",
-                  transition: "0.3s",
+                  ":hover": {
+                    backgroundColor: "var(--btn-primary-bg)",
+                  },
                 }}
                 onClick={() => {
-                  setIsActive(!isActive);
+                  setIsShowingNavbar(!isShowingNavbar);
                 }}
               ></Box>
             </Box>
@@ -152,21 +165,18 @@ function Header({}: Props) {
             }}
           >
             <SearchIcon
+              className="header-icon"
               sx={{
-                color: Colors.text2,
-                textAlign: "center",
-                cursor: "pointer",
+                color: "var(--text-black)",
                 ":hover": {
-                  color: Colors.button1,
+                  color: "var(--btn-primary-bg)",
                 },
-                borderRadius: "50%",
-                transition: "0.3s",
                 [theme.breakpoints.down("laptop")]: {
-                  color: Colors.text1,
+                  color: "var(--text-grey)",
                   padding: "12px",
                   ":hover": {
-                    backgroundColor: Colors.button1,
-                    color: Colors.text1,
+                    backgroundColor: "var(--btn-primary-bg)",
+                    color: "var(--text-grey)",
                   },
                   border: "1px solid #e8e8e8",
                 },
@@ -180,7 +190,8 @@ function Header({}: Props) {
 
         <List
           sx={{
-            display: isMediumScreenAndBelow && !isActive ? "none" : "flex",
+            display:
+              isMediumScreenAndBelow && !isShowingNavbar ? "none" : "flex",
             position: "relative",
             flexDirection: "row",
             paddingY: "0",
@@ -197,22 +208,15 @@ function Header({}: Props) {
           {pages.map((page: PageType) => {
             return (
               <ListItem
+                className="header-nav-item"
                 key={page.title}
                 component={Link}
                 to={page.link}
                 sx={{
-                  textDecoration: "none",
-                  color: Colors.text2,
-                  textTransform: "uppercase",
-                  fontWeight: 700,
-                  fontSize: "13px",
-                  paddingX: "14px",
-                  textAlign: "center",
-                  width: "auto",
-                  ":hover": {
-                    color: Colors.button1,
-                  },
-                  transition: "0.3s",
+                  color:
+                    active === page.title.toLocaleLowerCase()
+                      ? "var(--btn-primary-bg)"
+                      : "var(--text-black)",
                   [theme.breakpoints.down("laptop")]: {
                     paddingX: "0",
                     paddingY: "10px",
@@ -225,20 +229,9 @@ function Header({}: Props) {
             );
           })}
           <ListItem
+            className="header-nav-item"
             sx={{
-              textDecoration: "none",
-              color: Colors.text2,
-              textTransform: "uppercase",
-              fontWeight: 700,
-              fontSize: "13px",
-              textAlign: "center",
-              paddingX: "14px",
-              width: "auto",
-              cursor: "pointer",
-              ":hover": {
-                color: Colors.button1,
-              },
-              transition: "0.3s",
+              color: "var(--text-black)",
               [theme.breakpoints.down("laptop")]: {
                 paddingX: "0",
               },

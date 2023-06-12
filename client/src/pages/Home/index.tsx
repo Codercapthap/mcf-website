@@ -1,15 +1,15 @@
-import Header from "@/components/header/Header";
-import { ImageSliderType } from "@/shared/type";
-import Carousel from "@/components/Carousel/Carousel";
-import { Box, Typography } from "@mui/material/";
-import { Wrapper, CustomizedPrimaryButton } from "@/styles/Components";
-import { useMediaQuery } from "@mui/material";
-import Colors from "@/styles/Colors";
-type Props = {};
+import { Box, Typography, useMediaQuery } from "@mui/material/";
+import FullScreen from "react-fullscreen-crossbrowser";
+import { useState } from "react";
+import { Wrapper, CustomizedPrimaryButton } from "@/styles";
+import { ImageSliderType } from "@/shared";
+import Header from "@/components/header";
+import Carousel from "@/components/Carousel";
+import Footer from "@/components/Footer";
 
 const images: Array<ImageSliderType> = [
   {
-    src: "images/Bao-tang_home.jpg",
+    src: "images/carousel/Bao-tang_home.jpg",
     typoLeft: "13%",
     typoRight: "unset",
     typoBottom: "unset",
@@ -20,7 +20,7 @@ const images: Array<ImageSliderType> = [
     buttonText: "Find more",
   },
   {
-    src: "images/Sinh-ke_trangchu-2048x1110.jpg",
+    src: "images/carousel/Sinh-ke_trangchu-2048x1110.jpg",
     typoLeft: "unset",
     typoRight: "12%",
     typoBottom: "16%",
@@ -31,7 +31,7 @@ const images: Array<ImageSliderType> = [
     buttonText: "Find more",
   },
   {
-    src: "images/Bao-ton_home-2048x1365.jpg",
+    src: "images/carousel/Bao-ton_home-2048x1365.jpg",
     typoLeft: "unset",
     typoRight: "6%",
     typoBottom: "unset",
@@ -43,12 +43,35 @@ const images: Array<ImageSliderType> = [
   },
 ];
 
-const Home = (props: Props) => {
+const Home = () => {
+  const isMobileScreens = useMediaQuery("(max-width: 768px)");
+  const [isFullScreenEnabled, setIsFullScreenEnabled] =
+    useState<boolean>(false);
   return (
     <>
+      {/* HEADER SESSION */}
       <Header></Header>
-      {!isMobileScreens && <Carousel images={images}></Carousel>}
-      <Wrapper>
+
+      {/* CAROUSEL SESSION */}
+      {!isMobileScreens && (
+        <Box
+          onDoubleClick={() => {
+            setIsFullScreenEnabled(!isFullScreenEnabled);
+          }}
+        >
+          <FullScreen
+            enabled={isFullScreenEnabled}
+            onChange={(isFullScreenEnabled) =>
+              setIsFullScreenEnabled(isFullScreenEnabled)
+            }
+          >
+            <Carousel images={images}></Carousel>
+          </FullScreen>
+        </Box>
+      )}
+
+      {/* MAIN CONTENT SESSION */}
+      <Wrapper sx={{ paddingBottom: "50px" }}>
         <Typography
           variant="h1"
           fontSize="48px"
@@ -57,13 +80,13 @@ const Home = (props: Props) => {
           marginTop="100px"
           marginBottom="20px"
           paddingBottom="50px"
-          color={Colors.text2}
+          color="var(--text-black)"
         >
           THE MEKONG DELTA
         </Typography>
         <Box display="grid" gap={6} gridTemplateColumns="repeat(12, 1fr)">
           <Box gridColumn="span 6">
-            <Box color={Colors.text1}>
+            <Box color="var(--text-grey)">
               <Typography
                 paddingBottom="20px"
                 fontWeight="300"
@@ -100,10 +123,21 @@ const Home = (props: Props) => {
             </CustomizedPrimaryButton>
           </Box>
           <Box gridColumn="span 6">
-            <Box component="img" src="images/MD-zones-300x255.png"></Box>
+            <Box component="img" src="images/others/MD-zones-300x255.png"></Box>
           </Box>
         </Box>
+        <Typography
+          variant="h1"
+          fontWeight="300"
+          fontSize="3em"
+          paddingTop="200px"
+        >
+          Latest New
+        </Typography>
       </Wrapper>
+
+      {/* FOOTER SESSION */}
+      <Footer></Footer>
     </>
   );
 };

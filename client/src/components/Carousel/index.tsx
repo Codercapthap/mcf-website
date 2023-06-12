@@ -1,9 +1,8 @@
 import { Box } from "@mui/material";
 import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import { CustomizedButton, CustomizedTypography } from "@/styles/Components";
-import { ImageSliderType } from "@/shared/type";
-import theme from "@/styles/Theme";
+import { CustomizedButton, CustomizedTypography, theme } from "@/styles";
+import { ImageSliderType } from "@/shared";
 
 type Props = {
   images: Array<ImageSliderType>;
@@ -170,7 +169,6 @@ const Carousel = ({ images }: Props) => {
       width="100%"
       overflow="hidden"
       position="relative"
-      paddingTop="98px"
       sx={{
         ":hover .arrow_icon": { opacity: 1 },
         [theme.breakpoints.down("laptop")]: {
@@ -265,7 +263,7 @@ const Carousel = ({ images }: Props) => {
         width="40px"
         height="50px"
         sx={{
-          backgroundImage: "url('/images/skin.png')",
+          backgroundImage: "url('/images/others/skin.png')",
           backgroundPosition: "0 0",
           opacity: 0,
           transform: "translate(0, -50%)",
@@ -285,7 +283,7 @@ const Carousel = ({ images }: Props) => {
         width="40px"
         height="50px"
         sx={{
-          backgroundImage: "url('/images/skin.png')",
+          backgroundImage: "url('/images/others/skin.png')",
           backgroundPosition: "-150px 0",
           opacity: 0,
           transform: "translate(0, -50%)",
@@ -311,7 +309,7 @@ const Carousel = ({ images }: Props) => {
           ref={refPlayButton}
           sx={{
             cursor: "pointer",
-            backgroundImage: "url('/images/skin.png')",
+            backgroundImage: "url('/images/others/skin.png')",
             backgroundPosition: "-300px -75px",
             ":hover": {
               backgroundPosition: "-300px -75px",
@@ -333,7 +331,7 @@ const Carousel = ({ images }: Props) => {
               position="relative"
               sx={{
                 cursor: "pointer",
-                backgroundImage: "url('/images/skin.png')",
+                backgroundImage: "url('/images/others/skin.png')",
                 backgroundPosition: "0 -150px",
                 ":hover": { backgroundPosition: "-75px -150px" },
                 ":hover .carousel_indicator": {
@@ -388,7 +386,7 @@ const Carousel = ({ images }: Props) => {
           height="20px"
           sx={{
             cursor: "pointer",
-            backgroundImage: "url('/images/skin.png')",
+            backgroundImage: "url('/images/others/skin.png')",
             backgroundPosition: "-450px 0",
             ":hover": {
               backgroundPosition: "-450px -75px",

@@ -1,0 +1,80 @@
+@import "normalize.css/normalize.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap");
+@import "@/assets/fontello-ea591ead/css/fontello.css";
+
+:root {
+  --btn-carousel-bg: #27db0f;
+  --btn-primary-bg: #53d572;
+  --btn-hover-bg: #46c865;
+  --text-grey: #717171;
+  --text-black: #343434;
+  --text-primary: rgb(52, 52, 52);
+  --text-white: #ffffff;
+  --text-bg: rgba(0, 71, 14, 0.28);
+  --bg-black: #303030;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  a::selection {
+    background-color: var(--text-black);
+    color: var(--text-white);
+  }
+
+  :is(h1, h2, h3, h4, h5, h6, p)::selection {
+    color: var(--text-white);
+    background-color: var(--btn-hover-bg);
+  }
+}
+
+.card-hover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  &:hover {
+    background-color: rgba(70, 201, 101, 0.85);
+    .icon-leaf {
+      opacity: 1;
+    }
+  }
+}
+
+.card-media {
+  min-height: 350px;
+  cursor: pointer;
+  position: relative;
+  @media screen and (max-width: 768px) {
+    background-size: contain !important;
+  }
+}
+
+.card-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.card-title {
+  font-weight: 300 !important;
+  color: var(--text-black);
+  cursor: pointer;
+  &:hover {
+    color: var(--btn-hover-bg);
+  }
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
