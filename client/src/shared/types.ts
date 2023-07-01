@@ -2,6 +2,7 @@ export interface PageType {
   link: string;
   title: string;
   component: React.ReactNode;
+  props?: Array<any>;
 }
 
 export interface ImageSliderType {
@@ -25,6 +26,7 @@ export interface Project {
   categoryLink: string;
   thumbnail: string;
   title: string;
+  description?: string;
 }
 
 export const enum Status {
@@ -51,4 +53,8 @@ export interface Conservation extends Project {
   fundedBy?: string;
   fundMount?: string;
   status: Status;
+}
+
+export interface Projects {
+  [index: string]: Array<Project>;
 }

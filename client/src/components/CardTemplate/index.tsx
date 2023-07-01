@@ -7,6 +7,7 @@ import FlipMove from "react-flip-move";
 import { Project } from "@/shared";
 import "./CardTemplate.scss";
 import { theme } from "@/styles";
+import { Link } from "react-router-dom";
 type Props = {
   projectsProp: Array<Project>;
   type: string;
@@ -183,18 +184,23 @@ const CardTemplate = ({ projectsProp, type }: Props) => {
                     >
                       {information.title}
                     </Typography>
-                    <Typography
-                      color="var(--btn-primary-bg)"
-                      variant="h6"
-                      sx={{
-                        fontSize: "11px",
-                        fontWeight: "700",
-                        letterSpacing: ".1rem",
-                        marginTop: "auto",
-                      }}
+                    <Box
+                      component={Link}
+                      to={`/pj-categs/${type.toLowerCase()}`}
+                      marginTop="auto"
                     >
-                      {type}
-                    </Typography>
+                      <Typography
+                        color="var(--btn-primary-bg)"
+                        variant="h6"
+                        sx={{
+                          fontSize: "11px",
+                          fontWeight: "700",
+                          letterSpacing: ".1rem",
+                        }}
+                      >
+                        {type}
+                      </Typography>
+                    </Box>
                   </CardContent>
                 </Card>
               );

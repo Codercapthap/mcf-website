@@ -73,6 +73,7 @@ const MemberOfMcf = [
 ];
 
 const AboutUs = () => {
+  document.title = `About Us - MCF`;
   return (
     <>
       <Header></Header>

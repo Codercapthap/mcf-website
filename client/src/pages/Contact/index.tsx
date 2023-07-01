@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 
 const CustomInput = styled(Input)({
   marginTop: "10px",
-  border: "1px solid #dfdfdf",
+  border: "1px solid var(--border-color)",
   borderRadius: "30px",
   padding: "0 22px",
   width: "100%",
@@ -43,7 +43,7 @@ const CustomTextArea = styled(TextareaAutosize)({
   width: "94.7%",
   minWidth: "100px",
   resize: "vertical",
-  border: "1px solid #dfdfdf",
+  border: "1px solid var(--border-color)",
   borderRadius: "30px",
   padding: "10px 22px",
   transition: "border-color .2s ease-in-out",
@@ -75,6 +75,7 @@ const CustomButton = styled(Button)({
   },
 });
 const Contact = () => {
+  document.title = `Contact - MCF`;
   return (
     <>
       <Header></Header>
@@ -372,7 +373,7 @@ const Contact = () => {
                     sx={{
                       borderBottomWidth: "1px",
                       borderBottomStyle: "solid",
-                      borderColor: "#dfdfdf",
+                      borderColor: "var(--border-color)",
                       paddingTop: "10px",
                       marginBottom: "10px",
                       width: "100%",
@@ -423,7 +424,7 @@ const Contact = () => {
                     sx={{
                       borderBottomWidth: "1px",
                       borderBottomStyle: "solid",
-                      borderColor: "#dfdfdf",
+                      borderColor: "var(--border-color)",
                       paddingTop: "10px",
                       marginBottom: "10px",
                       width: "100%",
@@ -473,7 +474,7 @@ const Contact = () => {
                     sx={{
                       borderBottomWidth: "1px",
                       borderBottomStyle: "solid",
-                      borderColor: "#dfdfdf",
+                      borderColor: "var(--border-color)",
                       paddingTop: "10px",
                       marginBottom: "10px",
                       width: "100%",
@@ -523,7 +524,7 @@ const Contact = () => {
                     sx={{
                       borderBottomWidth: "1px",
                       borderBottomStyle: "solid",
-                      borderColor: "#dfdfdf",
+                      borderColor: "var(--border-color)",
                       paddingTop: "10px",
                       marginBottom: "10px",
                       width: "100%",

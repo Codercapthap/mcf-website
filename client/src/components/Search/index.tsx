@@ -2,11 +2,41 @@ import { Box } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import ReactDOM from "react-dom";
 import { motion } from "framer-motion";
+import { FormEvent, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { projects, Project } from "@/shared";
 type Props = {
   setToggleModal: Function;
 };
 
 export default function Search({ setToggleModal }: Props) {
+  const [searchInput, setSearchInput] = useState("");
+  const navigate = useNavigate();
+  const search = (e: React.KeyboardEvent<HTMLDivElement>) => {
+    if (e.key === "Enter") {
+      // var result: Record<string, Array<Project>> = {};
+      var result: Array<Project> = [];
+      Object.entries(projects).map((projectArray: any) => {
+        projectArray[1] = projectArray[1].filter((project: Project) => {
+          return (
+            project.title.toLowerCase().includes(searchInput.toLowerCase()) ||
+            (project.description &&
+              project.description
+                .toLowerCase()
+                .includes(searchInput.toLowerCase()))
+          );
+        });
+        console.log(projectArray[0]);
+        // if (projectArray[1].length > 0) {
+        // result[`${projectArray[0]}`] = projectArray[1];
+        result = [...result, ...projectArray[1]];
+        // }
+      });
+      setToggleModal(false);
+      navigate("/search", { state: { projects: result, input: searchInput } });
+    }
+  };
+
   return ReactDOM.createPortal(
     <Box
       component={motion.div}
@@ -54,14 +84,15 @@ export default function Search({ setToggleModal }: Props) {
             outline: "none",
           },
         }}
+        autoFocus
+        value={searchInput}
+        onChange={(e: FormEvent<HTMLInputElement>) => {
+          setSearchInput(e.currentTarget.value);
+        }}
+        onKeyDown={search}
         placeholder="Search..."
       ></Box>
     </Box>,
     document.querySelector("body") as HTMLElement
   );
 }
-
-// const SearchModal = ReactDOM.createPortal(
-//   Search({}),
-//   document.querySelector("body") as HTMLElement
-// );

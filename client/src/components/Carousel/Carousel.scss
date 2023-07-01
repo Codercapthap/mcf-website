@@ -1,0 +1,223 @@
+// .carousel-container {
+//   max-height: 100vh;
+// }
+
+.slick-list {
+  max-height: 617px;
+}
+
+.slick-slider {
+  position: relative;
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    color: black;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  &:hover {
+    .slick-arrow {
+      opacity: 1;
+    }
+  }
+  .slick-next {
+    right: 40px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 40px;
+      height: 50px;
+      background-image: url(images/others/skin.png);
+      background-position: -150px 0;
+      // display: none;
+      &:hover {
+        background-image: url(images/others/skin.png);
+        color: unset;
+        outline: unset;
+        background-position: -150px -75px;
+      }
+    }
+  }
+  .slick-prev {
+    left: 20px;
+    &::before {
+      content: "";
+      display: block;
+      width: 40px;
+      height: 50px;
+      background-image: url(images/others/skin.png);
+      background-position: 0 0;
+      // display: none;
+      &:hover {
+        background-image: url(images/others/skin.png);
+        color: unset;
+        outline: unset;
+        background-position: 0 -75px;
+      }
+    }
+  }
+  img {
+    // width: 50%;
+    // max-width: 90vw;
+    margin: auto;
+    height: auto;
+    max-height: 100vh;
+    object-fit: fill;
+    width: 100%;
+  }
+  .slick-dots {
+    li {
+      button {
+        position: relative;
+        ::before {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+$images: "images/carousel/Bao-tang_home.jpg" 2,
+  "images/carousel/Sinh-ke_trangchu-2048x1110.jpg" 3,
+  "images/carousel/Bao-ton_home-2048x1365.jpg" 4;
+@each $image, $i in $images {
+  ul > li:nth-child(#{$i}) {
+    &:hover {
+      &::after {
+        opacity: 1;
+      }
+      &::before {
+        opacity: 1;
+      }
+    }
+    &::before {
+      opacity: 0;
+      content: "";
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 10px solid #fff;
+      position: absolute;
+      top: -10px;
+      left: 0;
+      transition: 0.5s;
+    }
+    &::after {
+      opacity: 0;
+      content: "";
+      background-image: url($image);
+      background-size: cover;
+      background-position: top;
+      position: absolute;
+      top: -90px;
+      left: 0;
+      transform: translateX(-40%);
+      width: 120px;
+      height: 80px;
+      -webkit-transform: translateX(-40%);
+      -moz-transform: translateX(-40%);
+      -ms-transform: translateX(-40%);
+      -o-transform: translateX(-40%);
+      transition: 0.5s;
+    }
+  }
+}
+
+.customize-typo {
+  font-family: serif;
+  background-color: var(--text-bg);
+  color: var(--text-white);
+  font-size: 3.5vw;
+  padding: 0 20px;
+  line-height: normal;
+}
+
+.typo2 {
+  display: block;
+  margin-top: 1vw;
+  margin-left: 5vw;
+}
+
+.customize-div {
+  position: absolute;
+  box-sizing: border-box;
+  top: 40%;
+  left: 10%;
+}
+
+.customize-button {
+  padding: 12px 28px;
+  border-radius: 20px;
+  color: var(--text-primary);
+  font-family: serif;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  font-weight: 700;
+  background-color: var(--btn-carousel-bg);
+  text-decoration: none;
+  margin-left: 5vw;
+  margin-top: 1vw;
+  border: none;
+}
+
+.customize-container {
+  position: relative;
+  height: 100%;
+}
+
+.slick-dots {
+  position: absolute;
+  left: 50%;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-50%);
+  bottom: 10px !important;
+  :not(.dots-pause, .dots-play) {
+    background-position: -0px -150px;
+  }
+  li {
+    width: 25px;
+    height: 20px;
+    margin: 0 2px !important;
+    background-image: url(images/others/skin.png);
+    cursor: pointer;
+    &.slick-active {
+      background-position: -75px -150px;
+    }
+    button {
+      display: none;
+      &::before {
+        display: none;
+      }
+    }
+  }
+}
+
+.dots-pause {
+  background-position: -300px 0px;
+  &.active {
+    background-position: -300px -75px;
+  }
+  &:hover {
+    background-position: -300px -75px;
+  }
+}
+
+.dots-play {
+  background-position: -455px 0px;
+  &.active {
+    background-position: -455px -75px;
+  }
+  &:hover {
+    background-position: -455px -75px;
+  }
+}

@@ -1,21 +1,21 @@
 import { Box, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import { Wrapper } from "@/styles";
-import useMediaQuery from "@mui/material/useMediaQuery/useMediaQuery";
 import { theme } from "@/styles";
 
 type props = {
-  image: string;
+  image?: string;
+  name: string;
   title: string;
 };
 
-const index = ({ image, title }: props) => {
+const Headline = ({ image, name, title }: props) => {
   return (
     <Box
       height="560px"
       marginBottom="90px"
       sx={{
-        backgroundImage: `url(${image})`,
+        background: image ? `url(${image})` : `var(--btn-hover-bg)`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundAttachment: "scroll",
@@ -59,7 +59,7 @@ const index = ({ image, title }: props) => {
             >
               Home
             </Box>
-            / {title}
+            / {name || title}
           </Typography>
         </Box>
       </Wrapper>
@@ -67,4 +67,4 @@ const index = ({ image, title }: props) => {
   );
 };
 
-export default index;
+export default Headline;

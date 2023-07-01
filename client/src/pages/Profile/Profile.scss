@@ -135,7 +135,7 @@ li {
       top: 0;
       height: 100%;
       width: 1px;
-      background-color: #dfdfdf;
+      background-color: var(--border-color);
     }
   }
 
@@ -154,7 +154,7 @@ li {
       top: 0;
       height: 100%;
       width: 1px;
-      background-color: #dfdfdf;
+      background-color: var(--border-color);
     }
 
     .profile_details_item_title {
@@ -169,7 +169,7 @@ li {
     }
 
     .profile_details_item {
-      border-color: #dfdfdf;
+      border-color: var(--border-color);
 
       .profile_details_item_title {
         line-height: 30px;

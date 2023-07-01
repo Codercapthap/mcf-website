@@ -5,6 +5,7 @@ export type {
   Conservation,
   Livelihood,
   Project,
+  Projects,
 } from "./types";
 export { Status } from "./types";
-export { mainPages, subPages } from "./variables";
+export { mainPages, subPages, projects } from "./variables";

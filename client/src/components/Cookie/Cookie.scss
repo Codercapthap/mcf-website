@@ -1,0 +1,31 @@
+.cookie-fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+}
+
+.cookie-text {
+  font-size: 14px !important;
+  color: var(--text-black);
+}
+
+.accordion-summary {
+  background-color: #e9e9e9;
+  flex-direction: row-reverse;
+  & .MuiAccordionSummary-expandIconWrapper.Mui-expanded {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+  }
+  & .MuiAccordionSummary-content {
+    margin-left: 4px;
+  }
+}
+
+.accordion-details {
+  padding-bottom: 0;
+}

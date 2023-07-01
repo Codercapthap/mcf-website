@@ -41,9 +41,11 @@ const ScrollToTopBtn = () => {
         },
         transition: "0.5s",
         cursor: "pointer",
+        zIndex: 100,
       }}
       ref={buttonRef}
-      padding="12px"
+      display="flex"
+      padding="14px"
       color="var(--text-white)"
       onClick={() => {
         window.scrollTo({ behavior: "smooth", top: 0 });
