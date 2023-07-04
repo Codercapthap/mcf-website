@@ -59,6 +59,7 @@ const Home = () => {
           onDoubleClick={() => {
             setIsFullScreenEnabled(!isFullScreenEnabled);
           }}
+          marginBottom="100px"
         >
           <FullScreen
             enabled={isFullScreenEnabled}
