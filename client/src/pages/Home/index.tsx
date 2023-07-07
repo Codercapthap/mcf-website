@@ -56,6 +56,7 @@ const Home = () => {
       {/* CAROUSEL SESSION */}
       {!isMobileScreens && (
         <Box
+        className="carousel"
           onDoubleClick={() => {
             setIsFullScreenEnabled(!isFullScreenEnabled);
           }}

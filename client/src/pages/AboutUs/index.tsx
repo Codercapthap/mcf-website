@@ -129,7 +129,7 @@ const AboutUs = () => {
       >
         <Wrapper>
           <Box paddingTop="130px">
-            <Typography fontWeight="300" variant="h3">
+            <Typography fontWeight="300" variant="h3" textAlign= "center">
               THE MCF COUNCIL
             </Typography>
             <Box
@@ -200,7 +200,7 @@ const AboutUs = () => {
             </Box>
           </Box>
           <Box paddingTop="130px">
-            <Typography fontWeight="300" variant="h3">
+            <Typography fontWeight="300" variant="h3" textAlign= "center">
               THE SUPERVISORY COUNCIL
             </Typography>
             <Box
@@ -247,7 +247,7 @@ const AboutUs = () => {
             </Box>
           </Box>
           <Box paddingTop="130px">
-            <Typography fontWeight="300" variant="h3">
+            <Typography fontWeight="300" variant="h3" textAlign= "center">
               MEMBER OF MCF
             </Typography>
             <Box

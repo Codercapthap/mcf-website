@@ -25,7 +25,7 @@ const Profile = () => {
                         title="Dòng chảy của Văn hóa và Sự sống"
                         className="preloader highImg"
                         onClick={() => {
-                          document.body.style.overflow = "hidden";
+                          document.body.style.overflow = "hidden"
                           setToggleModal(true);
                         }}
                       >
@@ -34,9 +34,9 @@ const Profile = () => {
                           width="100%"
                           height="100%"
                           alt="Dòng chảy của Văn hóa và Sự sống"
-                          src="http://localhost:5173/images/conservation/dong-chay-cua-van-hoa-va-su-song/flow-of-culture-and-life_conservation-1160x870.jpg"
+                          src="http://localhost:5173/public/images/conservation/dong-chay-cua-van-hoa-va-su-song/flow-of-culture-and-life_conservation-1160x870.jpg"
                           title="Dòng chảy của Văn hóa và Sự sống"
-                          srcSet="http://localhost:5173/images/conservation/dong-chay-cua-van-hoa-va-su-song/flow-of-culture-and-life_conservation-1160x870.jpg 1160w, http://localhost:5173/images/conservation/dong-chay-cua-van-hoa-va-su-song/flow-of-culture-and-life_conservation-300x225.jpg 300w, http://localhost:5173/images/conservation/dong-chay-cua-van-hoa-va-su-song/flow-of-culture-and-life_conservation-1024x768.jpg 1024w, http://localhost:5173/images/conservation/dong-chay-cua-van-hoa-va-su-song/flow-of-culture-and-life_conservation-768x576.jpg 768w, http://localhost:5173/images/conservation/dong-chay-cua-van-hoa-va-su-song/flow-of-culture-and-life_conservation-580x435.jpg 580w, http://localhost:5173/images/conservation/dong-chay-cua-van-hoa-va-su-song/flow-of-culture-and-life_conservation-860x645.jpg 860w, http://localhost:5173/images/conservation/dong-chay-cua-van-hoa-va-su-song/flow-of-culture-and-life_conservation-440x330.jpg 440w, http://localhost:5173/images/conservation/dong-chay-cua-van-hoa-va-su-song/flow-of-culture-and-life_conservation.jpg 1190w"
+                          srcSet="http://localhost:5173/public/images/conservation/dong-chay-cua-van-hoa-va-su-song/flow-of-culture-and-life_conservation-1160x870.jpg 1160w, http://localhost:5173/public/images/conservation/dong-chay-cua-van-hoa-va-su-song/flow-of-culture-and-life_conservation-300x225.jpg 300w, http://localhost:5173/public/images/conservation/dong-chay-cua-van-hoa-va-su-song/flow-of-culture-and-life_conservation-1024x768.jpg 1024w, http://localhost:5173/public/images/conservation/dong-chay-cua-van-hoa-va-su-song/flow-of-culture-and-life_conservation-768x576.jpg 768w, http://localhost:5173/public/images/conservation/dong-chay-cua-van-hoa-va-su-song/flow-of-culture-and-life_conservation-580x435.jpg 580w, http://localhost:5173/public/images/conservation/dong-chay-cua-van-hoa-va-su-song/flow-of-culture-and-life_conservation-860x645.jpg 860w, http://localhost:5173/public/images/conservation/dong-chay-cua-van-hoa-va-su-song/flow-of-culture-and-life_conservation-440x330.jpg 440w, http://localhost:5173/public/images/conservation/dong-chay-cua-van-hoa-va-su-song/flow-of-culture-and-life_conservation.jpg 1190w"
                           sizes="(max-width: 1160px) 100vw, 1160px"
                         ></Box>
                       </Link>
@@ -100,60 +100,10 @@ const Profile = () => {
                             >
                               <Box component="div">
                                 <Box component="p">
-                                  Nguồn nước đại diện cho một thành phần cơ bản
-                                  của nền kinh tế trong khu vực, ngoài nhu cầu
-                                  tiêu dùng cho sinh hoạt, nước còn được sử dụng
-                                  cho nông nghiệp, công nghiệp và dịch vụ. Sông
-                                  và các khu vực ven sông cũng góp phần tạo nên
-                                  cảnh quan cho khu vực và phát triển các dịch
-                                  vụ du lịch khác. Bên cạnh đó, dòng sông còn là
-                                  sự kết nối và tạo môi trường sống của nhiều
-                                  sinh vật trên cạn và dưới nước và tạo nên các
-                                  giá trị thẩm mỹ và giải trí khác. Tại đồng
-                                  bằng sông Cửu Long (ĐBSCL), sông Mekong được
-                                  coi là nguồn cung cấp nước và các dịch vụ hệ
-                                  sinh thái quan trọng nhất bởi nó cung cấp
-                                  khoảng 90% lưu lượng nước cho ĐBSCL, đặc biệt
-                                  vào mùa khô lượng nước hoàn toàn phụ thuộc vào
-                                  vùng thượng lưu Mekong. Tuy nhiên, các lưu vực
-                                  sông đã và đang bị khai thác quá mức để phục
-                                  vụ cho mục tiêu phát triển kinh tế – xã hội,
-                                  từ đó gây ra các áp lực cho hệ sinh thái.
-                                  Trong khi đó, nhiều cộng đồng nông thôn và
-                                  đồng bào dân tộc thiểu số vẫn phụ thuộc nhiều
-                                  vào nguồn nước sông. Hiện nay các giá trị dịch
-                                  vụ hệ sinh thái dòng sống cung cấp cho cộng
-                                  đồng đã dần bị lãng quên dẫn đến các hoạt động
-                                  gây nhiều ảnh hưởng xấu cho dòng sông thường
-                                  xuyên xảy ra. Vì vậy, dự án đã đánh giá các
-                                  dịch vụ hệ sinh thái mà dòng sông thật sự cung
-                                  cấp cho con người nhằm thay đổi tư duy quản
-                                  trị sông hiện nay.
+                                Nguồn nước đại diện cho một thành phần cơ bản của nền kinh tế trong khu vực, ngoài nhu cầu tiêu dùng cho sinh hoạt, nước còn được sử dụng cho nông nghiệp, công nghiệp và dịch vụ. Sông và các khu vực ven sông cũng góp phần tạo nên cảnh quan cho khu vực và phát triển các dịch vụ du lịch khác. Bên cạnh đó, dòng sông còn là sự kết nối và tạo môi trường sống của nhiều sinh vật trên cạn và dưới nước và tạo nên các giá trị thẩm mỹ và giải trí khác. Tại đồng bằng sông Cửu Long (ĐBSCL), sông Mekong được coi là nguồn cung cấp nước và các dịch vụ hệ sinh thái quan trọng nhất bởi nó cung cấp khoảng 90% lưu lượng nước cho ĐBSCL, đặc biệt vào mùa khô lượng nước hoàn toàn phụ thuộc vào vùng thượng lưu Mekong. Tuy nhiên, các lưu vực sông đã và đang bị khai thác quá mức để phục vụ cho mục tiêu phát triển kinh tế – xã hội, từ đó gây ra các áp lực cho hệ sinh thái. Trong khi đó, nhiều cộng đồng nông thôn và đồng bào dân tộc thiểu số vẫn phụ thuộc nhiều vào nguồn nước sông. Hiện nay các giá trị dịch vụ hệ sinh thái dòng sống cung cấp cho cộng đồng đã dần bị lãng quên dẫn đến các hoạt động gây nhiều ảnh hưởng xấu cho dòng sông thường xuyên xảy ra. Vì vậy, dự án đã đánh giá các dịch vụ hệ sinh thái mà dòng sông thật sự cung cấp cho con người nhằm thay đổi tư duy quản trị sông hiện nay.
                                 </Box>
                                 <Box component="p">
-                                  Kết quả nghiên cứu cho thấy các dịch vụ hệ
-                                  sinh thái trên sông Hậu rất đa dạng và đóng
-                                  vai trò rất quan trọng đối với sự phát triển
-                                  của cả vùng Đồng bằng sông Cửu Long. Nơi đây
-                                  là nguồn cung cấp nước và thực phẩm cho nhiều
-                                  hoạt động của vùng. Sông Hậu đã cung cấp trực
-                                  tiếp và gián tiếp các dịch vụ về điều tiết và
-                                  hỗ trợ khác nhau, như điều hoà khí hậu, chất
-                                  dinh dưỡng,…Hơn nữa, đây được xem là nơi diễn
-                                  ra nhiều lễ hội, các hoạt động tín ngưỡng trên
-                                  sông, đặc trưng với nhiều hoạt động du lịch
-                                  sinh thái và các loại hình du lịch trải
-                                  nghiệm. Vai trò của dịch vụ cung cấp được
-                                  người dân quan tâm nhiều nhất trong quá trình
-                                  khảo sát. Tuy nhiên, các dịch vụ này đã ngày
-                                  càng bị suy giảm bởi nhiều yếu tố khác nhau
-                                  như sự thay đổi thuỷ văn, chất lượng, trữ
-                                  lượng môi trường nước giảm và các chính sách
-                                  phát triển liên quan đến dòng sông. Trong đó,
-                                  sự thay đổi về chất lượng và trữ lượng nước là
-                                  một trong những nguyên nhân chính dẫn đế sự
-                                  thay đổi của các dịch vụ hệ sinh thái trên
-                                  sông.
+                                Kết quả nghiên cứu cho thấy các dịch vụ hệ sinh thái trên sông Hậu rất đa dạng và đóng vai trò rất quan trọng đối với sự phát triển của cả vùng Đồng bằng sông Cửu Long. Nơi đây là nguồn cung cấp nước và thực phẩm cho nhiều hoạt động của vùng. Sông Hậu đã cung cấp trực tiếp và gián tiếp các dịch vụ về điều tiết và hỗ trợ khác nhau, như điều hoà khí hậu, chất dinh dưỡng,…Hơn nữa, đây được xem là nơi diễn ra nhiều lễ hội, các hoạt động tín ngưỡng trên sông, đặc trưng với nhiều hoạt động du lịch sinh thái và các loại hình du lịch trải nghiệm. Vai trò của dịch vụ cung cấp được người dân quan tâm nhiều nhất trong quá trình khảo sát. Tuy nhiên, các dịch vụ này đã ngày càng bị suy giảm bởi nhiều yếu tố khác nhau như sự thay đổi thuỷ văn, chất lượng, trữ lượng môi trường nước giảm và các chính sách phát triển liên quan đến dòng sông. Trong đó, sự thay đổi về chất lượng và trữ lượng nước là một trong những nguyên nhân chính dẫn đế sự thay đổi của các dịch vụ hệ sinh thái trên sông.
                                 </Box>
                               </Box>
                             </Box>
@@ -194,18 +144,8 @@ const Profile = () => {
                       </Box>
                     </Box>
                     <Box component="aside" className="cmsmasters_single_slider">
-                      <Typography
-                        variant="h4"
-                        className="cmsmasters_single_slider_title"
-                      >
-                        Các dự án khác
-                      </Typography>
-                      <Typography
-                        variant="h5"
-                        className="cmsmasters_single_slider_no_items"
-                      >
-                        Danh sách trống
-                      </Typography>
+                      <Typography variant="h4" className="cmsmasters_single_slider_title">Các dự án khác</Typography>
+                      <Typography variant="h5" className="cmsmasters_single_slider_no_items">Danh sách trống</Typography>
                     </Box>
                   </Box>
                 </Box>
@@ -250,11 +190,10 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_desc"
                       >
-                        <Link
-                          href="http://localhost:5173/author/lvloi/"
-                          title="Projects by Ly Van Loi"
-                          rel="author"
-                        >
+                        <Link 
+                        href="http://localhost:5173/author/lvloi/"
+                        title="Projects by Ly Van Loi"
+                        rel="author">
                           <Box component="span">Ly Van Loi</Box>
                         </Link>
                       </Box>
@@ -270,9 +209,7 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_desc"
                       >
-                        <Box component="abbr" title="26 Tháng Năm, 2023">
-                          26 Tháng Năm, 2023
-                        </Box>
+                        <Box component="abbr" title="26 Tháng Năm, 2023">26 Tháng Năm, 2023</Box>
                       </Box>
                     </Box>
                     <Box component="div" className="profile_details_item">
@@ -408,7 +345,7 @@ const Profile = () => {
               rel="prev"
               className="icon-angle-left"
             >
-              Tiến trình của Bảo tàng Lịch sử Tự nhiên Mekong
+             Tiến trình của Bảo tàng Lịch sử Tự nhiên Mekong
             </Link>
           </Box>
           <Box
@@ -420,20 +357,22 @@ const Profile = () => {
               rel="next"
               className="icon-angle-right"
             >
-              Cập nhật chiến lược quản lý nước để phục hồi sinh cảnh đất ngập
-              nước Vườn quốc gia Tràm chim trong bối cảnh biến đổi khí hậu và
-              phát triển ở thượng nguồn
+              Cập nhật chiến lược quản lý nước để phục hồi sinh cảnh đất ngập nước Vườn quốc gia Tràm chim trong bối cảnh biến đổi khí hậu và phát triển ở thượng nguồn
             </Link>
           </Box>
         </Box>
       </Box>
       <AnimatePresence>
-        {toggleModal && (
-          <ToggleModalImg
-            src="http://localhost:5173/images/conservation/dong-chay-cua-van-hoa-va-su-song/flow-of-culture-and-life_conservation-1160x870.jpg"
+        {toggleModal &&
+          (<ToggleModalImg 
+            src="http://localhost:5173/public/images/conservation/dong-chay-cua-van-hoa-va-su-song/flow-of-culture-and-life_conservation-1160x870.jpg"
             setToggleModal={setToggleModal}
-          ></ToggleModalImg>
-        )}
+            >
+
+            </ToggleModalImg>
+          )
+        }
+        
       </AnimatePresence>
       <Footer></Footer>
     </>

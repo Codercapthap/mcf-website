@@ -25,7 +25,7 @@ const Profile = () => {
                         title="PGS.TS. Trương Hoàng Đan"
                         className="preloader highImg"
                         onClick={() => {
-                          document.body.style.overflow = "hidden";
+                          document.body.style.overflow = "hidden"
                           setToggleModal(true);
                         }}
                       >
@@ -34,7 +34,7 @@ const Profile = () => {
                           width="100%"
                           height="100%"
                           alt="PGS.TS. Trương Hoàng Đan"
-                          src="http://localhost:5173/images/people/Truong-Hoang-Dan_gioithieu-1160x610.jpg"
+                          src="http://localhost:5173/public/images/people/Truong-Hoang-Dan_gioithieu-1160x610.jpg"
                           title="PGS.TS. Trương Hoàng Đan"
                           sizes="(max-width: 410px) 100vw, 410px"
                         ></Box>
@@ -99,23 +99,7 @@ const Profile = () => {
                             >
                               <Box component="div">
                                 <Box component="p">
-                                  Với nhiều năm kinh nghiệm trong các lĩnh vực
-                                  Khoa học Môi trường, Đa dạng sinh học, Khoa
-                                  học trái đất và khoa học môi trường có liên
-                                  quan khác. Đan đã thực hiện nhiều đề tài
-                                  nghiên cứu như Tư vấn lập báo cáo kỹ thuật Đất
-                                  ngập nước Búng Bình Thiên để thống kê đa dạng
-                                  sinh học và giải quyết vấn đề ô nhiễm môi
-                                  trường nước; Điều tra cơ bản, đánh giá thực
-                                  trạng đa dạng sinh học Khu bảo tồn thiên nhiên
-                                  Lung Ngọc Hoàng và xác định các vấn đề ưu
-                                  tiên; Đánh giá lượng cacbon tích lũy trên bề
-                                  mặt đất của một số trạng thái rừng tràm tại U
-                                  Minh Thượng; Sự thích nghi của thủy sinh thực
-                                  vật trong các thủy vực ô nhiễm hữu cơ ở một số
-                                  vùng ĐBSCL. Ngoài ra, Đan cũng là tác giả và
-                                  đồng tác giả của nhiều ấn phẩm Sách liên quan
-                                  đến lĩnh vực môi trường, đất ngập nước.
+                                Với nhiều năm kinh nghiệm trong các lĩnh vực Khoa học Môi trường, Đa dạng sinh học, Khoa học trái đất và khoa học môi trường có liên quan khác. Đan đã thực hiện nhiều đề tài nghiên cứu như Tư vấn lập báo cáo kỹ thuật Đất ngập nước Búng Bình Thiên để thống kê đa dạng sinh học và giải quyết vấn đề ô nhiễm môi trường nước; Điều tra cơ bản, đánh giá thực trạng đa dạng sinh học Khu bảo tồn thiên nhiên Lung Ngọc Hoàng và xác định các vấn đề ưu tiên; Đánh giá lượng cacbon tích lũy trên bề mặt đất của một số trạng thái rừng tràm tại U Minh Thượng; Sự thích nghi của thủy sinh thực vật trong các thủy vực ô nhiễm hữu cơ ở một số vùng ĐBSCL. Ngoài ra, Đan cũng là tác giả và đồng tác giả của nhiều ấn phẩm Sách liên quan đến lĩnh vực môi trường, đất ngập nước.
                                 </Box>
                               </Box>
                             </Box>
@@ -282,12 +266,11 @@ const Profile = () => {
         </Box>
       </Box>
       <AnimatePresence>
-        {toggleModal && (
-          <ToggleModalImg
-            src="http://localhost:5173/images/people/Truong-Hoang-Dan_gioithieu-1160x610.jpg"
-            setToggleModal={setToggleModal}
-          ></ToggleModalImg>
-        )}
+        {toggleModal &&
+          (<ToggleModalImg src="http://localhost:5173/public/images/people/Truong-Hoang-Dan_gioithieu-1160x610.jpg" setToggleModal={setToggleModal}></ToggleModalImg>
+          )
+        }
+        
       </AnimatePresence>
       <Footer></Footer>
     </>
