@@ -1,3 +1,8 @@
+.ilightbox-holder *{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 .ilightbox-overlay {
   display: none;
   position: fixed;
@@ -7,7 +12,11 @@
   height: 100%;
   z-index: 100000;
 }
-
+:not(:root):fullscreen::backdrop {
+  position: fixed;
+  inset: 0px;
+  background: transparent;
+}
 .ilightbox-overlay.dark {
   background: #000;
 }
@@ -33,6 +42,10 @@
   -o-transition: none;
   div.ilightbox-container {
     position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  img.ilightbox-image {
     width: 100%;
     height: 100%;
   }

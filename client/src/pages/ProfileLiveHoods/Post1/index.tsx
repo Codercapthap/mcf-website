@@ -25,7 +25,7 @@ const Profile = () => {
                         title="Ký kết đào tạo sinh viên thực hành ngắn hạn"
                         className="preloader highImg"
                         onClick={() => {
-                          document.body.style.overflow = "hidden";
+                          document.body.style.overflow = "hidden"
                           setToggleModal(true);
                         }}
                       >
@@ -34,9 +34,9 @@ const Profile = () => {
                           width="100%"
                           height="100%"
                           alt="Ký kết đào tạo sinh viên thực hành ngắn hạn"
-                          src="http://localhost:5173/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinh-ke.jpg"
+                          src="http://localhost:5173/public/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinh-ke.jpg"
                           title="Ký kết đào tạo sinh viên thực hành ngắn hạn"
-                          srcSet="http://localhost:5173/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinh-ke-1160x564.jpg 1160w, http://localhost:5173/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinh-ke-300x146.jpg 300w, http://localhost:5173/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinh-ke-1024x498.jpg 1024w, http://localhost:5173/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinh-ke-768x373.jpg 768w, http://localhost:5173/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinh-ke-580x282.jpg 580w, http://localhost:5173/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinh-ke-860x418.jpg 860w, http://localhost:5173/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinh-ke-440x214.jpg 440w, http://localhost:5173/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinh-ke.jpg 1348w"
+                          srcSet="http://localhost:5173/public/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinh-ke-1160x564.jpg 1160w, http://localhost:5173/public/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinh-ke-300x146.jpg 300w, http://localhost:5173/public/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinh-ke-1024x498.jpg 1024w, http://localhost:5173/public/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinh-ke-768x373.jpg 768w, http://localhost:5173/public/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinh-ke-580x282.jpg 580w, http://localhost:5173/public/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinh-ke-860x418.jpg 860w, http://localhost:5173/public/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinh-ke-440x214.jpg 440w, http://localhost:5173/public/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinh-ke.jpg 1348w"
                           sizes="(max-width: 1160px) 100vw, 1160px"
                         ></Box>
                       </Link>
@@ -100,152 +100,69 @@ const Profile = () => {
                             >
                               <Box component="div">
                                 <Box component="p">
-                                  Tạo điều kiện cho học sinh, sinh viên (HSSV)
-                                  các trường cao đẳng và đại học trong vùng Đồng
-                                  bằng sông Cửu Long, có cơ hội được tiếp cận
-                                  với môi trường làm việc chuyên sâu; thông qua
-                                  các hoạt động thực tế như
+                                  Tạo điều kiện cho học sinh, sinh viên (HSSV) các trường cao đẳng và đại học trong vùng Đồng bằng sông Cửu Long, có cơ hội được tiếp cận với môi trường làm việc chuyên sâu; thông qua các hoạt động thực tế như
                                 </Box>
                                 <Box component="ul">
-                                  <Box
-                                    component="li"
-                                    className="icon-angle-right-before"
-                                  >
-                                    Tham gia thực tập từ khảo sát môi trường tự
-                                    nhiên đất-nước-không khí;
+                                  <Box component="li" className="icon-angle-right-before">
+                                    Tham gia thực tập từ khảo sát môi trường tự nhiên đất-nước-không khí;
                                   </Box>
-                                  <Box
-                                    component="li"
-                                    className="icon-angle-right-before"
-                                  >
-                                    Quyết định chọn cây trồng vật nuôi, để xây
-                                    dựng hệ thống canh tác thông minh;
+                                  <Box component="li" className="icon-angle-right-before">
+                                    Quyết định chọn cây trồng vật nuôi, để xây dựng hệ thống canh tác thông minh;
                                   </Box>
-                                  <Box
-                                    component="li"
-                                    className="icon-angle-right-before"
-                                  >
-                                    Xây dựng và thực hành qui trình sản xuất
-                                    sạch và sản phẩm an toàn cho người tiêu dùng
-                                    và cho môi trường;
+                                  <Box component="li" className="icon-angle-right-before">
+                                    Xây dựng và thực hành qui trình sản xuất sạch và sản phẩm an toàn cho người tiêu dùng và cho môi trường;
                                   </Box>
-                                  <Box
-                                    component="li"
-                                    className="icon-angle-right-before"
-                                  >
-                                    Tham gia sản xuất, thiết kế và xây dựng các
-                                    mô hình thực nghiệm và dây chuyền kinh
-                                    doanh, phân phối tại Công ty Hai Lúa Vàng,
-                                    Công ty xuất khẩu hàng tiểu thủ công nghiệp
-                                    Việt Nam Housewares;
+                                  <Box component="li" className="icon-angle-right-before">
+                                    Tham gia sản xuất, thiết kế và xây dựng các mô hình thực nghiệm và dây chuyền kinh doanh, phân phối tại Công ty Hai Lúa Vàng, Công ty xuất khẩu hàng tiểu thủ công nghiệp Việt Nam Housewares;
                                   </Box>
-                                  <Box
-                                    component="li"
-                                    className="icon-angle-right-before"
-                                  >
-                                    Các dự án Xóa đói giảm nghèo, Phát triển
-                                    nông thôn và Bảo tồn Tài nguyên thiên nhiên
-                                    và Môi trường của Quỹ MCF.
+                                  <Box component="li" className="icon-angle-right-before">
+                                    Các dự án Xóa đói giảm nghèo, Phát triển nông thôn và Bảo tồn Tài nguyên thiên nhiên và Môi trường của Quỹ MCF.
                                   </Box>
                                 </Box>
                                 <Box component="p">
-                                  Thông qua các hoạt động nầy sẽ giúp cho HSSV
-                                  củng cố và hoàn thiện kiến thức chuyên môn đã
-                                  học, rèn luyện nâng cao kỹ năng mềm, như:
+                                  Thông qua các hoạt động nầy sẽ giúp cho HSSV củng cố và hoàn thiện kiến thức chuyên môn đã học, rèn luyện nâng cao kỹ năng mềm, như:
                                 </Box>
                                 <Box component="ul">
-                                  <Box
-                                    component="li"
-                                    className="icon-angle-right-before"
-                                  >
-                                    Có khả năng tìm thông tin và tự nghiên cứu
-                                    để giải quyết những vấn đề khó khăn và nâng
-                                    cao trình độ chuyên môn;
+                                  <Box component="li" className="icon-angle-right-before">
+                                    Có khả năng tìm thông tin và tự nghiên cứu để giải quyết những vấn đề khó khăn và nâng cao trình độ chuyên môn;
                                   </Box>
-                                  <Box
-                                    component="li"
-                                    className="icon-angle-right-before"
-                                  >
-                                    Có động cơ và thái độ học tập, làm việc đúng
-                                    đắn và nghiêm túc;
+                                  <Box component="li" className="icon-angle-right-before">
+                                    Có động cơ và thái độ học tập, làm việc đúng đắn và nghiêm túc;
                                   </Box>
-                                  <Box
-                                    component="li"
-                                    className="icon-angle-right-before"
-                                  >
-                                    Có kỹ năng truyền đạt, giao tiếp, thuyết
-                                    phục hay đàm phán để chuyển giao khoa học kỹ
-                                    thuật đến người dân;
+                                  <Box component="li" className="icon-angle-right-before">
+                                    Có kỹ năng truyền đạt, giao tiếp, thuyết phục hay đàm phán để chuyển giao khoa học kỹ thuật đến người dân;
                                   </Box>
-                                  <Box
-                                    component="li"
-                                    className="icon-angle-right-before"
-                                  >
-                                    Có khả năng tập hợp và tổ chức làm việc theo
-                                    nhóm, có bản lĩnh trí tuệ vững vàng đáp ứng
-                                    đủ các yếu tố chuẩn đầu ra của chương trình
-                                    đào tạo, đáp ứng yêu cầu ngày càng cao của
-                                    nhà tuyển dụng, có khả năng tự thích nghi
-                                    vào công việc và môi trường làm việc mới.
+                                  <Box component="li" className="icon-angle-right-before">
+                                    Có khả năng tập hợp và tổ chức làm việc theo nhóm, có bản lĩnh trí tuệ vững vàng đáp ứng đủ các yếu tố chuẩn đầu ra của chương trình đào tạo, đáp ứng yêu cầu ngày càng cao của nhà tuyển dụng, có khả năng tự thích nghi vào công việc và môi trường làm việc mới.
                                   </Box>
                                 </Box>
                                 <Box component="p">
                                   <strong>Một số hình ảnh thực tế</strong>
                                 </Box>
-                                <Box
-                                  component="div"
-                                  id="gallery-1"
-                                  className="gallery gallery-columns-3"
-                                >
-                                  <Box
-                                    component="figure"
-                                    className="gallery-item"
-                                  >
-                                    <Box
-                                      component="div"
-                                      className="gallery-icon portrait"
-                                    >
-                                      <Box
-                                        component="img"
+                                <Box component="div" id="gallery-1" className="gallery gallery-columns-3">
+                                  <Box component="figure" className="gallery-item">
+                                    <Box component="div" className="gallery-icon portrait">
+                                      <Box component="img"
                                         loading="lazy"
                                         aria-describedby="gallery-cap"
-                                        src="http://localhost:5173/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinhke_kyket_1-150x150.jpg"
-                                        srcSet="http://localhost:5173/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinhke_kyket_1-150x150.jpg 150w, http://localhost:5173/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinhke_kyket_1-60x60.jpg 60w, http://localhost:5173/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinhke_kyket_1-300x300.jpg 300w, http://localhost:5173/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinhke_kyket_1-320x320.jpg 320w, http://localhost:5173/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinhke_kyket_1-100x100.jpg 100w"
+                                        src="http://localhost:5173/public/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinhke_kyket_1-150x150.jpg"
+                                        srcSet="http://localhost:5173/public/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinhke_kyket_1-150x150.jpg 150w, http://localhost:5173/public/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinhke_kyket_1-60x60.jpg 60w, http://localhost:5173/public/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinhke_kyket_1-300x300.jpg 300w, http://localhost:5173/public/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinhke_kyket_1-320x320.jpg 320w, http://localhost:5173/public/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinhke_kyket_1-100x100.jpg 100w"
                                         sizes="(max-width: 150px) 100vw, 150px"
                                       ></Box>
                                     </Box>
-                                    <Box
-                                      component="figcaption"
-                                      id="gallery-cap"
-                                      className="wp-caption-text gallery-caption"
-                                    >
-                                      Sinh viên khoan lấy mẫu đất
-                                    </Box>
+                                    <Box component="figcaption" id="gallery-cap" className="wp-caption-text gallery-caption">Sinh viên khoan lấy mẫu đất</Box>
                                   </Box>
-                                  <Box
-                                    component="figure"
-                                    className="gallery-item"
-                                  >
-                                    <Box
-                                      component="div"
-                                      className="gallery-icon portrait"
-                                    >
-                                      <Box
-                                        component="img"
+                                  <Box component="figure" className="gallery-item">
+                                    <Box component="div" className="gallery-icon portrait">
+                                      <Box component="img"
                                         loading="lazy"
                                         aria-describedby="gallery-cap"
-                                        src="http://localhost:5173/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/hoat-dong-thuc-te_sinh-ke-150x150.jpg"
-                                        srcSet="http://localhost:5173/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/hoat-dong-thuc-te_sinh-ke-150x150.jpg 150w, http://localhost:5173/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/hoat-dong-thuc-te_sinh-ke-60x60.jpg 60w, http://localhost:5173/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/hoat-dong-thuc-te_sinh-ke-300x300.jpg 300w, http://localhost:5173/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/hoat-dong-thuc-te_sinh-ke-320x320.jpg 320w, http://localhost:5173/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/hoat-dong-thuc-te_sinh-ke-100x100.jpg 100w"
+                                        src="http://localhost:5173/public/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/hoat-dong-thuc-te_sinh-ke-150x150.jpg"
+                                        srcSet="http://localhost:5173/public/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/hoat-dong-thuc-te_sinh-ke-150x150.jpg 150w, http://localhost:5173/public/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/hoat-dong-thuc-te_sinh-ke-60x60.jpg 60w, http://localhost:5173/public/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/hoat-dong-thuc-te_sinh-ke-300x300.jpg 300w, http://localhost:5173/public/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/hoat-dong-thuc-te_sinh-ke-320x320.jpg 320w, http://localhost:5173/public/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/hoat-dong-thuc-te_sinh-ke-100x100.jpg 100w"
                                         sizes="(max-width: 150px) 100vw, 150px"
                                       ></Box>
                                     </Box>
-                                    <Box
-                                      component="figcaption"
-                                      id="gallery-cap"
-                                      className="wp-caption-text gallery-caption"
-                                    >
-                                      Sinh viên khoan lấy mẫu đất
-                                    </Box>
+                                    <Box component="figcaption" id="gallery-cap" className="wp-caption-text gallery-caption">Sinh viên khoan lấy mẫu đất</Box>
                                   </Box>
                                 </Box>
                               </Box>
@@ -287,18 +204,8 @@ const Profile = () => {
                       </Box>
                     </Box>
                     <Box component="aside" className="cmsmasters_single_slider">
-                      <Typography
-                        variant="h4"
-                        className="cmsmasters_single_slider_title"
-                      >
-                        Các dự án khác
-                      </Typography>
-                      <Typography
-                        variant="h5"
-                        className="cmsmasters_single_slider_no_items"
-                      >
-                        Danh sách trống
-                      </Typography>
+                      <Typography variant="h4" className="cmsmasters_single_slider_title">Các dự án khác</Typography>
+                      <Typography variant="h5" className="cmsmasters_single_slider_no_items">Danh sách trống</Typography>
                     </Box>
                   </Box>
                 </Box>
@@ -346,8 +253,7 @@ const Profile = () => {
                         <Link
                           href="http://localhost:5173/author/lvloi/"
                           title="Projects by Ly Van Loi"
-                          rel="author"
-                        >
+                          rel="author">
                           <Box component="span">Ly Van Loi</Box>
                         </Link>
                       </Box>
@@ -363,9 +269,7 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_desc"
                       >
-                        <Box component="abbr" title="11 Tháng Sáu, 2021">
-                          11 Tháng Sáu, 2021
-                        </Box>
+                        <Box component="abbr" title="11 Tháng Sáu, 2021">11 Tháng Sáu, 2021</Box>
                       </Box>
                     </Box>
                     <Box component="div" className="profile_details_item">
@@ -519,12 +423,16 @@ const Profile = () => {
         </Box>
       </Box>
       <AnimatePresence>
-        {toggleModal && (
-          <ToggleModalImg
-            src="http://localhost:5173/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinh-ke.jpg"
+        {toggleModal &&
+          (<ToggleModalImg
+            src="http://localhost:5173/public/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinh-ke.jpg"
             setToggleModal={setToggleModal}
-          ></ToggleModalImg>
-        )}
+          >
+
+          </ToggleModalImg>
+          )
+        }
+
       </AnimatePresence>
       <Footer></Footer>
     </>

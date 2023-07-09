@@ -30,6 +30,7 @@ import PostLH3 from "@/pages/ProfileLiveHoods/Post3";
 
 import PostMuseum1 from "@/pages/ProfileMuseum/Post1";
 
+
 import { PageType, Projects, Status, Project } from "@/shared";
 
 export const projects: Projects = {

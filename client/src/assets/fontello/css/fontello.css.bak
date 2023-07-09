@@ -85,10 +85,10 @@
 .icon-angle-left:before {
   content: "\f104";
 } /* '' */
-.icon-angle-right:after {
+.icon-angle-right-before:before {
   content: "\f105";
 } /* '' */
-.icon-angle-right-before:before {
+.icon-angle-right:after {
   content: "\f105";
 } /* '' */
 .icon-googleplus-rect:before {

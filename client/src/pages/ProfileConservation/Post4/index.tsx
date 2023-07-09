@@ -5,9 +5,48 @@ import ToggleModalImg from "@/components/ToggleModalImg";
 import { Box, Link, Typography } from "@mui/material";
 import "../Profile.scss";
 import Footer from "@/components/Footer";
+import Carousel from 'react-material-ui-carousel';
+import {Paper} from '@mui/material';
+// import { useSwipeable } from 'react-swipeable';
+// import React from "react";
 
 const Profile = () => {
   const [toggleModal, setToggleModal] = useState(false);
+  const carousel = [
+    {
+      src: "http://localhost:5173/public/images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3165-1160x773.jpg"
+    },
+    {
+      src: "http://localhost:5173/public/images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3180-1440x960.jpg"
+    }, 
+    {
+      src: "http://localhost:5173/public/images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3146-1440x960.jpg"
+    },
+    {
+      src: "http://localhost:5173/public/images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3147-1440x960.jpg"
+    },
+    {
+      src: "http://localhost:5173/public/images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3134-1440x960.jpg"
+    },
+    {
+      src: "http://localhost:5173/public/images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3163-1-1440x960.jpg"
+    }
+  ]
+  // const [activeStep, setActiveStep] = React.useState(0);
+
+  //    const handleStepChange = (step: any) => {
+  //      setActiveStep(step);
+  //    };
+
+  //    const handlers = useSwipeable({
+  //      onSwipedLeft: () => setActiveStep((prev) => (prev + 1) % carousel.length),
+  //      onSwipedRight: () =>
+  //        setActiveStep((prev) => (prev - 1 + carousel.length) % carousel.length),
+  //     // touchEventOptions: {passive: true},
+  //     // preventDefaultTouchmoveEvent: true,
+  //     trackMouse: true,
+  //     preventScrollOnSwipe: true,
+  //    });
   return (
     <>
       <Header></Header>
@@ -18,28 +57,72 @@ const Profile = () => {
               <Box component="article" className="cmsmasters_open_profile">
                 <Box component="div" className="profile_content with_sidebar">
                   <Box component="div" className="cmsmasters_profile_content">
-                    <Box component="figure" className="cmsmasters_img_wrap">
-                      <Link
-                        // href="https://mcf.com.vn/wp-content/uploads/2015/04/Vu-Van-Hieu.png"
-                        rel="ilightbox[img_12627_64987034241fd]"
-                        title="Công tác kiểm kê, khảo sát vườn chim Vạc tại xã Tân Mỹ, huyện Trà Ôn, tỉnh Vĩnh Long"
-                        className="preloader highImg"
-                        onClick={() => {
-                          document.body.style.overflow = "hidden";
-                          setToggleModal(true);
+                    <Box component="figure" className="cmsmasters_img_wrap" sx={{"button:hover":{color: "var(--btn-primary-bg) !important", backgroundColor: "var(--btn-primary-bg) !important"}}}>
+                      <Carousel autoPlay={false} swipe={true} 
+                      cycleNavigation={false} animation="slide" 
+                      navButtonsAlwaysInvisible={true} 
+                      duration={500}
+                      
+                        indicatorIconButtonProps={{
+                          style: {
+                            width: "12px",
+                            height: "12px",
+                            margin: "0px 5px 1px",
+                            color: "var(--text-white)",
+                            backgroundColor: "var(--text-white)",
+                          },
+                        }
+                      }
+                        activeIndicatorIconButtonProps={{
+                          style:{
+                            color: "var(--btn-primary-bg)",
+                            backgroundColor: "var(--btn-primary-bg)"
+                          }
                         }}
-                      >
-                        <Box
-                          component="img"
-                          width="100%"
-                          height="100%"
-                          alt="Công tác kiểm kê, khảo sát vườn chim Vạc tại xã Tân Mỹ, huyện Trà Ôn, tỉnh Vĩnh Long"
-                          src="https://mcf.com.vn/wp-content/uploads/2021/03/MG_3165-1160x773.jpg"
-                          title="Công tác kiểm kê, khảo sát vườn chim Vạc tại xã Tân Mỹ, huyện Trà Ôn, tỉnh Vĩnh Long"
-                          srcSet="https://mcf.com.vn/wp-content/uploads/2021/03/MG_3165-1160x773.jpg 1160w, https://mcf.com.vn/wp-content/uploads/2021/03/MG_3165-300x200.jpg 300w, https://mcf.com.vn/wp-content/uploads/2021/03/MG_3165-1024x683.jpg 1024w, https://mcf.com.vn/wp-content/uploads/2021/03/MG_3165-768x512.jpg 768w, https://mcf.com.vn/wp-content/uploads/2021/03/MG_3165-1536x1024.jpg 1536w, https://mcf.com.vn/wp-content/uploads/2021/03/MG_3165-2048x1365.jpg 2048w, https://mcf.com.vn/wp-content/uploads/2021/03/MG_3165-580x387.jpg 580w, https://mcf.com.vn/wp-content/uploads/2021/03/MG_3165-860x573.jpg 860w, https://mcf.com.vn/wp-content/uploads/2021/03/MG_3165-1440x960.jpg 1440w, https://mcf.com.vn/wp-content/uploads/2021/03/MG_3165-440x293.jpg 440w"
-                          sizes="(max-width: 1160px) 100vw, 1160px"
-                        ></Box>
-                      </Link>
+                        indicatorContainerProps={{
+                          style: {
+                            width: "auto",
+                            position: "absolute",
+                            left: "auto",
+                            right: "10px",
+                            top: "0px",
+                            bottom: "auto",
+                            zIndex: "1"
+                          },
+                          
+                        }}
+                        sx={{
+                          zIndex: "0",
+                          
+                        }}>
+                        {carousel.map((img, i) => (
+                          <Paper key={i}>
+                          <Link
+                            // href="https://mcf.com.vn/wp-content/uploads/2015/04/Vu-Van-Hieu.png"
+                            rel="ilightbox[img_12627_64987034241fd]"
+                            title="Công tác kiểm kê, khảo sát vườn chim Vạc tại xã Tân Mỹ, huyện Trà Ôn, tỉnh Vĩnh Long"
+                            className="preloader highImg"
+                            onClick={() => {
+                              document.body.style.overflow = "hidden"
+                              setToggleModal(true);
+                            }}
+                          >
+
+                            <Box
+                              component="img"
+                              width="100%"
+                              height="100%"
+                              alt="Công tác kiểm kê, khảo sát vườn chim Vạc tại xã Tân Mỹ, huyện Trà Ôn, tỉnh Vĩnh Long"
+                              src={`${img.src}`}
+                              title="Công tác kiểm kê, khảo sát vườn chim Vạc tại xã Tân Mỹ, huyện Trà Ôn, tỉnh Vĩnh Long"
+                              // srcSet="http://localhost:5173/public/images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3165-1160x773.jpg 1160w, http://localhost:5173/public/images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3165-300x200.jpg 300w, http://localhost:5173/public/images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3165-1024x683.jpg 1024w, http://localhost:5173/public/images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3165-768x512.jpg 768w, http://localhost:5173/public/images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3165-1536x1024.jpg 1536w, http://localhost:5173/public/images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3165-2048x1365.jpg 2048w, http://localhost:5173/public/images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3165-580x387.jpg 580w, http://localhost:5173/public/images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3165-860x573.jpg 860w, http://localhost:5173/public/images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3165-1440x960.jpg 1440w, http://localhost:5173/public/images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3165-440x293.jpg 440w"
+                              sizes="(max-width: 1160px) 100vw, 1160px"
+                            ></Box>
+
+                          </Link>
+                        </Paper>
+                        ))}
+                      </Carousel>
                     </Box>
                     <Box
                       component="header"
@@ -58,8 +141,7 @@ const Profile = () => {
                           textDecoration: "none",
                         }}
                       >
-                        Công tác kiểm kê, khảo sát vườn chim Vạc tại xã Tân Mỹ,
-                        huyện Trà Ôn, tỉnh Vĩnh Long
+                        Công tác kiểm kê, khảo sát vườn chim Vạc tại xã Tân Mỹ, huyện Trà Ôn, tỉnh Vĩnh Long
                       </Typography>
                       {/* <Typography
                         variant="h4"
@@ -101,56 +183,23 @@ const Profile = () => {
                             >
                               <Box component="div">
                                 <Box component="p">
-                                  Đồng bằng sông Cửu Long là vùng giàu tiềm năng
-                                  về đa dạng sinh học (ĐDSH), trong đó quần thể
-                                  chim nước rất phong phú về số loài và số cá
-                                  thể. Hiện nay, quần thể chim nước xuất hiện
-                                  chủ yếu tại các nơi đã có kế hoạch bảo tồn ở
-                                  cấp tỉnh hay cấp quốc gia như Vườn quốc gia
-                                  Tràm Chim (Đồng Tháp), U-Minh Thượng (Kiên
-                                  Giang), Mũi Cà Mau; hay các Khu bảo tồn như
-                                  Láng Sen (Long An), Lung Ngọc Hoàng (Hậu
-                                  Giang), Phú Mỹ (Kiên Giang); hoặc có qui mô
-                                  nhỏ hơn như các sân chim Cái Nước (Cà Mau),
-                                  sân chim Bạc Liêu, Vàm Hồ (Bến Tre); đặc biệt
-                                  là các quần thể chim định cư rãi rác khắp
-                                  ĐBSCL mà người dân hay gọi là “Vườn Cò”. Những
-                                  vườn cò nầy có qui mô diện tích nhỏ hơn như
-                                  vườn cò Bằng Lăng (Cần Thơ), Trung tâm Nông
-                                  nghiệp Mùa Xuân (Hậu Giang).
+                                  Đồng bằng sông Cửu Long là vùng giàu tiềm năng về đa dạng sinh học (ĐDSH), trong đó quần thể chim nước rất phong phú về số loài và số cá thể. Hiện nay, quần thể chim nước xuất hiện chủ yếu tại các nơi đã có kế hoạch bảo tồn ở cấp tỉnh hay cấp quốc gia như Vườn quốc gia Tràm Chim (Đồng Tháp), U-Minh Thượng (Kiên Giang), Mũi Cà Mau; hay các Khu bảo tồn như Láng Sen (Long An), Lung Ngọc Hoàng (Hậu Giang), Phú Mỹ (Kiên Giang); hoặc có qui mô nhỏ hơn như các sân chim Cái Nước (Cà Mau), sân chim Bạc Liêu, Vàm Hồ (Bến Tre); đặc biệt là các quần thể chim định cư rãi rác khắp ĐBSCL mà người dân hay gọi là “Vườn Cò”. Những vườn cò nầy có qui mô diện tích nhỏ hơn như vườn cò Bằng Lăng (Cần Thơ), Trung tâm Nông nghiệp Mùa Xuân (Hậu Giang).
                                 </Box>
                                 <Box component="p">
-                                  Ngoài ra, kiểm kê vườn Vạc nhằm thực hiện đúng
-                                  theo mục tiêu và Phương pháp quy hoạch được
-                                  UBND tỉnh phê duyệt tại Quyết định số
-                                  2269/QĐ-UBND ngày 27/9/2016 về việc phê duyệt
-                                  Quy hoạch bảo tồn đa dạng sinh học tỉnh Vĩnh
-                                  Long giai đoạn 2015 – 2020 và định hướng đến
-                                  năm 2030
+                                  Ngoài ra, kiểm kê vườn Vạc nhằm thực hiện đúng theo mục tiêu và Phương pháp quy hoạch được UBND tỉnh phê duyệt tại Quyết định số 2269/QĐ-UBND ngày 27/9/2016 về việc phê duyệt Quy hoạch bảo tồn đa dạng sinh học tỉnh Vĩnh Long giai đoạn 2015 – 2020 và định hướng đến năm 2030
                                 </Box>
                                 <Box component="p">
                                   <strong>Mục tiêu của đề tài: </strong>
                                 </Box>
                                 <Box component="p">
-                                  Khảo sát và đánh giá hiện trạng đa dạng loài
-                                  của quần thể chim nước. Dựa vào tập tính sinh
-                                  học của từng loài và mật độ cá thể biến động
-                                  trong năm để phân tích khả năng hiện diện theo
-                                  mùa hay thường xuyên và những mối đe dọa đối
-                                  với các loài chim, nhằm đề xuất kế hoạch quản
-                                  lý và bảo tồn bền vững.
+                                  Khảo sát và đánh giá hiện trạng đa dạng loài của quần thể chim nước. Dựa vào tập tính sinh học của từng loài và mật độ cá thể biến động trong năm để phân tích khả năng hiện diện theo mùa hay thường xuyên và những mối đe dọa đối với các loài chim, nhằm đề xuất kế hoạch quản lý và bảo tồn bền vững.
                                 </Box>
                                 <Typography variant="h3">
                                   Video đàn chim bay về tổ
                                 </Typography>
-                                <Box
-                                  component="iframe"
-                                  style={{ width: "560px", height: "315px" }}
-                                  src="https://www.youtube.com/embed/oJnwG_zJWt0?wmode=opaque"
-                                  frameBorder={0}
-                                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                  allowFullScreen
-                                ></Box>
+                                <Box component="iframe" style={{ width: "560px", height: "315px" }} src="https://www.youtube.com/embed/oJnwG_zJWt0?wmode=opaque" frameBorder={0} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
+
+                                </Box>
                               </Box>
                             </Box>
                           </Box>
@@ -190,18 +239,8 @@ const Profile = () => {
                       </Box>
                     </Box>
                     <Box component="aside" className="cmsmasters_single_slider">
-                      <Typography
-                        variant="h4"
-                        className="cmsmasters_single_slider_title"
-                      >
-                        Các dự án khác
-                      </Typography>
-                      <Typography
-                        variant="h5"
-                        className="cmsmasters_single_slider_no_items"
-                      >
-                        Danh sách trống
-                      </Typography>
+                      <Typography variant="h4" className="cmsmasters_single_slider_title">Các dự án khác</Typography>
+                      <Typography variant="h5" className="cmsmasters_single_slider_no_items">Danh sách trống</Typography>
                     </Box>
                   </Box>
                 </Box>
@@ -249,8 +288,7 @@ const Profile = () => {
                         <Link
                           href="http://localhost:5173/author/lvloi/"
                           title="Projects by Ly Van Loi"
-                          rel="author"
-                        >
+                          rel="author">
                           <Box component="span">Ly Van Loi</Box>
                         </Link>
                       </Box>
@@ -266,9 +304,7 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_desc"
                       >
-                        <Box component="abbr" title="17 Tháng Ba, 2021">
-                          17 Tháng Ba, 2021
-                        </Box>
+                        <Box component="abbr" title="17 Tháng Ba, 2021">17 Tháng Ba, 2021</Box>
                       </Box>
                     </Box>
                     <Box component="div" className="profile_details_item">
@@ -349,8 +385,7 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_desc"
                       >
-                        Chi cục Kiểm lâm và Quản lý Chất lượng Nông lâm Thủy sản
-                        Vĩnh Long
+                        Chi cục Kiểm lâm và Quản lý Chất lượng Nông lâm Thủy sản Vĩnh Long
                       </Box>
                     </Box>
                     <Box component="div" className="profile_details_item">
@@ -431,20 +466,23 @@ const Profile = () => {
               rel="next"
               className="icon-angle-right"
             >
-              Vai trò của Đất ngập nước đối với an ninh nguồn nước cho khu vực
-              sông Mekong
+              Vai trò của Đất ngập nước đối với an ninh nguồn nước cho khu vực sông Mekong
             </Link>
           </Box>
         </Box>
       </Box>
-      <AnimatePresence>
-        {toggleModal && (
-          <ToggleModalImg
-            src="http://localhost:5173/images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/flow-of-culture-and-life_conservation-1160x870.jpg"
+      {/* <AnimatePresence>
+        {toggleModal &&
+          (<ToggleModalImg
+            src="http://localhost:5173/public/images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/.jpg"
             setToggleModal={setToggleModal}
-          ></ToggleModalImg>
-        )}
-      </AnimatePresence>
+          >
+
+          </ToggleModalImg>
+          )
+        }
+
+      </AnimatePresence> */}
       <Footer></Footer>
     </>
   );

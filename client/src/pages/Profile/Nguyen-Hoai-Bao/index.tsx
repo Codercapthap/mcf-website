@@ -25,14 +25,14 @@ const Profile = () => {
                         title="Ông Nguyễn Hoài Bảo"
                         className="preloader highImg"
                         onClick={() => {
-                          document.body.style.overflow = "hidden";
+                          document.body.style.overflow = "hidden"
                           setToggleModal(true);
                         }}
                       >
                         <Box
                           component="img"
                           alt="Ông Nguyễn Hoài Bảo"
-                          src="http://localhost:5173/images/people/nguyen-hoai-bao.jpg"
+                          src="http://localhost:5173/public/images/people/nguyen-hoai-bao.jpg"
                           title="Ông Nguyễn Hoài Bảo"
                           sizes="(max-width: 410px) 100vw, 410px"
                         ></Box>
@@ -97,17 +97,8 @@ const Profile = () => {
                             >
                               <Box component="div">
                                 <Box component="p">
-                                  <strong>Ông Nguyễn Hoài Bảo </strong> là đồng
-                                  sáng là giảng viên bộ môn điểu học của trường
-                                  Đại học Khoa học Tự nhiên thuộc Đại học Quốc
-                                  gia Thành phố Hồ Chí Minh. Ông là người sáng
-                                  lập và là Giám đốc điều hành của Công ty Wild
-                                  Tour đã có hơn 15 năm hoạt động tại Việt Nam
-                                  và các nước. Ông có hơn 15 năm kinh nghiệm làm
-                                  việc trong lĩnh vực bảo tồn động vật hoang dã
-                                  và hợp tác với các tổ chức quốc tế để nghiên
-                                  cứu về hệ sinh thái chim ở Đông Nam Á. Ông
-                                  cũng đã xuất bản một số cuốn sách về điểu học.
+                                  <strong>Ông Nguyễn Hoài Bảo </strong> là đồng sáng
+                                  là giảng viên bộ môn điểu học của trường Đại học Khoa học Tự nhiên thuộc Đại học Quốc gia Thành phố Hồ Chí Minh. Ông là người sáng lập và là Giám đốc điều hành của Công ty Wild Tour đã có hơn 15 năm hoạt động tại Việt Nam và các nước. Ông có hơn 15 năm kinh nghiệm làm việc trong lĩnh vực bảo tồn động vật hoang dã và hợp tác với các tổ chức quốc tế để nghiên cứu về hệ sinh thái chim ở Đông Nam Á. Ông cũng đã xuất bản một số cuốn sách về điểu học.
                                 </Box>
                               </Box>
                             </Box>
@@ -260,12 +251,11 @@ const Profile = () => {
         </Box>
       </Box>
       <AnimatePresence>
-        {toggleModal && (
-          <ToggleModalImg
-            src="http://localhost:5173/images/people/nguyen-hoai-bao.jpg"
-            setToggleModal={setToggleModal}
-          ></ToggleModalImg>
-        )}
+        {toggleModal &&
+          (<ToggleModalImg src="http://localhost:5173/public/images/people/nguyen-hoai-bao.jpg" setToggleModal={setToggleModal}></ToggleModalImg>
+          )
+        }
+        
       </AnimatePresence>
       <Footer></Footer>
     </>

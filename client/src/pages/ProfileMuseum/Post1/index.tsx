@@ -2,15 +2,7 @@ import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import Header from "@/components/Header";
 import ToggleModalImg from "@/components/ToggleModalImg";
-import {
-  Box,
-  Link,
-  Typography,
-  Table,
-  TableBody,
-  TableCell,
-  TableRow,
-} from "@mui/material";
+import { Box, Link, Typography, Table, TableBody,TableCell, TableRow } from "@mui/material";
 import "../Profile.scss";
 import Footer from "@/components/Footer";
 const Profile = () => {
@@ -32,7 +24,7 @@ const Profile = () => {
                         title="Tiến trình của Bảo tàng Lịch sử Tự nhiên Mekong"
                         className="preloader highImg"
                         onClick={() => {
-                          document.body.style.overflow = "hidden";
+                          document.body.style.overflow = "hidden"
                           setToggleModal(true);
                         }}
                       >
@@ -41,9 +33,9 @@ const Profile = () => {
                           width="334"
                           height="250"
                           alt="Tiến trình của Bảo tàng Lịch sử Tự nhiên Mekong"
-                          src="http://localhost:5173/images/museum/post1/bao-tang_ky-ket-voi-usa.png"
+                          src="http://localhost:5173/public/images/museum/post1/bao-tang_ky-ket-voi-usa.png"
                           title="Tiến trình của Bảo tàng Lịch sử Tự nhiên Mekong"
-                          srcSet="http://localhost:5173/images/museum/post1/bao-tang_ky-ket-voi-usa.png 334w, http://localhost:5173/images/museum/post1/bao-tang_ky-ket-voi-usa-300x225.png 300w"
+                          srcSet="http://localhost:5173/public/images/museum/post1/bao-tang_ky-ket-voi-usa.png 334w, http://localhost:5173/public/images/museum/post1/bao-tang_ky-ket-voi-usa-300x225.png 300w"
                           sizes="(max-width: 334px) 100vw, 334px"
                         ></Box>
                       </Link>
@@ -107,87 +99,40 @@ const Profile = () => {
                             >
                               <Box component="div">
                                 <Box component="p">
-                                  Bảo tàng Lịch sử Tự nhiên Mê Kông (MNHM) lần
-                                  đầu tiên được công bố trong Kế hoạch Hành động
-                                  của Ủy ban hợp tác KH&CN Việt Nam (JCM)
-                                  2013-2015 (
-                                  <em>4. Khoa học Bảo tồn, phần 4.5</em>), và
-                                  được cập nhật bằng Thư đề nghị (LoI) ký ngày
-                                  23 Tháng 5 năm 2016, do bốn bên: Đại sứ quán
-                                  Hoa Kỳ tại Việt Nam đại diện cho Bộ Ngoại giao
-                                  Hoa Kỳ, Cơ quan Khảo sát Địa chất Hoa Kỳ
-                                  (USGS), Smithsonian và Đại học Cantho (CTU)
-                                  của Việt Nam.
+                                Bảo tàng Lịch sử Tự nhiên Mê Kông (MNHM) lần đầu tiên được công bố trong Kế hoạch Hành động của Ủy ban hợp tác KH&CN Việt Nam (JCM) 2013-2015 (<em>4. Khoa học Bảo tồn, phần 4.5</em>), và được cập nhật bằng Thư đề nghị (LoI) ký ngày 23 Tháng 5 năm 2016, do bốn bên: Đại sứ quán Hoa Kỳ tại Việt Nam đại diện cho Bộ Ngoại giao Hoa Kỳ, Cơ quan Khảo sát Địa chất Hoa Kỳ (USGS), Smithsonian và Đại học Cantho (CTU) của Việt Nam.
                                 </Box>
                                 <Box component="p">
-                                  Để theo đuổi mục tiêu này, Đại học Cần Thơ đã
-                                  hỗ trợ thành lập một tổ chức Phi chính phủ,
-                                  lấy tên là Quỹ Hỗ trợ Nghiên cứu và Bảo tồn
-                                  Mekong (MCF), MCF đã đăng ký tại Việt Nam và
-                                  nhận được giấy phép vào năm 2018.
+                                Để theo đuổi mục tiêu này, Đại học Cần Thơ đã hỗ trợ thành lập một tổ chức Phi chính phủ, lấy tên là Quỹ Hỗ trợ Nghiên cứu và Bảo tồn Mekong (MCF), MCF đã đăng ký tại Việt Nam và nhận được giấy phép vào năm 2018.
                                 </Box>
                                 <Box component="p">
-                                  Cho đến nay, CTU / MCF đã kết nối mạng lưới 14
-                                  trường Đại học tại Đồng bằng sông Cửu Long của
-                                  Việt Nam, 20 trường Đại học khu vực sông Mê
-                                  Kông bao phủ toàn bộ sáu quốc gia Trung Quốc,
-                                  Myanmar, Thái Lan, CHDCND Lào, Campuchia và
-                                  Việt Nam. Ngoài ra còn có 4 trường đại học tại
-                                  Hoa Kỳ tham gia vào mạng lưới. Với hàng trăm
-                                  nhà khoa học từ USGS, NOAA và các trường Đại
-                                  học trong Mạng lưới, đứng đầu là CTU và MCF,
-                                  dữ liệu và thông tin về Địa chất, Đất, Thủy
-                                  văn, Đa dạng sinh học, Lịch sử sử dụng đất,
-                                  Kinh nghiệm truyền thống và Văn hóa bản địa
-                                  đang được các chương trình thu thập/quản lý.
-                                  Tất cả các chi phí cho dữ liệu và thông tin
-                                  tổng hợp được tài trợ bởi các khu vực tư nhân.
+                                Cho đến nay, CTU / MCF đã kết nối mạng lưới 14 trường Đại học tại Đồng bằng sông Cửu Long của Việt Nam, 20 trường Đại học khu vực sông Mê Kông bao phủ toàn bộ sáu quốc gia Trung Quốc, Myanmar, Thái Lan, CHDCND Lào, Campuchia và Việt Nam. Ngoài ra còn có 4 trường đại học tại Hoa Kỳ tham gia vào mạng lưới. Với hàng trăm nhà khoa học từ USGS, NOAA và các trường Đại học trong Mạng lưới, đứng đầu là CTU và MCF, dữ liệu và thông tin về Địa chất, Đất, Thủy văn, Đa dạng sinh học, Lịch sử sử dụng đất, Kinh nghiệm truyền thống và Văn hóa bản địa đang được các chương trình thu thập/quản lý. Tất cả các chi phí cho dữ liệu và thông tin tổng hợp được tài trợ bởi các khu vực tư nhân.
                                 </Box>
                                 <Box component="p">
-                                  Trong quá trình thu thập dữ liệu và thông tin,
-                                  CTU / MCF cũng đang làm việc trên một nền tảng
-                                  bảo tàng ảo. Chúng tôi cũng đang thảo luận với
-                                  Chính quyền thành phố Cần Thơ về vị trí đất
-                                  của Bảo tàng Lịch sử Tự nhiên Mekong.
+                                Trong quá trình thu thập dữ liệu và thông tin, CTU / MCF cũng đang làm việc trên một nền tảng bảo tàng ảo. Chúng tôi cũng đang thảo luận với Chính quyền thành phố Cần Thơ về vị trí đất của Bảo tàng Lịch sử Tự nhiên Mekong.
                                 </Box>
-                                <Box
-                                  component="div"
-                                  sx={{
-                                    width: "100%",
-                                    paddingLeft: "1px",
-                                  }}
-                                >
+                                <Box component="div" sx={{
+                                  width: "100%",
+                                  paddingLeft: "1px"
+                                }}>
                                   <Table>
-                                    <TableBody>
+                                  <TableBody>
                                       <TableCell width="50%">
                                         <Box component="p"></Box>
                                         <Box component="p">
-                                          <Box
-                                            component="img"
-                                            src="http://localhost:5173/images/museum/post1/bao-tang_ky-ket-voi-usa_1.jpg"
-                                          ></Box>
+                                        <Box component="img"
+                                        src="http://localhost:5173/public/images/museum/post1/bao-tang_ky-ket-voi-usa_1.jpg"
+                                        ></Box>
                                         </Box>
+                                        
                                       </TableCell>
-                                      <TableCell
-                                        width="50%"
-                                        sx={{
-                                          fontStyle: "normal",
-                                          color: "#717171",
-                                          fontsWeight: "normal",
-                                          fontSize: "16px",
-                                          lineHeight: "30px",
-                                          verticalAlign: "top",
-                                        }}
-                                      >
-                                        Ý định thư (LoI) được ký bởi bốn bên: Bộ
-                                        Ngoại giao Hoa Kỳ, USGS, Smithsonian và
-                                        Đại học Cần Thơ tại Hà Nội, Việt Nam
-                                        nhân chuyến thăm của Tổng thống Hoa Kỳ
-                                        Obama tới Việt Nam.
+                                      <TableCell width="50%" sx={{ fontStyle: "normal", color: "#717171", fontsWeight: "normal", fontSize: "16px", lineHeight: "30px", verticalAlign: "top"}}>
+                                      Ý định thư (LoI) được ký bởi bốn bên: Bộ Ngoại giao Hoa Kỳ, USGS, Smithsonian và Đại học Cần Thơ tại Hà Nội, Việt Nam nhân chuyến thăm của Tổng thống Hoa Kỳ Obama tới Việt Nam.
                                       </TableCell>
-                                    </TableBody>
-                                  </Table>
+                                  </TableBody>
+                                </Table>
                                 </Box>
+                                
+                                
                               </Box>
                             </Box>
                           </Box>
@@ -225,25 +170,15 @@ const Profile = () => {
                       </Box>
                     </Box>
                     <Box component="aside" className="cmsmasters_single_slider">
-                      <Typography
-                        variant="h4"
-                        className="cmsmasters_single_slider_title"
-                      >
-                        Các dự án khác
-                      </Typography>
-                      <Typography
-                        variant="h5"
-                        className="cmsmasters_single_slider_no_items"
-                      >
-                        Danh sách trống
-                      </Typography>
+                      <Typography variant="h4" className="cmsmasters_single_slider_title">Các dự án khác</Typography>
+                      <Typography variant="h5" className="cmsmasters_single_slider_no_items">Danh sách trống</Typography>
                     </Box>
                   </Box>
                 </Box>
                 <Box component="div" className="profile_sidebar">
                   <Box component="div" className="profile_details">
                     <Typography variant="h4" className="profile_details_title">
-                      PROJECT DETAILS
+                    PROJECT DETAILS
                     </Typography>
                     <Box component="div" className="profile_details_item">
                       <Box
@@ -284,8 +219,7 @@ const Profile = () => {
                         <Link
                           href="http://localhost:5173/author/lvloi/"
                           title="Projects by Ly Van Loi"
-                          rel="author"
-                        >
+                          rel="author">
                           <Box component="span">Ly Van Loi</Box>
                         </Link>
                       </Box>
@@ -301,9 +235,7 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_desc"
                       >
-                        <Box component="abbr" title="11 Tháng Sáu, 2021">
-                          11 Tháng Sáu, 2021
-                        </Box>
+                        <Box component="abbr" title="11 Tháng Sáu, 2021">11 Tháng Sáu, 2021</Box>
                       </Box>
                     </Box>
                     <Box component="div" className="profile_details_item">
@@ -402,7 +334,7 @@ const Profile = () => {
                       </Box>
                     </Box> */}
                   </Box>
-                  {/* <Box component="div" className="profile_social_icons">
+                    {/* <Box component="div" className="profile_social_icons">
                       <Typography
                         variant="h4"
                         className="profile_social_icons_title"
@@ -424,48 +356,52 @@ const Profile = () => {
                         </Box>
                       </Box>
                     </Box> */}
+                  </Box>
                 </Box>
               </Box>
             </Box>
           </Box>
-        </Box>
-        <Box component="div" className="post_nav">
-          <Box
-            component="span"
-            className="cmsmasters_prev_post post_nav_prev_arrow"
-          >
-            <Link
-              href="http://localhost:5173/project/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/"
-              rel="prev"
-              className="icon-angle-left"
+          <Box component="div" className="post_nav">
+            <Box
+              component="span"
+              className="cmsmasters_prev_post post_nav_prev_arrow"
             >
-              Ký kết đào tạo sinh viên thực hành ngắn hạn
-            </Link>
-          </Box>
-          <Box
-            component="span"
-            className="cmsmasters_next_post post_nav_next_arrow"
-          >
-            <Link
-              href="http://localhost:5173/project/dong-chay-cua-van-hoa-va-su-song/"
-              rel="next"
-              className="icon-angle-right"
+              <Link
+                href="http://localhost:5173/project/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/"
+                rel="prev"
+                className="icon-angle-left"
+              >
+                Ký kết đào tạo sinh viên thực hành ngắn hạn
+              </Link>
+            </Box>
+            <Box
+              component="span"
+              className="cmsmasters_next_post post_nav_next_arrow"
             >
-              Dòng chảy của Văn hóa và Sự sống
-            </Link>
+              <Link
+                href="http://localhost:5173/project/dong-chay-cua-van-hoa-va-su-song/"
+                rel="next"
+                className="icon-angle-right"
+              >
+                Dòng chảy của Văn hóa và Sự sống
+              </Link>
+            </Box>
           </Box>
         </Box>
-      </Box>
-      <AnimatePresence>
-        {toggleModal && (
-          <ToggleModalImg
-            src="http://localhost:5173/images/museum/post1/bao-tang_ky-ket-voi-usa.png"
-            setToggleModal={setToggleModal}
-          ></ToggleModalImg>
-        )}
-      </AnimatePresence>
-      <Footer></Footer>
-    </>
-  );
+        <AnimatePresence>
+          {toggleModal &&
+            (<ToggleModalImg
+              src="http://localhost:5173/public/images/museum/post1/bao-tang_ky-ket-voi-usa.png"
+              setToggleModal={setToggleModal}
+            >
+
+            </ToggleModalImg>
+            )
+          }
+
+        </AnimatePresence>
+        <Footer></Footer>
+      </>
+      );
 };
-export default Profile;
+      export default Profile;

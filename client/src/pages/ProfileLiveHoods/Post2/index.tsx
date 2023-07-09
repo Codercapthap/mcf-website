@@ -2,42 +2,30 @@ import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import Header from "@/components/Header";
 import ToggleModalImg from "@/components/ToggleModalImg";
-import {
-  Box,
-  Link,
-  Typography,
-  Table,
-  TableBody,
-  TableCell,
-  TableRow,
-  TableHead,
-} from "@mui/material";
+import { Box, Link, Typography, Table, TableBody, TableCell, TableRow, TableHead } from "@mui/material";
 import "../Profile.scss";
 import Footer from "@/components/Footer";
 
 const Profile = () => {
   const [toggleModal, setToggleModal] = useState(false);
-  function createData(code: String, profession: String) {
-    return { code, profession };
+  function createData(
+    code: String,
+    profession: String
+  ){
+    return {code, profession}
   }
-  const rows = [
-    createData("0118 (Chính)", "Trồng rau, đậu các loại và trồng hoa"),
-    createData("0161", "Hoạt động dịch vụ trồng trọt"),
-    createData("0162", "Hoạt động dịch vụ chăn nuôi"),
-    createData("0163", "Hoạt động dịch vụ sau thu hoạch"),
-    createData("0322", "Nuôi trồng thuỷ sản nội địa"),
-    createData(
-      "1629",
-      "Sản xuất sản phẩm khác từ gỗ; sản xuất sản phẩm từ tre, nứa, rơm, rạ và vật liệu tết bện"
-    ),
-    createData("4632", "Bán buôn thực phẩm"),
-    createData("4669", "Bán buôn chuyên doanh khác chưa được phân vào đâu"),
-    createData("7020", "Hoạt động tư vấn quản lý"),
-    createData(
-      "7490",
-      "Hoạt động chuyên môn, khoa học và công nghệ khác chưa được phân vào đâu <p>Chi tiết: Tư vấn nông học, tư vấn khoa học về khí hậu và biến đổi khí hậu, cung cấp dịch vụ nghiên cứu, khảo sát khoa học về các lĩnh vực khoa học nông nghiệp, khoa học tự nhiên</p>"
-    ),
-  ];
+  const rows=[
+    createData("0118 (Chính)","Trồng rau, đậu các loại và trồng hoa"),
+    createData("0161","Hoạt động dịch vụ trồng trọt"),
+    createData("0162","Hoạt động dịch vụ chăn nuôi"),
+    createData("0163","Hoạt động dịch vụ sau thu hoạch"),
+    createData("0322","Nuôi trồng thuỷ sản nội địa"),
+    createData("1629","Sản xuất sản phẩm khác từ gỗ; sản xuất sản phẩm từ tre, nứa, rơm, rạ và vật liệu tết bện"),
+    createData("4632","Bán buôn thực phẩm"),
+    createData("4669","Bán buôn chuyên doanh khác chưa được phân vào đâu"),
+    createData("7020","Hoạt động tư vấn quản lý"),
+    createData("7490","Hoạt động chuyên môn, khoa học và công nghệ khác chưa được phân vào đâu <p>Chi tiết: Tư vấn nông học, tư vấn khoa học về khí hậu và biến đổi khí hậu, cung cấp dịch vụ nghiên cứu, khảo sát khoa học về các lĩnh vực khoa học nông nghiệp, khoa học tự nhiên</p>")
+  ]
   return (
     <>
       <Header></Header>
@@ -55,16 +43,17 @@ const Profile = () => {
                         title="Thành lập Công ty cổ phần MLS Việt Nam"
                         className="preloader highImg"
                         onClick={() => {
-                          document.body.style.overflow = "hidden";
+                          document.body.style.overflow = "hidden"
                           setToggleModal(true);
                         }}
                       >
                         <Box
                           component="img"
+                          
                           alt="Thành lập Công ty cổ phần MLS Việt Nam"
-                          src="http://localhost:5173/images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-1160x542.jpg"
+                          src="http://localhost:5173/public/images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-1160x542.jpg"
                           title="Thành lập Công ty cổ phần MLS Việt Nam"
-                          srcSet="http://localhost:5173/images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-1160x542.jpg 1160w, http://localhost:5173/images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-300x140.jpg 300w, http://localhost:5173/images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-1024x478.jpg 1024w, http://localhost:5173/images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-768x359.jpg 768w, http://localhost:5173/images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-1536x718.jpg 1536w, http://localhost:5173/images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-2048x957.jpg 2048w, http://localhost:5173/images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-580x271.jpg 580w, http://localhost:5173/images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-860x402.jpg 860w, http://localhost:5173/images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-1440x673.jpg 1440w, http://localhost:5173/images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-440x206.jpg 440w"
+                          srcSet="http://localhost:5173/public/images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-1160x542.jpg 1160w, http://localhost:5173/public/images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-300x140.jpg 300w, http://localhost:5173/public/images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-1024x478.jpg 1024w, http://localhost:5173/public/images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-768x359.jpg 768w, http://localhost:5173/public/images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-1536x718.jpg 1536w, http://localhost:5173/public/images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-2048x957.jpg 2048w, http://localhost:5173/public/images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-580x271.jpg 580w, http://localhost:5173/public/images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-860x402.jpg 860w, http://localhost:5173/public/images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-1440x673.jpg 1440w, http://localhost:5173/public/images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-440x206.jpg 440w"
                           sizes="(max-width: 1160px) 100vw, 1160px"
                         ></Box>
                       </Link>
@@ -73,7 +62,9 @@ const Profile = () => {
                       component="header"
                       className="cmsmasters_profile_header"
                     >
-                      <Typography variant="h2">
+                      <Typography
+                        variant="h2"
+                      >
                         Thành lập Công ty cổ phần MLS Việt Nam
                       </Typography>
                       {/* <Typography
@@ -115,107 +106,54 @@ const Profile = () => {
                               className="cmsmasters_column one_first"
                             >
                               <Box component="div">
-                                <Typography variant="h2">
-                                  <strong>I. Giới thiệu về công ty</strong>
-                                </Typography>
+                              <Typography variant="h2">
+                                <strong>I. Giới thiệu về công ty</strong>
+                              </Typography>
                                 <Box component="p">
-                                  Công ty Cổ phần Giải pháp sinh kế cho Đồng
-                                  bằng sông Cửu Long (MLS) được thành lập vào
-                                  ngày 20/02/2021, là công ty hoạt động trong
-                                  lĩnh vực sản xuất, phát triển nông nghiệp, tư
-                                  vấn về nông học, khoa học về khí hậu và biến
-                                  đổi khí hậu, cung cấp dịch vụ nghiên cứu, khảo
-                                  sát khoa học về các lĩnh vực khoa học nông
-                                  nghiệp, khoa học tự nhiên nhằm mục đích hỗ trợ
-                                  phát triển nông nghiệp cho người nông dân,
-                                  phát triển kinh tế gắn liền với bảo vệ môi
-                                  trường và đa dạng sinh học.
+                                Công ty Cổ phần Giải pháp sinh kế cho Đồng bằng sông Cửu Long (MLS) được thành lập vào ngày 20/02/2021, là công ty hoạt động trong lĩnh vực sản xuất, phát triển nông nghiệp, tư vấn về nông học, khoa học về khí hậu và biến đổi khí hậu, cung cấp dịch vụ nghiên cứu, khảo sát khoa học về các lĩnh vực khoa học nông nghiệp, khoa học tự nhiên nhằm mục đích hỗ trợ phát triển nông nghiệp cho người nông dân, phát triển kinh tế gắn liền với bảo vệ môi trường và đa dạng sinh học.
                                 </Box>
                                 <Box component="p">
-                                  Công ty Cổ phần MLS vừa là cầu nối gắn kết
-                                  giữa các tổ chức nghiên cứu, các tổ chức phi
-                                  lợi nhuận trong lĩnh vực tư vấn phát triển
-                                  nông nghiệp bền vững với người nông dân vừa là
-                                  trung gian thương mại, hỗ trợ người nông dân
-                                  trong quá trình phân phối, tiêu thụ sản phẩm.
+                                Công ty Cổ phần MLS vừa là cầu nối gắn kết giữa các tổ chức nghiên cứu, các tổ chức phi lợi nhuận trong lĩnh vực tư vấn phát triển nông nghiệp bền vững với người nông dân vừa là trung gian thương mại, hỗ trợ người nông dân trong quá trình phân phối, tiêu thụ sản phẩm.
                                 </Box>
                                 <Box component="p">
-                                  Công ty Cổ phần MLS định hướng phát triển
-                                  trong tương lai là trở thành một trong những
-                                  công ty hàng đầu tại khu vực đồng bằng Sông
-                                  Cửu Long tiên phong trong việc phát triển kinh
-                                  tế nông nghiệp bền vững đi liền với việc bảo
-                                  vệ môi trường và đa dạng sinh học, tạo ra sự
-                                  hài hòa giữa con người và tự nhiên, góp phần
-                                  chống lại và thích nghi với các tác động của
-                                  việc biến đổi khí hậu tại khu vực.
+                                Công ty Cổ phần MLS định hướng phát triển trong tương lai là trở thành một trong những công ty hàng đầu tại khu vực đồng bằng Sông Cửu Long tiên phong trong việc phát triển kinh tế nông nghiệp bền vững đi liền với việc bảo vệ môi trường và đa dạng sinh học, tạo ra sự hài hòa giữa con người và tự nhiên, góp phần chống lại và thích nghi với các tác động của việc biến đổi khí hậu tại khu vực.
                                 </Box>
                                 <Typography variant="h2">
                                   <strong>II. Lĩnh vực kinh doanh</strong>
                                 </Typography>
-                                <Box
-                                  component="div"
-                                  sx={{ paddingLeft: "1px" }}
-                                >
-                                  <Table>
-                                    <TableBody>
-                                      <TableRow key="head">
-                                        <TableCell sx={{ fontWeight: "bold" }}>
-                                          Mã ngành
-                                        </TableCell>
-                                        <TableCell sx={{ fontWeight: "bold" }}>
-                                          Tên ngành, nghề kinh doanh
-                                        </TableCell>
+                                <Box component="div" sx={{paddingLeft: "1px"}}>
+                                <Table>
+                                  <TableBody>
+                                  <TableRow key="head">
+                                      <TableCell sx={{fontWeight: "bold"}}>Mã ngành</TableCell>
+                                      <TableCell sx={{fontWeight: "bold"}}>Tên ngành, nghề kinh doanh</TableCell>
+                                    </TableRow>
+                                    {rows.map((row)=>(
+                                      <TableRow key={`${row.code}`}>
+                                        <TableCell sx={{width: "18%"}} scope="row">{row.code}</TableCell>
+                                        <TableCell sx={{width: "82%"}} dangerouslySetInnerHTML={{__html: `${row.profession}`}}></TableCell>
                                       </TableRow>
-                                      {rows.map((row) => (
-                                        <TableRow key={`${row.code}`}>
-                                          <TableCell
-                                            sx={{ width: "18%" }}
-                                            scope="row"
-                                          >
-                                            {row.code}
-                                          </TableCell>
-                                          <TableCell
-                                            sx={{ width: "82%" }}
-                                            dangerouslySetInnerHTML={{
-                                              __html: `${row.profession}`,
-                                            }}
-                                          ></TableCell>
-                                        </TableRow>
-                                      ))}
-                                    </TableBody>
-                                  </Table>
-                                  <Box component="p">&nbsp;</Box>
-                                  <Table>
-                                    <TableBody>
-                                      <TableRow>
-                                        <TableCell sx={{ width: "100%" }}>
-                                          <Typography variant="h3">
-                                            CÔNG TY CỔ PHẦN MLS VIỆT NAM
-                                          </Typography>
-                                          <Box component="p">
-                                            Ấp Thạnh Long, Xã Đông Thạnh, Huyện
-                                            Châu Thành, Tỉnh Hậu Giang, Việt Nam
-                                          </Box>
-                                          <Box component="p">
-                                            Điện thoại: 0937128716
-                                          </Box>
-                                          <Box component="p">
-                                            Email:
-                                            <Box
-                                              component="span"
-                                              sx={{
-                                                color: "#3366ff",
-                                              }}
-                                            >
-                                              {" "}
-                                              lskieuvuong.2016@gmail.com
-                                            </Box>
-                                          </Box>
-                                        </TableCell>
-                                      </TableRow>
-                                    </TableBody>
-                                  </Table>
+                                    ))}
+                                  </TableBody>
+                                </Table>
+                                <Box component="p">&nbsp;</Box>
+                                <Table>
+                                  <TableBody>
+                                    <TableRow>
+                                      <TableCell sx={{width: "100%"}}>
+                                        <Typography variant="h3">CÔNG TY CỔ PHẦN MLS VIỆT NAM</Typography>
+                                        <Box component="p">Ấp Thạnh Long, Xã Đông Thạnh, Huyện Châu Thành, Tỉnh Hậu Giang, Việt Nam</Box>
+                                        <Box component="p">Điện thoại: 0937128716</Box>
+                                        <Box component="p">
+                                          Email: 
+                                          <Box component="span" sx={{
+                                            color: "#3366ff"
+                                          }}> lskieuvuong.2016@gmail.com</Box>
+                                        </Box>
+                                      </TableCell>
+                                    </TableRow>
+                                  </TableBody>
+                                </Table>
                                 </Box>
                               </Box>
                             </Box>
@@ -256,18 +194,8 @@ const Profile = () => {
                       </Box>
                     </Box>
                     <Box component="aside" className="cmsmasters_single_slider">
-                      <Typography
-                        variant="h4"
-                        className="cmsmasters_single_slider_title"
-                      >
-                        Các dự án khác
-                      </Typography>
-                      <Typography
-                        variant="h5"
-                        className="cmsmasters_single_slider_no_items"
-                      >
-                        Danh sách trống
-                      </Typography>
+                      <Typography variant="h4" className="cmsmasters_single_slider_title">Các dự án khác</Typography>
+                      <Typography variant="h5" className="cmsmasters_single_slider_no_items">Danh sách trống</Typography>
                     </Box>
                   </Box>
                 </Box>
@@ -312,11 +240,10 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_desc"
                       >
-                        <Link
-                          href="http://localhost:5173/author/lvloi/"
-                          title="Projects by Ly Van Loi"
-                          rel="author"
-                        >
+                        <Link 
+                        href="http://localhost:5173/author/lvloi/"
+                        title="Projects by Ly Van Loi"
+                        rel="author">
                           <Box component="span">Ly Van Loi</Box>
                         </Link>
                       </Box>
@@ -333,7 +260,7 @@ const Profile = () => {
                         className="profile_details_item_desc"
                       >
                         <Box component="abbr" title="11 Tháng Sáu, 2021">
-                          11 Tháng Sáu, 2021
+                        11 Tháng Sáu, 2021
                         </Box>
                       </Box>
                     </Box>
@@ -470,8 +397,7 @@ const Profile = () => {
               rel="prev"
               className="icon-angle-left"
             >
-              Vai trò của Đất ngập nước đối với an ninh nguồn nước cho khu vực
-              sông Mekong
+              Vai trò của Đất ngập nước đối với an ninh nguồn nước cho khu vực sông Mekong
             </Link>
           </Box>
           <Box
@@ -489,12 +415,16 @@ const Profile = () => {
         </Box>
       </Box>
       <AnimatePresence>
-        {toggleModal && (
-          <ToggleModalImg
-            src="http://localhost:5173/images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-1160x542.jpg"
+        {toggleModal &&
+          (<ToggleModalImg 
+            src="http://localhost:5173/public/images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-1160x542.jpg"
             setToggleModal={setToggleModal}
-          ></ToggleModalImg>
-        )}
+            >
+
+            </ToggleModalImg>
+          )
+        }
+        
       </AnimatePresence>
       <Footer></Footer>
     </>

@@ -25,7 +25,7 @@ const Profile = () => {
                         title="Tiến sĩ Hồ Lê Khoa"
                         className="preloader highImg"
                         onClick={() => {
-                          document.body.style.overflow = "hidden";
+                          document.body.style.overflow = "hidden"
                           setToggleModal(true);
                         }}
                       >
@@ -34,7 +34,7 @@ const Profile = () => {
                           width="100%"
                           height="100%"
                           alt="Tiến sĩ Hồ Lê Khoa"
-                          src="http://localhost:5173/images/people/Ho-Van-Khoa-580x490.jpg"
+                          src="http://localhost:5173/public/images/people/Ho-Van-Khoa-580x490.jpg"
                           title="Tiến sĩ Hồ Lê Khoa"
                           sizes="(max-width: 410px) 100vw, 410px"
                         ></Box>
@@ -76,7 +76,7 @@ const Profile = () => {
                           letterSpacing: ".1em",
                         }}
                       >
-                        THÀNH VIÊN HỘI ĐỒNG GIÁM SÁT
+                      THÀNH VIÊN HỘI ĐỒNG GIÁM SÁT
                       </Typography>
                     </Box>
                     <Box
@@ -99,18 +99,7 @@ const Profile = () => {
                             >
                               <Box component="div">
                                 <Box component="p">
-                                  <strong>Tiến sĩ Hồ Lê Khoa </strong>là người
-                                  sáng lập Abaki, một công ty phần mềm có trụ sở
-                                  tại Úc cung cấp các giải pháp công nghệ thông
-                                  tin cho các Dịch vụ Y tế. Ông từng nhận học
-                                  bổng kế hoạch Colombo và có bằng cử nhân và
-                                  tiến sĩ về kỹ thuật cơ khí tại Đại học Monash.
-                                  Ông là thành viên của Hiệp hội Khuyến học Úc –
-                                  Việt Nam và Những người bạn của Giáo dục Việt
-                                  Nam. Ông có nhiều năm kinh nghiệm trong công
-                                  nghiệp, làm việc trong lĩnh vực máy tính cho
-                                  Telecom Australia và Tổ chức Nghiên cứu Công
-                                  nghiệp và Khoa học liên bang.
+                                <strong>Tiến sĩ Hồ Lê Khoa </strong>là người sáng lập Abaki, một công ty phần mềm có trụ sở tại Úc cung cấp các giải pháp công nghệ thông tin cho các Dịch vụ Y tế. Ông từng nhận học bổng kế hoạch Colombo và có bằng cử nhân và tiến sĩ về kỹ thuật cơ khí tại Đại học Monash. Ông là thành viên của Hiệp hội Khuyến học Úc – Việt Nam và Những người bạn của Giáo dục Việt Nam. Ông có nhiều năm kinh nghiệm trong công nghiệp, làm việc trong lĩnh vực máy tính cho Telecom Australia và Tổ chức Nghiên cứu Công nghiệp và Khoa học liên bang.
                                 </Box>
                               </Box>
                             </Box>
@@ -277,12 +266,11 @@ const Profile = () => {
         </Box>
       </Box>
       <AnimatePresence>
-        {toggleModal && (
-          <ToggleModalImg
-            src="http://localhost:5173/images/people/Ho-Van-Khoa-580x490.jpg"
-            setToggleModal={setToggleModal}
-          ></ToggleModalImg>
-        )}
+        {toggleModal &&
+          (<ToggleModalImg src="http://localhost:5173/public/images/people/Ho-Van-Khoa-580x490.jpg" setToggleModal={setToggleModal}></ToggleModalImg>
+          )
+        }
+        
       </AnimatePresence>
       <Footer></Footer>
     </>
