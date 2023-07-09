@@ -117,26 +117,27 @@
     display: flex;
     justify-content: center;
 }
-
-input:not([type=button]):not([type=checkbox]):not([type=file]):not([type=hidden]):not([type=image]):not([type=radio]):not([type=reset]):not([type=submit]):not([type=color]):not([type=range]) {
-    height: 48px;
-    border-color: #dfdfdf;
-    background-color: #ffffff;
-    color: #717171;
-    font-family: 'Roboto', Tahoma, Geneva, Kalimati, sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    font-style: normal;
-    padding: 0 22px;
-    max-width: 100%;
-    border-width: 1px;
-    border-style: solid;
-    -webkit-border-radius: 30px;
-    border-radius: 30px;
-}
-input:not([type=button]):not([type=checkbox]):not([type=file]):not([type=hidden]):not([type=image]):not([type=radio]):not([type=reset]):not([type=submit]):not([type=color]):not([type=range]):focus{
-    border-color: var(--btn-hover-bg);
-    outline: none;
+.error_page{
+    input:not([type=button]):not([type=checkbox]):not([type=file]):not([type=hidden]):not([type=image]):not([type=radio]):not([type=reset]):not([type=submit]):not([type=color]):not([type=range]) {
+        height: 48px;
+        border-color: #dfdfdf;
+        background-color: #ffffff;
+        color: #717171;
+        font-family: 'Roboto', Tahoma, Geneva, Kalimati, sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        font-style: normal;
+        padding: 0 22px;
+        max-width: 100%;
+        border-width: 1px;
+        border-style: solid;
+        -webkit-border-radius: 30px;
+        border-radius: 30px;
+    }
+    input:not([type=button]):not([type=checkbox]):not([type=file]):not([type=hidden]):not([type=image]):not([type=radio]):not([type=reset]):not([type=submit]):not([type=color]):not([type=range]):focus{
+        border-color: var(--btn-hover-bg);
+        outline: none;
+    }
 }
 @media only screen and (max-width: 600px){
 
