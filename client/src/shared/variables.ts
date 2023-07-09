@@ -4,32 +4,31 @@ import Conservation from "@/pages/Conservation";
 import Livelihood from "@/pages/Livelihood";
 import Museum from "@/pages/Museum";
 import Contact from "@/pages/Contact";
-import Profile from "@/pages/Profile";
 import ProfileMuseum from "@/pages/ProfileMuseum";
 import Category from "@/pages/Category";
-import Carousel from "@/components/Carousel";
+import Stories from "@/pages/Stories";
 
-import VuVanHieu from "@/pages/Profile/Vu-Van-Hieu"
-import THDan from "@/pages/Profile/Truong-Hoang-Dan"
-import LATuan from "@/pages/Profile/Le-Anh-Tuan"
-import DavidWilmoth from "@/pages/Profile/david-wilmoth"
-import HLKhoa from "@/pages/Profile/Ho-Le-Khoa"
-import NTKVuong from "@/pages/Profile/Nguyen-Thi-Kieu-Vuong"
-import DVNi from "@/pages/Profile/Duong-Van-Ni"
-import NHBao from "@/pages/Profile/Nguyen-Hoai-Bao"
-import LVLoi from "@/pages/Profile/Ly-Van-Loi"
-import NTTung from "@/pages/Profile/Nguyen-Thanh-Tung"
+import VuVanHieu from "@/pages/Profile/Vu-Van-Hieu";
+import THDan from "@/pages/Profile/Truong-Hoang-Dan";
+import LATuan from "@/pages/Profile/Le-Anh-Tuan";
+import DavidWilmoth from "@/pages/Profile/david-wilmoth";
+import HLKhoa from "@/pages/Profile/Ho-Le-Khoa";
+import NTKVuong from "@/pages/Profile/Nguyen-Thi-Kieu-Vuong";
+import DVNi from "@/pages/Profile/Duong-Van-Ni";
+import NHBao from "@/pages/Profile/Nguyen-Hoai-Bao";
+import LVLoi from "@/pages/Profile/Ly-Van-Loi";
+import NTTung from "@/pages/Profile/Nguyen-Thanh-Tung";
 // import ProfileMuseum from "@/pages/ProfileMuseum";
-import PostConservation1 from "@/pages/ProfileConservation/Post1"
-import PostConservation2 from "@/pages/ProfileConservation/Post2"
-import PostConservation3 from "@/pages/ProfileConservation/Post3"
-import PostConservation4 from "@/pages/ProfileConservation/Post4"
+import PostConservation1 from "@/pages/ProfileConservation/Post1";
+import PostConservation2 from "@/pages/ProfileConservation/Post2";
+import PostConservation3 from "@/pages/ProfileConservation/Post3";
+import PostConservation4 from "@/pages/ProfileConservation/Post4";
 
-import PostLH1 from "@/pages/ProfileLiveHoods/Post1"
-import PostLH2 from "@/pages/ProfileLiveHoods/Post2"
-import PostLH3 from "@/pages/ProfileLiveHoods/Post3"
+import PostLH1 from "@/pages/ProfileLiveHoods/Post1";
+import PostLH2 from "@/pages/ProfileLiveHoods/Post2";
+import PostLH3 from "@/pages/ProfileLiveHoods/Post3";
 
-import PostMuseum1 from "@/pages/ProfileMuseum/Post1"
+import PostMuseum1 from "@/pages/ProfileMuseum/Post1";
 
 import { PageType, Projects, Status, Project } from "@/shared";
 
@@ -177,7 +176,11 @@ export const mainPages: Array<PageType> = [
     component: Museum,
     props: { museums: projects.Museums },
   },
-  { link: "/stories", title: "Stories", component: Home },
+  {
+    link: "/stories",
+    title: "Stories",
+    component: Stories,
+  },
   { link: "/contact-us", title: "Contact Us", component: Contact },
 ];
 
@@ -239,7 +242,8 @@ var subPages: Array<PageType> = [
   // },
   {
     link: "/project/cap-nhat-chien-luoc-quan-ly-nuoc-de-phuc-hoi-sinh-canh-dat-ngap-nuoc-vuon-quoc-gia-tram-chim-trong-boi-canh-bien-doi-khi-hau-va-phat-trien-o-thuong-nguon",
-    title: "Cập nhật chiến lược quản lý nước để phục hồi sinh cảnh đất ngập nước Vườn quốc gia Tràm chim trong bối cảnh biến đổi khí hậu và phát triển ở thượng nguồn",
+    title:
+      "Cập nhật chiến lược quản lý nước để phục hồi sinh cảnh đất ngập nước Vườn quốc gia Tràm chim trong bối cảnh biến đổi khí hậu và phát triển ở thượng nguồn",
     component: PostConservation1,
   },
   {
@@ -249,12 +253,14 @@ var subPages: Array<PageType> = [
   },
   {
     link: "/project/vai-tro-cua-dat-ngap-nuoc-doi-voi-an-ninh-nguon-nuoc-cho-khu-vuc-song-mekong",
-    title: "Vai trò của Đất ngập nước đối với an ninh nguồn nước cho khu vực sông Mekong",
+    title:
+      "Vai trò của Đất ngập nước đối với an ninh nguồn nước cho khu vực sông Mekong",
     component: PostConservation3,
   },
   {
     link: "/project/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/",
-    title: "Công tác kiểm kê, khảo sát vườn chim Vạc tại xã Tân Mỹ, huyện Trà Ôn, tỉnh Vĩnh Long",
+    title:
+      "Công tác kiểm kê, khảo sát vườn chim Vạc tại xã Tân Mỹ, huyện Trà Ôn, tỉnh Vĩnh Long",
     component: PostConservation4,
   },
 
