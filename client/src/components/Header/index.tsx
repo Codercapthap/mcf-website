@@ -9,6 +9,7 @@ import { PageType, mainPages } from "@/shared";
 import Search from "@/components/Search";
 import { theme } from "@/styles";
 import "./Header.scss";
+import { useTranslation } from "react-i18next";
 type Props = {};
 
 function Header({}: Props) {
@@ -19,6 +20,7 @@ function Header({}: Props) {
   const [active, setActive] = useState("");
   const { pathname } = useLocation();
   const [scrollY, setScrollY] = useState(0);
+  const { t } = useTranslation();
 
   // Get Scroll Position
   const changeScrollY = () => {
@@ -237,7 +239,7 @@ function Header({}: Props) {
               },
             }}
           >
-            Tiếng Việt
+            {t("nav.language")}
           </ListItem>
         </List>
       </Box>

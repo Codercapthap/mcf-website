@@ -7,5 +7,4 @@ export type {
   Project,
   Projects,
 } from "./types";
-export { Status } from "./types";
 export { mainPages, subPages, projects } from "./variables";

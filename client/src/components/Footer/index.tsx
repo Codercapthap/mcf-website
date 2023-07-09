@@ -1,6 +1,8 @@
 import { Box } from "@mui/material";
 import { Wrapper } from "@/styles";
+import { useTranslation } from "react-i18next";
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <Box
       height="98px"
@@ -20,7 +22,7 @@ const Footer = () => {
           letterSpacing=".1em"
           padding={0}
         >
-          MCF © 2020 | ALL RIGHTS RESERVED
+          {t("footer")}
         </Box>
       </Wrapper>
     </Box>

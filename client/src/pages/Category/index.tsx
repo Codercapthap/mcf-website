@@ -5,7 +5,7 @@ import CategoryCard from "@/components/CategoryCard";
 import { Wrapper } from "@/styles";
 import Footer from "@/components/Footer";
 import SearchIcon from "@mui/icons-material/Search";
-import { useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Box, Typography } from "@mui/material";
 import { FormEvent, useState } from "react";
 

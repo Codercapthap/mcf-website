@@ -6,10 +6,13 @@ import { Box } from "@mui/material";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import CarouselText from "@/components/CarouselText";
+import { useTranslation } from "react-i18next";
+
 const Carousel = () => {
   const [nextDisplay, setNextDisplay] = useState(0);
   const [isPause, setIsPause] = useState(false);
   const sliderRef = useRef<any>();
+  const { t } = useTranslation();
   var settings = {
     dots: true,
     Infinity: true,
@@ -54,8 +57,8 @@ const Carousel = () => {
           <AnimatePresence>
             {nextDisplay === 0 && (
               <CarouselText
-                text1="The Mekong Delta"
-                text2="Natural History Museum"
+                text1={t("home.slide.0.text1")}
+                text2={t("home.slide.0.text2")}
               ></CarouselText>
             )}
           </AnimatePresence>
@@ -68,7 +71,7 @@ const Carousel = () => {
                 topDistant={55}
                 leftDistant={50}
                 marginLeftVw={35}
-                text2="Improve local livelihoods"
+                text2={t("home.slide.1.text2")}
               ></CarouselText>
             )}
           </AnimatePresence>
@@ -81,7 +84,7 @@ const Carousel = () => {
                 marginLeftVw={28}
                 topDistant={10}
                 leftDistant={58}
-                text2="Natural conservation"
+                text2={t("home.slide.2.text2")}
               ></CarouselText>
             )}
           </AnimatePresence>

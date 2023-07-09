@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Box } from "@mui/material";
+import { useTranslation } from "react-i18next";
 
 type Props = {
   topDistant?: number;
@@ -16,6 +17,7 @@ const index = ({
   text1,
   text2,
 }: Props) => {
+  const { t } = useTranslation();
   return (
     <Box
       component={motion.div}
@@ -73,7 +75,7 @@ const index = ({
         // style={{ marginLeft: `${marginLeftVw}vw` || "5vw" }}
         marginLeft={`${marginLeftVw}vw` || "5vw"}
       >
-        Find More
+        {t("home.slide.0.info")}
       </Box>
     </Box>
   );

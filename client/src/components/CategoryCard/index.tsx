@@ -34,7 +34,7 @@ const CategoryCard = ({ project, isSearch = false }: Props) => {
         component={Link}
         width="30vw"
         height="100%"
-        to="/"
+        to={project.link}
         sx={{
           [theme.breakpoints.down("tablet")]: {
             width: "100%",
@@ -76,6 +76,7 @@ const CategoryCard = ({ project, isSearch = false }: Props) => {
                     color: "var(--btn-hover-bg)",
                   },
                 }}
+                to={project.link}
                 color="var(--text-black)"
               >
                 {project.title}

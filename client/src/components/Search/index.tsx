@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { FormEvent, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { projects, Project } from "@/shared";
+import { useTranslation } from "react-i18next";
 type Props = {
   setToggleModal: Function;
 };
@@ -36,6 +37,7 @@ export default function Search({ setToggleModal }: Props) {
       navigate("/search", { state: { projects: result, input: searchInput } });
     }
   };
+  const { t } = useTranslation();
 
   return ReactDOM.createPortal(
     <Box
@@ -90,7 +92,7 @@ export default function Search({ setToggleModal }: Props) {
           setSearchInput(e.currentTarget.value);
         }}
         onKeyDown={search}
-        placeholder="Search..."
+        placeholder={t("nav.search")}
       ></Box>
     </Box>,
     document.querySelector("body") as HTMLElement

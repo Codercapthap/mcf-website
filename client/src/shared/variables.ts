@@ -39,128 +39,187 @@ export const projects: Projects = {
   Conservation: [
     {
       likes: 0,
-      author: "Ly Van Loi",
+      author: `${i18next.t(
+        "conservation.profile.post1.profile_detail.author"
+      )}`,
       authorLink: "lvloi",
-      date: "26 May, 2023",
-      category: "Conservation",
+      date: `${i18next.t("conservation.profile.post1.profile_detail.date")}`,
+      category: `${i18next.t(
+        "conservation.profile.post1.profile_detail.categories"
+      )}`,
       categoryLink: "/conservation",
       thumbnail:
         "/images/conservation/chien-luoc-quan-li-nuoc_Bao-ton-580x490.jpg",
       title: `${i18next.t("conservation.profile.post1.title")}`,
-      // "Updating water management strategy for restoring wetland habitats in Tram chim National park in the context of climate change and upstream development",
-      description:
-        "Tram Chim National Park (TCNP) is one of the important biodiversity conservation areas in the system of protected areas of Vietnam. TCNP is the largest remaining natural area of ​​the Plain of Reeds region, the floodplain ecosystem of the Mekong River. Biodiversity conservation in TCNP is therefore of importance not only for Vietnam but also...",
-      implemented: "MCF",
-      endDate: "2022",
-      location: "Tram Chim national park",
-      funder: "WWF - Viet Nam",
-      status: Status.Completed,
+      description: `${i18next.t("conservation.profile.post1.description")}`,
+      implemented: `${i18next.t(
+        "conservation.profile.post1.profile_detail.implemented"
+      )}`,
+      endDate: `${i18next.t(
+        "conservation.profile.post1.profile_detail.end_date"
+      )}`,
+      location: `${i18next.t(
+        "conservation.profile.post1.profile_detail.location"
+      )}`,
+      funder: `${i18next.t(
+        "conservation.profile.post1.profile_detail.funded"
+      )}`,
+      status: `${i18next.t(
+        "conservation.profile.post1.profile_detail.status"
+      )}`,
       link: "/project/cap-nhat-chien-luoc-quan-ly-nuoc-de-phuc-hoi-sinh-canh-dat-ngap-nuoc-vuon-quoc-gia-tram-chim-trong-boi-canh-bien-doi-khi-hau-va-phat-trien-o-thuong-nguon",
     },
     {
       likes: 0,
-      author: "Ly Van Loi",
+      author: `${i18next.t(
+        "conservation.profile.post2.profile_detail.author"
+      )}`,
       authorLink: "lvloi",
-      date: "26 May, 2023",
-      category: "Conservation",
+      date: `${i18next.t("conservation.profile.post2.profile_detail.date")}`,
+      category: `${i18next.t(
+        "conservation.profile.post2.profile_detail.categories"
+      )}`,
       categoryLink: "/conservation",
       thumbnail:
         "/images/conservation/flow-of-culture-and-life_conservation-580x490.jpg",
-      title: "The flow of Culture and Life",
-      description:
-        "Water represents a basic component of the economy in the region, in addition to domestic consumption, water is also used for agriculture, industry and services. Rivers and riparian areas also contribute to the landscape for the area and the development of other tourism services. In addition, the river is also a connection and creates habitat...",
-      implemented: "MCF",
-      endDate: "2022",
-      location: "Đong Thap, Can Tho, Vinh Long, Soc Trang",
-      funder: "OXFAM",
-      status: Status.Completed,
+      title: `${i18next.t("conservation.profile.post2.title")}`,
+      description: `${i18next.t("conservation.profile.post2.description")}`,
+      implemented: `${i18next.t(
+        "conservation.profile.post2.profile_detail.implemented"
+      )}`,
+      endDate: `${i18next.t(
+        "conservation.profile.post2.profile_detail.end_date"
+      )}`,
+      location: `${i18next.t(
+        "conservation.profile.post2.profile_detail.location"
+      )}`,
+      funder: `${i18next.t(
+        "conservation.profile.post2.profile_detail.funded"
+      )}`,
+      status: `${i18next.t(
+        "conservation.profile.post2.profile_detail.status"
+      )}`,
       link: "/project/dong-chay-cua-van-hoa-va-su-song",
     },
     {
       likes: 0,
-      author: "Ly Van Loi",
+      author: `${i18next.t(
+        "conservation.profile.post4.profile_detail.author"
+      )}`,
       authorLink: "lvloi",
-      date: "19 June, 2021",
-      category: "Conservation",
+      date: `${i18next.t("conservation.profile.post4.profile_detail.date")}`,
+      category: `${i18next.t(
+        "conservation.profile.post4.profile_detail.categories"
+      )}`,
       categoryLink: "/conservation",
       thumbnail: "/images/conservation/vuon-co-tan-my-580x490.jpg",
-      title:
-        "Inventory and survey of Vac bird garden in Tan My commune, Tra On district, Vinh Long province",
-      time: "01-10/2021",
-      budget: 200000000,
-      investor:
-        "Department of Agriculture and Rural Development of Vinh Long province",
-      implementation:
-        "Forest Protection and Quality Control Department of Agriculture, Forestry and Fisheries of Vinh Long",
-      consultant: "MCF",
-      status: Status.Completed,
+      title: `${i18next.t("conservation.profile.post4.title")}`,
+      time: `${i18next.t("conservation.profile.post4.profile_detail.time")}`,
+      budget: `${i18next.t(
+        "conservation.profile.post4.profile_detail.budget"
+      )}`,
+      investor: `${i18next.t(
+        "conservation.profile.post4.profile_detail.investor"
+      )}`,
+      implementation: `${i18next.t(
+        "conservation.profile.post4.profile_detail.implemented"
+      )}`,
+      consultant: `${i18next.t(
+        "conservation.profile.post4.profile_detail.consultant"
+      )}`,
+      status: `${i18next.t(
+        "conservation.profile.post4.profile_detail.status"
+      )}`,
       link: "/project/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/",
     },
     {
       likes: 0,
-      author: "Ly Van Loi",
+      author: `${i18next.t(
+        "conservation.profile.Post3.profile_detail.author"
+      )}`,
       authorLink: "lvloi",
-      date: "18 March, 2021",
-      category: "Conservation",
+      date: `${i18next.t("conservation.profile.post3.profile_detail.date")}`,
+      category: `${i18next.t(
+        "conservation.profile.post3.profile_detail.categories"
+      )}`,
       categoryLink: "/conservation",
       thumbnail: "/images/conservation/sumernet_map-580x490.jpg",
-      title: "The role of wetlands in water security for the Mekong region",
-      description:
-        "Wetlands are highly important to the food-energy-water nexus of the Mekong region. Rural water security is of specific interest for Mekong-region countries because major rural economic sectors of all countries, especially agriculture and aquaculture, as well as main sources of water for rural household consumption and public water supply, depend on water from wetlands. Many...",
-      implemented: "MCF",
-      endTime: "31/12/2022",
-      studySite: "Vietnam, Laos, Cambodia and Thailand",
-      fundedBy: "Stiftelsen The Stockholm Environment Institute",
-      fundMount: "SEK 1,000,000",
-      status: Status.Pending,
+      title: `${i18next.t("conservation.profile.post3.title")}`,
+      description: `${i18next.t("conservation.profile.post3.description")}`,
+      implemented: `${i18next.t(
+        "conservation.profile.post3.profile_detail.implemented"
+      )}`,
+      endTime: `${i18next.t(
+        "conservation.profile.post3.profile_detail.end_date"
+      )}`,
+      studySite: `${i18next.t(
+        "conservation.profile.post3.profile_detail.location"
+      )}`,
+      fundedBy: `${i18next.t(
+        "conservation.profile.post3.profile_detail.funded"
+      )}`,
+      fundMount: `${i18next.t(
+        "conservation.profile.post3.profile_detail.fund_mount"
+      )}`,
+      status: `${i18next.t(
+        "conservation.profile.post3.profile_detail.status"
+      )}`,
       link: "/project/vai-tro-cua-dat-ngap-nuoc-doi-voi-an-ninh-nguon-nuoc-cho-khu-vuc-song-mekong",
     },
   ],
   Livelihoods: [
     {
       likes: 0,
-      author: "Ly Van Loi",
+      author: `${i18next.t("livelihoods.profile.post2.profile_detail.author")}`,
       authorLink: "lvloi",
-      date: "19 June, 2021",
-      category: "Livelihoods",
+      date: `${i18next.t("livelihoods.profile.post2.profile_detail.date")}`,
+      category: `${i18next.t(
+        "livelihoods.profile.post2.profile_detail.categories"
+      )}`,
       categoryLink: "/livelihoods",
       thumbnail: "/images/livelihoods/sinh-ke_sinh-ke-580x490.jpg",
-      title: "Established MLS Joint Stock Company",
+      title: `${i18next.t("livelihoods.profile.post2.title")}`,
       link: "/project/thanh-lap-cong-ty-co-phan-mcf-viet-nam/",
     },
     {
       likes: 0,
-      author: "Ly Van Loi",
+      author: `${i18next.t("livelihoods.profile.post1.profile_detail.author")}`,
       authorLink: "lvloi",
-      date: "26 May, 2023",
-      category: "Livelihoods",
+      date: `${i18next.t("livelihoods.profile.post1.profile_detail.date")}`,
+      category: `${i18next.t(
+        "livelihoods.profile.post1.profile_detail.categories"
+      )}`,
       categoryLink: "/livelihoods",
       thumbnail: "/images/livelihoods/sinh-ke-580x490.jpg",
-      title: "Signing short-term hands-on training for students",
+      title: `${i18next.t("livelihoods.profile.post1.title")}`,
       link: "/project/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/",
     },
     {
       likes: 0,
-      author: "mcf_admin",
+      author: `${i18next.t("livelihoods.profile.post3.profile_detail.author")}`,
       authorLink: "mcf_admin",
-      date: "15 March, 2021",
-      category: "Livelihoods",
+      date: `${i18next.t("livelihoods.profile.post3.profile_detail.date")}`,
+      category: `${i18next.t(
+        "livelihoods.profile.post3.profile_detail.categories"
+      )}`,
       categoryLink: "/livelihoods",
       thumbnail: "/images/livelihoods/sinhke-580x490.png",
-      title: "Improve Livelihoods",
+      title: `${i18next.t("livelihoods.profile.post3.title")}`,
       link: "/project/bai-viet-sinh-ke-01/",
     },
   ],
   Museums: [
     {
       likes: 0,
-      author: "Ly Van Loi",
+      author: `${i18next.t("museum.profile.post1.profile_detail.author")}`,
       authorLink: "lvloi",
-      date: "11 June, 2021",
-      category: "Museum",
+      date: `${i18next.t("museum.profile.post1.profile_detail.date")}`,
+      category: `${i18next.t(
+        "museum.profile.post1.profile_detail.categories"
+      )}`,
       categoryLink: "/museum",
       thumbnail: "/images/museum/bao-tang_ky-ket-voi-usa.png",
-      title: "The Mekong Natural History Museum progress",
+      title: `${i18next.t("museum.profile.post1.title")}`,
       link: "/project/tien-trinh-cua-bao-tang-lich-su-tu-nhien-mekong",
     },
   ],
@@ -171,25 +230,29 @@ export const mainPages: Array<PageType> = [
   { link: "/about-us", title: "About Us", component: AboutUs },
   {
     link: "/conservation",
-    title: "Conservation",
+    // title: "Conservation",
+    title: `${i18next.t("nav.conservation")}`,
     component: Conservation,
     props: { conservations: projects.Conservation },
   },
   {
     link: "/livelihoods",
-    title: "Livelihoods",
+    // title: "Livelihoods",
+    title: `${i18next.t("nav.livelihoods")}`,
     component: Livelihood,
     props: { livelihoods: projects.Livelihoods },
   },
   {
     link: "/museum",
-    title: "Museum",
+    // title: "Museum",
+    title: `${i18next.t("nav.museum")}`,
     component: Museum,
     props: { museums: projects.Museums },
   },
   {
     link: "/stories",
-    title: "Stories",
+    // title: "Stories",
+    title: `${i18next.t("nav.stories")}`,
     component: Stories,
   },
   { link: "/contact-us", title: "Contact Us", component: Contact },
@@ -198,52 +261,63 @@ export const mainPages: Array<PageType> = [
 var subPages: Array<PageType> = [
   {
     link: "/profile/vu-van-hieu",
-    title: "Mr Vu Van Hieu",
+    // title: "Mr Vu Van Hieu",
+    title: `${i18next.t("about-us.the_mcf_council.vu-van-hieu")}`,
     component: VuVanHieu,
   },
   {
     link: "/profile/nguyen-thi-kieu-vuong",
-    title: "Mr Nguyen Thi Kieu Vuong",
+    // title: "Mr Nguyen Thi Kieu Vuong",
+
+    title: `${i18next.t("about-us.the_mcf_council.nguyen-thi-kieu-vuong")}`,
     component: NTKVuong,
   },
   {
     link: "/profile/dvni",
-    title: "Dr Duong Van Ni",
+    // title: "Dr Duong Van Ni",
+    title: `${i18next.t("about-us.the_mcf_council.duong-van-ni")}`,
     component: DVNi,
   },
   {
     link: "/profile/ong-nguyen-hoai-bao",
-    title: "Dr Nguyen Hoai Bao",
+    // title: "Dr Nguyen Hoai Bao",
+    title: `${i18next.t("about-us.member_of_mcf.nguyen-hoai-bao")}`,
     component: NHBao,
   },
   {
     link: "/profile/ong-ly-van-loi",
-    title: "Dr Ly Van Loi",
+    // title: "Dr Ly Van Loi",
+    title: `${i18next.t("about-us.member_of_mcf.ly-van-loi")}`,
     component: LVLoi,
   },
   {
     link: "/profile/pgs-ts-nguyen-thanh-tung",
-    title: "PGS.TS Nguyen Thanh Tung",
+    // title: "PGS.TS Nguyen Thanh Tung",
+    title: `${i18next.t("about-us.member_of_mcf.nguyen-thanh-tung")}`,
     component: NTTung,
   },
   {
     link: "/profile/pgs-ts-le-anh-tuan",
-    title: "PGS.TS Le Anh Tuan",
+    // title: "PGS.TS Le Anh Tuan",
+    title: `${i18next.t("about-us.member_of_mcf.le-anh-tuan")}`,
     component: LATuan,
   },
   {
     link: "/profile/pgs-ts-truong-hoang-dan",
-    title: "PGS.TS Truong Hoang Dan",
+    // title: "PGS.TS Truong Hoang Dan",
+    title: `${i18next.t("about-us.member_of_mcf.truong-hoang-dan")}`,
     component: THDan,
   },
   {
     link: "/profile/ts-david-wilmoth",
-    title: "Dr David Wilmoth",
+    // title: "Dr David Wilmoth",
+    title: `${i18next.t("about-us.the_supervisory_council.david-wilmoth")}`,
     component: DavidWilmoth,
   },
   {
     link: "/profile/tien-si-ho-le-khoa",
-    title: "Dr Ho Le Khoa",
+    // title: "Dr Ho Le Khoa",
+    title: `${i18next.t("about-us.the_supervisory_council.ho-le-khoa")}`,
     component: HLKhoa,
   },
   // {
@@ -253,53 +327,45 @@ var subPages: Array<PageType> = [
   // },
   {
     link: "/project/cap-nhat-chien-luoc-quan-ly-nuoc-de-phuc-hoi-sinh-canh-dat-ngap-nuoc-vuon-quoc-gia-tram-chim-trong-boi-canh-bien-doi-khi-hau-va-phat-trien-o-thuong-nguon",
-    title:
-      "Cập nhật chiến lược quản lý nước để phục hồi sinh cảnh đất ngập nước Vườn quốc gia Tràm chim trong bối cảnh biến đổi khí hậu và phát triển ở thượng nguồn",
+    title: `${i18next.t("conservation.profile.post1.title")}`,
     component: PostConservation1,
   },
   {
     link: "/project/dong-chay-cua-van-hoa-va-su-song",
-    title: "Dòng chảy của Văn hóa và Sự sống",
+    title: `${i18next.t("conservation.profile.post2.title")}`,
     component: PostConservation2,
   },
   {
     link: "/project/vai-tro-cua-dat-ngap-nuoc-doi-voi-an-ninh-nguon-nuoc-cho-khu-vuc-song-mekong",
-    title:
-      "Vai trò của Đất ngập nước đối với an ninh nguồn nước cho khu vực sông Mekong",
+    title: `${i18next.t("conservation.profile.post3.title")}`,
     component: PostConservation3,
   },
   {
     link: "/project/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/",
-    title:
-      "Công tác kiểm kê, khảo sát vườn chim Vạc tại xã Tân Mỹ, huyện Trà Ôn, tỉnh Vĩnh Long",
+    title: `${i18next.t("conservation.profile.post4.title")}`,
     component: PostConservation4,
   },
 
   {
     link: "/project/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/",
-    title: "Ký kết đào tạo sinh viên thực hành ngắn hạn",
+    title: `${i18next.t("livelihoods.profile.post1.title")}`,
     component: PostLH1,
   },
   {
     link: "/project/thanh-lap-cong-ty-co-phan-mcf-viet-nam/",
-    title: "Thành lập Công ty cổ phần MLS Việt Nam",
+    title: `${i18next.t("livelihoods.profile.post2.title")}`,
     component: PostLH2,
   },
   {
     link: "/project/bai-viet-sinh-ke-01/",
-    title: "CẢI THIỆN SINH KẾ",
+    title: `${i18next.t("livelihoods.profile.post3.title")}`,
     component: PostLH3,
   },
 
   {
     link: "/project/tien-trinh-cua-bao-tang-lich-su-tu-nhien-mekong",
-    title: "Tiến trình của Bảo tàng Lịch sử Tự nhiên Mekong",
+    title: `${i18next.t("museum.profile.post1.title")}`,
     component: PostMuseum1,
-  },
-  {
-    link: "/project/the-mekong-natural-history-museum-progress",
-    title: "The Mekong Natural History Museum progress",
-    component: ProfileMuseum,
   },
   {
     link: "/search",

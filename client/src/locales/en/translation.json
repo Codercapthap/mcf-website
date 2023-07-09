@@ -1,277 +1,278 @@
 {
-    "nav":{
-        "home": "HOME",
-        "about-us":"ABOUT US",
-        "conservation": "CONSERVATION",
-        "livelihoods": "LIVELIHOODS",
-        "museum": "MUSEUM",
-        "stories": "STORIES",
-        "contact-us": "CONTACT US",
-        "language": "TIẾNG VIỆT"
+  "nav": {
+    "home": "HOME",
+    "about-us": "ABOUT US",
+    "conservation": "CONSERVATION",
+    "livelihoods": "LIVELIHOODS",
+    "museum": "MUSEUM",
+    "stories": "STORIES",
+    "contact-us": "CONTACT US",
+    "language": "TIẾNG VIỆT",
+    "search": "Search..."
+  },
+  "categories": {
+    "all_categories": "ALL CATEGORIES",
+    "conservation": "CONSERVATION"
+  },
+  "profileDetail": {
+    "profile_detail": "PROFILE DETAILS",
+    "project_info": "PROJECT INFORMATION",
+
+    "likes": "LIKES:",
+    "email": "EMAIL:",
+    "categories": "CATEGORIES:",
+    "author": "AUTHOR:",
+    "date": "DATE:",
+    "implemented": "IMPLEMENTED BY:",
+    "end_date": "END DATE:",
+    "location": "LOCATION",
+    "funded": "FUNDED BY:",
+
+    "fund_mount": "FUND MOUNT",
+
+    "time": "TIME",
+    "budget": "BUDGET:",
+    "investor": "INVESTOR:",
+    "implementation": "IMPLEMENTATION:",
+    "consultant": "CONSULTANT:",
+
+    "status": "STATUS:",
+
+    "social": "SOCIALS",
+    "like_this_profile": "LIKE THIS PROFILE?",
+    "more_projects": "MORE PROJECTS",
+    "project_found": "NO PROJECTS FOUND"
+  },
+  "sort": {
+    "name": "NAME",
+    "date": "DATE"
+  },
+  "home": {
+    "slide": [
+      {
+        "text1": "The Mekong Delta",
+        "text2": "Natural History Museum",
+        "info": "FIND MORE"
+      },
+      {
+        "text2": "Improve local livelihoods",
+        "info": "FIND MORE"
+      },
+      {
+        "text2": "Natural conservation",
+        "info": "FIND MORE"
+      }
+    ],
+    "title": "THE MEKONG DELTA",
+    "content1": "The Mekong Delta is center of Vietnam’s rice, fish, fruits and vegetables production. With about 40 thousand square kilometers and 20 million people, it is so-called ‘rice-bowl’ of Vietnam. Despite its centrality to the Vietnamese economy, the delta is particularly vulnerable to increasing climate changes pressures and regional development impacts. Challenges such as rising sea levels and hydropower development causing erosion, flooding, drought, and land subsidence and poverty and migration.",
+    "content2": "Resolution 120/NQ-CP and the integrated master plan for the Mekong Delta to respond to climate change by 2050 divides the delta into three major ecological zones: permanent saline area, salt-fresh water transition zone, and freshwater zone. In each ecological zone, it is necessary to transform sustainable agricultural systems and adapt to climate change.",
+    "information": "LEARN MORE",
+    "news": "Latest News"
+  },
+  "about-us": {
+    "title": "THE MEKONG CONSERVANCY AND RESEARCH ASSISTANCE FOUNDATION",
+    "heading": "The Mekong Conservancy Foundation – MCF",
+    "content": "The Mekong Conservancy & Research Assistance Foundation (MCF) was founded and run under Decision No. 567/QD/BNV dated July 24, 2019. MCF focuses on research and problem solving in the fields of livelihood, education, environment, and natural resources in order to contribute to the Mekong Delta’s long-term development. The MCF has successfully conducted numerous projects in the aforementioned sectors, establishing a vast network of both national and international partners.",
+    "mcf_council": "THE MCF COUNCIL",
+    "the_mcf_council": {
+      "the_mcf_council": "THE MCF COUNCIL",
+      "duong-van-ni": {
+        "name": "Dr Duong Van Ni",
+        "position": "CHAIRPERSON AND DIRECTOR",
+        "brief": "",
+        "story": "<strong>Chairperson of the MCF Council and Director: Dr Duong Van Ni </strong>is the Director of the Wetland University Network which comprises 24 Universities across 7 countries in the Mekong region, and the former Director of the Hoa An Research Center of Can Tho University. As a lecturer in the faculty of Environment and Natural resources of Can Tho University, his research focuses on climate change in the Mekong River region and poverty reduction."
+      },
+      "vu-van-hieu": {
+        "name": "Mr Vu Van Hieu",
+        "position": "VICE CHAIRPERSON",
+        "brief": "<strong>Mr Vu Van Hieu </strong>is the cofounder and a director of the Australian company Titan Dealer Management Solutions"
+      },
+      "nguyen-thi-kieu-vuong": {
+        "name": "Ms Nguyen Thi Kieu Vuong",
+        "position": "VICE CHAIRPERSON",
+        "brief": "<strong>Ms Nguyen Thi Kieu Vuong </strong>is a lawyer of the Vietnam Bar Federation and Ho Chi Minh City Bar Association and has over 18 years legal experience."
+      }
     },
-    "profileDetail":{
-        "profile_detail": "PROFILE DETAILS",
-        "project_info":"PROJECT INFORMATION",
-
-        "likes": "LIKES:",
-        "email": "EMAIL:",
-        "categories": "CATEGORIES:",
-        "author": "AUTHOR:",
-        "date": "DATE:",
-        "implemented": "IMPLEMENTED BY:",
-        "end_date": "END DATE:",
-        "location": "LOCATION",
-        "funded": "FUNDED BY:",
-
-        "fund_mount": "FUND MOUNT",
-
-        "time": "TIME",
-        "budget": "BUDGET:",
-        "investor": "INVESTOR:",
-        "implementation": "IMPLEMENTATION:",
-        "consultant": "CONSULTANT:",
-
-        "status": "STATUS:",
-
-        "social": "SOCIALS",
-        "like_this_profile": "LIKE THIS PROFILE?",
-        "more_projects":"MORE PROJECTS",
-        "project_found":"NO PROJECTS FOUND"
+    "supervisory_council": "THE SUPERVISORY COUNCIL",
+    "the_supervisory_council": {
+      "the_supervisory_council": "THE SUPERVISORY COUNCIL",
+      "david-wilmoth": {
+        "name": "Dr David Wilmoth",
+        "position": "CHAIRPERSON OF THE SUPERVISORY COUNCIL",
+        "story": "<strong>Dr David Wilmoth </strong>holds a Master's degree from the University of Sydney and a PhD from Berkeley. He is Professor Emeritus at RMIT University and a former Professional Vice-Chancellor (Corporate Governance). He led RMIT University's start-up in Vietnam, the world's largest international branch. He is also the director of the Vietnam-Australia Education Promotion Association, the Learning Chair of International Cities, and the Chair of the Academic Council of Torren University Australia."
+      },
+      "ho-le-khoa": {
+        "name": "Dr Ho Le Khoa",
+        "position": "MEMBER OF THE SUPERVISORY COUNCIL",
+        "story": "<strong>Dr Ho Le Khoa </strong>is the founder of Abaki Pty Ltd, an Australian based software company providing IT solutions to Health Services. He was a recipient of the Colombo Plan scholarship and holds a bachelors and PhD in mechanical engineering from Monash University. He is a member of Australia Vietnam Education Promotion Association and Friends of Vietnam Education. He has several decades experience in the industry, working in computing areas for Telecom Australia and the Commonwealth Scientific and Industrial Research Organization."
+      }
     },
-    "categories":{
-        "all_categories": "ALL CATEGORIES",
-        "conservation": "CONSERVATION"
-    },
-    "sort":{
-        "name":"NAME",
-        "date": "DATE"
-    },
-    "home":{
-        "slide":[
-            {
-                "title": "The Mekong Delta Natural History Museum",
-                "info": "FIND MORE"
-            },
-            {
-                "title": "Improve local livelihoods",
-                "info": "FIND MORE"
-
-            },
-            {
-                "title": "Natural conservation",
-                "info": "FIND MORE"
-
-            }
-        ],
-        "title": "THE MEKONG DELTA",
-        "content1": "The Mekong Delta is center of Vietnam’s rice, fish, fruits and vegetables production. With about 40 thousand square kilometers and 20 million people, it is so-called ‘rice-bowl’ of Vietnam. Despite its centrality to the Vietnamese economy, the delta is particularly vulnerable to increasing climate changes pressures and regional development impacts. Challenges such as rising sea levels and hydropower development causing erosion, flooding, drought, and land subsidence and poverty and migration.",
-        "content2": "Resolution 120/NQ-CP and the integrated master plan for the Mekong Delta to respond to climate change by 2050 divides the delta into three major ecological zones: permanent saline area, salt-fresh water transition zone, and freshwater zone. In each ecological zone, it is necessary to transform sustainable agricultural systems and adapt to climate change.",
-        "information": "LEARN MORE",
-        "news": "Latest News"
-    },
-    "about-us":{
-        "title": "THE MEKONG CONSERVANCY AND RESEARCH ASSISTANCE FOUNDATION",
-        "heading": "The Mekong Conservancy Foundation – MCF",
-        "content": "The Mekong Conservancy & Research Assistance Foundation (MCF) was founded and run under Decision No. 567/QD/BNV dated July 24, 2019. MCF focuses on research and problem solving in the fields of livelihood, education, environment, and natural resources in order to contribute to the Mekong Delta’s long-term development. The MCF has successfully conducted numerous projects in the aforementioned sectors, establishing a vast network of both national and international partners.",
-        "mcf_council": "THE MCF COUNCIL",
-        "the_mcf_council":{
-        "the_mcf_council": "THE MCF COUNCIL",
-            "duong-van-ni":{
-                "name": "Dr Duong Van Ni",
-                "position": "CHAIRPERSON AND DIRECTOR",
-                "brief":"",
-                "story": "<strong>Chairperson of the MCF Council and Director: Dr Duong Van Ni </strong>is the Director of the Wetland University Network which comprises 24 Universities across 7 countries in the Mekong region, and the former Director of the Hoa An Research Center of Can Tho University. As a lecturer in the faculty of Environment and Natural resources of Can Tho University, his research focuses on climate change in the Mekong River region and poverty reduction."
-            },
-            "vu-van-hieu":{
-                "name": "Mr Vu Van Hieu",
-                "position": "VICE CHAIRPERSON",
-                "brief": "<strong>Mr Vu Van Hieu </strong>is the cofounder and a director of the Australian company Titan Dealer Management Solutions"
-            },
-            "nguyen-thi-kieu-vuong":{
-                "name": "Ms Nguyen Thi Kieu Vuong",
-                "position": "VICE CHAIRPERSON",
-                "brief": "<strong>Ms Nguyen Thi Kieu Vuong </strong>is a lawyer of the Vietnam Bar Federation and Ho Chi Minh City Bar Association and has over 18 years legal experience."
-            }
-        },
-        "supervisory_council": "THE SUPERVISORY COUNCIL",
-        "the_supervisory_council":{
-        "the_supervisory_council": "THE SUPERVISORY COUNCIL",
-            "david-wilmoth":{
-                "name": "Dr David Wilmoth",
-                "position": "CHAIRPERSON OF THE SUPERVISORY COUNCIL",
-                "story": "<strong>Dr David Wilmoth </strong>holds a Master's degree from the University of Sydney and a PhD from Berkeley. He is Professor Emeritus at RMIT University and a former Professional Vice-Chancellor (Corporate Governance). He led RMIT University's start-up in Vietnam, the world's largest international branch. He is also the director of the Vietnam-Australia Education Promotion Association, the Learning Chair of International Cities, and the Chair of the Academic Council of Torren University Australia."
-            },
-            "ho-le-khoa":{
-                "name": "Dr Ho Le Khoa",
-                "position": "MEMBER OF THE SUPERVISORY COUNCIL",
-                "story":"<strong>Dr Ho Le Khoa </strong>is the founder of Abaki Pty Ltd, an Australian based software company providing IT solutions to Health Services. He was a recipient of the Colombo Plan scholarship and holds a bachelors and PhD in mechanical engineering from Monash University. He is a member of Australia Vietnam Education Promotion Association and Friends of Vietnam Education. He has several decades experience in the industry, working in computing areas for Telecom Australia and the Commonwealth Scientific and Industrial Research Organization."
-            }
-        },
-        "member": "MEMBER OF MCF",
-        "member_of_mcf":{
-        "member_of_mcf": "MEMBER OF MCF",
-            "ly-van-loi":{
-                "name": "Mr. Ly Van Loi",
-                "story": "<strong>Mr. Ly Van Loi </strong>is young researcher at Department of Environmental Management, College of Environment & Natural Resources, Can Tho University. He interests in working on biodiversity conservation, wetland wise use, water governance and climate change adaptation in the Mekong Delta. Loi has gained practical experience with many conservation zones 10 years ago. Now, he is widening his knowledge by enrolling PhD candidate at Mahidol University, Thailand. Besides, he has a passionate commitment to building “Young Scientist Network” to connect young researchers around the world to support sustainable development in the Mekong region"
-            },
-            "le-anh-tuan":{
-                "name": "Assoc. Prof. Dr LE ANH TUAN",
-                "story": "<strong>Assoc. Prof. Dr. Le Anh Tuan </strong>has been working at Can Tho University since 1982 and currently holds the position of Senior Lecturer at the College of Environment and Natural Resources. He also is the Former Vice Director of the Research Institute for Climate Change – Can Tho University, Vietnam. Dr. Tuan is currently a member of the Advisory Board of Vietnam River Network. He is also a coordinator of the Mekong River Delta Network for Environmental Protection and Climate Change Adaptation (MekongNet)."
-            },
-            "nguyen-thanh-tung":{
-                "name": "Assoc. Prof. Dr. NGUYEN THANH TUNG",
-                "story": "<strong>Assoc. Prof. Dr. Nguyen Thanh Tung </strong>is currently working is as a Senior Lecturer at the Department of Biology, School of Education, Can Tho University. He has more than 14 years’ experience working in biodiversity conservation and on earthworm taxonomy. He published 35 scientific articles and 1 monograph."
-            },
-            "nguyen-hoai-bao":{
-                "name": "Mr Nguyen Hoai Bao",
-                "story": "<strong>Mr Nguyen Hoai Bao </strong>is a lecturer in ornithology at the University of Natural Sciences at Vietnam National University, Ho Chi Minh. He is a founder and CEO of Wild Tour Company which has over 15 years of operation in Vietnam and other countries. He has more than 15 years’ experience working in wildlife conservation and collaborated with international organizations to study bird ecology in Southeast Asia. He has also published several books on ornithology."
-            },
-            "truong-hoang-dan":{
-                "name": "Assoc. Prof. Truong Hoang Dan",
-                "story": "With years of experience in the fields of Environmental Science, Biodiversity, Earth Science and other relevant environmental science. Dan has carried out many research projects such as consulting for the preparation of technical reports on Bung Binh Thien Wetland for biodiversity statistics and solving water pollution problems; Basic survey and assessment of biodiversity status of Lung Ngoc Hoang Nature Reserve and identification of priority issues; Assessment of carbon accumulation on the soil surface of some states of Melaleuca forest at U Minh Thuong; Adaptation of aquatic plants in organic polluted water bodies in some Mekong Delta regions. In addition, Dan is also the author and co-author of many books related to the environment and wetlands."
-            }
+    "member": "MEMBER OF MCF",
+    "member_of_mcf": {
+      "member_of_mcf": "MEMBER OF MCF",
+      "ly-van-loi": {
+        "name": "Mr. Ly Van Loi",
+        "story": "<strong>Mr. Ly Van Loi </strong>is young researcher at Department of Environmental Management, College of Environment & Natural Resources, Can Tho University. He interests in working on biodiversity conservation, wetland wise use, water governance and climate change adaptation in the Mekong Delta. Loi has gained practical experience with many conservation zones 10 years ago. Now, he is widening his knowledge by enrolling PhD candidate at Mahidol University, Thailand. Besides, he has a passionate commitment to building “Young Scientist Network” to connect young researchers around the world to support sustainable development in the Mekong region"
+      },
+      "le-anh-tuan": {
+        "name": "Assoc. Prof. Dr LE ANH TUAN",
+        "story": "<strong>Assoc. Prof. Dr. Le Anh Tuan </strong>has been working at Can Tho University since 1982 and currently holds the position of Senior Lecturer at the College of Environment and Natural Resources. He also is the Former Vice Director of the Research Institute for Climate Change – Can Tho University, Vietnam. Dr. Tuan is currently a member of the Advisory Board of Vietnam River Network. He is also a coordinator of the Mekong River Delta Network for Environmental Protection and Climate Change Adaptation (MekongNet)."
+      },
+      "nguyen-thanh-tung": {
+        "name": "Assoc. Prof. Dr. NGUYEN THANH TUNG",
+        "story": "<strong>Assoc. Prof. Dr. Nguyen Thanh Tung </strong>is currently working is as a Senior Lecturer at the Department of Biology, School of Education, Can Tho University. He has more than 14 years’ experience working in biodiversity conservation and on earthworm taxonomy. He published 35 scientific articles and 1 monograph."
+      },
+      "nguyen-hoai-bao": {
+        "name": "Mr Nguyen Hoai Bao",
+        "story": "<strong>Mr Nguyen Hoai Bao </strong>is a lecturer in ornithology at the University of Natural Sciences at Vietnam National University, Ho Chi Minh. He is a founder and CEO of Wild Tour Company which has over 15 years of operation in Vietnam and other countries. He has more than 15 years’ experience working in wildlife conservation and collaborated with international organizations to study bird ecology in Southeast Asia. He has also published several books on ornithology."
+      },
+      "truong-hoang-dan": {
+        "name": "Assoc. Prof. Truong Hoang Dan",
+        "story": "With years of experience in the fields of Environmental Science, Biodiversity, Earth Science and other relevant environmental science. Dan has carried out many research projects such as consulting for the preparation of technical reports on Bung Binh Thien Wetland for biodiversity statistics and solving water pollution problems; Basic survey and assessment of biodiversity status of Lung Ngoc Hoang Nature Reserve and identification of priority issues; Assessment of carbon accumulation on the soil surface of some states of Melaleuca forest at U Minh Thuong; Adaptation of aquatic plants in organic polluted water bodies in some Mekong Delta regions. In addition, Dan is also the author and co-author of many books related to the environment and wetlands."
+      }
+    }
+  },
+  "conservation": {
+    "profile": {
+      "post1": {
+        "title": "Updating water management strategy for restoring wetland habitats in Tram chim National park in the context of climate change and upstream development",
+        "content": "<p>Tram Chim National Park (TCNP) is one of the important biodiversity conservation areas in the system of protected areas of Vietnam. TCNP is the largest remaining natural area of ​​the Plain of Reeds region, the floodplain ecosystem of the Mekong River. Biodiversity conservation in TCNP is therefore of importance not only for Vietnam but also for the entire Mekong Basin. In Tram Chim, flood water and acidic soil are the two most unique and important environmental conditions. During the year, water can vary from neutral pH to very acidic (pH lower than 4). The difference in water level between the flood season and the dry season in Tram Chim can be up to 4 meters or more. Floodwater is also the road connecting Tram Chim with the Mekong River. At the peak of the flood season, water from the Mekong River flows into Tram Chim in a large volume, full of nutrients. At the end of the rainy season, water from Tram Chim flows back to the river, helping to discharge a lot of residues from the forest. Along with the movement of water is the movement of phytoplankton, fish and shrimp, contributing to the diversity and uniqueness of the biological system. The alternation between dry and flooded, between “sour” and “sweet”, and the connection with the Mekong River are the most basic ecological features of TCNP. Biodiversity conservation in Tram Chim is based on the restoration and maintenance of these basic ecological conditions.</p><p>Biodiversity management in Tram Chim is therefore not limited to the statistics of the composition and richness of biological species, but also requires a deep understanding of environmental conditions, especially hydrological regime or forest fire, soil and water environmental conditions. In addition, climate change is increasingly showing serious impacts on the biodiversity of TCNP. In recent years, climatic factors such as heat, rainfall, and works on the upper Mekong River have led to sudden and unpredictable changes and the hydrological regime no longer follows natural law. The management to meet all goals of biodiversity conservation, forest fire prevention and attracting Sarus cranes to TCNP requires specific and flexible new plans, especially the water regime management in the park. This study was conducted to update water management strategy for restoring wetland habitats in TCNP in the context of climate change and upstream development.</p>",
+        "description": "Tram Chim National Park (TCNP) is one of the important biodiversity conservation areas in the system of protected areas of Vietnam. TCNP is the largest remaining natural area of ​​the Plain of Reeds region, the floodplain ecosystem of the Mekong River. Biodiversity conservation in TCNP is therefore of importance not only for Vietnam but also...",
+        "profile_detail": {
+          "author": "Ly Van Loi",
+          "date": "26 May, 2023",
+          "categories": "Conservation",
+          "implemented": "MCF",
+          "end_date": "2022",
+          "location": "Tram Chim national park",
+          "funded": "WWF - Viet Nam",
+          "status": "Completed"
         }
-    },
-    "conservation":{
-        "profile":{
-            "post1":{
-                "title": "Updating water management strategy for restoring wetland habitats in Tram chim National park in the context of climate change and upstream development",
-                "content":"<p>Tram Chim National Park (TCNP) is one of the important biodiversity conservation areas in the system of protected areas of Vietnam. TCNP is the largest remaining natural area of ​​the Plain of Reeds region, the floodplain ecosystem of the Mekong River. Biodiversity conservation in TCNP is therefore of importance not only for Vietnam but also for the entire Mekong Basin. In Tram Chim, flood water and acidic soil are the two most unique and important environmental conditions. During the year, water can vary from neutral pH to very acidic (pH lower than 4). The difference in water level between the flood season and the dry season in Tram Chim can be up to 4 meters or more. Floodwater is also the road connecting Tram Chim with the Mekong River. At the peak of the flood season, water from the Mekong River flows into Tram Chim in a large volume, full of nutrients. At the end of the rainy season, water from Tram Chim flows back to the river, helping to discharge a lot of residues from the forest. Along with the movement of water is the movement of phytoplankton, fish and shrimp, contributing to the diversity and uniqueness of the biological system. The alternation between dry and flooded, between “sour” and “sweet”, and the connection with the Mekong River are the most basic ecological features of TCNP. Biodiversity conservation in Tram Chim is based on the restoration and maintenance of these basic ecological conditions.</p><p>Biodiversity management in Tram Chim is therefore not limited to the statistics of the composition and richness of biological species, but also requires a deep understanding of environmental conditions, especially hydrological regime or forest fire, soil and water environmental conditions. In addition, climate change is increasingly showing serious impacts on the biodiversity of TCNP. In recent years, climatic factors such as heat, rainfall, and works on the upper Mekong River have led to sudden and unpredictable changes and the hydrological regime no longer follows natural law. The management to meet all goals of biodiversity conservation, forest fire prevention and attracting Sarus cranes to TCNP requires specific and flexible new plans, especially the water regime management in the park. This study was conducted to update water management strategy for restoring wetland habitats in TCNP in the context of climate change and upstream development.</p>",
-                "profile_detail":{
-                    "author": "Ly Van Loi",
-                    "date": "26 May, 2023",
-                    "categories": "Conservation",
-                    "implemented": "MCF",
-                    "end_date":"2022",
-                    "location": "Tram Chim national park",
-                    "funded": "WWF - Viet Nam",
-                    "status": "Completed"
-                }
-            },
-            "post2":{
-                "title": "The flow of Culture and Life",
-                "content":"<p>Water represents a basic component of the economy in the region, in addition to domestic consumption, water is also used for agriculture, industry and services. Rivers and riparian areas also contribute to the landscape for the area and the development of other tourism services. In addition, the river is also a connection and creates habitat for many terrestrial and aquatic creatures and creates other aesthetic and recreational values. In the Mekong Delta, the Mekong River is considered the most important source of water and ecosystem services because it provides about 90% of the water flow for the Mekong Delta, especially in the dry season, entirely dependent on the upper Mekong region. However, river basins have been over-exploited to serve socio-economic development goals, thereby causing pressure on the ecosystem. Meanwhile, many rural communities and ethnic minorities are still heavily dependent on river water. Currently, the value of ecosystem services provided to the community has been gradually forgotten, leading to activities that cause many negative impacts to the river frequently. Therefore, the project evaluated the ecosystem services that the river actually provides to people in order to change the current thinking about river management.</p><p>The result revealed that the ecosystem services generated by th River are diverse and play a very important role in the development of the whole Mekong Delta. It is the source of water and food for many of the region’s activities. The river has directly and indirectly offered various regulating and supporting services, such as climate regulation, nutrients, etc. Moreover, this is considered the place where many festivals and beliefs activities take place on the river, featured with many eco-tourism activities and types of experiential tourism. The role of the provisioning services were the most interested people in the survey process. However, these services have been increasingly degraded by a variety of factors such as hydrological changes, quality, reduced water resources, and river-related development policies. In which, the change in water quality and quantity is one of the main causes leading to the change of ecosystem services on the river.</p>",
-                "profile_detail":{
-                    "author": "Ly Van Loi",
-                    "date": "26 May, 2023",
-                    "categories": "Conservation",
-                    "implemented": "MCF",
-                    "end_date":"2022",
-                    "location": "Đong Thap, Can Tho, Vinh Long, Soc Trang",
-                    "funded": "OXFAM",
-                    "status": "Completed"
-                }
-            },
-            "post3":{
-                "title": "The role of wetlands in water security for the Mekong region",
-                "content": "<p>Wetlands are critical to the food-energy-water relationship of the Mekong region. Rural water security is a major concern for Mekong countries because rural economic sectors play a key role in all countries, especially agriculture and aquaculture. as the main sources of water for domestic use and public water supply, dependent on water from wetlands. Those most affected, especially women, children and the elderly, are vulnerable groups as their livelihoods are highly dependent on wetlands. To prepare for the impacts of global change and strengthen water management in the Mekong region, it is imperative to quantify ecosystem services from wetlands.</p><p>Our particular concern is the role of wetlands in water security. The specific objectives of this study are:</p><ul style=\"list-style-type: circle;\"><li className=\"icon-angle-right-before\">Determine for each wetland type in the Mekong River region, how water reserves, water quality and communities are related to ecosystem services,</li><li className=\"icon-angle-right-before\">Projecting the impact of global and regional change on water security for communities through changes in those services.</li></ul><p>We will select four wetlands, one for each of the four LMB countries, as our study sites. Each wetland will represent the area's significant water reserves and how different local community groups use water resources. Those regions include:</p><ul style=\"list-style-type: circle;\"><li className=\"icon-angle-right-before\">Wetlands in Cambodia;</li><li className=\"icon-angle-right-before\">Shallow marshes provided by groundwater in Lao PDR;</li><li className=\"icon-angle-right-before\">The mixed forest - swamp estuary in Thailand; and</li><li className=\"icon-angle-right-before\">Peat swamp forest in Vietnam.</li></ul><p>We will use field measurements of hydrological parameters, water quality parameters and simple models from published data to quantify water reserves, using satellite data and Field measurements to determine vegetation structure, using socio-economic and community surveys to describe local land use and water user groups. We will examine the interactions of these systems (natural and human) by identifying key water ecosystem services from combined socioeconomic and biophysical datasets, and using uses games to assess community dependence and response to change, emphasizing the role of socioeconomic factors, gender roles, and interactions among user groups. We will investigate the role women play in using water and maintaining water security, and identify ways to strengthen these roles. These study sites are representative of rural socioeconomic conditions in the Mekong region, including conflicts over shared water use and management among groups, social justice and gender equality, and reductions. rural poverty and the role of water from wetlands in enhancing household economies and livelihoods, as well as reducing local dependence on natural resources. We will integrate the research findings into an ongoing project to match wetland scientists with local wetland managers: that project will inform this research by improving information resources among local water user groups (including men, women, the elderly, children) and the project's researchers will then be able to capitalize on their findings by connecting with local wetland managers. Throughout the project, we will communicate with local teams (communication is established through our pre-existing partners and new partners are identified through community surveys) to help them better recognize and manage the reliance of the social fabric on wetland-based water services, using a human rights approach. We will accomplish this using local teams consisting of local faculty and graduate students, along with a regional management team consisting of a director and project coordinator. This research required 30 months to complete all project deliverables.</p>",
-                "profile_detail":{
-                    "author": "Ly Van Loi",
-                    "date": "18 March, 2021",
-                    "categories": "Conservation",
-                    "implemented": "MCF",
-                    "end_date":"31/12/2022",
-                    "location": "Vietnam, Laos, Cambodia and Thailand",
-                    "funded": "Stiftelsen The Stockholm Environment Institute",
-                    "fund_mount": "SEK 1,000,000",
-                    "status": "On going"
-                }
-            },
-            "post4":{
-                "title": "Inventory and survey of Vac bird garden in Tan My commune, Tra On district, Vinh Long province",
-                "content": "<p>The Mekong Delta is an area in great potential of biodiversity, in which the waterfowl population is very high in number of species and individuals. Currently, waterfowl populations appear mainly in places where having conservation plans at the provincial or national level such as Tram Chim National Park (Dong Thap), U Minh Thuong (Kien Giang), Ca Mau Cape; or protected areas such as Lang Sen (Long An), Lung Ngoc Hoang (Hau Giang), Phu My (Kien Giang); or smaller scale such as Cai Nuoc bird sanctuary (Ca Mau), Bac Lieu bird sanctuary, Vam Ho bird sanctuary (Ben Tre); especially the populations of birds that are scattered throughout the Mekong Delta, which people often call “Vuon Co (Stork garden)”. These stork gardens have a smaller area such as Bang Lang stork garden (Can Tho), Trung tam Nong Nghiep Mua Xuan (Hau Giang).</p><p>In addition, the inventory of Vac garden is to comply with the planning objectives and methods approved by the Provincial People’s Committee in Decision No. 2269/QD-UBND dated September 27, 2016 on the approval of the biodiversity conservation planning in Vinh Long province in the period of 2015 – 2020 and orientation to 2030</p><p><strong>The goal of the project:</strong></p><p>Survey and investigate the current status of species diversity of waterfowl populations. Based on the biology of each species and the variation of individual density during the year to analyze the seasonal or regular presence and threats to birds, in order to propose a sustainable management and conservation plan.</p><h3>Video of bird flying to the nest</h3>",
-                "profile_detail":{
-                    "author": "Ly Van Loi",
-                    "date": "19 June, 2021",
-                    "categories": "Conservation",
-                    "time": "01-10/2021",
-                    "budget": "200.000.000",
-                    "investor": "Department of Agriculture and Rural Development of Vinh Long province",
-                    "implemented": "Forest Protection and Quality Control Department of Agriculture, Forestry and Fisheries of Vinh Long",
-                    "consultant": "MCF",
-                    "status": "Completed"
-                }
-            }
+      },
+      "post2": {
+        "title": "The flow of Culture and Life",
+        "content": "<p>Water represents a basic component of the economy in the region, in addition to domestic consumption, water is also used for agriculture, industry and services. Rivers and riparian areas also contribute to the landscape for the area and the development of other tourism services. In addition, the river is also a connection and creates habitat for many terrestrial and aquatic creatures and creates other aesthetic and recreational values. In the Mekong Delta, the Mekong River is considered the most important source of water and ecosystem services because it provides about 90% of the water flow for the Mekong Delta, especially in the dry season, entirely dependent on the upper Mekong region. However, river basins have been over-exploited to serve socio-economic development goals, thereby causing pressure on the ecosystem. Meanwhile, many rural communities and ethnic minorities are still heavily dependent on river water. Currently, the value of ecosystem services provided to the community has been gradually forgotten, leading to activities that cause many negative impacts to the river frequently. Therefore, the project evaluated the ecosystem services that the river actually provides to people in order to change the current thinking about river management.</p><p>The result revealed that the ecosystem services generated by th River are diverse and play a very important role in the development of the whole Mekong Delta. It is the source of water and food for many of the region’s activities. The river has directly and indirectly offered various regulating and supporting services, such as climate regulation, nutrients, etc. Moreover, this is considered the place where many festivals and beliefs activities take place on the river, featured with many eco-tourism activities and types of experiential tourism. The role of the provisioning services were the most interested people in the survey process. However, these services have been increasingly degraded by a variety of factors such as hydrological changes, quality, reduced water resources, and river-related development policies. In which, the change in water quality and quantity is one of the main causes leading to the change of ecosystem services on the river.</p>",
+        "description": "Water represents a basic component of the economy in the region, in addition to domestic consumption, water is also used for agriculture, industry and services. Rivers and riparian areas also contribute to the landscape for the area and the development of other tourism services. In addition, the river is also a connection and creates habitat...",
+        "profile_detail": {
+          "author": "Ly Van Loi",
+          "date": "26 May, 2023",
+          "categories": "Conservation",
+          "implemented": "MCF",
+          "end_date": "2022",
+          "location": "Đong Thap, Can Tho, Vinh Long, Soc Trang",
+          "funded": "OXFAM",
+          "status": "Completed"
         }
-    },
-    "livelihoods":{
-        "profile":{
-            "post1":{
-                "title": "Signing short-term hands-on training for students",
-                "content": "<p>Create favorable conditions for students and practitioners (HSSV) – from colleges and universities in the Mekong Delta – have the opportunity to join an intensive working environment; through practical activities such as</p><ul style=\"list-style-type: circle;\"><li className=\"icon-angle-right-before\">Participating in internships of surveying the natural environment of soil-water-air;</li><li className=\"icon-angle-right-before\">Deciding to choose plants and animals to build smart farming system;</li><li className=\"icon-angle-right-before\">Develop and practice clean production processes and products that are safe for consumers and the environment,</li><li className=\"icon-angle-right-before\">Participating in production, and designing experimental models and business and distribution chains at Hai Lua Vang Company, Viet Nam Housewares group;</li><li className=\"icon-angle-right-before\">The projects on Poverty Reduction, Rural Development and Conservation of Natural Resources and Environment of MCF funds.</li></ul><p>Through these activities, it will help students consolidate and perfect their professional knowledge, practice and improve soft skills, such as:</p><ul style=\"list-style-type: circle;\"><li className=\"icon-angle-right-before\">Ability to find information and self-study to solve difficult problems and improve professional qualifications;</li><li className=\"icon-angle-right-before\">Having motivation and attitude to study, work properly and seriously;</li><li className=\"icon-angle-right-before\">Improving skills in presenting, communicating, persuading or negotiating to transfer science and technology to people;</li><li className=\"icon-angle-right-before\">Great ability to gather and organize teamwork, have a strong intellectual ability to fully meet the output standards of the training programs, meet the increasing requirements of employers, have the ability to self-adapt to new job and working environment.</li></ul><p><strong>Some practical pictures</strong></p>",
-                "titleImg-1": "Student drill to sample soil",
-                "titleImg-2": "Weaving practice at Viet Nam Housewares group",
-                "profile_detail":{
-                    "author": "Ly Van Loi",
-                    "date": "11 June, 2021",
-                    "categories":"Livelihoods"
-                }
-            },
-            "post2":{
-                "title": "Established MLS Joint Stock Company",
-                "content": "<h2>I. About the company</h2><p>MLS Joint Stock Company was established on February 20, 2021, is a company operating in the fields of production, agricultural development, consulting on agronomy, climate science and climate change, providing research services, scientific surveys in the fields of agricultural science, natural science for the purpose of supporting agricultural development for farmers, economic development associated with environmental protection and biodiversity.</p><p>MLS Joint Stock Company is both a bridge connecting research organizations, non-profit organizations in the field of consulting on sustainable agricultural development and farmers, as well as a commercial intermediary supporting farmers in the process of distributing and consuming products.</p><p>Future development orientation of MLS Joint Stock Company is to become one of the leading companies in the Mekong Delta region, pioneering in sustainable agricultural economic development associated with protecting environment and biodiversity, creating harmony between people and nature, contributing to combating and adapting to the impacts of climate change in the region.</p><h2>II. Business areas</h2>",
-                "tableHeader-col1": "Code",
-                "tableHeader-col2": "Business line",
-                "row-1":"\"0118 (Major)\",\"Growing vegetables, fruit, flowers and ornamental flowers\"",
-                "row-2":"\"0161\",\"Cultivation services activities\"",
-                "row-3":"\"0162\",\"Breeding services activities\"",
-                "row-4":"\"0163\",\"Post-harvest services\"",
-                "row-5":"\"0322\",\"Growing internal waters’ produce\"",
-                "row-6":"\"1629\",\"Producing other products from wood, producing products from straw, thatch and plaited materials\"",
-                "row-7":"\"4632\",\"Wholesale of food products\"",
-                "row-8":"\"4669\",\"Other uncategorized specialized wholesale\"",
-                "row-9":"\"7020\",\"Management consultancy\"",
-                "row-10":"\"7490\",\"Other uncategorized professional practice, science and technology <p>Detail: Agronomy consultancy, Meteorological and Hydrographical activities, providing research services, science survey in the fields of agricultural science and natural science.</p>\"",
-                "table": "<table style=\"width: 100%; border-collapse: collapse; border-style: solid; background-color: #e3dede;\"><tbody><tr><td style=\"width: 100%;\"><h3>MLS Joint Stock Company</h3><p>Thanh Long hamlet, Đong Thanh commune, Chau Thanh district, Hau Giang province, Vietnam</p><p>Phone: 0937128716</p><p>Email: <span style=\"color: #3366ff;\">lskieuvuong.2016@gmail.com</span></p></td></tr></tbody></table>",
-                "profile_detail":{
-                    "author": "Ly Van Loi",
-                    "date": "19 June, 2021",
-                    "categories":"Livelihoods"
-                }
-            },
-            "post3":{
-                "title": "Improve Livelihoods",
-                "content": "<strong>Livelihood improvement project in the buffer zone of Tram Chim National Park. </strong>Since 1995, the project has targeted low-income families. Start with technical training related to agriculture, aquaculture, livestock production, small business, handicrafts and local services. Follow up with small loans from 50-100 USD to implement the application of the gained knowledge. Under various funding sources from the British and Danish Embassies in Vietnam, VHI, VNHELP organizations and Australian individuals. Currently, the project is being continuously supported by MCF.",
-                "profile_detail":{
-                    "author": "mcf_admin",
-                    "date": "15 March, 2021",
-                    "categories":"Livelihoods"
-                }
-            }
+      },
+      "post3": {
+        "title": "The role of wetlands in water security for the Mekong region",
+        "content": "<p>Wetlands are critical to the food-energy-water relationship of the Mekong region. Rural water security is a major concern for Mekong countries because rural economic sectors play a key role in all countries, especially agriculture and aquaculture. as the main sources of water for domestic use and public water supply, dependent on water from wetlands. Those most affected, especially women, children and the elderly, are vulnerable groups as their livelihoods are highly dependent on wetlands. To prepare for the impacts of global change and strengthen water management in the Mekong region, it is imperative to quantify ecosystem services from wetlands.</p><p>Our particular concern is the role of wetlands in water security. The specific objectives of this study are:</p><ul style=\"list-style-type: circle;\"><li className=\"icon-angle-right-before\">Determine for each wetland type in the Mekong River region, how water reserves, water quality and communities are related to ecosystem services,</li><li className=\"icon-angle-right-before\">Projecting the impact of global and regional change on water security for communities through changes in those services.</li></ul><p>We will select four wetlands, one for each of the four LMB countries, as our study sites. Each wetland will represent the area's significant water reserves and how different local community groups use water resources. Those regions include:</p><ul style=\"list-style-type: circle;\"><li className=\"icon-angle-right-before\">Wetlands in Cambodia;</li><li className=\"icon-angle-right-before\">Shallow marshes provided by groundwater in Lao PDR;</li><li className=\"icon-angle-right-before\">The mixed forest - swamp estuary in Thailand; and</li><li className=\"icon-angle-right-before\">Peat swamp forest in Vietnam.</li></ul><p>We will use field measurements of hydrological parameters, water quality parameters and simple models from published data to quantify water reserves, using satellite data and Field measurements to determine vegetation structure, using socio-economic and community surveys to describe local land use and water user groups. We will examine the interactions of these systems (natural and human) by identifying key water ecosystem services from combined socioeconomic and biophysical datasets, and using uses games to assess community dependence and response to change, emphasizing the role of socioeconomic factors, gender roles, and interactions among user groups. We will investigate the role women play in using water and maintaining water security, and identify ways to strengthen these roles. These study sites are representative of rural socioeconomic conditions in the Mekong region, including conflicts over shared water use and management among groups, social justice and gender equality, and reductions. rural poverty and the role of water from wetlands in enhancing household economies and livelihoods, as well as reducing local dependence on natural resources. We will integrate the research findings into an ongoing project to match wetland scientists with local wetland managers: that project will inform this research by improving information resources among local water user groups (including men, women, the elderly, children) and the project's researchers will then be able to capitalize on their findings by connecting with local wetland managers. Throughout the project, we will communicate with local teams (communication is established through our pre-existing partners and new partners are identified through community surveys) to help them better recognize and manage the reliance of the social fabric on wetland-based water services, using a human rights approach. We will accomplish this using local teams consisting of local faculty and graduate students, along with a regional management team consisting of a director and project coordinator. This research required 30 months to complete all project deliverables.</p>",
+        "description": "Wetlands are highly important to the food-energy-water nexus of the Mekong region. Rural water security is of specific interest for Mekong-region countries because major rural economic sectors of all countries, especially agriculture and aquaculture, as well as main sources of water for rural household consumption and public water supply, depend on water from wetlands. Many...",
+        "profile_detail": {
+          "author": "Ly Van Loi",
+          "date": "18 March, 2021",
+          "categories": "Conservation",
+          "implemented": "MCF",
+          "end_date": "31/12/2022",
+          "location": "Vietnam, Laos, Cambodia and Thailand",
+          "funded": "Stiftelsen The Stockholm Environment Institute",
+          "fund_mount": "SEK 1,000,000",
+          "status": "On going"
         }
-    },
-    "museum":{
-        "profile":{
-            "post1":{
-                "title": "The Mekong Natural History Museum progress",
-                "content": "<p>The <strong>Mekong Natural History Museum</strong> (MNHM) is first announced in U.S.-Vietnam S&amp;T Joint Committee Meeting (JCM) Action Plan 2013-2015 (<em>4. Conservation Science, part 4.5</em>), and is updated by Letter of Intent (LoI) signed on 23 May 2016, by four parties: The US Embassy at Vietnam representative for The US State Department, The US Geological Survey (USGS), The Smithsonian and The Cantho University (CTU) of Vietnam.</p><p>To pursuit this objective, Cantho University supported to form a Non-government organization, named The Mekong Research and Conservancy Assistance Foundation (MRCAF), MRCAF registered at Vietnam and received its license on 2018.</p>v<p>While the data and information collection, CTU/MRCAF is working on a virtual museum version. We are also discussing with Government of Cantho city for land location of the physical Mekong Natural History Museum.</p>",
-                "letter": "Letter of Intent (LoI) signed by four parties: US Sate Department, USGS, Smithsonian and Cantho University at Hanoi, Vietnam on the visiting trip of US President Obama to Vietnam.",
-                "profile_detail":{
-                    "author": "Ly Van Loi",
-                    "date": "11 June, 2021",
-                    "categories":"Museum"
-                }
-            }
+      },
+      "post4": {
+        "title": "Inventory and survey of Vac bird garden in Tan My commune, Tra On district, Vinh Long province",
+        "content": "<p>The Mekong Delta is an area in great potential of biodiversity, in which the waterfowl population is very high in number of species and individuals. Currently, waterfowl populations appear mainly in places where having conservation plans at the provincial or national level such as Tram Chim National Park (Dong Thap), U Minh Thuong (Kien Giang), Ca Mau Cape; or protected areas such as Lang Sen (Long An), Lung Ngoc Hoang (Hau Giang), Phu My (Kien Giang); or smaller scale such as Cai Nuoc bird sanctuary (Ca Mau), Bac Lieu bird sanctuary, Vam Ho bird sanctuary (Ben Tre); especially the populations of birds that are scattered throughout the Mekong Delta, which people often call “Vuon Co (Stork garden)”. These stork gardens have a smaller area such as Bang Lang stork garden (Can Tho), Trung tam Nong Nghiep Mua Xuan (Hau Giang).</p><p>In addition, the inventory of Vac garden is to comply with the planning objectives and methods approved by the Provincial People’s Committee in Decision No. 2269/QD-UBND dated September 27, 2016 on the approval of the biodiversity conservation planning in Vinh Long province in the period of 2015 – 2020 and orientation to 2030</p><p><strong>The goal of the project:</strong></p><p>Survey and investigate the current status of species diversity of waterfowl populations. Based on the biology of each species and the variation of individual density during the year to analyze the seasonal or regular presence and threats to birds, in order to propose a sustainable management and conservation plan.</p><h3>Video of bird flying to the nest</h3>",
+        "profile_detail": {
+          "author": "Ly Van Loi",
+          "date": "19 June, 2021",
+          "categories": "Conservation",
+          "time": "01-10/2021",
+          "budget": "200.000.000",
+          "investor": "Department of Agriculture and Rural Development of Vinh Long province",
+          "implemented": "Forest Protection and Quality Control Department of Agriculture, Forestry and Fisheries of Vinh Long",
+          "consultant": "MCF",
+          "status": "Completed"
         }
-    },
-    "contact-us":{
-        "heading": "Please fill in the form below to contact us online. We’ll answer within 24 hours.",
-        "form":{
-            "name": "YOUR NAME",
-            "email": "YOUR EMAIL",
-            "subject": "SUBJECT",
-            "message": "YOUR MESSAGE (OPTIONAL)",
-            "send": "SUBMIT"
-        },
-        "info":{
-            "contact_info": "CONTACT INFO",
-            "phone": "+84 909 987 887",
-            "address": "Room 216, Environment & Natural Resources college, Campus II, Cantho university, 3/2 street, Xuan Khanh ward, Ninh Kieu district, Cantho city, Vietnam",
-            "email": "duongvani@gmail.com",
-            "work": "Monday - Friday: 7:00am - 5:00pm"
+      }
+    }
+  },
+  "livelihoods": {
+    "profile": {
+      "post1": {
+        "title": "Signing short-term hands-on training for students",
+        "content": "<p>Create favorable conditions for students and practitioners (HSSV) – from colleges and universities in the Mekong Delta – have the opportunity to join an intensive working environment; through practical activities such as</p><ul style=\"list-style-type: circle;\"><li className=\"icon-angle-right-before\">Participating in internships of surveying the natural environment of soil-water-air;</li><li className=\"icon-angle-right-before\">Deciding to choose plants and animals to build smart farming system;</li><li className=\"icon-angle-right-before\">Develop and practice clean production processes and products that are safe for consumers and the environment,</li><li className=\"icon-angle-right-before\">Participating in production, and designing experimental models and business and distribution chains at Hai Lua Vang Company, Viet Nam Housewares group;</li><li className=\"icon-angle-right-before\">The projects on Poverty Reduction, Rural Development and Conservation of Natural Resources and Environment of MCF funds.</li></ul><p>Through these activities, it will help students consolidate and perfect their professional knowledge, practice and improve soft skills, such as:</p><ul style=\"list-style-type: circle;\"><li className=\"icon-angle-right-before\">Ability to find information and self-study to solve difficult problems and improve professional qualifications;</li><li className=\"icon-angle-right-before\">Having motivation and attitude to study, work properly and seriously;</li><li className=\"icon-angle-right-before\">Improving skills in presenting, communicating, persuading or negotiating to transfer science and technology to people;</li><li className=\"icon-angle-right-before\">Great ability to gather and organize teamwork, have a strong intellectual ability to fully meet the output standards of the training programs, meet the increasing requirements of employers, have the ability to self-adapt to new job and working environment.</li></ul><p><strong>Some practical pictures</strong></p>",
+        "titleImg-1": "Student drill to sample soil",
+        "titleImg-2": "Weaving practice at Viet Nam Housewares group",
+        "profile_detail": {
+          "author": "Ly Van Loi",
+          "date": "11 June, 2021",
+          "categories": "Livelihoods"
         }
+      },
+      "post2": {
+        "title": "Established MLS Joint Stock Company",
+        "content": "<h2>I. About the company</h2><p>MLS Joint Stock Company was established on February 20, 2021, is a company operating in the fields of production, agricultural development, consulting on agronomy, climate science and climate change, providing research services, scientific surveys in the fields of agricultural science, natural science for the purpose of supporting agricultural development for farmers, economic development associated with environmental protection and biodiversity.</p><p>MLS Joint Stock Company is both a bridge connecting research organizations, non-profit organizations in the field of consulting on sustainable agricultural development and farmers, as well as a commercial intermediary supporting farmers in the process of distributing and consuming products.</p><p>Future development orientation of MLS Joint Stock Company is to become one of the leading companies in the Mekong Delta region, pioneering in sustainable agricultural economic development associated with protecting environment and biodiversity, creating harmony between people and nature, contributing to combating and adapting to the impacts of climate change in the region.</p><h2>II. Business areas</h2>",
+        "tableHeader-col1": "Code",
+        "tableHeader-col2": "Business line",
+        "row-1": "\"0118 (Major)\",\"Growing vegetables, fruit, flowers and ornamental flowers\"",
+        "row-2": "\"0161\",\"Cultivation services activities\"",
+        "row-3": "\"0162\",\"Breeding services activities\"",
+        "row-4": "\"0163\",\"Post-harvest services\"",
+        "row-5": "\"0322\",\"Growing internal waters’ produce\"",
+        "row-6": "\"1629\",\"Producing other products from wood, producing products from straw, thatch and plaited materials\"",
+        "row-7": "\"4632\",\"Wholesale of food products\"",
+        "row-8": "\"4669\",\"Other uncategorized specialized wholesale\"",
+        "row-9": "\"7020\",\"Management consultancy\"",
+        "row-10": "\"7490\",\"Other uncategorized professional practice, science and technology <p>Detail: Agronomy consultancy, Meteorological and Hydrographical activities, providing research services, science survey in the fields of agricultural science and natural science.</p>\"",
+        "table": "<table style=\"width: 100%; border-collapse: collapse; border-style: solid; background-color: #e3dede;\"><tbody><tr><td style=\"width: 100%;\"><h3>MLS Joint Stock Company</h3><p>Thanh Long hamlet, Đong Thanh commune, Chau Thanh district, Hau Giang province, Vietnam</p><p>Phone: 0937128716</p><p>Email: <span style=\"color: #3366ff;\">lskieuvuong.2016@gmail.com</span></p></td></tr></tbody></table>",
+        "profile_detail": {
+          "author": "Ly Van Loi",
+          "date": "19 June, 2021",
+          "categories": "Livelihoods"
+        }
+      },
+      "post3": {
+        "title": "Improve Livelihoods",
+        "content": "<strong>Livelihood improvement project in the buffer zone of Tram Chim National Park. </strong>Since 1995, the project has targeted low-income families. Start with technical training related to agriculture, aquaculture, livestock production, small business, handicrafts and local services. Follow up with small loans from 50-100 USD to implement the application of the gained knowledge. Under various funding sources from the British and Danish Embassies in Vietnam, VHI, VNHELP organizations and Australian individuals. Currently, the project is being continuously supported by MCF.",
+        "profile_detail": {
+          "author": "mcf_admin",
+          "date": "15 March, 2021",
+          "categories": "Livelihoods"
+        }
+      }
+    }
+  },
+  "museum": {
+    "profile": {
+      "post1": {
+        "title": "The Mekong Natural History Museum progress",
+        "content": "<p>The <strong>Mekong Natural History Museum</strong> (MNHM) is first announced in U.S.-Vietnam S&amp;T Joint Committee Meeting (JCM) Action Plan 2013-2015 (<em>4. Conservation Science, part 4.5</em>), and is updated by Letter of Intent (LoI) signed on 23 May 2016, by four parties: The US Embassy at Vietnam representative for The US State Department, The US Geological Survey (USGS), The Smithsonian and The Cantho University (CTU) of Vietnam.</p><p>To pursuit this objective, Cantho University supported to form a Non-government organization, named The Mekong Research and Conservancy Assistance Foundation (MRCAF), MRCAF registered at Vietnam and received its license on 2018.</p>v<p>While the data and information collection, CTU/MRCAF is working on a virtual museum version. We are also discussing with Government of Cantho city for land location of the physical Mekong Natural History Museum.</p>",
+        "letter": "Letter of Intent (LoI) signed by four parties: US Sate Department, USGS, Smithsonian and Cantho University at Hanoi, Vietnam on the visiting trip of US President Obama to Vietnam.",
+        "profile_detail": {
+          "author": "Ly Van Loi",
+          "date": "11 June, 2021",
+          "categories": "Museum"
+        }
+      }
+    }
+  },
+  "contact-us": {
+    "heading": "Please fill in the form below to contact us online. We’ll answer within 24 hours.",
+    "form": {
+      "name": "YOUR NAME",
+      "email": "YOUR EMAIL",
+      "subject": "SUBJECT",
+      "message": "YOUR MESSAGE (OPTIONAL)",
+      "send": "SUBMIT"
     },
-    "footer":"MCF © 2020 | ALL RIGHTS RESERVED"
-    
-   
+    "info": {
+      "contact_info": "CONTACT INFO",
+      "phone": "+84 909 987 887",
+      "address": "Room 216, Environment & Natural Resources college, Campus II, Cantho university, 3/2 street, Xuan Khanh ward, Ninh Kieu district, Cantho city, Vietnam",
+      "email": "duongvani@gmail.com",
+      "work": "Monday - Friday: 7:00am - 5:00pm"
+    }
+  },
+  "footer": "MCF © 2020 | ALL RIGHTS RESERVED"
 }

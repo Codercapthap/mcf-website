@@ -28,12 +28,6 @@ export interface Project {
   title: string;
   description?: string;
 }
-
-export const enum Status {
-  Completed = "Completed",
-  Pending = "On going",
-}
-
 export interface Museum extends Project {}
 
 export interface Livelihood extends Project {}
@@ -52,7 +46,7 @@ export interface Conservation extends Project {
   studySite?: string;
   fundedBy?: string;
   fundMount?: string;
-  status: Status;
+  status: string;
 }
 
 export interface Projects {

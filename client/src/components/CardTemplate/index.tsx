@@ -8,6 +8,7 @@ import { Project } from "@/shared";
 import "./CardTemplate.scss";
 import { theme } from "@/styles";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 type Props = {
   projectsProp: Array<Project>;
   type: string;
@@ -19,6 +20,7 @@ const CardTemplate = ({ projectsProp, type }: Props) => {
   const allCateButtonRef = useRef();
   const currentPageButtonRef = useRef();
   const [projects, setProjects] = useState<Array<Project>>(projectsProp);
+  const { t } = useTranslation();
 
   const toggleSortByName = () => {
     const sortAsc = (a: Project, b: Project) => (a.title > b.title ? 1 : -1);
@@ -88,7 +90,7 @@ const CardTemplate = ({ projectsProp, type }: Props) => {
                 (e.currentTarget as HTMLElement).classList.add("active");
               }}
             >
-              ALL CATEGORIES
+              {t("categories.all_categories")}
             </SortingButton>
             <SortingButton
               ref={currentPageButtonRef}
@@ -113,7 +115,7 @@ const CardTemplate = ({ projectsProp, type }: Props) => {
                 toggleSortByName();
               }}
             >
-              NAME
+              {t("sort.name")}
               <KeyboardArrowDownIcon
                 sx={{ lineHeight: "24px", transition: ".5s" }}
               ></KeyboardArrowDownIcon>
@@ -128,7 +130,7 @@ const CardTemplate = ({ projectsProp, type }: Props) => {
               }}
               className="active"
             >
-              DATE
+              {t("sort.date")}
               <KeyboardArrowUpIcon
                 sx={{ lineHeight: "24px", transition: ".5s" }}
               ></KeyboardArrowUpIcon>
