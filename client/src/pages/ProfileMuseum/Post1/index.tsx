@@ -4,7 +4,6 @@ import Header from "@/components/Header";
 import ToggleModalImg from "@/components/ToggleModalImg";
 import {
   Box,
-  Link,
   Typography,
   Table,
   TableBody,
@@ -14,9 +13,10 @@ import {
 import "../Profile.scss";
 import Footer from "@/components/Footer";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 const Profile = () => {
   const { t } = useTranslation();
-  document.title=`${t("museum.profile.post1.title")} - MCF`
+  document.title = `${t("museum.profile.post1.title")} - MCF`;
   const [toggleModal, setToggleModal] = useState(false);
   return (
     <>
@@ -29,8 +29,8 @@ const Profile = () => {
                 <Box component="div" className="profile_content with_sidebar">
                   <Box component="div" className="cmsmasters_profile_content">
                     <Box component="figure" className="cmsmasters_img_wrap">
-                      <Link 
-                        // href="https://mcf.com.vn/wp-content/uploads/2015/04/Vu-Van-Hieu.png"
+                      <Link
+                        to="#"
                         rel="ilightbox[img_12627_64987034241fd]"
                         title={t("museum.profile.post1.title")}
                         className="preloader highImg"
@@ -109,10 +109,13 @@ const Profile = () => {
                               className="cmsmasters_column one_first"
                             >
                               <Box component="div">
-                                <Box component="div" 
-                                 dangerouslySetInnerHTML={{
-                                  __html: `${t("conservation.profile.post1.content")}`
-                                 }}
+                                <Box
+                                  component="div"
+                                  dangerouslySetInnerHTML={{
+                                    __html: `${t(
+                                      "museum.profile.post1.content"
+                                    )}`,
+                                  }}
                                 ></Box>
                                 <Box
                                   component="div"
@@ -173,13 +176,13 @@ const Profile = () => {
                         {t("profileDetail.like_this_profile")}
                       </Typography>
                       <Box component="div" className="share_posts_inner">
-                        <Link href="https://www.facebook.com/sharer/sharer.php?display=popup&u=https%3A%2F%2Fmcf.com.vn%2Fprofile%2Fvu-van-hieu-2%2F">
+                        <Link to="https://www.facebook.com/sharer/sharer.php?display=popup&u=https%3A%2F%2Fmcf.com.vn%2Fprofile%2Fvu-van-hieu-2%2F">
                           Facebook
                         </Link>
-                        <Link href="https://twitter.com/intent/tweet?text=Check+out+%27%C3%94ng+V%C5%A9+V%C4%83n+Hi%E1%BB%87u%27+on+MCF+website&amp;url=https%3A%2F%2Fmcf.com.vn%2Fprofile%2Fvu-van-hieu-2%2F">
+                        <Link to="https://twitter.com/intent/tweet?text=Check+out+%27%C3%94ng+V%C5%A9+V%C4%83n+Hi%E1%BB%87u%27+on+MCF+website&amp;url=https%3A%2F%2Fmcf.com.vn%2Fprofile%2Fvu-van-hieu-2%2F">
                           Twitter
                         </Link>
-                        <Link href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fmcf.com.vn%2Fprofile%2Fvu-van-hieu-2%2F&amp;media=https%3A%2F%2Fmcf.com.vn%2Fwp-content%2Fuploads%2F2015%2F04%2FVu-Van-Hieu.png&amp;description=Ông%20Vũ%20Văn%20Hiệu">
+                        <Link to="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fmcf.com.vn%2Fprofile%2Fvu-van-hieu-2%2F&amp;media=https%3A%2F%2Fmcf.com.vn%2Fwp-content%2Fuploads%2F2015%2F04%2FVu-Van-Hieu.png&amp;description=Ông%20Vũ%20Văn%20Hiệu">
                           Pinterest
                         </Link>
                       </Box>
@@ -195,7 +198,7 @@ const Profile = () => {
                         variant="h5"
                         className="cmsmasters_single_slider_no_items"
                       >
-                       {t("profileDetail.project_found")}
+                        {t("profileDetail.project_found")}
                       </Typography>
                     </Box>
                   </Box>
@@ -203,7 +206,7 @@ const Profile = () => {
                 <Box component="div" className="profile_sidebar">
                   <Box component="div" className="profile_details">
                     <Typography variant="h4" className="profile_details_title">
-                    {t("profileDetail.project_info")}
+                      {t("profileDetail.project_info")}
                     </Typography>
                     <Box component="div" className="profile_details_item">
                       <Box
@@ -221,9 +224,8 @@ const Profile = () => {
                           className="cmsmasters_likes cmsmasters_profile_likes"
                         >
                           <Link
-                            href="#"
+                            to="#"
                             className="cmsmasters_theme_icon_like icon-heart"
-                            sx={{}}
                           >
                             <Box component="span">0</Box>
                           </Link>
@@ -242,11 +244,13 @@ const Profile = () => {
                         className="profile_details_item_desc"
                       >
                         <Link
-                          href="http://localhost:5173/author/lvloi/"
+                          to="/author/lvloi/"
                           title="Projects by Ly Van Loi"
                           rel="author"
                         >
-                          <Box component="span">{t("museum.profile.post1.profile_detail.author")}</Box>
+                          <Box component="span">
+                            {t("museum.profile.post1.profile_detail.author")}
+                          </Box>
                         </Link>
                       </Box>
                     </Box>
@@ -255,14 +259,17 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_title"
                       >
-                       {t("profileDetail.date")}
+                        {t("profileDetail.date")}
                       </Box>
                       <Box
                         component="div"
                         className="profile_details_item_desc"
                       >
-                        <Box component="abbr" title={t("museum.profile.post1.profile_detail.date")}>
-                        {t("museum.profile.post1.profile_detail.date")}
+                        <Box
+                          component="abbr"
+                          title={t("museum.profile.post1.profile_detail.date")}
+                        >
+                          {t("museum.profile.post1.profile_detail.date")}
                         </Box>
                       </Box>
                     </Box>
@@ -282,11 +289,13 @@ const Profile = () => {
                           className="cmsmasters_profile_category"
                         >
                           <Link
-                            href="https://mcf.com.vn/pl-categs/hoi-dong-mcf/"
+                            to="/pj-categs/museums/"
                             className="cmsmasters_cat_color cmsmasters_cat_153"
                             rel="category tag"
                           >
-                            {t("museum.profile.post1.profile_detail.categories")}
+                            {t(
+                              "museum.profile.post1.profile_detail.categories"
+                            )}
                           </Link>
                         </Box>
                       </Box>
@@ -372,13 +381,13 @@ const Profile = () => {
                       <Box component="ul" className="profile_social_icons_list">
                         <Box component="li">
                           <Link
-                            href="#"
+                            to="#"
                             className="cmsmasters_social_icon cmsmasters-icon-custom-googleplus-rect icon-googleplus-rect"
                           ></Link>
                         </Box>
                         <Box component="li">
                           <Link
-                            href="#"
+                            to="#"
                             className="cmsmasters_social_icon cmsmasters-icon-phone icon-phone"
                           ></Link>
                         </Box>
@@ -395,7 +404,7 @@ const Profile = () => {
             className="cmsmasters_prev_post post_nav_prev_arrow"
           >
             <Link
-              href="http://localhost:5173/project/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/"
+              to="/project/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/"
               rel="prev"
               className="icon-angle-left"
             >
@@ -407,7 +416,7 @@ const Profile = () => {
             className="cmsmasters_next_post post_nav_next_arrow"
           >
             <Link
-              href="http://localhost:5173/project/dong-chay-cua-van-hoa-va-su-song/"
+              to="/project/dong-chay-cua-van-hoa-va-su-song/"
               rel="next"
               className="icon-angle-right"
             >

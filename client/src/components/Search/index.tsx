@@ -5,12 +5,13 @@ import { motion } from "framer-motion";
 import { FormEvent, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { projects, Project } from "@/shared";
-import { useTranslation } from "react-i18next";
+import { useTranslation, withTranslation } from "react-i18next";
+import T from "react-i18next";
 type Props = {
   setToggleModal: Function;
 };
 
-export default function Search({ setToggleModal }: Props) {
+function Search({ setToggleModal }: Props) {
   const [searchInput, setSearchInput] = useState("");
   const navigate = useNavigate();
   const search = (e: React.KeyboardEvent<HTMLDivElement>) => {
@@ -92,9 +93,11 @@ export default function Search({ setToggleModal }: Props) {
           setSearchInput(e.currentTarget.value);
         }}
         onKeyDown={search}
-        placeholder={t("nav.search")}
+        placeholder={t("search.search")}
       ></Box>
     </Box>,
     document.querySelector("body") as HTMLElement
   );
 }
+
+export default withTranslation()(Search);

@@ -13,9 +13,10 @@ import { useTranslation } from "react-i18next";
 type Props = {
   resultProjects: Array<Project>;
   title?: string;
+  isProject?: boolean;
 };
 
-const Category = ({ resultProjects, title }: Props) => {
+const Category = ({ resultProjects, title, isProject }: Props) => {
   const { t } = useTranslation();
 
   const [searchInput, setSearchInput] = useState("");
@@ -54,8 +55,12 @@ const Category = ({ resultProjects, title }: Props) => {
       <Headline
         title={
           title
-            ? `Project Category: ${title}`
-            : `${resultProjects.length} ${t("search.not_found")} ${location.state.input}`
+            ? isProject
+              ? `Project Category: ${title}`
+              : `Profile Category: ${title}`
+            : `${resultProjects.length} ${t("search.not_found")} ${
+                location.state.input
+              }`
         }
         name={title || `${t("search.not_found")} ${location.state.input}`}
       ></Headline>
@@ -69,6 +74,7 @@ const Category = ({ resultProjects, title }: Props) => {
             <CategoryCard
               project={project}
               isSearch={location.state ? true : false}
+              isProject={isProject}
             ></CategoryCard>
           );
         })}

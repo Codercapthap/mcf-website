@@ -19,7 +19,10 @@ const Museum = ({ museums }: props) => {
         image="images/headlines/banner_bg.jpg"
         title={t("nav.museum")}
       ></Headline>
-      <CardTemplate projectsProp={museums} type="Museum"></CardTemplate>
+      <CardTemplate
+        projectsProp={museums}
+        type={t("nav.museum")}
+      ></CardTemplate>
       <Footer></Footer>
     </>
   );

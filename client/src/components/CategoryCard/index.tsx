@@ -16,9 +16,14 @@ const CardTitleTypography = styled(Typography)`
 type Props = {
   project: Project;
   isSearch: boolean;
+  isProject: boolean;
 };
 
-const CategoryCard = ({ project, isSearch = false }: Props) => {
+const CategoryCard = ({
+  project,
+  isSearch = false,
+  isProject = true,
+}: Props) => {
   return (
     <Box
       width="100%"
@@ -56,7 +61,7 @@ const CategoryCard = ({ project, isSearch = false }: Props) => {
             padding: "0 38px",
           }}
         >
-          PROJECT
+          {isProject ? "PROJECT" : "PROFILE"}
         </CardTitleTypography>
         <Box>
           <Box padding="20px 38px">

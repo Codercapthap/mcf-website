@@ -1,4 +1,4 @@
-import { Box, Link, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import Header from "@/components/Header";
 import SearchIcon from "@mui/icons-material/Search";
 import Footer from "@/components/Footer";

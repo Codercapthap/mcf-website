@@ -2,11 +2,12 @@ import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import Header from "@/components/Header";
 import ToggleModalImg from "@/components/ToggleModalImg";
-import { Box, Link, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import "../Profile.scss";
 import Footer from "@/components/Footer";
 
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 const Profile = () => {
   const { t } = useTranslation();
@@ -25,9 +26,11 @@ const Profile = () => {
                   <Box component="div" className="cmsmasters_profile_content">
                     <Box component="figure" className="cmsmasters_img_wrap">
                       <Link
-                        // href="https://mcf.com.vn/wp-content/uploads/2015/04/Vu-Van-Hieu.png"
+                        to="#"
                         rel="ilightbox[img_12462_647d8bee23d81]"
-                        title={`${t("about-us.the_mcf_council.duong-van-ni.name")}`}
+                        title={`${t(
+                          "about-us.the_mcf_council.duong-van-ni.name"
+                        )}`}
                         className="preloader highImg"
                         onClick={() => {
                           document.body.style.overflow = "hidden";
@@ -38,9 +41,13 @@ const Profile = () => {
                           component="img"
                           width="410px"
                           height="380px"
-                          alt={`${t("about-us.the_mcf_council.duong-van-ni.name")}`}
+                          alt={`${t(
+                            "about-us.the_mcf_council.duong-van-ni.name"
+                          )}`}
                           src="http://localhost:5173/images/people/Duong-Van-Ni.png"
-                          title={`${t("about-us.the_mcf_council.duong-van-ni.name")}`}
+                          title={`${t(
+                            "about-us.the_mcf_council.duong-van-ni.name"
+                          )}`}
                           sizes="(max-width: 410px) 100vw, 410px"
                           srcSet="http://localhost:5173/images/people/Duong-Van-Ni.png"
                         ></Box>
@@ -139,13 +146,13 @@ const Profile = () => {
                         {t("profileDetail.like_this_profile")}
                       </Typography>
                       <Box component="div" className="share_posts_inner">
-                        <Link href="https://www.facebook.com/sharer/sharer.php?display=popup&u=https%3A%2F%2Fmcf.com.vn%2Fprofile%2Fvu-van-hieu-2%2F">
+                        <Link to="https://www.facebook.com/sharer/sharer.php?display=popup&u=https%3A%2F%2Fmcf.com.vn%2Fprofile%2Fvu-van-hieu-2%2F">
                           Facebook
                         </Link>
-                        <Link href="https://twitter.com/intent/tweet?text=Check+out+%27%C3%94ng+V%C5%A9+V%C4%83n+Hi%E1%BB%87u%27+on+MCF+website&amp;url=https%3A%2F%2Fmcf.com.vn%2Fprofile%2Fvu-van-hieu-2%2F">
+                        <Link to="https://twitter.com/intent/tweet?text=Check+out+%27%C3%94ng+V%C5%A9+V%C4%83n+Hi%E1%BB%87u%27+on+MCF+website&amp;url=https%3A%2F%2Fmcf.com.vn%2Fprofile%2Fvu-van-hieu-2%2F">
                           Twitter
                         </Link>
-                        <Link href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fmcf.com.vn%2Fprofile%2Fvu-van-hieu-2%2F&amp;media=https%3A%2F%2Fmcf.com.vn%2Fwp-content%2Fuploads%2F2015%2F04%2FVu-Van-Hieu.png&amp;description=Ông%20Vũ%20Văn%20Hiệu">
+                        <Link to="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fmcf.com.vn%2Fprofile%2Fvu-van-hieu-2%2F&amp;media=https%3A%2F%2Fmcf.com.vn%2Fwp-content%2Fuploads%2F2015%2F04%2FVu-Van-Hieu.png&amp;description=Ông%20Vũ%20Văn%20Hiệu">
                           Pinterest
                         </Link>
                       </Box>
@@ -155,7 +162,7 @@ const Profile = () => {
                 <Box component="div" className="profile_sidebar">
                   <Box component="div" className="profile_details">
                     <Typography variant="h4" className="profile_details_title">
-                    {t("profileDetail.profile_detail")}
+                      {t("profileDetail.profile_detail")}
                     </Typography>
                     <Box component="div" className="profile_details_item">
                       <Box
@@ -173,9 +180,8 @@ const Profile = () => {
                           className="cmsmasters_likes cmsmasters_profile_likes"
                         >
                           <Link
-                            href="#"
+                            to="#"
                             className="cmsmasters_theme_icon_like icon-heart"
-                            sx={{}}
                           >
                             <Box component="span">7</Box>
                           </Link>
@@ -212,7 +218,7 @@ const Profile = () => {
                           className="cmsmasters_profile_category"
                         >
                           <Link
-                            href="https://mcf.com.vn/pl-categs/hoi-dong-mcf/"
+                            to="/pl-categs/the-mcf-council/"
                             className="cmsmasters_cat_color cmsmasters_cat_153"
                             rel="category tag"
                           >
@@ -232,13 +238,13 @@ const Profile = () => {
                     <Box component="ul" className="profile_social_icons_list">
                       <Box component="li">
                         <Link
-                          href="#"
+                          to="#"
                           className="cmsmasters_social_icon cmsmasters-icon-custom-googleplus-rect icon-googleplus-rect"
                         ></Link>
                       </Box>
                       <Box component="li">
                         <Link
-                          href="#"
+                          to="#"
                           className="cmsmasters_social_icon cmsmasters-icon-phone icon-phone"
                         ></Link>
                       </Box>
@@ -255,7 +261,7 @@ const Profile = () => {
             className="cmsmasters_prev_post post_nav_prev_arrow"
           >
             {/* <Link
-              href="https://mcf.com.vn/profile/nguyen-thi-kieu-vuong-2/"
+              to="https://mcf.com.vn/profile/nguyen-thi-kieu-vuong-2/"
               rel="prev"
               className="icon-angle-left"
             >
@@ -267,7 +273,7 @@ const Profile = () => {
             className="cmsmasters_next_post post_nav_next_arrow"
           >
             <Link
-              href="http://localhost:5173/profile/nguyen-thi-kieu-vuong/"
+              to="/profile/nguyen-thi-kieu-vuong/"
               rel="next"
               className="icon-angle-right"
             >

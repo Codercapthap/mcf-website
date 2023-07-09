@@ -11,7 +11,7 @@ import { theme } from "@/styles";
 import "./Header.scss";
 
 import i18n from "i18next";
-import { useTranslation } from "react-i18next";
+import { useTranslation, withTranslation } from "react-i18next";
 type Props = {};
 
 function Header({}: Props) {
@@ -36,16 +36,16 @@ function Header({}: Props) {
   }, [scrollY]);
 
   useEffect(() => {
-    const currentTag = pathname
-      .split("-")
-      .map((value, index) => {
-        if (index === 0) {
-          return value.substring(1);
-        } else {
-          return value;
-        }
-      })
-      .join(" ");
+    const currentTag = pathname.split("/")[pathname.split("/").length - 1];
+    // .map((value, index) => {
+    //   if (index === 0) {
+    //     return value;
+    //   } else {
+    //     return value;
+    //   }
+    // })
+    // .join(" ");
+    console.log(currentTag);
     setActive(currentTag);
   }, [pathname]);
 
@@ -226,7 +226,7 @@ function Header({}: Props) {
                 to={page.link}
                 sx={{
                   color:
-                    active === page.title.toLocaleLowerCase()
+                    active === page.link.substring(1)
                       ? "var(--btn-primary-bg)"
                       : "var(--text-black)",
                   [theme.breakpoints.down("laptop")]: {
@@ -257,4 +257,4 @@ function Header({}: Props) {
   );
 }
 
-export default Header;
+export default withTranslation()(Header);

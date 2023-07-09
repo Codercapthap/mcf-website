@@ -21,7 +21,7 @@ const Livelihood = ({ livelihoods }: props) => {
       ></Headline>
       <CardTemplate
         projectsProp={livelihoods}
-        type="Livelihoods"
+        type={t("nav.livelihoods")}
       ></CardTemplate>
       <Footer></Footer>
     </>

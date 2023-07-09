@@ -24,7 +24,7 @@ const Conservation = ({ conservations }: props) => {
       ></Headline>
       <CardTemplate
         projectsProp={conservations}
-        type="Conservation"
+        type={t("nav.conservation")}
       ></CardTemplate>
       <Footer></Footer>
     </>

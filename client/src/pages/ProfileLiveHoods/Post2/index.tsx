@@ -4,7 +4,6 @@ import Header from "@/components/Header";
 import ToggleModalImg from "@/components/ToggleModalImg";
 import {
   Box,
-  Link,
   Typography,
   Table,
   TableBody,
@@ -15,27 +14,30 @@ import {
 import "../Profile.scss";
 import Footer from "@/components/Footer";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 const Profile = () => {
   const { t } = useTranslation();
-  document.title=`${t("livelihoods.profile.post2.title")} - MCF`
-
+  document.title = `${t("livelihoods.profile.post2.title")} - MCF`;
 
   const [toggleModal, setToggleModal] = useState(false);
   function createData(code: String, profession: String) {
     return { code, profession };
   }
   const rows = [
-    createData(`0118 ${t("livelihoods.profile.post2.major")}`,`${t("livelihoods.profile.post2.row-1")}`),
+    createData(
+      `0118 ${t("livelihoods.profile.post2.major")}`,
+      `${t("livelihoods.profile.post2.row-1")}`
+    ),
     createData("0161", `${t("livelihoods.profile.post2.row-2")}`),
     createData("0162", `${t("livelihoods.profile.post2.row-3")}`),
     createData("0163", `${t("livelihoods.profile.post2.row-4")}`),
     createData("0322", `${t("livelihoods.profile.post2.row-5")}`),
-    createData("1629",`${t("livelihoods.profile.post2.row-6")}`),
+    createData("1629", `${t("livelihoods.profile.post2.row-6")}`),
     createData("4632", `${t("livelihoods.profile.post2.row-7")}`),
     createData("4669", `${t("livelihoods.profile.post2.row-8")}`),
     createData("7020", `${t("livelihoods.profile.post2.row-9")}`),
-    createData("7490",`${t("livelihoods.profile.post2.row-10")}`),
+    createData("7490", `${t("livelihoods.profile.post2.row-10")}`),
   ];
   return (
     <>
@@ -48,8 +50,8 @@ const Profile = () => {
                 <Box component="div" className="profile_content with_sidebar">
                   <Box component="div" className="cmsmasters_profile_content">
                     <Box component="figure" className="cmsmasters_img_wrap">
-                      <Link 
-                        // href="https://mcf.com.vn/wp-content/uploads/2015/04/Vu-Van-Hieu.png"
+                      <Link
+                        to="#"
                         rel="ilightbox[img_12627_64987034241fd]"
                         title={t("livelihoods.profile.post2.title")}
                         className="preloader highImg"
@@ -73,7 +75,7 @@ const Profile = () => {
                       className="cmsmasters_profile_header"
                     >
                       <Typography variant="h2">
-                      {t("livelihoods.profile.post2.title")}
+                        {t("livelihoods.profile.post2.title")}
                       </Typography>
                       {/* <Typography
                         variant="h4"
@@ -114,46 +116,50 @@ const Profile = () => {
                               className="cmsmasters_column one_first"
                             >
                               <Box component="div">
-                                <Box component="div"
-                                dangerouslySetInnerHTML={{
-                                  __html: `${t("livelihoods.profile.post2.content")}`
-                                 }}
-                                ></Box>
-                                </Box>
                                 <Box
                                   component="div"
-                                  sx={{ paddingLeft: "1px" }}
-                                >
-                                  <Table>
-                                    <TableBody>
-                                      <TableRow key="head">
-                                        <TableCell sx={{ fontWeight: "bold" }}>
-                                        {t("livelihoods.profile.post2.tableHeader-col1")}
+                                  dangerouslySetInnerHTML={{
+                                    __html: `${t(
+                                      "livelihoods.profile.post2.content"
+                                    )}`,
+                                  }}
+                                ></Box>
+                              </Box>
+                              <Box component="div" sx={{ paddingLeft: "1px" }}>
+                                <Table>
+                                  <TableBody>
+                                    <TableRow key="head">
+                                      <TableCell sx={{ fontWeight: "bold" }}>
+                                        {t(
+                                          "livelihoods.profile.post2.tableHeader-col1"
+                                        )}
+                                      </TableCell>
+                                      <TableCell sx={{ fontWeight: "bold" }}>
+                                        {t(
+                                          "livelihoods.profile.post2.tableHeader-col2"
+                                        )}
+                                      </TableCell>
+                                    </TableRow>
+                                    {rows.map((row) => (
+                                      <TableRow key={`${row.code}`}>
+                                        <TableCell
+                                          sx={{ width: "18%" }}
+                                          scope="row"
+                                        >
+                                          {row.code}
                                         </TableCell>
-                                        <TableCell sx={{ fontWeight: "bold" }}>
-                                        {t("livelihoods.profile.post2.tableHeader-col2")}
-                                        </TableCell>
+                                        <TableCell
+                                          sx={{ width: "82%" }}
+                                          dangerouslySetInnerHTML={{
+                                            __html: `${row.profession}`,
+                                          }}
+                                        ></TableCell>
                                       </TableRow>
-                                      {rows.map((row) => (
-                                        <TableRow key={`${row.code}`}>
-                                          <TableCell
-                                            sx={{ width: "18%" }}
-                                            scope="row"
-                                          >
-                                            {row.code}
-                                          </TableCell>
-                                          <TableCell
-                                            sx={{ width: "82%" }}
-                                            dangerouslySetInnerHTML={{
-                                              __html: `${row.profession}`,
-                                            }}
-                                          ></TableCell>
-                                        </TableRow>
-                                      ))}
-                                    </TableBody>
-                                  </Table>
-                                  <Box component="p">&nbsp;</Box>
-                                  {/* <Table>
+                                    ))}
+                                  </TableBody>
+                                </Table>
+                                <Box component="p">&nbsp;</Box>
+                                {/* <Table>
                                     <TableBody>
                                       <TableRow>
                                         <TableCell sx={{ width: "100%" }}>
@@ -183,15 +189,18 @@ const Profile = () => {
                                       </TableRow>
                                     </TableBody>
                                   </Table> */}
-                                  <Box component="div" sx={{
-                                    borderStyle: "none"
+                                <Box
+                                  component="div"
+                                  sx={{
+                                    borderStyle: "none",
                                   }}
                                   dangerouslySetInnerHTML={{
-                                    __html: `${t("livelihoods.profile.post2.table")}`
-                                   }}
-                                  ></Box>
-                                </Box>
-                              
+                                    __html: `${t(
+                                      "livelihoods.profile.post2.table"
+                                    )}`,
+                                  }}
+                                ></Box>
+                              </Box>
                             </Box>
                           </Box>
                         </Box>
@@ -218,13 +227,13 @@ const Profile = () => {
                         {t("profileDetail.like_this_profile")}
                       </Typography>
                       <Box component="div" className="share_posts_inner">
-                        <Link href="https://www.facebook.com/sharer/sharer.php?display=popup&u=https%3A%2F%2Fmcf.com.vn%2Fprofile%2Fvu-van-hieu-2%2F">
+                        <Link to="https://www.facebook.com/sharer/sharer.php?display=popup&u=https%3A%2F%2Fmcf.com.vn%2Fprofile%2Fvu-van-hieu-2%2F">
                           Facebook
                         </Link>
-                        <Link href="https://twitter.com/intent/tweet?text=Check+out+%27%C3%94ng+V%C5%A9+V%C4%83n+Hi%E1%BB%87u%27+on+MCF+website&amp;url=https%3A%2F%2Fmcf.com.vn%2Fprofile%2Fvu-van-hieu-2%2F">
+                        <Link to="https://twitter.com/intent/tweet?text=Check+out+%27%C3%94ng+V%C5%A9+V%C4%83n+Hi%E1%BB%87u%27+on+MCF+website&amp;url=https%3A%2F%2Fmcf.com.vn%2Fprofile%2Fvu-van-hieu-2%2F">
                           Twitter
                         </Link>
-                        <Link href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fmcf.com.vn%2Fprofile%2Fvu-van-hieu-2%2F&amp;media=https%3A%2F%2Fmcf.com.vn%2Fwp-content%2Fuploads%2F2015%2F04%2FVu-Van-Hieu.png&amp;description=Ông%20Vũ%20Văn%20Hiệu">
+                        <Link to="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fmcf.com.vn%2Fprofile%2Fvu-van-hieu-2%2F&amp;media=https%3A%2F%2Fmcf.com.vn%2Fwp-content%2Fuploads%2F2015%2F04%2FVu-Van-Hieu.png&amp;description=Ông%20Vũ%20Văn%20Hiệu">
                           Pinterest
                         </Link>
                       </Box>
@@ -248,7 +257,7 @@ const Profile = () => {
                 <Box component="div" className="profile_sidebar">
                   <Box component="div" className="profile_details">
                     <Typography variant="h4" className="profile_details_title">
-                    {t("profileDetail.project_info")}
+                      {t("profileDetail.project_info")}
                     </Typography>
                     <Box component="div" className="profile_details_item">
                       <Box
@@ -266,9 +275,8 @@ const Profile = () => {
                           className="cmsmasters_likes cmsmasters_profile_likes"
                         >
                           <Link
-                            href="#"
+                            to="#"
                             className="cmsmasters_theme_icon_like icon-heart"
-                            sx={{}}
                           >
                             <Box component="span">0</Box>
                           </Link>
@@ -287,11 +295,15 @@ const Profile = () => {
                         className="profile_details_item_desc"
                       >
                         <Link
-                          href="http://localhost:5173/author/lvloi/"
+                          to="/author/lvloi/"
                           title="Projects by Ly Van Loi"
                           rel="author"
                         >
-                          <Box component="span">{t("livelihoods.profile.post2.profile_detail.author")}</Box>
+                          <Box component="span">
+                            {t(
+                              "livelihoods.profile.post2.profile_detail.author"
+                            )}
+                          </Box>
                         </Link>
                       </Box>
                     </Box>
@@ -306,8 +318,13 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_desc"
                       >
-                        <Box component="abbr" title={t("livelihoods.profile.post2.profile_detail.date")}>
-                        {t("livelihoods.profile.post2.profile_detail.date")}
+                        <Box
+                          component="abbr"
+                          title={t(
+                            "livelihoods.profile.post2.profile_detail.date"
+                          )}
+                        >
+                          {t("livelihoods.profile.post2.profile_detail.date")}
                         </Box>
                       </Box>
                     </Box>
@@ -327,11 +344,13 @@ const Profile = () => {
                           className="cmsmasters_profile_category"
                         >
                           <Link
-                            href="https://mcf.com.vn/pl-categs/hoi-dong-mcf/"
+                            to="/pj-categs/livelihoods/"
                             className="cmsmasters_cat_color cmsmasters_cat_153"
                             rel="category tag"
                           >
-                            {t("livelihoods.profile.post2.profile_detail.categories")}
+                            {t(
+                              "livelihoods.profile.post2.profile_detail.categories"
+                            )}
                           </Link>
                         </Box>
                       </Box>
@@ -417,13 +436,13 @@ const Profile = () => {
                     <Box component="ul" className="profile_social_icons_list">
                       <Box component="li">
                         <Link
-                          href="#"
+                          to="#"
                           className="cmsmasters_social_icon cmsmasters-icon-custom-googleplus-rect icon-googleplus-rect"
                         ></Link>
                       </Box>
                       <Box component="li">
                         <Link
-                          href="#"
+                          to="#"
                           className="cmsmasters_social_icon cmsmasters-icon-phone icon-phone"
                         ></Link>
                       </Box>
@@ -440,7 +459,7 @@ const Profile = () => {
             className="cmsmasters_prev_post post_nav_prev_arrow"
           >
             <Link
-              href="http://localhost:5173/project/vai-tro-cua-dat-ngap-nuoc-doi-voi-an-ninh-nguon-nuoc-cho-khu-vuc-song-mekong/"
+              to="/project/vai-tro-cua-dat-ngap-nuoc-doi-voi-an-ninh-nguon-nuoc-cho-khu-vuc-song-mekong/"
               rel="prev"
               className="icon-angle-left"
             >
@@ -452,7 +471,7 @@ const Profile = () => {
             className="cmsmasters_next_post post_nav_next_arrow"
           >
             <Link
-              href="http://localhost:5173/project/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/"
+              to="/project/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/"
               rel="next"
               className="icon-angle-right"
             >
