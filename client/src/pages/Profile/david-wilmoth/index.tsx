@@ -5,8 +5,12 @@ import ToggleModalImg from "@/components/ToggleModalImg";
 import { Box, Link, Typography } from "@mui/material";
 import "../Profile.scss";
 import Footer from "@/components/Footer";
+import { useTranslation } from "react-i18next"
 
 const Profile = () => {
+const {t} = useTranslation()
+document.title = `${t("about-us.the_supervisory_council.david-wilmoth.name")} - MCF`;
+
   const [toggleModal, setToggleModal] = useState(false);
   return (
     <>
@@ -22,7 +26,7 @@ const Profile = () => {
                       <Link
                         // href="https://mcf.com.vn/wp-content/uploads/2015/04/Vu-Van-Hieu.png"
                         rel="ilightbox[img_12627_64987034241fd]"
-                        title="Tiến sĩ David Wilmoth"
+                        title={`${t("about-us.the_supervisory_council.david-wilmoth.name")}`}
                         className="preloader highImg"
                         onClick={() => {
                           document.body.style.overflow = "hidden";
@@ -33,9 +37,9 @@ const Profile = () => {
                           component="img"
                           width="400px"
                           height="500px"
-                          alt="Tiến sĩ David Wilmoth"
+                          alt={`${t("about-us.the_supervisory_council.david-wilmoth.name")}`}
                           src="http://localhost:5173/images/people/david-wilmoth.jpg"
-                          title="Tiến sĩ David Wilmoth"
+                          title={`${t("about-us.the_supervisory_council.david-wilmoth.name")}`}
                           srcSet="http://localhost:5173/images/people/david-wilmoth.jpg 400w, http://localhost:5173/images/people/david-wilmoth-240x300.jpg"
                           sizes="(max-width: 410px) 100vw, 410px"
                         ></Box>
@@ -58,7 +62,7 @@ const Profile = () => {
                           textDecoration: "none",
                         }}
                       >
-                        Tiến sĩ David Wilmoth
+                        {t("about-us.the_supervisory_council.david-wilmoth.name")}
                       </Typography>
                       <Typography
                         variant="h4"
@@ -77,7 +81,7 @@ const Profile = () => {
                           letterSpacing: ".1em",
                         }}
                       >
-                        Chủ tịch Hội đồng giám sát
+                        {t("about-us.the_supervisory_council.david-wilmoth.position")}
                       </Typography>
                     </Box>
                     <Box
@@ -99,18 +103,12 @@ const Profile = () => {
                               className="cmsmasters_column one_first"
                             >
                               <Box component="div">
-                                <Box component="p">
-                                  <strong>Tiến sĩ David Wilmoth </strong>tốt
-                                  nghiệp Thạc sĩ tại Đại học Sydney và Tiến sĩ
-                                  tại Berkeley. Ông là Giáo sư danh dự tại Đại
-                                  học RMIT và là cựu Phó Hiệu trưởng chuyên
-                                  nghiệp (Quản trị Tập đoàn). Ông đã lãnh đạo
-                                  công ty khởi nghiệp của Đại học RMIT tại Việt
-                                  Nam, một nhánh đại học quốc tế lớn nhất thế
-                                  giới. Ông cũng là giám đốc của Hiệp hội Xúc
-                                  tiến Giáo dục Việt – Úc, Chủ tịch Học tập các
-                                  Thành phố Quốc tế, và Chủ tịch Hội đồng Học
-                                  thuật của Đại học Torren Úc.
+                                <Box component="p" 
+                                dangerouslySetInnerHTML={{
+                                  __html: `${t('about-us.the_supervisory_council.david-wilmoth.story')}`
+                                }}
+                                >
+                                  
                                 </Box>
                               </Box>
                             </Box>
@@ -136,7 +134,7 @@ const Profile = () => {
                           letterSpacing: ".1em",
                         }}
                       >
-                        Bạn thích hồ sơ này?
+                        {t("profileDetail.like_this_profile")}
                       </Typography>
                       <Box component="div" className="share_posts_inner">
                         <Link href="https://www.facebook.com/sharer/sharer.php?display=popup&u=https%3A%2F%2Fmcf.com.vn%2Fprofile%2Fvu-van-hieu-2%2F">
@@ -155,14 +153,14 @@ const Profile = () => {
                 <Box component="div" className="profile_sidebar">
                   <Box component="div" className="profile_details">
                     <Typography variant="h4" className="profile_details_title">
-                      Profile details
+                    {t("profileDetail.profile_detail")}
                     </Typography>
                     <Box component="div" className="profile_details_item">
                       <Box
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Lượt thích:
+                        {t("profileDetail.likes")}
                       </Box>
                       <Box
                         component="div"
@@ -201,7 +199,7 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Chuyên mục:
+                        {t("profileDetail.categories")}
                       </Box>
                       <Box
                         component="div"
@@ -216,7 +214,7 @@ const Profile = () => {
                             className="cmsmasters_cat_color cmsmasters_cat_153"
                             rel="category tag"
                           >
-                            HỘI ĐỒNG GIÁM SÁT
+                            {t("about-us.the_supervisory_council.the_supervisory_council")}
                           </Link>
                         </Box>
                       </Box>
@@ -227,7 +225,7 @@ const Profile = () => {
                       variant="h4"
                       className="profile_social_icons_title"
                     >
-                      Liên kết
+                        {t("profileDetail.social")}
                     </Typography>
                     <Box component="ul" className="profile_social_icons_list">
                       <Box component="li">
@@ -259,7 +257,7 @@ const Profile = () => {
               rel="prev"
               className="icon-angle-left"
             >
-              Ông Vũ Văn Hiệu
+              {t("about-us.the_mcf_council.vu-van-hieu.name")}
             </Link>
           </Box>
           <Box
@@ -271,7 +269,7 @@ const Profile = () => {
               rel="next"
               className="icon-angle-right"
             >
-              Tiến sĩ Hồ Lê Khoa
+              {t("about-us.the_supervisory_council.ho-le-khoa.name")}
             </Link>
           </Box>
         </Box>

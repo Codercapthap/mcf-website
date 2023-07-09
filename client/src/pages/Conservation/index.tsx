@@ -7,19 +7,20 @@ import {
   // Project as ProjectType,
 } from "@/shared";
 import CardTemplate from "@/components/CardTemplate";
-
+import { useTranslation } from "react-i18next";
 type props = {
   conservations: ConservationType;
 };
 
 const Conservation = ({ conservations }: props) => {
-  document.title = `Conservation - MCF`;
+  const { t } = useTranslation();
+  document.title = `${t("nav.conservation")} - MCF`;
   return (
     <>
       <Header></Header>
       <Headline
         image="images/headlines/Bao-ton_baoton.jpg"
-        title="Conservation"
+        title={t("nav.conservation")}
       ></Headline>
       <CardTemplate
         projectsProp={conservations}

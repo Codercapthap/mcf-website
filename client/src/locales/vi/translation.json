@@ -1,12 +1,12 @@
 {
     "nav": {
-        "home": "TRANG CHỦ",
-        "about-us": "GIỚI THIỆU",
-        "conservation": "BẢO TỒN",
-        "livelihoods": "SINH KẾ",
-        "museum": "BẢO TÀNG",
-        "stories": "CÂU CHUYỆN",
-        "contact-us": "LIÊN HỆ",
+        "home": "Trang chủ",
+        "about-us": "Giới thiệu",
+        "conservation": "Bảo tồn",
+        "livelihoods": "Sinh kế",
+        "museum": "Bảo tàng",
+        "stories": "Câu chuyện",
+        "contact-us": "Liên hệ",
         "language": "ENGLISH"
     },
     "categories": {
@@ -33,7 +33,7 @@
         "budget": "KINH PHÍ:",
         "investor": "CHỦ QUẢN:",
         "implementation": "THỰC HIỆN:",
-        "consultant": "TƯ VẤN",
+        "consultant": "TƯ VẤN:",
 
         "status": "TÌNH TRẠNG:",
 
@@ -83,13 +83,13 @@
             "vu-van-hieu":{
                 "name": "Ông Vũ Văn Hiệu",
                 "position": "PHÓ CHỦ TỊCH HỘI ĐỒNG MCF",
-                "brief": "Ông Vũ Văn Hiếu là đồng sáng lập và giám đốc của công ty Úc Titan Dealer Management Solutions.",
+                "brief": "<strong>Ông Vũ Văn Hiếu </strong>là đồng sáng lập và giám đốc của công ty Úc Titan Dealer Management Solutions.",
                 "story": "<strong>Ông Vũ Văn Hiệu</strong> là đồng sáng lập kiêm Giám đốc Công ty Titan tại Úc – Các giải pháp Quản lý Đại lý, một nhà phát triển phần mềm hàng đầu trong ngành ô tô phục vụ khách hàng trên toàn cầu. Ông từng nhận được học bổng kế hoạch Colombo và nhận bằng cử nhân của Đại học Tây Úc chuyên ngành khoa học máy tính và toán học."
             },
             "nguyen-thi-kieu-vuong":{
                 "name": "Bà Nguyễn Thị Kiều Vương",
                 "position": "PHÓ CHỦ TỊCH HỘI ĐỒNG MCF",
-                "brief": "Bà Nguyễn Thị Kiều Vương là luật sư của Liên đoàn Luật sư Việt Nam và Đoàn Luật sư Thành phố Hồ Chí Minh và có hơn 18 năm kinh nghiệm pháp lý.",
+                "brief": "<strong>Bà Nguyễn Thị Kiều Vương </strong>là luật sư của Liên đoàn Luật sư Việt Nam và Đoàn Luật sư Thành phố Hồ Chí Minh và có hơn 18 năm kinh nghiệm pháp lý.",
                 "story": "<strong>Bà Nguyễn Thị Kiều Vương</strong> là Luật sư của Liên đoàn Luật sư Việt Nam, Đoàn Luật sư Thành phố Hồ Chí Minh và có hơn 18 năm kinh nghiệm trong lĩnh vực pháp luật. Bà là người sáng lập kiêm Tổng Giám đốc Công ty Luật Phúc Gia Nguyễn, chuyên tư vấn pháp luật về đầu tư tại Việt Nam. Bà cũng là trọng tài viên tại Trung tâm Trọng tài Quốc tế Thái Bình Dương và tích cực hoạt động từ thiện hỗ trợ những người có hoàn cảnh khó khăn về các vấn đề pháp lý ở miền Nam và miền Trung Việt Nam."
             }
         },
@@ -164,7 +164,7 @@
             },
             "post3":{
                 "title": "Vai trò của Đất ngập nước đối với an ninh nguồn nước cho khu vực sông Mekong",
-                "content": "<p>Đất ngập nước rất quan trọng đối với mối quan hệ lương thực-năng lượng-nước của khu vực sông Mekong. An ninh nguồn nước nông thôn là mối quan tâm lớn đối với các nước khu vực sông Mê Kông vì các ngành kinh tế nông thôn giữ vai trò chủ lực của tất cả các nước, đặc biệt là nông nghiệp và nuôi trồng thủy sản, cũng như các nguồn nước chính cho sinh hoạt gia đình và cấp nước công cộng, phụ thuộc vào nước từ các vùng đất ngập nước. Những người bị ảnh hưởng nhiều nhất, đặc biệt là phụ nữ, trẻ em và người cao tuổi, là những nhóm dễ bị tổn thương do sinh kế của họ phụ thuộc nhiều vào đất ngập nước. Để chuẩn bị ứng phó cho các tác động từ biến đổi toàn cầu và tăng cường quản lý nước ở khu vực sông Mê Kông, định lượng các dịch vụ hệ sinh thái từ các vùng đất ngập nước là điều cấp bách cần được thực hiện.</p><p>Mối quan tâm cụ thể của chúng tôi là vai trò của đất ngập nước đối với an ninh nguồn nước. Các mục tiêu cụ thể của nghiên cứu này:</p><ul><li className=\"icon-angle-right-before\">Xác định đối với mỗi loại đất ngập nước ở khu vực sông Mekong thì trữ lượng nước, chất lượng nước cung cấp và cộng đồng có mối quan hệ như thế nào với các dịch vụ hệ sinh thái.</li><li className=\"icon-angle-right-before\">Dự báo tác động của sự thay đổi toàn cầu và khu vực về an ninh nước cho cộng đồng thông qua những thay đổi trong các dịch vụ đó.</li></ul><p>Chúng tôi sẽ chọn bốn vùng đất ngập nước, một vùng cho mỗi quốc gia trong số bốn nước Hạ lưu sông Mê Kông làm địa điểm nghiên cứu của chúng tôi. Mỗi vùng đất ngập nước sẽ đại diện cho trữ lượng nước đáng kể của khu vực và cách các nhóm cộng đồng địa phương khác nhau sử dụng tài nguyên nước. Các vùng đó bao gồm:</p><ul><li className=\"icon-angle-right-before\">Vùng đất ngập nước ở Campuchia.</li><li className=\"icon-angle-right-before\">Đầm lầy cạn do nước ngầm cung cấp ở CHDCND Lào.</li><li className=\"icon-angle-right-before\">Khu hổn hợp rừng – đầm lầy cửa sông ở Thái Lan</li><li className=\"icon-angle-right-before\">Khu rừng đầm lầy than bùn ở Việt Nam.</li></ul><p>Chúng tôi sẽ sử dụng các phép đo thực địa về các tham số thủy văn, các thông số chất lượng nước và các mô hình đơn giản từ dữ liệu đã được công bố để định lượng trữ lượng nước, sử dụng dữ liệu vệ tinh và đo đạc thực địa để xác định cấu trúc thảm thực vật, sử dụng các đợt điều tra cộng đồng và kinh tế xã hội để mô tả việc sử dụng đất và các nhóm sử dụng nước tại địa phương. Chúng tôi sẽ xem xét sự tương tác của các hệ thống này (tự nhiên và con người) bằng cách xác định các dịch vụ hệ sinh thái nước chính từ các bộ dữ liệu kinh tế xã hội và lý sinh kết hợp, đồng thời sử dụng các trò chơi để đánh giá sự phụ thuộc và phản ứng của cộng đồng đối với thay đổi, nhấn mạnh vai trò của các yếu tố kinh tế xã hội, vai trò giới, và tương tác giữa các nhóm người dùng. Chúng tôi sẽ điều tra vai trò của phụ nữ trong việc sử dụng nước và duy trì an ninh nguồn nước, đồng thời xác định các phương thức để tăng cường những vai trò này. Các địa điểm nghiên cứu này đại diện cho các điều kiện kinh tế xã hội nông thôn khu vực sông Mê Kông, bao gồm xung đột trong sử dụng và quản lý nước chung giữa các nhóm, công bằng xã hội và bình đẳng giới, giảm nghèo ở nông thôn và vai trò của nước từ đất ngập nước trong việc tăng cường kinh tế hộ gia đình và sinh kế, cũng như giảm bớt sự phụ thuộc của địa phương vào tài nguyên tự nhiên. Chúng tôi sẽ tích hợp các kết quả nghiên cứu vào một dự án đang thực hiện để kết hợp các nhà khoa học đất ngập nước với các nhà quản lý đất ngập nước địa phương: dự án đó sẽ cung cấp thông tin cho nghiên cứu này bằng cách cải thiện nguồn thông tin giữa các nhóm sử dụng nước địa phương (bao gồm nam giới, phụ nữ, người cao tuổi, trẻ em) và các nhà nghiên cứu của dự án sau đó sẽ có thể tận dụng các phát hiện của mình bằng cách kết nối với các nhà quản lý đất ngập nước địa phương. Trong suốt dự án, chúng tôi sẽ liên lạc với các nhóm địa phương (thông tin liên lạc được thiết lập thông qua các đối tác đã có từ trước của chúng tôi và các đối tác mới được xác định thông qua khảo sát cộng đồng) để giúp họ nhận thức và quản lý tốt hơn sự phụ thuộc của cấu trúc xã hội vào các dịch vụ nước có nguồn gốc từ đất ngập nước, sử dụng cách tiếp cần về quyền con người. Chúng tôi sẽ hoàn thành công việc này bằng cách sử dụng các nhóm địa phương bao gồm giảng viên địa phương và sinh viên sau đại học, cùng với nhóm quản lí khu vực bao gồm giám đốc và điều phối viên dự án. Nghiên cứu này cần 30 tháng để hoàn thành tất cả các sản phẩm của dự án.</p>",
+                "content": "<p>Đất ngập nước rất quan trọng đối với mối quan hệ lương thực-năng lượng-nước của khu vực sông Mekong. An ninh nguồn nước nông thôn là mối quan tâm lớn đối với các nước khu vực sông Mê Kông vì các ngành kinh tế nông thôn giữ vai trò chủ lực của tất cả các nước, đặc biệt là nông nghiệp và nuôi trồng thủy sản, cũng như các nguồn nước chính cho sinh hoạt gia đình và cấp nước công cộng, phụ thuộc vào nước từ các vùng đất ngập nước. Những người bị ảnh hưởng nhiều nhất, đặc biệt là phụ nữ, trẻ em và người cao tuổi, là những nhóm dễ bị tổn thương do sinh kế của họ phụ thuộc nhiều vào đất ngập nước. Để chuẩn bị ứng phó cho các tác động từ biến đổi toàn cầu và tăng cường quản lý nước ở khu vực sông Mê Kông, định lượng các dịch vụ hệ sinh thái từ các vùng đất ngập nước là điều cấp bách cần được thực hiện.</p><p>Mối quan tâm cụ thể của chúng tôi là vai trò của đất ngập nước đối với an ninh nguồn nước. Các mục tiêu cụ thể của nghiên cứu này:</p><ul><li class=\"icon-angle-right-before\">Xác định đối với mỗi loại đất ngập nước ở khu vực sông Mekong thì trữ lượng nước, chất lượng nước cung cấp và cộng đồng có mối quan hệ như thế nào với các dịch vụ hệ sinh thái.</li><li class=\"icon-angle-right-before\">Dự báo tác động của sự thay đổi toàn cầu và khu vực về an ninh nước cho cộng đồng thông qua những thay đổi trong các dịch vụ đó.</li></ul><p>Chúng tôi sẽ chọn bốn vùng đất ngập nước, một vùng cho mỗi quốc gia trong số bốn nước Hạ lưu sông Mê Kông làm địa điểm nghiên cứu của chúng tôi. Mỗi vùng đất ngập nước sẽ đại diện cho trữ lượng nước đáng kể của khu vực và cách các nhóm cộng đồng địa phương khác nhau sử dụng tài nguyên nước. Các vùng đó bao gồm:</p><ul><li class=\"icon-angle-right-before\">Vùng đất ngập nước ở Campuchia.</li><li class=\"icon-angle-right-before\">Đầm lầy cạn do nước ngầm cung cấp ở CHDCND Lào.</li><li class=\"icon-angle-right-before\">Khu hổn hợp rừng – đầm lầy cửa sông ở Thái Lan</li><li class=\"icon-angle-right-before\">Khu rừng đầm lầy than bùn ở Việt Nam.</li></ul><p>Chúng tôi sẽ sử dụng các phép đo thực địa về các tham số thủy văn, các thông số chất lượng nước và các mô hình đơn giản từ dữ liệu đã được công bố để định lượng trữ lượng nước, sử dụng dữ liệu vệ tinh và đo đạc thực địa để xác định cấu trúc thảm thực vật, sử dụng các đợt điều tra cộng đồng và kinh tế xã hội để mô tả việc sử dụng đất và các nhóm sử dụng nước tại địa phương. Chúng tôi sẽ xem xét sự tương tác của các hệ thống này (tự nhiên và con người) bằng cách xác định các dịch vụ hệ sinh thái nước chính từ các bộ dữ liệu kinh tế xã hội và lý sinh kết hợp, đồng thời sử dụng các trò chơi để đánh giá sự phụ thuộc và phản ứng của cộng đồng đối với thay đổi, nhấn mạnh vai trò của các yếu tố kinh tế xã hội, vai trò giới, và tương tác giữa các nhóm người dùng. Chúng tôi sẽ điều tra vai trò của phụ nữ trong việc sử dụng nước và duy trì an ninh nguồn nước, đồng thời xác định các phương thức để tăng cường những vai trò này. Các địa điểm nghiên cứu này đại diện cho các điều kiện kinh tế xã hội nông thôn khu vực sông Mê Kông, bao gồm xung đột trong sử dụng và quản lý nước chung giữa các nhóm, công bằng xã hội và bình đẳng giới, giảm nghèo ở nông thôn và vai trò của nước từ đất ngập nước trong việc tăng cường kinh tế hộ gia đình và sinh kế, cũng như giảm bớt sự phụ thuộc của địa phương vào tài nguyên tự nhiên. Chúng tôi sẽ tích hợp các kết quả nghiên cứu vào một dự án đang thực hiện để kết hợp các nhà khoa học đất ngập nước với các nhà quản lý đất ngập nước địa phương: dự án đó sẽ cung cấp thông tin cho nghiên cứu này bằng cách cải thiện nguồn thông tin giữa các nhóm sử dụng nước địa phương (bao gồm nam giới, phụ nữ, người cao tuổi, trẻ em) và các nhà nghiên cứu của dự án sau đó sẽ có thể tận dụng các phát hiện của mình bằng cách kết nối với các nhà quản lý đất ngập nước địa phương. Trong suốt dự án, chúng tôi sẽ liên lạc với các nhóm địa phương (thông tin liên lạc được thiết lập thông qua các đối tác đã có từ trước của chúng tôi và các đối tác mới được xác định thông qua khảo sát cộng đồng) để giúp họ nhận thức và quản lý tốt hơn sự phụ thuộc của cấu trúc xã hội vào các dịch vụ nước có nguồn gốc từ đất ngập nước, sử dụng cách tiếp cần về quyền con người. Chúng tôi sẽ hoàn thành công việc này bằng cách sử dụng các nhóm địa phương bao gồm giảng viên địa phương và sinh viên sau đại học, cùng với nhóm quản lí khu vực bao gồm giám đốc và điều phối viên dự án. Nghiên cứu này cần 30 tháng để hoàn thành tất cả các sản phẩm của dự án.</p>",
                 "profile_detail":{
                     "author": "Lý Văn Lợi",
                     "date": "11 Tháng Sáu, 2021",
@@ -198,7 +198,7 @@
         "profile": {
             "post1":{
                 "title": "Ký kết đào tạo sinh viên thực hành ngắn hạn",
-                "content": "<p>Tạo điều kiện cho học sinh, sinh viên (HSSV) các trường cao đẳng và đại học trong vùng Đồng bằng sông Cửu Long, có cơ hội được tiếp cận với môi trường làm việc chuyên sâu; thông qua các hoạt động thực tế như</p><ul style='list-style-type: circle;'><li className=\"icon-angle-right-before\">Tham gia thực tập từ khảo sát môi trường tự nhiên đất-nước-không khí;</li><li className=\"icon-angle-right-before\">Quyết định chọn cây trồng vật nuôi, để xây dựng hệ thống canh tác thông minh;</li><li className=\"icon-angle-right-before\">Xây dựng và thực hành qui trình sản xuất sạch và sản phẩm an toàn cho người tiêu dùng và cho môi trường;</li><li className=\"icon-angle-right-before\">Tham gia sản xuất, thiết kế và xây dựng các mô hình thực nghiệm và dây chuyền kinh doanh, phân phối tại Công ty Hai Lúa Vàng, Công ty xuất khẩu hàng tiểu thủ công nghiệp Việt Nam Housewares;</li><li className=\"icon-angle-right-before\">Các dự án Xóa đói giảm nghèo, Phát triển nông thôn và Bảo tồn Tài nguyên thiên nhiên và Môi trường của Quỹ MCF.</li></ul><p>Thông qua các hoạt động nầy sẽ giúp cho HSSV củng cố và hoàn thiện kiến thức chuyên môn đã học, rèn luyện nâng cao kỹ năng mềm, như:</p><ul style='list-style-type: circle;''><li className=\"icon-angle-right-before\">Có khả năng tìm thông tin và tự nghiên cứu để giải quyết những vấn đề khó khăn và nâng cao trình độ chuyên môn;</li><li className=\"icon-angle-right-before\">Có động cơ và thái độ học tập, làm việc đúng đắn và nghiêm túc;</li><li className=\"icon-angle-right-before\">Có kỹ năng truyền đạt, giao tiếp, thuyết phục hay đàm phán để chuyển giao khoa học kỹ thuật đến người dân;</li><li className=\"icon-angle-right-before\">Có khả năng tập hợp và tổ chức làm việc theo nhóm, có bản lĩnh trí tuệ vững vàng đáp ứng đủ các yếu tố chuẩn đầu ra của chương trình đào tạo, đáp ứng yêu cầu ngày càng cao của nhà tuyển dụng, có khả năng tự thích nghi vào công việc và môi trường làm việc mới.</li></ul><p><strong>Một số hình ảnh thực tế</strong></p>",
+                "content": "<p>Tạo điều kiện cho học sinh, sinh viên (HSSV) các trường cao đẳng và đại học trong vùng Đồng bằng sông Cửu Long, có cơ hội được tiếp cận với môi trường làm việc chuyên sâu; thông qua các hoạt động thực tế như</p><ul style='list-style-type: circle;'><li class=\"icon-angle-right-before\">Tham gia thực tập từ khảo sát môi trường tự nhiên đất-nước-không khí;</li><li class=\"icon-angle-right-before\">Quyết định chọn cây trồng vật nuôi, để xây dựng hệ thống canh tác thông minh;</li><li class=\"icon-angle-right-before\">Xây dựng và thực hành qui trình sản xuất sạch và sản phẩm an toàn cho người tiêu dùng và cho môi trường;</li><li class=\"icon-angle-right-before\">Tham gia sản xuất, thiết kế và xây dựng các mô hình thực nghiệm và dây chuyền kinh doanh, phân phối tại Công ty Hai Lúa Vàng, Công ty xuất khẩu hàng tiểu thủ công nghiệp Việt Nam Housewares;</li><li class=\"icon-angle-right-before\">Các dự án Xóa đói giảm nghèo, Phát triển nông thôn và Bảo tồn Tài nguyên thiên nhiên và Môi trường của Quỹ MCF.</li></ul><p>Thông qua các hoạt động nầy sẽ giúp cho HSSV củng cố và hoàn thiện kiến thức chuyên môn đã học, rèn luyện nâng cao kỹ năng mềm, như:</p><ul style='list-style-type: circle;''><li class=\"icon-angle-right-before\">Có khả năng tìm thông tin và tự nghiên cứu để giải quyết những vấn đề khó khăn và nâng cao trình độ chuyên môn;</li><li class=\"icon-angle-right-before\">Có động cơ và thái độ học tập, làm việc đúng đắn và nghiêm túc;</li><li class=\"icon-angle-right-before\">Có kỹ năng truyền đạt, giao tiếp, thuyết phục hay đàm phán để chuyển giao khoa học kỹ thuật đến người dân;</li><li class=\"icon-angle-right-before\">Có khả năng tập hợp và tổ chức làm việc theo nhóm, có bản lĩnh trí tuệ vững vàng đáp ứng đủ các yếu tố chuẩn đầu ra của chương trình đào tạo, đáp ứng yêu cầu ngày càng cao của nhà tuyển dụng, có khả năng tự thích nghi vào công việc và môi trường làm việc mới.</li></ul><p><strong>Một số hình ảnh thực tế</strong></p>",
                 "titleImg-1": "Sinh viên khoan lấy mẫu đất",
                 "titleImg-2": "Thực hành dệt tại nhóm Gia Dụng Việt",
                 "profile_detail":{
@@ -212,16 +212,17 @@
                 "content": "<h2><strong>I. Giới thiệu về công ty</strong></h2><p>Công ty Cổ phần Giải pháp sinh kế cho Đồng bằng sông Cửu Long (MLS) được thành lập vào ngày 20/02/2021, là công ty hoạt động trong lĩnh vực sản xuất, phát triển nông nghiệp, tư vấn về nông học, khoa học về khí hậu và biến đổi khí hậu, cung cấp dịch vụ nghiên cứu, khảo sát khoa học về các lĩnh vực khoa học nông nghiệp, khoa học tự nhiên nhằm mục đích hỗ trợ phát triển nông nghiệp cho người nông dân, phát triển kinh tế gắn liền với bảo vệ môi trường và đa dạng sinh học.</p><p>Công ty Cổ phần MLS vừa là cầu nối gắn kết giữa các tổ chức nghiên cứu, các tổ chức phi lợi nhuận trong lĩnh vực tư vấn phát triển nông nghiệp bền vững với người nông dân vừa là trung gian thương mại, hỗ trợ người nông dân trong quá trình phân phối, tiêu thụ sản phẩm.</p><p>Công ty Cổ phần MLS định hướng phát triển trong tương lai là trở thành một trong những công ty hàng đầu tại khu vực đồng bằng Sông Cửu Long tiên phong trong việc phát triển kinh tế nông nghiệp bền vững đi liền với việc bảo vệ môi trường và đa dạng sinh học, tạo ra sự hài hòa giữa con người và tự nhiên, góp phần chống lại và thích nghi với các tác động của việc biến đổi khí hậu tại khu vực.</p><h2><strong>II. Lĩnh vực kinh doanh</strong></h2>",
                 "tableHeader-col1": "Mã ngành",
                 "tableHeader-col2": "Tên ngành, nghề kinh doang",
-                "row-1":"\"0118 (Chính)\",\"Trồng rau, đậu các loại và trồng hoa\"",
-                "row-2":"\"0161\",\"Hoạt động dịch vụ trồng trọt\"",
-                "row-3":"\"0162\",\"Hoạt động dịch vụ chăn nuôi\"",
-                "row-4":"\"0163\",\"Hoạt động dịch vụ sau thu hoạch\"",
-                "row-5":"\"0322\",\"Nuôi trồng thuỷ sản nội địa\"",
-                "row-6":"\"1629\",\"Sản xuất sản phẩm khác từ gỗ; sản xuất sản phẩm từ tre, nứa, rơm, rạ và vật liệu tết bện\"",
-                "row-7":"\"4632\",\"Bán buôn thực phẩm\"",
-                "row-8":"\"4669\",\"Bán buôn chuyên doanh khác chưa được phân vào đâu\"",
-                "row-9":"\"7020\",\"Hoạt động tư vấn quản lý\"",
-                "row-10":"\"7490\",\"Hoạt động chuyên môn, khoa học và công nghệ khác chưa được phân vào đâu <p>Chi tiết: Tư vấn nông học, tư vấn khoa học về khí hậu và biến đổi khí hậu, cung cấp dịch vụ nghiên cứu, khảo sát khoa học về các lĩnh vực khoa học nông nghiệp, khoa học tự nhiên</p>\"",
+                "major": "(Chính)",
+                "row-1":"Trồng rau, đậu các loại và trồng hoa",
+                "row-2":"Hoạt động dịch vụ trồng trọt",
+                "row-3":"Hoạt động dịch vụ chăn nuôi",
+                "row-4":"Hoạt động dịch vụ sau thu hoạch",
+                "row-5":"Nuôi trồng thuỷ sản nội địa",
+                "row-6":"Sản xuất sản phẩm khác từ gỗ; sản xuất sản phẩm từ tre, nứa, rơm, rạ và vật liệu tết bện",
+                "row-7":"Bán buôn thực phẩm",
+                "row-8":"Bán buôn chuyên doanh khác chưa được phân vào đâu",
+                "row-9":"Hoạt động tư vấn quản lý",
+                "row-10":"Hoạt động chuyên môn, khoa học và công nghệ khác chưa được phân vào đâu <p>Chi tiết: Tư vấn nông học, tư vấn khoa học về khí hậu và biến đổi khí hậu, cung cấp dịch vụ nghiên cứu, khảo sát khoa học về các lĩnh vực khoa học nông nghiệp, khoa học tự nhiên</p>",
                 "table":"<table style=\"width: 100%; border-collapse: collapse; border-style: solid; background-color: #e3dede;\"><tbody><tr><td style=\"width: 100%;\"><h3>CÔNG TY CỔ PHẦN MLS VIỆT NAM</h3><p>Ấp Thạnh Long, Xã Đông Thạnh, Huyện Châu Thành, Tỉnh Hậu Giang, Việt Nam</p><p>Điện thoại: 0937128716</p><p>Email: <span style=\"color: #3366ff;\">lskieuvuong.2016@gmail.com</span></p></td></tr></tbody></table>",
                 "profile_detail":{
                     "author": "Lý Văn Lợi",
@@ -272,5 +273,12 @@
             "work": "Thứ 2 - Thứ 6: 7:00am - 5:00pm"
         }
     },
+    "stories":"Đang phát triển, xin vui lòng quay lại sau.",
+    "search":{
+        "search":"Tìm kiếm...",
+        "not_found": "Kết quả tìm kiếm cho từ khóa:",
+        "message": "XIN LỖI, NHƯNG KHÔNG CÓ GÌ PHÙ HỢP VỚI ĐIỀU KIỆN TÌM KIẾM CỦA BẠN. VUI LÒNG THỬ LẠI VỚI MỘT SỐ TỪ KHÓA KHÁC NHAU."
+    },
+    "page-not-found":"Chúng tôi xin lỗi, nhưng trang bạn đang tìm kiếm không tồn tại.",
     "footer": "MCF © 2020 | ĐÃ ĐĂNG KÝ BẢN QUYỀN"
 }

@@ -8,6 +8,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import { useLocation, useNavigate } from "react-router-dom";
 import { Box, Typography } from "@mui/material";
 import { FormEvent, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 type Props = {
   resultProjects: Array<Project>;
@@ -15,6 +16,8 @@ type Props = {
 };
 
 const Category = ({ resultProjects, title }: Props) => {
+  const { t } = useTranslation();
+
   const [searchInput, setSearchInput] = useState("");
   const navigate = useNavigate();
   const location = useLocation();
@@ -52,9 +55,9 @@ const Category = ({ resultProjects, title }: Props) => {
         title={
           title
             ? `Project Category: ${title}`
-            : `${resultProjects.length} result for: ${location.state.input}`
+            : `${resultProjects.length} ${t("search.not_found")} ${location.state.input}`
         }
-        name={title || `search result for: ${location.state.input}`}
+        name={title || `${t("search.not_found")} ${location.state.input}`}
       ></Headline>
       <Wrapper
         sx={{
@@ -79,8 +82,7 @@ const Category = ({ resultProjects, title }: Props) => {
                   textAlign="center"
                   letterSpacing=".1em"
                 >
-                  SORRY, BUT NOTHING MATCHED YOUR SEARCH TERMS. PLEASE TRY AGAIN
-                  WITH SOME DIFFERENT KEYWORDS.
+                  {t("search.message")}
                 </Typography>
                 <Box position="relative" textAlign="center">
                   <Box
@@ -122,7 +124,7 @@ const Category = ({ resultProjects, title }: Props) => {
                       setSearchInput(e.currentTarget.value);
                     }}
                     onKeyDown={search}
-                    placeholder="Search..."
+                    placeholder={t("search.search")}
                   ></Box>
                   <SearchIcon
                     sx={{

@@ -5,8 +5,13 @@ import ToggleModalImg from "@/components/ToggleModalImg";
 import { Box, Link, Typography } from "@mui/material";
 import "../Profile.scss";
 import Footer from "@/components/Footer";
+import { useTranslation } from "react-i18next";
 
 const Profile = () => {
+  const { t } = useTranslation();
+  document.title = `${t("about-us.the_mcf_council.nguyen-thi-kieu-vuong.name")} - MCF`;
+
+
   const [toggleModal, setToggleModal] = useState(false);
   return (
     <>
@@ -22,7 +27,7 @@ const Profile = () => {
                       <Link
                         // href="https://mcf.com.vn/wp-content/uploads/2015/04/Vu-Van-Hieu.png"
                         rel="ilightbox[img_12462_647d8bee23d81]"
-                        title="Bà Nguyễn Thị Kiều Vương"
+                        title={t("about-us.the_mcf_council.nguyen-thi-kieu-vuong.name")}
                         className="preloader highImg"
                         onClick={() => {
                           document.body.style.overflow = "hidden";
@@ -33,9 +38,9 @@ const Profile = () => {
                           component="img"
                           width="410px"
                           height="380px"
-                          alt="Bà Nguyễn Thị Kiều Vương"
+                          alt={t("about-us.the_mcf_council.nguyen-thi-kieu-vuong.name")}
                           src="http://localhost:5173/images/people/Nguyen-Thi-Kieu-Vuong.png"
-                          title="Bà Nguyễn Thị Kiều Vương"
+                          title={t("about-us.the_mcf_council.nguyen-thi-kieu-vuong.name")}
                           sizes="(max-width: 410px) 100vw, 410px"
                           srcSet="http://localhost:5173/images/people/Nguyen-Thi-Kieu-Vuong.png 290w, https://mcf.com.vn/wp-content/uploads/2015/04/Nguyen-Thi-Kieu-Vuong.png 366w"
                         ></Box>
@@ -58,7 +63,7 @@ const Profile = () => {
                           textDecoration: "none",
                         }}
                       >
-                        Bà Nguyễn Thị Kiều Vương
+                        {t("about-us.the_mcf_council.nguyen-thi-kieu-vuong.name")}
                       </Typography>
                       <Typography
                         variant="h4"
@@ -77,7 +82,7 @@ const Profile = () => {
                           letterSpacing: ".1em",
                         }}
                       >
-                        Phó Chủ tịch Hội đồng MCF
+                        {t("about-us.the_mcf_council.nguyen-thi-kieu-vuong.position")}
                       </Typography>
                     </Box>
                     <Box
@@ -99,19 +104,13 @@ const Profile = () => {
                               className="cmsmasters_column one_first"
                             >
                               <Box component="div">
-                                <Box component="p">
-                                  <strong>Bà Nguyễn Thị Kiều Vương </strong> là
-                                  đồng sáng là Luật sư của Liên đoàn Luật sư
-                                  Việt Nam, Đoàn Luật sư Thành phố Hồ Chí Minh
-                                  và có hơn 18 năm kinh nghiệm trong lĩnh vực
-                                  pháp luật. Bà là người sáng lập kiêm Tổng Giám
-                                  đốc Công ty Luật Phúc Gia Nguyễn, chuyên tư
-                                  vấn pháp luật về đầu tư tại Việt Nam. Bà cũng
-                                  là trọng tài viên tại Trung tâm Trọng tài Quốc
-                                  tế Thái Bình Dương và tích cực hoạt động từ
-                                  thiện hỗ trợ những người có hoàn cảnh khó khăn
-                                  về các vấn đề pháp lý ở miền Nam và miền Trung
-                                  Việt Nam.
+                                <Box component="p" 
+                                dangerouslySetInnerHTML={{
+                                    __html: `${t(
+                                      "about-us.the_mcf_council.nguyen-thi-kieu-vuong.story"
+                                    )}`,
+                                  }}
+                                >
                                 </Box>
                               </Box>
                             </Box>
@@ -137,7 +136,7 @@ const Profile = () => {
                           letterSpacing: ".1em",
                         }}
                       >
-                        Bạn thích hồ sơ này?
+                        {t("profileDetail.like_this_profile")}
                       </Typography>
                       <Box component="div" className="share_posts_inner">
                         <Link href="https://www.facebook.com/sharer/sharer.php?display=popup&u=https%3A%2F%2Fmcf.com.vn%2Fprofile%2Fvu-van-hieu-2%2F">
@@ -156,14 +155,14 @@ const Profile = () => {
                 <Box component="div" className="profile_sidebar">
                   <Box component="div" className="profile_details">
                     <Typography variant="h4" className="profile_details_title">
-                      Profile details
+                    {t("profileDetail.profile_detail")}
                     </Typography>
                     <Box component="div" className="profile_details_item">
                       <Box
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Lượt thích:
+                        {t("profileDetail.likes")}
                       </Box>
                       <Box
                         component="div"
@@ -188,7 +187,7 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Chuyên mục:
+                        {t("profileDetail.categories")}
                       </Box>
                       <Box
                         component="div"
@@ -203,7 +202,7 @@ const Profile = () => {
                             className="cmsmasters_cat_color cmsmasters_cat_153"
                             rel="category tag"
                           >
-                            HỘI ĐỒNG MCF
+                            {t("about-us.the_mcf_council.the_mcf_council")}
                           </Link>
                         </Box>
                       </Box>
@@ -214,7 +213,7 @@ const Profile = () => {
                       variant="h4"
                       className="profile_social_icons_title"
                     >
-                      Liên kết
+                      {t("profileDetail.social")}
                     </Typography>
                     <Box component="ul" className="profile_social_icons_list">
                       <Box component="li">
@@ -246,7 +245,7 @@ const Profile = () => {
               rel="prev"
               className="icon-angle-left"
             >
-              Tiến sĩ Dương Văn Ni
+              {t("about-us.the_mcf_council.duong-van-ni.name")}
             </Link>
           </Box>
           <Box
@@ -258,7 +257,7 @@ const Profile = () => {
               rel="next"
               className="icon-angle-right"
             >
-              Ông Vũ Văn Hiệu
+             {t("about-us.the_mcf_council.vu-van-hieu.name")}
             </Link>
           </Box>
         </Box>

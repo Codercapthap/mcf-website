@@ -5,8 +5,10 @@ import ToggleModalImg from "@/components/ToggleModalImg";
 import { Box, Link, Typography } from "@mui/material";
 import "../Profile.scss";
 import Footer from "@/components/Footer";
-
+import { useTranslation } from "react-i18next";
 const Profile = () => {
+  const { t } = useTranslation();
+  document.title = `${t("about-us.member_of_mcf.ly-van-loi.name")} - MCF`;
   const [toggleModal, setToggleModal] = useState(false);
   return (
     <>
@@ -22,7 +24,7 @@ const Profile = () => {
                       <Link
                         // href="https://mcf.com.vn/wp-content/uploads/2015/04/Vu-Van-Hieu.png"
                         rel="ilightbox[img_12627_64987034241fd]"
-                        title="Ông Lý Văn Lợi"
+                        title={t("about-us.member_of_mcf.ly-van-loi.name")}
                         className="preloader highImg"
                         onClick={() => {
                           document.body.style.overflow = "hidden";
@@ -33,9 +35,9 @@ const Profile = () => {
                           component="img"
                           width="100%"
                           height="100%"
-                          alt="Ông Lý Văn Lợi"
+                          alt={t("about-us.member_of_mcf.ly-van-loi.name")}
                           src="http://localhost:5173/images/people/ly-van-loi-1-960x610.jpg"
-                          title="Ông Lý Văn Lợi"
+                          title={t("about-us.member_of_mcf.ly-van-loi.name")}
                           sizes="(max-width: 410px) 100vw, 410px"
                         ></Box>
                       </Link>
@@ -57,7 +59,7 @@ const Profile = () => {
                           textDecoration: "none",
                         }}
                       >
-                        Ông Lý Văn Lợi
+                        {t("about-us.member_of_mcf.ly-van-loi.name")}
                       </Typography>
                       {/* <Typography
                         variant="h4"
@@ -98,22 +100,13 @@ const Profile = () => {
                               className="cmsmasters_column one_first"
                             >
                               <Box component="div">
-                                <Box component="p">
-                                  <strong>Ông Lý Văn Lợi </strong> là nhà nghiên
-                                  cứu trẻ tại Bộ môn Quản lý Môi trường, Khoa
-                                  Môi trường & Tài nguyên Thiên nhiên, Đại học
-                                  Cần Thơ. Ông quan tâm đến công tác bảo tồn đa
-                                  dạng sinh học, sử dụng hợp lý đất ngập nước,
-                                  quản lý nước và thích ứng với biến đổi khí hậu
-                                  ở Đồng bằng sông Cửu Long. Lợi đã có kinh
-                                  nghiệm thực tế với nhiều khu bảo tồn từ 10 năm
-                                  trước. Giờ đây, Ông đang nâng cao kiến ​​thức
-                                  của mình bằng cách đăng ký nghiên cứu sinh
-                                  Tiến sĩ tại Đại học Mahidol, Thái Lan. Bên
-                                  cạnh đó, ông có một niềm đam mê xây dựng “Mạng
-                                  lưới các nhà khoa học trẻ” nhằm kết nối các
-                                  nhà nghiên cứu trẻ trên toàn thế giới để hỗ
-                                  trợ phát triển bền vững ở khu vực sông Mekong.
+                                <Box component="p"
+                                dangerouslySetInnerHTML={{
+                                  __html: `${t(
+                                    "about-us.member_of_mcf.ly-van-loi.story"
+                                  )}`,
+                                }}
+                                >
                                 </Box>
                               </Box>
                             </Box>
@@ -139,7 +132,7 @@ const Profile = () => {
                           letterSpacing: ".1em",
                         }}
                       >
-                        Bạn thích hồ sơ này?
+                        {t("profileDetail.like_this_profile")}
                       </Typography>
                       <Box component="div" className="share_posts_inner">
                         <Link href="https://www.facebook.com/sharer/sharer.php?display=popup&u=https%3A%2F%2Fmcf.com.vn%2Fprofile%2Fvu-van-hieu-2%2F">
@@ -158,14 +151,14 @@ const Profile = () => {
                 <Box component="div" className="profile_sidebar">
                   <Box component="div" className="profile_details">
                     <Typography variant="h4" className="profile_details_title">
-                      Profile details
+                    {t("profileDetail.profile_detail")}
                     </Typography>
                     <Box component="div" className="profile_details_item">
                       <Box
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Lượt thích:
+                        {t("profileDetail.likes")}
                       </Box>
                       <Box
                         component="div"
@@ -190,7 +183,7 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Email:
+                        {t("profileDetail.email")}
                       </Box>
                       <Box
                         component="div"
@@ -204,7 +197,7 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Chuyên mục:
+                        {t("profileDetail.categories")}
                       </Box>
                       <Box
                         component="div"
@@ -219,7 +212,7 @@ const Profile = () => {
                             className="cmsmasters_cat_color cmsmasters_cat_153"
                             rel="category tag"
                           >
-                            THÀNH VIÊN MCF
+                            {t("about-us.member_of_mcf.member_of_mcf")}
                           </Link>
                         </Box>
                       </Box>
@@ -230,7 +223,7 @@ const Profile = () => {
                       variant="h4"
                       className="profile_social_icons_title"
                     >
-                      Liên kết
+                      {t("profileDetail.social")}
                     </Typography>
                     <Box component="ul" className="profile_social_icons_list">
                       <Box component="li">
@@ -262,7 +255,7 @@ const Profile = () => {
               rel="prev"
               className="icon-angle-left"
             >
-              Ông Nguyễn Hoài Bảo
+              {t("about-us.member_of_mcf.nguyen-hoai-bao.name")}
             </Link>
           </Box>
           <Box
@@ -274,7 +267,7 @@ const Profile = () => {
               rel="next"
               className="icon-angle-right"
             >
-              PGS.TS Nguyễn Thanh Tùng
+              {t("about-us.member_of_mcf.nguyen-thanh-tung.name")}
             </Link>
           </Box>
         </Box>

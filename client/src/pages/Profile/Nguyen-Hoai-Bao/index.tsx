@@ -5,8 +5,11 @@ import ToggleModalImg from "@/components/ToggleModalImg";
 import { Box, Link, Typography } from "@mui/material";
 import "../Profile.scss";
 import Footer from "@/components/Footer";
-
+import { useTranslation } from "react-i18next";
 const Profile = () => {
+  const { t } = useTranslation();
+  document.title = `${t("about-us.member_of_mcf.nguyen-hoai-bao.name")} - MCF`;
+
   const [toggleModal, setToggleModal] = useState(false);
   return (
     <>
@@ -22,7 +25,7 @@ const Profile = () => {
                       <Link
                         // href="https://mcf.com.vn/wp-content/uploads/2015/04/Vu-Van-Hieu.png"
                         rel="ilightbox[img_12627_64987034241fd]"
-                        title="Ông Nguyễn Hoài Bảo"
+                        title={t("about-us.member_of_mcf.nguyen-hoai-bao.name")}
                         className="preloader highImg"
                         onClick={() => {
                           document.body.style.overflow = "hidden";
@@ -31,9 +34,9 @@ const Profile = () => {
                       >
                         <Box
                           component="img"
-                          alt="Ông Nguyễn Hoài Bảo"
+                          alt={t("about-us.member_of_mcf.nguyen-hoai-bao.name")}
                           src="http://localhost:5173/images/people/nguyen-hoai-bao.jpg"
-                          title="Ông Nguyễn Hoài Bảo"
+                          title={t("about-us.member_of_mcf.nguyen-hoai-bao.name")}
                           sizes="(max-width: 410px) 100vw, 410px"
                         ></Box>
                       </Link>
@@ -55,7 +58,7 @@ const Profile = () => {
                           textDecoration: "none",
                         }}
                       >
-                        Ông Nguyễn Hoài Bảo
+                        {t("about-us.member_of_mcf.nguyen-hoai-bao.name")}
                       </Typography>
                       {/* <Typography
                         variant="h4"
@@ -96,18 +99,13 @@ const Profile = () => {
                               className="cmsmasters_column one_first"
                             >
                               <Box component="div">
-                                <Box component="p">
-                                  <strong>Ông Nguyễn Hoài Bảo </strong> là đồng
-                                  sáng là giảng viên bộ môn điểu học của trường
-                                  Đại học Khoa học Tự nhiên thuộc Đại học Quốc
-                                  gia Thành phố Hồ Chí Minh. Ông là người sáng
-                                  lập và là Giám đốc điều hành của Công ty Wild
-                                  Tour đã có hơn 15 năm hoạt động tại Việt Nam
-                                  và các nước. Ông có hơn 15 năm kinh nghiệm làm
-                                  việc trong lĩnh vực bảo tồn động vật hoang dã
-                                  và hợp tác với các tổ chức quốc tế để nghiên
-                                  cứu về hệ sinh thái chim ở Đông Nam Á. Ông
-                                  cũng đã xuất bản một số cuốn sách về điểu học.
+                                <Box component="p"
+                                dangerouslySetInnerHTML={{
+                                  __html: `${t(
+                                    "about-us.member_of_mcf.nguyen-hoai-bao.story"
+                                  )}`,
+                                }}
+                                >
                                 </Box>
                               </Box>
                             </Box>
@@ -133,7 +131,7 @@ const Profile = () => {
                           letterSpacing: ".1em",
                         }}
                       >
-                        Bạn thích hồ sơ này?
+                        {t("profileDetail.like_this_profile")}
                       </Typography>
                       <Box component="div" className="share_posts_inner">
                         <Link href="https://www.facebook.com/sharer/sharer.php?display=popup&u=https%3A%2F%2Fmcf.com.vn%2Fprofile%2Fvu-van-hieu-2%2F">
@@ -152,14 +150,14 @@ const Profile = () => {
                 <Box component="div" className="profile_sidebar">
                   <Box component="div" className="profile_details">
                     <Typography variant="h4" className="profile_details_title">
-                      Profile details
+                    {t("profileDetail.profile_detail")} 
                     </Typography>
                     <Box component="div" className="profile_details_item">
                       <Box
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Lượt thích:
+                        {t("profileDetail.likes")}
                       </Box>
                       <Box
                         component="div"
@@ -184,7 +182,7 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Chuyên mục:
+                        {t("profileDetail.categories")}
                       </Box>
                       <Box
                         component="div"
@@ -199,7 +197,7 @@ const Profile = () => {
                             className="cmsmasters_cat_color cmsmasters_cat_153"
                             rel="category tag"
                           >
-                            THÀNH VIÊN MCF
+                            {t("about-us.member_of_mcf.member_of_mcf")}
                           </Link>
                         </Box>
                       </Box>
@@ -210,7 +208,7 @@ const Profile = () => {
                       variant="h4"
                       className="profile_social_icons_title"
                     >
-                      Liên kết
+                      {t("profileDetail.social")}
                     </Typography>
                     <Box component="ul" className="profile_social_icons_list">
                       <Box component="li">
@@ -242,7 +240,7 @@ const Profile = () => {
               rel="prev"
               className="icon-angle-left"
             >
-              Tiến sĩ Hồ Lê Khoa
+              {t("about-us.the_supervisory_council.ho-le-khoa.name")}
             </Link>
           </Box>
           <Box
@@ -254,7 +252,7 @@ const Profile = () => {
               rel="next"
               className="icon-angle-right"
             >
-              Ông Lý Văn Lợi
+              {t("about-us.member_of_mcf.ly-van-loi.name")}
             </Link>
           </Box>
         </Box>

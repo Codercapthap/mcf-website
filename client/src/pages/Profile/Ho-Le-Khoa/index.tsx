@@ -5,8 +5,12 @@ import ToggleModalImg from "@/components/ToggleModalImg";
 import { Box, Link, Typography } from "@mui/material";
 import "../Profile.scss";
 import Footer from "@/components/Footer";
+import { useTranslation } from "react-i18next";
 
 const Profile = () => {
+  const { t } = useTranslation();
+  document.title = `${t("about-us.the_supervisory_council.ho-le-khoa.name")} - MCF`;
+
   const [toggleModal, setToggleModal] = useState(false);
   return (
     <>
@@ -22,7 +26,7 @@ const Profile = () => {
                       <Link
                         // href="https://mcf.com.vn/wp-content/uploads/2015/04/Vu-Van-Hieu.png"
                         rel="ilightbox[img_12627_64987034241fd]"
-                        title="Tiến sĩ Hồ Lê Khoa"
+                        title={t("about-us.the_supervisory_council.ho-le-khoa.name")}
                         className="preloader highImg"
                         onClick={() => {
                           document.body.style.overflow = "hidden";
@@ -33,9 +37,9 @@ const Profile = () => {
                           component="img"
                           width="100%"
                           height="100%"
-                          alt="Tiến sĩ Hồ Lê Khoa"
+                          alt={t("about-us.the_supervisory_council.ho-le-khoa.name")}
                           src="http://localhost:5173/images/people/Ho-Van-Khoa-580x490.jpg"
-                          title="Tiến sĩ Hồ Lê Khoa"
+                          title={t("about-us.the_supervisory_council.ho-le-khoa.name")}
                           sizes="(max-width: 410px) 100vw, 410px"
                         ></Box>
                       </Link>
@@ -57,7 +61,7 @@ const Profile = () => {
                           textDecoration: "none",
                         }}
                       >
-                        Tiến sĩ Hồ Lê Khoa
+                        {t("about-us.the_supervisory_council.ho-le-khoa.name")}
                       </Typography>
                       <Typography
                         variant="h4"
@@ -76,7 +80,7 @@ const Profile = () => {
                           letterSpacing: ".1em",
                         }}
                       >
-                        THÀNH VIÊN HỘI ĐỒNG GIÁM SÁT
+                        {t("about-us.the_supervisory_council.ho-le-khoa.position")}
                       </Typography>
                     </Box>
                     <Box
@@ -98,19 +102,13 @@ const Profile = () => {
                               className="cmsmasters_column one_first"
                             >
                               <Box component="div">
-                                <Box component="p">
-                                  <strong>Tiến sĩ Hồ Lê Khoa </strong>là người
-                                  sáng lập Abaki, một công ty phần mềm có trụ sở
-                                  tại Úc cung cấp các giải pháp công nghệ thông
-                                  tin cho các Dịch vụ Y tế. Ông từng nhận học
-                                  bổng kế hoạch Colombo và có bằng cử nhân và
-                                  tiến sĩ về kỹ thuật cơ khí tại Đại học Monash.
-                                  Ông là thành viên của Hiệp hội Khuyến học Úc –
-                                  Việt Nam và Những người bạn của Giáo dục Việt
-                                  Nam. Ông có nhiều năm kinh nghiệm trong công
-                                  nghiệp, làm việc trong lĩnh vực máy tính cho
-                                  Telecom Australia và Tổ chức Nghiên cứu Công
-                                  nghiệp và Khoa học liên bang.
+                                <Box component="p"
+                                dangerouslySetInnerHTML={{
+                                  __html: `${t(
+                                    "about-us.the_supervisory_council.ho-le-khoa.story"
+                                  )}`,
+                                }}
+                                >
                                 </Box>
                               </Box>
                             </Box>
@@ -136,7 +134,7 @@ const Profile = () => {
                           letterSpacing: ".1em",
                         }}
                       >
-                        Bạn thích hồ sơ này?
+                        {t("profileDetail.like_this_profile")}
                       </Typography>
                       <Box component="div" className="share_posts_inner">
                         <Link href="https://www.facebook.com/sharer/sharer.php?display=popup&u=https%3A%2F%2Fmcf.com.vn%2Fprofile%2Fvu-van-hieu-2%2F">
@@ -155,14 +153,14 @@ const Profile = () => {
                 <Box component="div" className="profile_sidebar">
                   <Box component="div" className="profile_details">
                     <Typography variant="h4" className="profile_details_title">
-                      Profile details
+                    {t("profileDetail.profile_detail")}
                     </Typography>
                     <Box component="div" className="profile_details_item">
                       <Box
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Lượt thích:
+                        {t("profileDetail.likes")}
                       </Box>
                       <Box
                         component="div"
@@ -201,7 +199,7 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Chuyên mục:
+                        {t("profileDetail.categories")}
                       </Box>
                       <Box
                         component="div"
@@ -216,7 +214,7 @@ const Profile = () => {
                             className="cmsmasters_cat_color cmsmasters_cat_153"
                             rel="category tag"
                           >
-                            HỘI ĐỒNG GIÁM SÁT
+                            {t("about-us.the_supervisory_council.the_supervisory_council")}
                           </Link>
                         </Box>
                       </Box>
@@ -227,7 +225,7 @@ const Profile = () => {
                       variant="h4"
                       className="profile_social_icons_title"
                     >
-                      Liên kết
+                      {t("profileDetail.social")}
                     </Typography>
                     <Box component="ul" className="profile_social_icons_list">
                       <Box component="li">
@@ -259,7 +257,7 @@ const Profile = () => {
               rel="prev"
               className="icon-angle-left"
             >
-              Tiến Sĩ David Wilmoth
+              {t("about-us.the_supervisory_council.david-wilmoth.name")}
             </Link>
           </Box>
           <Box
@@ -271,7 +269,7 @@ const Profile = () => {
               rel="next"
               className="icon-angle-right"
             >
-              Ông Nguyễn Hoài Bảo
+             {t("about-us.member_of_mcf.nguyen-hoai-bao.name")}
             </Link>
           </Box>
         </Box>

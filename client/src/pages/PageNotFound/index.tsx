@@ -2,10 +2,12 @@ import { Box, Link, Typography } from "@mui/material";
 import Header from "@/components/Header";
 import SearchIcon from "@mui/icons-material/Search";
 import Footer from "@/components/Footer";
-
+import { useTranslation } from "react-i18next";
 import "./404.scss"
 
 const PageNotFound = () => {
+    const {t} = useTranslation()
+    document.title=`Page Not Found`
     return (
         <Box component="div">
             <Header></Header>
@@ -22,7 +24,7 @@ const PageNotFound = () => {
                                 <Box component="div" className="content_wrap fullwidth">
                                     <Box component="div" className="error_inner">
                                         <Typography variant="h1" className="error_title">404</Typography>
-                                        <Typography variant="h2" className="error_subtitle">We're sorry, but the page you were looking for doesn't exist.</Typography>
+                                        <Typography variant="h2" className="error_subtitle">{t("page-not-found")}</Typography>
                                     </Box>
                                 </Box>
                             </Box>
@@ -33,7 +35,7 @@ const PageNotFound = () => {
                             <Box component="div" className="search_bar_wrap">
                                 <Box component="form" method="get" action="http://localhost:5173/">
                                     <Box component="p" className="search_field">
-                                        <Box component="input" name="s" type="search" className="form-control" id="search" placeholder="Tìm kiếm..."></Box>
+                                        <Box component="input" name="s" type="search" className="form-control" id="search" placeholder={t("search.search")}></Box>
                                     </Box>
                                     <Box component="p" className="search_button">
                                         <SearchIcon />

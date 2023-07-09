@@ -5,8 +5,12 @@ import ToggleModalImg from "@/components/ToggleModalImg";
 import { Box, Link, Typography } from "@mui/material";
 import "../Profile.scss";
 import Footer from "@/components/Footer";
+import { useTranslation } from "react-i18next";
 
 const Profile = () => {
+  const { t } = useTranslation();
+  document.title = `${t("about-us.the_mcf_council.vu-van-hieu.name")} - MCF`;
+
   const [toggleModal, setToggleModal] = useState(false);
   return (
     <>
@@ -22,7 +26,7 @@ const Profile = () => {
                       <Link
                         // href="http://localhost:5173/images/people/Vu-Van-Hieu.png"
                         rel="ilightbox[img_12462_647d8bee23d81]"
-                        title="Ông Vũ Văn Hiệu"
+                        title={t("about-us.the_mcf_council.vu-van-hieu.name")}
                         className="preloader highImg"
                         onClick={() => {
                           document.body.style.overflow = "hidden";
@@ -33,9 +37,9 @@ const Profile = () => {
                           component="img"
                           width="410px"
                           height="380px"
-                          alt="Ông Vũ Văn Hiệu"
+                          alt={t("about-us.the_mcf_council.vu-van-hieu.name")}
                           src="http://localhost:5173/images/people/Vu-Van-Hieu.png"
-                          title="Ông Vũ Văn Hiệu"
+                          title={t("about-us.the_mcf_council.vu-van-hieu.name")}
                           sizes="(max-width: 410px) 100vw, 410px"
                           srcSet="http://localhost:5173/images/people/Vu-Van-Hieu.png 410w, https://mcf.com.vn/wp-content/uploads/2015/04/Vu-Van-Hieu-300x278.png 300w"
                         ></Box>
@@ -58,7 +62,7 @@ const Profile = () => {
                           textDecoration: "none",
                         }}
                       >
-                        Ông Vũ Văn Hiệu
+                        {t("about-us.the_mcf_council.vu-van-hieu.name")}
                       </Typography>
                       <Typography
                         variant="h4"
@@ -77,7 +81,7 @@ const Profile = () => {
                           letterSpacing: ".1em",
                         }}
                       >
-                        Phó Chủ tịch Hội đồng MCF
+                        {t("about-us.the_mcf_council.vu-van-hieu.position")}
                       </Typography>
                     </Box>
                     <Box
@@ -99,15 +103,13 @@ const Profile = () => {
                               className="cmsmasters_column one_first"
                             >
                               <Box component="div">
-                                <Box component="p">
-                                  <strong>Ông Vũ Văn Hiệu </strong> là đồng sáng
-                                  lập kiêm Giám đốc Công ty Titan tại Úc – Các
-                                  giải pháp Quản lý Đại lý, một nhà phát triển
-                                  phần mềm hàng đầu trong ngành ô tô phục vụ
-                                  khách hàng trên toàn cầu. Ông từng nhận được
-                                  học bổng kế hoạch Colombo và nhận bằng cử nhân
-                                  của Đại học Tây Úc chuyên ngành khoa học máy
-                                  tính và toán học.
+                                <Box component="p"
+                                dangerouslySetInnerHTML={{
+                                  __html: `${t(
+                                    "about-us.the_mcf_council.vu-van-hieu.story"
+                                  )}`,
+                                }}
+                                >
                                 </Box>
                               </Box>
                             </Box>
@@ -133,7 +135,7 @@ const Profile = () => {
                           letterSpacing: ".1em",
                         }}
                       >
-                        Bạn thích hồ sơ này?
+                        {t("profileDetail.like_this_profile")}
                       </Typography>
                       <Box component="div" className="share_posts_inner">
                         <Link href="https://www.facebook.com/sharer/sharer.php?display=popup&u=https%3A%2F%2Fmcf.com.vn%2Fprofile%2Fvu-van-hieu-2%2F">
@@ -152,14 +154,14 @@ const Profile = () => {
                 <Box component="div" className="profile_sidebar">
                   <Box component="div" className="profile_details">
                     <Typography variant="h4" className="profile_details_title">
-                      Profile details
+                    {t("profileDetail.profile_detail")}
                     </Typography>
                     <Box component="div" className="profile_details_item">
                       <Box
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Lượt thích:
+                        {t("profileDetail.likes")}
                       </Box>
                       <Box
                         component="div"
@@ -184,7 +186,7 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Chuyên mục:
+                        {t("profileDetail.categories")}
                       </Box>
                       <Box
                         component="div"
@@ -199,7 +201,7 @@ const Profile = () => {
                             className="cmsmasters_cat_color cmsmasters_cat_153"
                             rel="category tag"
                           >
-                            HỘI ĐỒNG MCF
+                            {t("about-us.the_mcf_council.the_mcf_council")}
                           </Link>
                         </Box>
                       </Box>
@@ -210,7 +212,7 @@ const Profile = () => {
                       variant="h4"
                       className="profile_social_icons_title"
                     >
-                      Liên kết
+                      {t("profileDetail.social")}
                     </Typography>
                     <Box component="ul" className="profile_social_icons_list">
                       <Box component="li">
@@ -242,7 +244,7 @@ const Profile = () => {
               rel="prev"
               className="icon-angle-left"
             >
-              Bà Nguyễn Thị Kiều Vương
+              {t("about-us.the_mcf_council.nguyen-thi-kieu-vuong.name")}
             </Link>
           </Box>
           <Box
@@ -254,7 +256,7 @@ const Profile = () => {
               rel="next"
               className="icon-angle-right"
             >
-              Tiến sĩ David Wilmoth
+              {t("about-us.the_supervisory_council.david-wilmoth.name")}
             </Link>
           </Box>
         </Box>

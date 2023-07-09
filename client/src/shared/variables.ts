@@ -30,6 +30,8 @@ import PostLH3 from "@/pages/ProfileLiveHoods/Post3";
 
 import PostMuseum1 from "@/pages/ProfileMuseum/Post1";
 
+import PageNotFound from "@/pages/PageNotFound";
+
 import "@/i18n.tsx";
 import i18next from "i18next";
 
@@ -304,6 +306,11 @@ var subPages: Array<PageType> = [
   {
     link: "/search",
     component: Category,
+  },
+  {
+    link: "/page-not-found",
+    title: "Page Not Found",
+    component: PageNotFound,
   },
 ];
 

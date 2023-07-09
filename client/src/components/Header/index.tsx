@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Box, useMediaQuery, ListItem, List } from "@mui/material";
+import { Box, useMediaQuery, ListItem, List, Button } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
@@ -9,6 +9,9 @@ import { PageType, mainPages } from "@/shared";
 import Search from "@/components/Search";
 import { theme } from "@/styles";
 import "./Header.scss";
+
+import i18n from "i18next"
+import { useTranslation } from "react-i18next"
 type Props = {};
 
 function Header({}: Props) {
@@ -44,6 +47,11 @@ function Header({}: Props) {
       .join(" ");
     setActive(currentTag);
   }, [pathname]);
+
+  const {t} = useTranslation()
+  const changeLanguage = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+    i18n.changeLanguage(event.currentTarget.innerText==='ENGLISH' ? 'en' : 'vi')
+  }
 
   return (
     <Box
@@ -237,7 +245,7 @@ function Header({}: Props) {
               },
             }}
           >
-            Tiếng Việt
+           <span onClick={changeLanguage}>{t('nav.language')}</span>
           </ListItem>
         </List>
       </Box>

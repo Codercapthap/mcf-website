@@ -9,8 +9,13 @@ import Carousel from "react-material-ui-carousel";
 import { Paper } from "@mui/material";
 // import { useSwipeable } from 'react-swipeable';
 // import React from "react";
+import { useTranslation } from "react-i18next";
 
 const Profile = () => {
+  const { t } = useTranslation();
+  document.title=`${t("conservation.profile.post4.title")} - MCF`
+
+
   const [toggleModal, setToggleModal] = useState(false);
   const carousel = [
     {
@@ -110,7 +115,7 @@ const Profile = () => {
                             <Link
                               // href="https://mcf.com.vn/wp-content/uploads/2015/04/Vu-Van-Hieu.png"
                               rel="ilightbox[img_12627_64987034241fd]"
-                              title="Công tác kiểm kê, khảo sát vườn chim Vạc tại xã Tân Mỹ, huyện Trà Ôn, tỉnh Vĩnh Long"
+                              title={t("conservation.profile.post4.title")}
                               className="preloader highImg"
                               onClick={() => {
                                 document.body.style.overflow = "hidden";
@@ -121,9 +126,9 @@ const Profile = () => {
                                 component="img"
                                 width="100%"
                                 height="100%"
-                                alt="Công tác kiểm kê, khảo sát vườn chim Vạc tại xã Tân Mỹ, huyện Trà Ôn, tỉnh Vĩnh Long"
+                                alt={t("conservation.profile.post4.title")}
                                 src={`${img.src}`}
-                                title="Công tác kiểm kê, khảo sát vườn chim Vạc tại xã Tân Mỹ, huyện Trà Ôn, tỉnh Vĩnh Long"
+                                title={t("conservation.profile.post4.title")}
                                 // srcSet="http://localhost:5173/images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3165-1160x773.jpg 1160w, http://localhost:5173/images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3165-300x200.jpg 300w, http://localhost:5173/images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3165-1024x683.jpg 1024w, http://localhost:5173/images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3165-768x512.jpg 768w, http://localhost:5173/images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3165-1536x1024.jpg 1536w, http://localhost:5173/images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3165-2048x1365.jpg 2048w, http://localhost:5173/images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3165-580x387.jpg 580w, http://localhost:5173/images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3165-860x573.jpg 860w, http://localhost:5173/images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3165-1440x960.jpg 1440w, http://localhost:5173/images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3165-440x293.jpg 440w"
                                 sizes="(max-width: 1160px) 100vw, 1160px"
                               ></Box>
@@ -149,8 +154,7 @@ const Profile = () => {
                           textDecoration: "none",
                         }}
                       >
-                        Công tác kiểm kê, khảo sát vườn chim Vạc tại xã Tân Mỹ,
-                        huyện Trà Ôn, tỉnh Vĩnh Long
+                       {t("conservation.profile.post4.title")}
                       </Typography>
                       {/* <Typography
                         variant="h4"
@@ -190,50 +194,14 @@ const Profile = () => {
                               component="div"
                               className="cmsmasters_column one_first"
                             >
-                              <Box component="div">
-                                <Box component="p">
-                                  Đồng bằng sông Cửu Long là vùng giàu tiềm năng
-                                  về đa dạng sinh học (ĐDSH), trong đó quần thể
-                                  chim nước rất phong phú về số loài và số cá
-                                  thể. Hiện nay, quần thể chim nước xuất hiện
-                                  chủ yếu tại các nơi đã có kế hoạch bảo tồn ở
-                                  cấp tỉnh hay cấp quốc gia như Vườn quốc gia
-                                  Tràm Chim (Đồng Tháp), U-Minh Thượng (Kiên
-                                  Giang), Mũi Cà Mau; hay các Khu bảo tồn như
-                                  Láng Sen (Long An), Lung Ngọc Hoàng (Hậu
-                                  Giang), Phú Mỹ (Kiên Giang); hoặc có qui mô
-                                  nhỏ hơn như các sân chim Cái Nước (Cà Mau),
-                                  sân chim Bạc Liêu, Vàm Hồ (Bến Tre); đặc biệt
-                                  là các quần thể chim định cư rãi rác khắp
-                                  ĐBSCL mà người dân hay gọi là “Vườn Cò”. Những
-                                  vườn cò nầy có qui mô diện tích nhỏ hơn như
-                                  vườn cò Bằng Lăng (Cần Thơ), Trung tâm Nông
-                                  nghiệp Mùa Xuân (Hậu Giang).
-                                </Box>
-                                <Box component="p">
-                                  Ngoài ra, kiểm kê vườn Vạc nhằm thực hiện đúng
-                                  theo mục tiêu và Phương pháp quy hoạch được
-                                  UBND tỉnh phê duyệt tại Quyết định số
-                                  2269/QĐ-UBND ngày 27/9/2016 về việc phê duyệt
-                                  Quy hoạch bảo tồn đa dạng sinh học tỉnh Vĩnh
-                                  Long giai đoạn 2015 – 2020 và định hướng đến
-                                  năm 2030
-                                </Box>
-                                <Box component="p">
-                                  <strong>Mục tiêu của đề tài: </strong>
-                                </Box>
-                                <Box component="p">
-                                  Khảo sát và đánh giá hiện trạng đa dạng loài
-                                  của quần thể chim nước. Dựa vào tập tính sinh
-                                  học của từng loài và mật độ cá thể biến động
-                                  trong năm để phân tích khả năng hiện diện theo
-                                  mùa hay thường xuyên và những mối đe dọa đối
-                                  với các loài chim, nhằm đề xuất kế hoạch quản
-                                  lý và bảo tồn bền vững.
-                                </Box>
-                                <Typography variant="h3">
-                                  Video đàn chim bay về tổ
-                                </Typography>
+                              <Box component="div" 
+                              dangerouslySetInnerHTML={{
+                                __html: `${t(
+                                  "conservation.profile.post4.content"
+                                )}`,
+                              }}
+                              >
+                              </Box>
                                 <Box
                                   component="iframe"
                                   style={{ width: "560px", height: "315px" }}
@@ -242,7 +210,6 @@ const Profile = () => {
                                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                   allowFullScreen
                                 ></Box>
-                              </Box>
                             </Box>
                           </Box>
                         </Box>
@@ -266,7 +233,7 @@ const Profile = () => {
                           letterSpacing: ".1em",
                         }}
                       >
-                        Bạn thích hồ sơ này?
+                        {t("profileDetail.like_this_profile")}
                       </Typography>
                       <Box component="div" className="share_posts_inner">
                         <Link href="https://www.facebook.com/sharer/sharer.php?display=popup&u=https%3A%2F%2Fmcf.com.vn%2Fprofile%2Fvu-van-hieu-2%2F">
@@ -285,13 +252,13 @@ const Profile = () => {
                         variant="h4"
                         className="cmsmasters_single_slider_title"
                       >
-                        Các dự án khác
+                        {t("profileDetail.more_projects")}
                       </Typography>
                       <Typography
                         variant="h5"
                         className="cmsmasters_single_slider_no_items"
                       >
-                        Danh sách trống
+                        {t("profileDetail.project_found")}
                       </Typography>
                     </Box>
                   </Box>
@@ -299,14 +266,14 @@ const Profile = () => {
                 <Box component="div" className="profile_sidebar">
                   <Box component="div" className="profile_details">
                     <Typography variant="h4" className="profile_details_title">
-                      Thông tin đề tài
+                    {t("profileDetail.project_info")}
                     </Typography>
                     <Box component="div" className="profile_details_item">
                       <Box
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Lượt thích:
+                        {t("profileDetail.likes")}
                       </Box>
                       <Box
                         component="div"
@@ -331,7 +298,7 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Người đăng:
+                        {t("profileDetail.author")}
                       </Box>
                       <Box
                         component="div"
@@ -342,7 +309,7 @@ const Profile = () => {
                           title="Projects by Ly Van Loi"
                           rel="author"
                         >
-                          <Box component="span">Ly Van Loi</Box>
+                          <Box component="span">{t("conservation.profile.post4.profile_detail.author")}</Box>
                         </Link>
                       </Box>
                     </Box>
@@ -351,14 +318,14 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Ngày đăng
+                        {t("profileDetail.date")}
                       </Box>
                       <Box
                         component="div"
                         className="profile_details_item_desc"
                       >
-                        <Box component="abbr" title="17 Tháng Ba, 2021">
-                          17 Tháng Ba, 2021
+                        <Box component="abbr" title={t("conservation.profile.post4.profile_detail.date")}>
+                        {t("conservation.profile.post4.profile_detail.date")}
                         </Box>
                       </Box>
                     </Box>
@@ -367,7 +334,7 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Chuyên mục:
+                        {t("profileDetail.categories")}
                       </Box>
                       <Box
                         component="div"
@@ -382,7 +349,7 @@ const Profile = () => {
                             className="cmsmasters_cat_color cmsmasters_cat_153"
                             rel="category tag"
                           >
-                            Bảo tồn
+                            {t("conservation.profile.post4.profile_detail.categories")}
                           </Link>
                         </Box>
                       </Box>
@@ -392,13 +359,13 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Thời gian:
+                        {t("profileDetail.time")}
                       </Box>
                       <Box
                         component="div"
                         className="profile_details_item_desc"
                       >
-                        01-10/2021
+                        {t("conservation.profile.post4.profile_detail.time")}
                       </Box>
                     </Box>
                     <Box component="div" className="profile_details_item">
@@ -406,13 +373,13 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Kinh phí:
+                        {t("profileDetail.budget")}
                       </Box>
                       <Box
                         component="div"
                         className="profile_details_item_desc"
                       >
-                        200.000.000
+                        {t("conservation.profile.post4.profile_detail.budget")}
                       </Box>
                     </Box>
                     <Box component="div" className="profile_details_item">
@@ -420,13 +387,13 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Chủ quản:
+                        {t("profileDetail.investor")}
                       </Box>
                       <Box
                         component="div"
                         className="profile_details_item_desc"
                       >
-                        Sở Nông nghiệp và Phát triển Nông thôn tỉnh Vĩnh Long
+                      {t("conservation.profile.post4.profile_detail.investor")}
                       </Box>
                     </Box>
                     <Box component="div" className="profile_details_item">
@@ -434,14 +401,13 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Thực hiện:
+                        {t("profileDetail.implemented")}
                       </Box>
                       <Box
                         component="div"
                         className="profile_details_item_desc"
                       >
-                        Chi cục Kiểm lâm và Quản lý Chất lượng Nông lâm Thủy sản
-                        Vĩnh Long
+                        {t("conservation.profile.post4.profile_detail.implemented")}
                       </Box>
                     </Box>
                     <Box component="div" className="profile_details_item">
@@ -449,13 +415,13 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Tư vấn:
+                        {t("profileDetail.consultant")}
                       </Box>
                       <Box
                         component="div"
                         className="profile_details_item_desc"
                       >
-                        MCF
+                        {t("conservation.profile.post4.profile_detail.consultant")}
                       </Box>
                     </Box>
                     <Box component="div" className="profile_details_item">
@@ -463,13 +429,13 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Tình trạng:
+                        {t("profileDetail.status")}
                       </Box>
                       <Box
                         component="div"
                         className="profile_details_item_desc"
                       >
-                        Đã hoàn thành
+                        {t("conservation.profile.post4.profile_detail.status")}
                       </Box>
                     </Box>
                   </Box>
@@ -510,7 +476,7 @@ const Profile = () => {
               rel="prev"
               className="icon-angle-left"
             >
-              CẢI THIỆN SINH KẾ
+              {t("livelihoods.profile.post3.title")}
             </Link>
           </Box>
           <Box
@@ -522,8 +488,7 @@ const Profile = () => {
               rel="next"
               className="icon-angle-right"
             >
-              Vai trò của Đất ngập nước đối với an ninh nguồn nước cho khu vực
-              sông Mekong
+              {t("conservation.profile.post3.title")}
             </Link>
           </Box>
         </Box>

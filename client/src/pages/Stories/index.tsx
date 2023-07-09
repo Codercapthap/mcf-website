@@ -3,15 +3,18 @@ import Headline from "@/components/Headline";
 import Footer from "@/components/Footer";
 import { Wrapper } from "@/styles";
 import { Typography } from "@mui/material";
+import { useTranslation } from "react-i18next";
 
 const Stories = () => {
-  document.title = `Stories - MCF`;
+  const { t } = useTranslation();
+
+  document.title = `${t("nav.stories")} - MCF`;
   return (
     <>
       <Header></Header>
       <Headline
         image="images/headlines/Tu-Thien_cauchuyen-scaled.jpg"
-        title="Stories"
+        title={t("nav.stories")}
       ></Headline>
       <Wrapper>
         <Typography
@@ -21,7 +24,7 @@ const Stories = () => {
           paddingTop="200px"
           paddingBottom="50px"
         >
-          Coming soon!!
+          {t("stories")}
         </Typography>
       </Wrapper>
       <Footer></Footer>
