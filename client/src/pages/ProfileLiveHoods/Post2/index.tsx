@@ -14,29 +14,28 @@ import {
 } from "@mui/material";
 import "../Profile.scss";
 import Footer from "@/components/Footer";
+import { useTranslation } from "react-i18next";
 
 const Profile = () => {
+  const { t } = useTranslation();
+  document.title=`${t("livelihoods.profile.post2.title")} - MCF`
+
+
   const [toggleModal, setToggleModal] = useState(false);
   function createData(code: String, profession: String) {
     return { code, profession };
   }
   const rows = [
-    createData("0118 (Chính)", "Trồng rau, đậu các loại và trồng hoa"),
-    createData("0161", "Hoạt động dịch vụ trồng trọt"),
-    createData("0162", "Hoạt động dịch vụ chăn nuôi"),
-    createData("0163", "Hoạt động dịch vụ sau thu hoạch"),
-    createData("0322", "Nuôi trồng thuỷ sản nội địa"),
-    createData(
-      "1629",
-      "Sản xuất sản phẩm khác từ gỗ; sản xuất sản phẩm từ tre, nứa, rơm, rạ và vật liệu tết bện"
-    ),
-    createData("4632", "Bán buôn thực phẩm"),
-    createData("4669", "Bán buôn chuyên doanh khác chưa được phân vào đâu"),
-    createData("7020", "Hoạt động tư vấn quản lý"),
-    createData(
-      "7490",
-      "Hoạt động chuyên môn, khoa học và công nghệ khác chưa được phân vào đâu <p>Chi tiết: Tư vấn nông học, tư vấn khoa học về khí hậu và biến đổi khí hậu, cung cấp dịch vụ nghiên cứu, khảo sát khoa học về các lĩnh vực khoa học nông nghiệp, khoa học tự nhiên</p>"
-    ),
+    createData(`0118 ${t("livelihoods.profile.post2.major")}`,`${t("livelihoods.profile.post2.row-1")}`),
+    createData("0161", `${t("livelihoods.profile.post2.row-2")}`),
+    createData("0162", `${t("livelihoods.profile.post2.row-3")}`),
+    createData("0163", `${t("livelihoods.profile.post2.row-4")}`),
+    createData("0322", `${t("livelihoods.profile.post2.row-5")}`),
+    createData("1629",`${t("livelihoods.profile.post2.row-6")}`),
+    createData("4632", `${t("livelihoods.profile.post2.row-7")}`),
+    createData("4669", `${t("livelihoods.profile.post2.row-8")}`),
+    createData("7020", `${t("livelihoods.profile.post2.row-9")}`),
+    createData("7490",`${t("livelihoods.profile.post2.row-10")}`),
   ];
   return (
     <>
@@ -49,10 +48,10 @@ const Profile = () => {
                 <Box component="div" className="profile_content with_sidebar">
                   <Box component="div" className="cmsmasters_profile_content">
                     <Box component="figure" className="cmsmasters_img_wrap">
-                      <Link
+                      <Link 
                         // href="https://mcf.com.vn/wp-content/uploads/2015/04/Vu-Van-Hieu.png"
                         rel="ilightbox[img_12627_64987034241fd]"
-                        title="Thành lập Công ty cổ phần MLS Việt Nam"
+                        title={t("livelihoods.profile.post2.title")}
                         className="preloader highImg"
                         onClick={() => {
                           document.body.style.overflow = "hidden";
@@ -61,9 +60,9 @@ const Profile = () => {
                       >
                         <Box
                           component="img"
-                          alt="Thành lập Công ty cổ phần MLS Việt Nam"
+                          alt={t("livelihoods.profile.post2.title")}
                           src="http://localhost:5173/images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-1160x542.jpg"
-                          title="Thành lập Công ty cổ phần MLS Việt Nam"
+                          title={t("livelihoods.profile.post2.title")}
                           srcSet="http://localhost:5173/images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-1160x542.jpg 1160w, http://localhost:5173/images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-300x140.jpg 300w, http://localhost:5173/images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-1024x478.jpg 1024w, http://localhost:5173/images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-768x359.jpg 768w, http://localhost:5173/images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-1536x718.jpg 1536w, http://localhost:5173/images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-2048x957.jpg 2048w, http://localhost:5173/images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-580x271.jpg 580w, http://localhost:5173/images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-860x402.jpg 860w, http://localhost:5173/images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-1440x673.jpg 1440w, http://localhost:5173/images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-440x206.jpg 440w"
                           sizes="(max-width: 1160px) 100vw, 1160px"
                         ></Box>
@@ -74,7 +73,7 @@ const Profile = () => {
                       className="cmsmasters_profile_header"
                     >
                       <Typography variant="h2">
-                        Thành lập Công ty cổ phần MLS Việt Nam
+                      {t("livelihoods.profile.post2.title")}
                       </Typography>
                       {/* <Typography
                         variant="h4"
@@ -115,44 +114,12 @@ const Profile = () => {
                               className="cmsmasters_column one_first"
                             >
                               <Box component="div">
-                                <Typography variant="h2">
-                                  <strong>I. Giới thiệu về công ty</strong>
-                                </Typography>
-                                <Box component="p">
-                                  Công ty Cổ phần Giải pháp sinh kế cho Đồng
-                                  bằng sông Cửu Long (MLS) được thành lập vào
-                                  ngày 20/02/2021, là công ty hoạt động trong
-                                  lĩnh vực sản xuất, phát triển nông nghiệp, tư
-                                  vấn về nông học, khoa học về khí hậu và biến
-                                  đổi khí hậu, cung cấp dịch vụ nghiên cứu, khảo
-                                  sát khoa học về các lĩnh vực khoa học nông
-                                  nghiệp, khoa học tự nhiên nhằm mục đích hỗ trợ
-                                  phát triển nông nghiệp cho người nông dân,
-                                  phát triển kinh tế gắn liền với bảo vệ môi
-                                  trường và đa dạng sinh học.
+                                <Box component="div"
+                                dangerouslySetInnerHTML={{
+                                  __html: `${t("livelihoods.profile.post2.content")}`
+                                 }}
+                                ></Box>
                                 </Box>
-                                <Box component="p">
-                                  Công ty Cổ phần MLS vừa là cầu nối gắn kết
-                                  giữa các tổ chức nghiên cứu, các tổ chức phi
-                                  lợi nhuận trong lĩnh vực tư vấn phát triển
-                                  nông nghiệp bền vững với người nông dân vừa là
-                                  trung gian thương mại, hỗ trợ người nông dân
-                                  trong quá trình phân phối, tiêu thụ sản phẩm.
-                                </Box>
-                                <Box component="p">
-                                  Công ty Cổ phần MLS định hướng phát triển
-                                  trong tương lai là trở thành một trong những
-                                  công ty hàng đầu tại khu vực đồng bằng Sông
-                                  Cửu Long tiên phong trong việc phát triển kinh
-                                  tế nông nghiệp bền vững đi liền với việc bảo
-                                  vệ môi trường và đa dạng sinh học, tạo ra sự
-                                  hài hòa giữa con người và tự nhiên, góp phần
-                                  chống lại và thích nghi với các tác động của
-                                  việc biến đổi khí hậu tại khu vực.
-                                </Box>
-                                <Typography variant="h2">
-                                  <strong>II. Lĩnh vực kinh doanh</strong>
-                                </Typography>
                                 <Box
                                   component="div"
                                   sx={{ paddingLeft: "1px" }}
@@ -161,10 +128,10 @@ const Profile = () => {
                                     <TableBody>
                                       <TableRow key="head">
                                         <TableCell sx={{ fontWeight: "bold" }}>
-                                          Mã ngành
+                                        {t("livelihoods.profile.post2.tableHeader-col1")}
                                         </TableCell>
                                         <TableCell sx={{ fontWeight: "bold" }}>
-                                          Tên ngành, nghề kinh doanh
+                                        {t("livelihoods.profile.post2.tableHeader-col2")}
                                         </TableCell>
                                       </TableRow>
                                       {rows.map((row) => (
@@ -186,7 +153,7 @@ const Profile = () => {
                                     </TableBody>
                                   </Table>
                                   <Box component="p">&nbsp;</Box>
-                                  <Table>
+                                  {/* <Table>
                                     <TableBody>
                                       <TableRow>
                                         <TableCell sx={{ width: "100%" }}>
@@ -215,9 +182,16 @@ const Profile = () => {
                                         </TableCell>
                                       </TableRow>
                                     </TableBody>
-                                  </Table>
+                                  </Table> */}
+                                  <Box component="div" sx={{
+                                    borderStyle: "none"
+                                  }}
+                                  dangerouslySetInnerHTML={{
+                                    __html: `${t("livelihoods.profile.post2.table")}`
+                                   }}
+                                  ></Box>
                                 </Box>
-                              </Box>
+                              
                             </Box>
                           </Box>
                         </Box>
@@ -241,7 +215,7 @@ const Profile = () => {
                           letterSpacing: ".1em",
                         }}
                       >
-                        Bạn thích hồ sơ này?
+                        {t("profileDetail.like_this_profile")}
                       </Typography>
                       <Box component="div" className="share_posts_inner">
                         <Link href="https://www.facebook.com/sharer/sharer.php?display=popup&u=https%3A%2F%2Fmcf.com.vn%2Fprofile%2Fvu-van-hieu-2%2F">
@@ -260,13 +234,13 @@ const Profile = () => {
                         variant="h4"
                         className="cmsmasters_single_slider_title"
                       >
-                        Các dự án khác
+                        {t("profileDetail.more_projects")}
                       </Typography>
                       <Typography
                         variant="h5"
                         className="cmsmasters_single_slider_no_items"
                       >
-                        Danh sách trống
+                        {t("profileDetail.project_found")}
                       </Typography>
                     </Box>
                   </Box>
@@ -274,14 +248,14 @@ const Profile = () => {
                 <Box component="div" className="profile_sidebar">
                   <Box component="div" className="profile_details">
                     <Typography variant="h4" className="profile_details_title">
-                      Thông tin dự án
+                    {t("profileDetail.project_info")}
                     </Typography>
                     <Box component="div" className="profile_details_item">
                       <Box
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Lượt thích:
+                        {t("profileDetail.likes")}
                       </Box>
                       <Box
                         component="div"
@@ -306,7 +280,7 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Người đăng:
+                        {t("profileDetail.author")}
                       </Box>
                       <Box
                         component="div"
@@ -317,7 +291,7 @@ const Profile = () => {
                           title="Projects by Ly Van Loi"
                           rel="author"
                         >
-                          <Box component="span">Ly Van Loi</Box>
+                          <Box component="span">{t("livelihoods.profile.post2.profile_detail.author")}</Box>
                         </Link>
                       </Box>
                     </Box>
@@ -326,14 +300,14 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Ngày đăng
+                        {t("profileDetail.date")}
                       </Box>
                       <Box
                         component="div"
                         className="profile_details_item_desc"
                       >
-                        <Box component="abbr" title="11 Tháng Sáu, 2021">
-                          11 Tháng Sáu, 2021
+                        <Box component="abbr" title={t("livelihoods.profile.post2.profile_detail.date")}>
+                        {t("livelihoods.profile.post2.profile_detail.date")}
                         </Box>
                       </Box>
                     </Box>
@@ -342,7 +316,7 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Chuyên mục:
+                        {t("profileDetail.categories")}
                       </Box>
                       <Box
                         component="div"
@@ -357,7 +331,7 @@ const Profile = () => {
                             className="cmsmasters_cat_color cmsmasters_cat_153"
                             rel="category tag"
                           >
-                            Sinh kế
+                            {t("livelihoods.profile.post2.profile_detail.categories")}
                           </Link>
                         </Box>
                       </Box>
@@ -470,8 +444,7 @@ const Profile = () => {
               rel="prev"
               className="icon-angle-left"
             >
-              Vai trò của Đất ngập nước đối với an ninh nguồn nước cho khu vực
-              sông Mekong
+              {t("conservation.profile.post3.title")}
             </Link>
           </Box>
           <Box
@@ -483,7 +456,7 @@ const Profile = () => {
               rel="next"
               className="icon-angle-right"
             >
-              Ký kết đào tạo sinh viên thực hành ngắn hạn
+              {t("livelihoods.profile.post1.title")}
             </Link>
           </Box>
         </Box>

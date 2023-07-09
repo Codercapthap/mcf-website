@@ -5,8 +5,10 @@ import ToggleModalImg from "@/components/ToggleModalImg";
 import { Box, Link, Typography } from "@mui/material";
 import "../Profile.scss";
 import Footer from "@/components/Footer";
-
+import { useTranslation } from "react-i18next";
 const Profile = () => {
+  const { t } = useTranslation();
+  document.title = `${t("about-us.member_of_mcf.le-anh-tuan.name")} - MCF`;
   const [toggleModal, setToggleModal] = useState(false);
   return (
     <>
@@ -22,7 +24,7 @@ const Profile = () => {
                       <Link
                         // href="https://mcf.com.vn/wp-content/uploads/2015/04/Vu-Van-Hieu.png"
                         rel="ilightbox[img_12627_64987034241fd]"
-                        title="PGS.TS Lê Anh Tuấn"
+                        title={t("about-us.member_of_mcf.le-anh-tuan.name")}
                         className="preloader highImg"
                         onClick={() => {
                           document.body.style.overflow = "hidden";
@@ -33,9 +35,9 @@ const Profile = () => {
                           component="img"
                           width="100%"
                           height="100%"
-                          alt="PGS.TS Lê Anh Tuấn"
+                          alt={t("about-us.member_of_mcf.le-anh-tuan.name")}
                           src="http://localhost:5173/images/people/le-anh-tuan-1-960x610.jpg"
-                          title="PGS.TS Lê Anh Tuấn"
+                          title={t("about-us.member_of_mcf.le-anh-tuan.name")}
                           sizes="(max-width: 410px) 100vw, 410px"
                         ></Box>
                       </Link>
@@ -57,7 +59,7 @@ const Profile = () => {
                           textDecoration: "none",
                         }}
                       >
-                        PGS.TS Lê Anh Tuấn
+                        {t("about-us.member_of_mcf.le-anh-tuan.name")}
                       </Typography>
                       {/* <Typography
                         variant="h4"
@@ -98,18 +100,13 @@ const Profile = () => {
                               className="cmsmasters_column one_first"
                             >
                               <Box component="div">
-                                <Box component="p">
-                                  <strong>Tiến sĩ Lê Anh Tuấn </strong> công tác
-                                  tại Trường Đại học Cần Thơ từ năm 1982 và hiện
-                                  đang giữ chức vụ Giảng viên chính Khoa Môi
-                                  trường và Tài nguyên. Ông cũng là Nguyên Phó
-                                  Viện trưởng Viện Nghiên cứu Biến đổi Khí hậu –
-                                  Trường Đại học Cần Thơ, Việt Nam. Tiến sĩ Tuấn
-                                  hiện là thành viên Ban cố vấn của Mạng lưới
-                                  sông ngòi Việt Nam. Ông cũng là điều phối viên
-                                  của Mạng lưới Bảo vệ Môi trường và Thích ứng
-                                  với Biến đổi Khí hậu Đồng bằng sông Cửu Long
-                                  (MekongNet).
+                                <Box component="p"
+                                dangerouslySetInnerHTML={{
+                                  __html: `${t(
+                                    "about-us.member_of_mcf.le-anh-tuan.story"
+                                  )}`,
+                                }}
+                                >
                                 </Box>
                               </Box>
                             </Box>
@@ -135,7 +132,7 @@ const Profile = () => {
                           letterSpacing: ".1em",
                         }}
                       >
-                        Bạn thích hồ sơ này?
+                        {t("profileDetail.like_this_profile")}
                       </Typography>
                       <Box component="div" className="share_posts_inner">
                         <Link href="https://www.facebook.com/sharer/sharer.php?display=popup&u=https%3A%2F%2Fmcf.com.vn%2Fprofile%2Fvu-van-hieu-2%2F">
@@ -154,14 +151,14 @@ const Profile = () => {
                 <Box component="div" className="profile_sidebar">
                   <Box component="div" className="profile_details">
                     <Typography variant="h4" className="profile_details_title">
-                      Profile details
+                    {t("profileDetail.profile_detail")}
                     </Typography>
                     <Box component="div" className="profile_details_item">
                       <Box
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Lượt thích:
+                       {t("profileDetail.likes")}
                       </Box>
                       <Box
                         component="div"
@@ -186,7 +183,7 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Email:
+                        {t("profileDetail.email")}
                       </Box>
                       <Box
                         component="div"
@@ -200,7 +197,7 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Chuyên mục:
+                        {t("profileDetail.categories")}
                       </Box>
                       <Box
                         component="div"
@@ -215,7 +212,7 @@ const Profile = () => {
                             className="cmsmasters_cat_color cmsmasters_cat_153"
                             rel="category tag"
                           >
-                            THÀNH VIÊN MCF
+                            {t("about-us.member_of_mcf.member_of_mcf")}
                           </Link>
                         </Box>
                       </Box>
@@ -226,7 +223,7 @@ const Profile = () => {
                       variant="h4"
                       className="profile_social_icons_title"
                     >
-                      Liên kết
+                      {t("profileDetail.social")}
                     </Typography>
                     <Box component="ul" className="profile_social_icons_list">
                       <Box component="li">
@@ -258,7 +255,7 @@ const Profile = () => {
               rel="prev"
               className="icon-angle-left"
             >
-              PGS.TS Nguyễn Thanh Tùng
+             {t("about-us.member_of_mcf.nguyen-thanh-tung.name")}
             </Link>
           </Box>
           <Box
@@ -270,7 +267,7 @@ const Profile = () => {
               rel="next"
               className="icon-angle-right"
             >
-              PGS.TS. Trương Hoàng Đan
+              {t("about-us.member_of_mcf.truong-hoang-dan.name")}
             </Link>
           </Box>
         </Box>

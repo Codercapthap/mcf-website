@@ -3,6 +3,9 @@ import { Box, Input, styled, TextareaAutosize, Button, Typography } from "@mui/m
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import "./Contact.scss"
+
+import { useTranslation } from "react-i18next"
+
 const CustomInput = styled(Input)({
   marginTop: "10px",
   border: "1px solid var(--border-color)",
@@ -79,6 +82,7 @@ const CustomButton = styled(Button)({
 });
 const Contact = () => {
   document.title = `Contact - MCF`;
+  const {t} = useTranslation()
   return (
     <>
       <Header></Header>
@@ -113,14 +117,13 @@ const Contact = () => {
 
                           <Box component="div" id="cmsmasters_heading_64a3e8e8bf4be" className="cmsmasters_heading_wrap cmsmasters_heading_align_left">
                             <Typography variant="h1" className="cmsmasters_heading">
-                              Liên hệ
+                              {t("nav.contact-us")}
                             </Typography>
                           </Box>
 
                           <Box component="div" id="cmsmasters_heading_64a3e8e8bf5bf" className="cmsmasters_heading_wrap cmsmasters_heading_align_left">
                             <Typography variant="h3" className="cmsmasters_heading">
-                              Vui lòng điền đầy đủ thông tin của bạn bên dưới, chúng
-                              tôi sẽ liên lạc với bạn trong vòng 24 giờ
+                              {t("contact-us.heading")}
                             </Typography>
                           </Box>
                           <Box component="div" id="cmsmasters_divider_64a3e8e8bf6056_43275592" className="cl"></Box>
@@ -133,7 +136,7 @@ const Contact = () => {
                               <Box component="form" action="/lien-he/#wpcf7-f12038-p12413-o1" method="post" className="wpcf7-form resetting" noValidate data-status="resetting">
                                 <Box component="p">
                                   <Box component="label" htmlFor="name">
-                                    tên của bạn
+                                    {t("contact-us.form.name")}
                                     <br />
                                     <Box component="span" className="wpcf7-form-control-wrap your-name">
                                       <CustomInput id="name" type="text" name="your-name" aria-valuemax={40} aria-required="true" aria-invalid="false" />
@@ -142,7 +145,7 @@ const Contact = () => {
                                 </Box>
                                 <Box component="p">
                                   <Box component="label" htmlFor="email">
-                                    email
+                                  {t("contact-us.form.email")}
                                     <br />
                                     <Box component="span" className="wpcf7-form-control-wrap your-email">
                                       <CustomInput id="email" type="email" name="your-email" aria-required="true" aria-invalid="false" />
@@ -151,7 +154,7 @@ const Contact = () => {
                                 </Box>
                                 <Box component="p">
                                   <Box component="label" htmlFor="subject">
-                                    Tiêu đề
+                                  {t("contact-us.form.subject")}
                                     <br />
                                     <Box component="span">
                                       <CustomInput id="subject" type="text" name="your-subject" aria-required="true" aria-invalid="false" />
@@ -160,7 +163,7 @@ const Contact = () => {
                                 </Box>
                                 <Box component="p">
                                   <Box component="label" htmlFor="subject">
-                                    Lời nhắn (tùy chọn)
+                                  {t("contact-us.form.message")}
                                     <br />
                                     <Box
                                       component="span"
@@ -181,7 +184,7 @@ const Contact = () => {
                                   </Box>
                                 </Box>
                                 <Box component="p">
-                                  <CustomButton>Gửi ngay</CustomButton>
+                                  <CustomButton>{t("contact-us.form.send")}</CustomButton>
                                 </Box>
                               </Box>
                             </Box>
@@ -199,7 +202,7 @@ const Contact = () => {
                               className="cmsmasters_heading"
                                       
                             >
-                              THÔNG TIN LIÊN HỆ
+                              {t("contact-us.info.contact_info")}
                             </Typography>
                           </Box>
                           <Box
@@ -213,7 +216,7 @@ const Contact = () => {
                               className="icon-mobile-1 cmsmasters_icon_list_item"
                               
                             >
-                              +84 909 987 887
+                              {t("contact-us.info.phone")}
                             </Box>
                           </Box>
                           <Box
@@ -231,8 +234,7 @@ const Contact = () => {
                               id="cmsmasters_icon_list_item_64a3e8e8c05145_60611078"
                               className="icon-location cmsmasters_icon_list_item"
                             >
-                              Phòng 216, Khoa Môi trường & TNTN, Đại học Cần Thơ khu II,
-                              đường 3/2, Xuân Khánh, Ninh Kiều, Cần Thơ, Việt Nam
+                              {t("contact-us.info.address")}
                             </Box>
                           </Box>
                           <Box
@@ -250,7 +252,7 @@ const Contact = () => {
                               id="cmsmasters_icon_list_item_64a3e8e8c05145_60611078"
                               className="icon-mail cmsmasters_icon_list_item"
                             >
-                              duongvani@gmail.com
+                              {t("contact-us.info.email")}
                             </Box>
                           </Box>
                           <Box
@@ -268,7 +270,7 @@ const Contact = () => {
                               id="cmsmasters_icon_list_item_64a3e8e8c05145_60611078"
                               className="icon-clock cmsmasters_icon_list_item"
                             >
-                              Thứ 2 - Thứ 6: 7:00am - 5:00pm
+                              {t("contact-us.info.work")}
                             </Box>
                           </Box>
                           <Box

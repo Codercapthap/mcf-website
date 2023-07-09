@@ -12,84 +12,83 @@ import { Wrapper, theme } from "@/styles";
 import "./AboutUs.scss";
 import { Link } from "react-router-dom";
 import Footer from "@/components/Footer";
+import { useTranslation } from "react-i18next";
 
-const TheMcfCouncil = [
-  {
-    name: "Dr Duong Van Ni",
-    image: "images/people/Duong-Van-Ni.png",
-    position: "CHAIRPERSON AND DIRECTOR",
-    description: "",
-    link: "/profile/dvni",
-  },
-  {
-    name: "Mr Vu Van Hieu",
-    image: "images/people/Vu-Van-Hieu.png",
-    position: "VICE CHAIRPERSON",
-    description:
-      "Mr Vu Van Hieu is the cofounder and a director of the Australian company Titan Dealer Management Solutions",
-    link: "/profile/vu-van-hieu",
-  },
-  {
-    name: "Ms Nguyen Thi Kieu Vuong",
-    image: "images/people/Nguyen-Thi-Kieu-Vuong.png",
-    position: "VICE CHAIRPERSON",
-    description:
-      "Ms Nguyen Thi Kieu Vuong is a lawyer of the Vietnam Bar Federation and Ho Chi Minh City Bar Association and has over 18 years legal experience",
-    link: "/profile/nguyen-thi-kieu-vuong",
-  },
-];
 
-const TheSupervisoryCouncil = [
-  {
-    name: "Dr David Wilmoth",
-    image: "images/people/david-wilmoth-400x490.jpg",
-    position: "CHAIRPERSON OF THE SUPERVISORY COUNCIL",
-    link: "/profile/ts-david-wilmoth",
-  },
-  {
-    name: "Dr Ho Le Khoa",
-    image: "images/people/Ho-Van-Khoa-580x490.jpg",
-    position: "MEMBER OF THE SUPERVISORY COUNCIL",
-    link: "/profile/tien-si-ho-le-khoa",
-  },
-];
+const AboutUs = () => {
+  const { t } = useTranslation();
+  document.title = `${t("nav.about-us")} - MCF`;
 
+  const TheMcfCouncil = [
+    {
+      name: `${t("about-us.the_mcf_council.duong-van-ni.name")}`,
+      image: "images/people/Duong-Van-Ni.png",
+      position: `${t("about-us.the_mcf_council.duong-van-ni.position")}`,
+      description: `${t("about-us.the_mcf_council.duong-van-ni.brief")}`,
+      link: "/profile/dvni",
+    },
+    {
+      name: `${t("about-us.the_mcf_council.vu-van-hieu.name")}`,
+      image: "images/people/Vu-Van-Hieu.png",
+      position: `${t("about-us.the_mcf_council.vu-van-hieu.position")}`,
+      description:`${t("about-us.the_mcf_council.vu-van-hieu.brief")}`,
+      link: "/profile/vu-van-hieu",
+    },
+    {
+      name: `${t("about-us.the_mcf_council.nguyen-thi-kieu-vuong.name")}`,
+      image: "images/people/Nguyen-Thi-Kieu-Vuong.png",
+      position: `${t("about-us.the_mcf_council.nguyen-thi-kieu-vuong.position")}`,
+      description:`${t("about-us.the_mcf_council.nguyen-thi-kieu-vuong.brief")}`,
+      link: "/profile/nguyen-thi-kieu-vuong",
+    },
+  ];
+  const TheSupervisoryCouncil = [
+    {
+      name: `${t("about-us.the_supervisory_council.david-wilmoth.name")}`,
+      image: "images/people/david-wilmoth-400x490.jpg",
+      position: `${t("about-us.the_supervisory_council.david-wilmoth.position")}`,
+      link: "/profile/ts-david-wilmoth",
+    },
+    {
+      name: `${t("about-us.the_supervisory_council.ho-le-khoa.name")}`,
+      image: "images/people/Ho-Van-Khoa-580x490.jpg",
+      position: `${t("about-us.the_supervisory_council.ho-le-khoa.position")}`,
+      link: "/profile/tien-si-ho-le-khoa",
+    },
+  ];
 const MemberOfMcf = [
   {
-    name: "Mr. Ly Van Loi",
+    name: `${t("about-us.member_of_mcf.ly-van-loi.name")}`,
     image: "images/people/ly-van-loi-1-580x490.jpg",
     link: "/profile/ong-ly-van-loi",
   },
   {
-    name: "Assoc. Prof. Dr LE ANH TUAN",
+    name: `${t("about-us.member_of_mcf.le-anh-tuan.name")}`,
     image: "images/people/le-anh-tuan-1-580x490.jpg",
     link: "/profile/pgs-ts-le-anh-tuan",
   },
   {
-    name: "Assoc. Prof. Dr. NGUYEN THANH TUNG",
+    name: `${t("about-us.member_of_mcf.nguyen-thanh-tung.name")}`,
     image: "images/people/nguyen-thanh-tung-1-e1624288880348-580x490.jpg",
     link: "/profile/pgs-ts-nguyen-thanh-tung",
   },
   {
-    name: "Mr Nguyen Hoai Bao",
+    name: `${t("about-us.member_of_mcf.nguyen-hoai-bao.name")}`,
     image: "images/people/nguyen-hoai-bao.jpg",
     link: "/profile/ong-nguyen-hoai-bao",
   },
   {
-    name: "Assoc. Prof. Truong Hoang Dan",
+    name: `${t("about-us.member_of_mcf.truong-hoang-dan.name")}`,
     image: "images/people/Truong-Hoang-Dan_gioithieu-580x490.jpg",
     link: "/profile/pgs-ts-truong-hoang-dan",
   },
 ];
-
-const AboutUs = () => {
-  document.title = `About Us - MCF`;
   return (
     <>
       <Header></Header>
       <Headline
         image="images/headlines/mcf_ceremony_banner-scaled.jpg"
-        title="About Us"
+        title={t("nav.about-us")}
       ></Headline>
       <Wrapper
         sx={{
@@ -105,10 +104,10 @@ const AboutUs = () => {
                 marginY: "20px",
               }}
             >
-              THE MEKONG CONSERVANCY AND RESEARCH ASSISTANCE FOUNDATION
+              {t("about-us.title")}
             </Typography>
             <Typography fontWeight="300" variant="h6" marginBottom="20px">
-              The Mekong Conservancy Foundation – MCF
+            {t("about-us.heading")}
             </Typography>
           </Box>
           <Box
@@ -118,14 +117,7 @@ const AboutUs = () => {
           ></Box>
           <Box color="var(--text-grey)" marginTop="50px">
             <Typography fontWeight="300" variant="body1">
-              The Mekong Conservancy & Research Assistance Foundation (MCF) was
-              founded and run under Decision No. 567/QD/BNV dated July 24, 2019.
-              MCF focuses on research and problem solving in the fields of
-              livelihood, education, environment, and natural resources in order
-              to contribute to the Mekong Delta’s long-term development. The MCF
-              has successfully conducted numerous projects in the aforementioned
-              sectors, establishing a vast network of both national and
-              international partners.
+            {t("about-us.content")}
             </Typography>
           </Box>
         </Box>
@@ -140,7 +132,7 @@ const AboutUs = () => {
         <Wrapper>
           <Box paddingTop="130px">
             <Typography fontWeight="300" variant="h3" textAlign="center">
-              THE MCF COUNCIL
+            {t("about-us.mcf_council")}
             </Typography>
             <Box
               display="grid"
@@ -190,8 +182,12 @@ const AboutUs = () => {
                         fontWeight="300"
                         sx={{ color: "var(--text-grey)" }}
                         paddingTop="18px"
+
+                        dangerouslySetInnerHTML={{
+                          __html: `${information.description}`
+                        }}
                       >
-                        {information.description}
+                       
                       </Typography>
                       <CardActions
                         sx={{
@@ -218,7 +214,7 @@ const AboutUs = () => {
           </Box>
           <Box paddingTop="130px">
             <Typography fontWeight="300" variant="h3" textAlign="center">
-              THE SUPERVISORY COUNCIL
+            {t("about-us.supervisory_council")}
             </Typography>
             <Box
               display="grid"
@@ -272,7 +268,7 @@ const AboutUs = () => {
           </Box>
           <Box paddingTop="130px">
             <Typography fontWeight="300" variant="h3" textAlign="center">
-              MEMBER OF MCF
+            {t("about-us.member")}
             </Typography>
             <Box
               display="grid"

@@ -6,7 +6,7 @@ import { ImageSliderType } from "@/shared";
 import Header from "@/components/header";
 import Carousel from "@/components/Carousel";
 import Footer from "@/components/Footer";
-
+import { useTranslation } from "react-i18next";
 // const images: Array<ImageSliderType> = [
 //   {
 //     src: "images/carousel/Bao-tang_home.jpg",
@@ -44,7 +44,8 @@ import Footer from "@/components/Footer";
 // ];
 
 const Home = () => {
-  document.title = `Home - MCF`;
+  const { t } = useTranslation();
+  document.title = `${t("nav.home")} - MCF`;
   const isMobileScreens = useMediaQuery("(max-width: 768px)");
   const [isFullScreenEnabled, setIsFullScreenEnabled] =
     useState<boolean>(false);
@@ -85,7 +86,7 @@ const Home = () => {
           paddingBottom="50px"
           color="var(--text-black)"
         >
-          THE MEKONG DELTA
+          {t("home.title")}
         </Typography>
         <Box display="grid" gap={6} gridTemplateColumns="repeat(12, 1fr)">
           <Box gridColumn="span 6">
@@ -96,15 +97,11 @@ const Home = () => {
                 variant="body1"
                 textAlign="justify"
                 lineHeight="30px"
+
+                dangerouslySetInnerHTML={{
+                  __html: `${t("home.content1")}`
+                }}
               >
-                The Mekong Delta is center of Vietnam’s rice, fish, fruits and
-                vegetables production. With about 40 thousand square kilometers
-                and 20 million people, it is so-called ‘rice-bowl’ of Vietnam.
-                Despite its centrality to the Vietnamese economy, the delta is
-                particularly vulnerable to increasing climate changes pressures
-                and regional development impacts. Challenges such as rising sea
-                levels and hydropower development causing erosion, flooding,
-                drought, and land subsidence and poverty and migration.
               </Typography>
               <Typography
                 paddingBottom="20px"
@@ -113,16 +110,11 @@ const Home = () => {
                 textAlign="justify"
                 lineHeight="30px"
               >
-                Resolution 120/NQ-CP and the integrated master plan for the
-                Mekong Delta to respond to climate change by 2050 divides the
-                delta into three major ecological zones: permanent saline area,
-                salt-fresh water transition zone, and freshwater zone. In each
-                ecological zone, it is necessary to transform sustainable
-                agricultural systems and adapt to climate change
+                {t("home.content2")}
               </Typography>
             </Box>
             <CustomizedPrimaryButton sx={{ marginTop: "40px" }}>
-              LEARN MORE
+            {t("home.information")}
             </CustomizedPrimaryButton>
           </Box>
           <Box gridColumn="span 6">
@@ -135,7 +127,7 @@ const Home = () => {
           fontSize="3em"
           paddingTop="200px"
         >
-          Latest New
+          {t("home.news")}
         </Typography>
       </Wrapper>
 

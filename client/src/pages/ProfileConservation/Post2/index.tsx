@@ -5,8 +5,11 @@ import ToggleModalImg from "@/components/ToggleModalImg";
 import { Box, Link, Typography } from "@mui/material";
 import "../Profile.scss";
 import Footer from "@/components/Footer";
-
+import { useTranslation } from "react-i18next";
 const Profile = () => {
+  const { t } = useTranslation();
+  document.title=`${t("conservation.profile.post2.title")} - MCF`
+
   const [toggleModal, setToggleModal] = useState(false);
   return (
     <>
@@ -22,7 +25,7 @@ const Profile = () => {
                       <Link
                         // href="https://mcf.com.vn/wp-content/uploads/2015/04/Vu-Van-Hieu.png"
                         rel="ilightbox[img_12627_64987034241fd]"
-                        title="Dòng chảy của Văn hóa và Sự sống"
+                        title={t("conservation.profile.post2.title")}
                         className="preloader highImg"
                         onClick={() => {
                           document.body.style.overflow = "hidden";
@@ -33,9 +36,9 @@ const Profile = () => {
                           component="img"
                           width="100%"
                           height="100%"
-                          alt="Dòng chảy của Văn hóa và Sự sống"
+                          alt={t("conservation.profile.post2.title")}
                           src="http://localhost:5173/images/conservation/dong-chay-cua-van-hoa-va-su-song/flow-of-culture-and-life_conservation-1160x870.jpg"
-                          title="Dòng chảy của Văn hóa và Sự sống"
+                          title={t("conservation.profile.post2.title")}
                           srcSet="http://localhost:5173/images/conservation/dong-chay-cua-van-hoa-va-su-song/flow-of-culture-and-life_conservation-1160x870.jpg 1160w, http://localhost:5173/images/conservation/dong-chay-cua-van-hoa-va-su-song/flow-of-culture-and-life_conservation-300x225.jpg 300w, http://localhost:5173/images/conservation/dong-chay-cua-van-hoa-va-su-song/flow-of-culture-and-life_conservation-1024x768.jpg 1024w, http://localhost:5173/images/conservation/dong-chay-cua-van-hoa-va-su-song/flow-of-culture-and-life_conservation-768x576.jpg 768w, http://localhost:5173/images/conservation/dong-chay-cua-van-hoa-va-su-song/flow-of-culture-and-life_conservation-580x435.jpg 580w, http://localhost:5173/images/conservation/dong-chay-cua-van-hoa-va-su-song/flow-of-culture-and-life_conservation-860x645.jpg 860w, http://localhost:5173/images/conservation/dong-chay-cua-van-hoa-va-su-song/flow-of-culture-and-life_conservation-440x330.jpg 440w, http://localhost:5173/images/conservation/dong-chay-cua-van-hoa-va-su-song/flow-of-culture-and-life_conservation.jpg 1190w"
                           sizes="(max-width: 1160px) 100vw, 1160px"
                         ></Box>
@@ -58,7 +61,7 @@ const Profile = () => {
                           textDecoration: "none",
                         }}
                       >
-                        Dòng chảy của Văn hóa và Sự sống
+                        {t("conservation.profile.post2.title")}
                       </Typography>
                       {/* <Typography
                         variant="h4"
@@ -98,63 +101,13 @@ const Profile = () => {
                               component="div"
                               className="cmsmasters_column one_first"
                             >
-                              <Box component="div">
-                                <Box component="p">
-                                  Nguồn nước đại diện cho một thành phần cơ bản
-                                  của nền kinh tế trong khu vực, ngoài nhu cầu
-                                  tiêu dùng cho sinh hoạt, nước còn được sử dụng
-                                  cho nông nghiệp, công nghiệp và dịch vụ. Sông
-                                  và các khu vực ven sông cũng góp phần tạo nên
-                                  cảnh quan cho khu vực và phát triển các dịch
-                                  vụ du lịch khác. Bên cạnh đó, dòng sông còn là
-                                  sự kết nối và tạo môi trường sống của nhiều
-                                  sinh vật trên cạn và dưới nước và tạo nên các
-                                  giá trị thẩm mỹ và giải trí khác. Tại đồng
-                                  bằng sông Cửu Long (ĐBSCL), sông Mekong được
-                                  coi là nguồn cung cấp nước và các dịch vụ hệ
-                                  sinh thái quan trọng nhất bởi nó cung cấp
-                                  khoảng 90% lưu lượng nước cho ĐBSCL, đặc biệt
-                                  vào mùa khô lượng nước hoàn toàn phụ thuộc vào
-                                  vùng thượng lưu Mekong. Tuy nhiên, các lưu vực
-                                  sông đã và đang bị khai thác quá mức để phục
-                                  vụ cho mục tiêu phát triển kinh tế – xã hội,
-                                  từ đó gây ra các áp lực cho hệ sinh thái.
-                                  Trong khi đó, nhiều cộng đồng nông thôn và
-                                  đồng bào dân tộc thiểu số vẫn phụ thuộc nhiều
-                                  vào nguồn nước sông. Hiện nay các giá trị dịch
-                                  vụ hệ sinh thái dòng sống cung cấp cho cộng
-                                  đồng đã dần bị lãng quên dẫn đến các hoạt động
-                                  gây nhiều ảnh hưởng xấu cho dòng sông thường
-                                  xuyên xảy ra. Vì vậy, dự án đã đánh giá các
-                                  dịch vụ hệ sinh thái mà dòng sông thật sự cung
-                                  cấp cho con người nhằm thay đổi tư duy quản
-                                  trị sông hiện nay.
-                                </Box>
-                                <Box component="p">
-                                  Kết quả nghiên cứu cho thấy các dịch vụ hệ
-                                  sinh thái trên sông Hậu rất đa dạng và đóng
-                                  vai trò rất quan trọng đối với sự phát triển
-                                  của cả vùng Đồng bằng sông Cửu Long. Nơi đây
-                                  là nguồn cung cấp nước và thực phẩm cho nhiều
-                                  hoạt động của vùng. Sông Hậu đã cung cấp trực
-                                  tiếp và gián tiếp các dịch vụ về điều tiết và
-                                  hỗ trợ khác nhau, như điều hoà khí hậu, chất
-                                  dinh dưỡng,…Hơn nữa, đây được xem là nơi diễn
-                                  ra nhiều lễ hội, các hoạt động tín ngưỡng trên
-                                  sông, đặc trưng với nhiều hoạt động du lịch
-                                  sinh thái và các loại hình du lịch trải
-                                  nghiệm. Vai trò của dịch vụ cung cấp được
-                                  người dân quan tâm nhiều nhất trong quá trình
-                                  khảo sát. Tuy nhiên, các dịch vụ này đã ngày
-                                  càng bị suy giảm bởi nhiều yếu tố khác nhau
-                                  như sự thay đổi thuỷ văn, chất lượng, trữ
-                                  lượng môi trường nước giảm và các chính sách
-                                  phát triển liên quan đến dòng sông. Trong đó,
-                                  sự thay đổi về chất lượng và trữ lượng nước là
-                                  một trong những nguyên nhân chính dẫn đế sự
-                                  thay đổi của các dịch vụ hệ sinh thái trên
-                                  sông.
-                                </Box>
+                              <Box component="div"
+                              dangerouslySetInnerHTML={{
+                                __html: `${t(
+                                  "conservation.profile.post1.content"
+                                )}`,
+                              }}
+                              >
                               </Box>
                             </Box>
                           </Box>
@@ -179,7 +132,7 @@ const Profile = () => {
                           letterSpacing: ".1em",
                         }}
                       >
-                        Bạn thích hồ sơ này?
+                        {t("profileDetail.like_this_profile")}
                       </Typography>
                       <Box component="div" className="share_posts_inner">
                         <Link href="https://www.facebook.com/sharer/sharer.php?display=popup&u=https%3A%2F%2Fmcf.com.vn%2Fprofile%2Fvu-van-hieu-2%2F">
@@ -198,13 +151,13 @@ const Profile = () => {
                         variant="h4"
                         className="cmsmasters_single_slider_title"
                       >
-                        Các dự án khác
+                       {t("profileDetail.more_projects")}
                       </Typography>
                       <Typography
                         variant="h5"
                         className="cmsmasters_single_slider_no_items"
                       >
-                        Danh sách trống
+                        {t("profileDetail.project_found")}
                       </Typography>
                     </Box>
                   </Box>
@@ -212,14 +165,14 @@ const Profile = () => {
                 <Box component="div" className="profile_sidebar">
                   <Box component="div" className="profile_details">
                     <Typography variant="h4" className="profile_details_title">
-                      Thông tin dự án
+                    {t("profileDetail.project_info")}
                     </Typography>
                     <Box component="div" className="profile_details_item">
                       <Box
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Lượt thích:
+                        {t("profileDetail.likes")}
                       </Box>
                       <Box
                         component="div"
@@ -244,7 +197,7 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Người đăng:
+                       {t("profileDetail.author")}
                       </Box>
                       <Box
                         component="div"
@@ -255,7 +208,7 @@ const Profile = () => {
                           title="Projects by Ly Van Loi"
                           rel="author"
                         >
-                          <Box component="span">Ly Van Loi</Box>
+                          <Box component="span">{t("conservation.profile.post2.profile_detail.author")}</Box>
                         </Link>
                       </Box>
                     </Box>
@@ -264,14 +217,14 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Ngày đăng
+                       {t("profileDetail.date")}
                       </Box>
                       <Box
                         component="div"
                         className="profile_details_item_desc"
                       >
-                        <Box component="abbr" title="26 Tháng Năm, 2023">
-                          26 Tháng Năm, 2023
+                        <Box component="abbr" title={t("conservation.profile.post2.profile_detail.date")}>
+                        {t("conservation.profile.post2.profile_detail.date")}
                         </Box>
                       </Box>
                     </Box>
@@ -280,7 +233,7 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Chuyên mục:
+                        {t("profileDetail.categories")}
                       </Box>
                       <Box
                         component="div"
@@ -295,7 +248,7 @@ const Profile = () => {
                             className="cmsmasters_cat_color cmsmasters_cat_153"
                             rel="category tag"
                           >
-                            Bảo tồn
+                           {t("conservation.profile.post2.profile_detail.categories")}
                           </Link>
                         </Box>
                       </Box>
@@ -305,13 +258,13 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Triển khai:
+                        {t("profileDetail.implemented")}
                       </Box>
                       <Box
                         component="div"
                         className="profile_details_item_desc"
                       >
-                        MCF
+                       {t("conservation.profile.post2.profile_detail.implemented")}
                       </Box>
                     </Box>
                     <Box component="div" className="profile_details_item">
@@ -319,13 +272,13 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Kết thúc:
+                        {t("profileDetail.end_date")}
                       </Box>
                       <Box
                         component="div"
                         className="profile_details_item_desc"
                       >
-                        2022
+                        {t("conservation.profile.post2.profile_detail.end_date")}
                       </Box>
                     </Box>
                     <Box component="div" className="profile_details_item">
@@ -333,13 +286,13 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Địa điểm:
+                        {t("profileDetail.location")}
                       </Box>
                       <Box
                         component="div"
                         className="profile_details_item_desc"
                       >
-                        Đồng Tháp, Cần Thơ, Vĩnh Long, Sóc Trăng
+                       {t("conservation.profile.post2.profile_detail.location")}
                       </Box>
                     </Box>
                     <Box component="div" className="profile_details_item">
@@ -347,13 +300,13 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Tài trợ:
+                        {t("profileDetail.funded")}
                       </Box>
                       <Box
                         component="div"
                         className="profile_details_item_desc"
                       >
-                        OXFAM
+                        {t("conservation.profile.post2.profile_detail.funded")}
                       </Box>
                     </Box>
                     <Box component="div" className="profile_details_item">
@@ -361,13 +314,13 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Tình trạng:
+                        {t("profileDetail.status")}
                       </Box>
                       <Box
                         component="div"
                         className="profile_details_item_desc"
                       >
-                        Hoàn thành
+                        {t("conservation.profile.post2.profile_detail.status")}
                       </Box>
                     </Box>
                   </Box>
@@ -408,7 +361,7 @@ const Profile = () => {
               rel="prev"
               className="icon-angle-left"
             >
-              Tiến trình của Bảo tàng Lịch sử Tự nhiên Mekong
+              {t("museum.profile.post1.title")}
             </Link>
           </Box>
           <Box
@@ -420,9 +373,7 @@ const Profile = () => {
               rel="next"
               className="icon-angle-right"
             >
-              Cập nhật chiến lược quản lý nước để phục hồi sinh cảnh đất ngập
-              nước Vườn quốc gia Tràm chim trong bối cảnh biến đổi khí hậu và
-              phát triển ở thượng nguồn
+              {t("conservation.profile.post1.title")}
             </Link>
           </Box>
         </Box>

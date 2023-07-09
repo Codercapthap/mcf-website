@@ -6,10 +6,9 @@ import { Box, Link, Typography } from "@mui/material";
 import "../Profile.scss";
 import Footer from "@/components/Footer";
 import { useTranslation } from "react-i18next";
-
 const Profile = () => {
   const { t } = useTranslation();
-
+  document.title=`${t("conservation.profile.post1.title")} - MCF`
   const [toggleModal, setToggleModal] = useState(false);
   return (
     <>
@@ -25,7 +24,7 @@ const Profile = () => {
                       <Link
                         // href="https://mcf.com.vn/wp-content/uploads/2015/04/Vu-Van-Hieu.png"
                         rel="ilightbox[img_12627_64987034241fd]"
-                        title="Cập nhật chiến lược quản lý nước để phục hồi sinh cảnh đất ngập nước Vườn quốc gia Tràm chim trong bối cảnh biến đổi khí hậu và phát triển ở thượng nguồn"
+                        title={t("conservation.profile.post1.title")}
                         className="preloader highImg"
                         onClick={() => {
                           document.body.style.overflow = "hidden";
@@ -36,9 +35,9 @@ const Profile = () => {
                           component="img"
                           width="100%"
                           height="100%"
-                          alt="Cập nhật chiến lược quản lý nước để phục hồi sinh cảnh đất ngập nước Vườn quốc gia Tràm chim trong bối cảnh biến đổi khí hậu và phát triển ở thượng nguồn"
+                          alt={t("conservation.profile.post1.title")}
                           src="http://localhost:5173/images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-1160x635.jpg"
-                          title="Cập nhật chiến lược quản lý nước để phục hồi sinh cảnh đất ngập nước Vườn quốc gia Tràm chim trong bối cảnh biến đổi khí hậu và phát triển ở thượng nguồn"
+                          title={t("conservation.profile.post1.title")}
                           srcSet="http://localhost:5173/images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-1160x635.jpg 1160w, http://localhost:5173/images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-300x164.jpg 300w, http://localhost:5173/images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-1024x560.jpg 1024w, http://localhost:5173/images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-768x420.jpg 768w, http://localhost:5173/images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-1536x840.jpg 1536w, http://localhost:5173/images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-2048x1121.jpg 2048w, http://localhost:5173/images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-580x317.jpg 580w, http://localhost:5173/images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-860x471.jpg 860w, http://localhost:5173/images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-1440x788.jpg 1440w, http://localhost:5173/images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-440x241.jpg 440w"
                           sizes="(max-width: 1160px) 100vw, 1160px"
                         ></Box>
@@ -61,9 +60,7 @@ const Profile = () => {
                           textDecoration: "none",
                         }}
                       >
-                        Cập nhật chiến lược quản lý nước để phục hồi sinh cảnh
-                        đất ngập nước Vườn quốc gia Tràm chim trong bối cảnh
-                        biến đổi khí hậu và phát triển ở thượng nguồn
+                        {t("conservation.profile.post1.title")}
                       </Typography>
                       {/* <Typography
                         variant="h4"
@@ -134,7 +131,7 @@ const Profile = () => {
                           letterSpacing: ".1em",
                         }}
                       >
-                        Bạn thích hồ sơ này?
+                        {t("profileDetail.like_this_profile")}
                       </Typography>
                       <Box component="div" className="share_posts_inner">
                         <Link href="https://www.facebook.com/sharer/sharer.php?display=popup&u=https%3A%2F%2Fmcf.com.vn%2Fprofile%2Fvu-van-hieu-2%2F">
@@ -153,13 +150,13 @@ const Profile = () => {
                         variant="h4"
                         className="cmsmasters_single_slider_title"
                       >
-                        Các dự án khác
+                        {t("profileDetail.more_projects")}
                       </Typography>
                       <Typography
                         variant="h5"
                         className="cmsmasters_single_slider_no_items"
                       >
-                        Danh sách trống
+                        {t("profileDetail.project_found")}
                       </Typography>
                     </Box>
                   </Box>
@@ -167,14 +164,14 @@ const Profile = () => {
                 <Box component="div" className="profile_sidebar">
                   <Box component="div" className="profile_details">
                     <Typography variant="h4" className="profile_details_title">
-                      Thông tin dự án
+                    {t("profileDetail.project_info")}
                     </Typography>
                     <Box component="div" className="profile_details_item">
                       <Box
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Lượt thích:
+                        {t("profileDetail.likes")}
                       </Box>
                       <Box
                         component="div"
@@ -199,7 +196,7 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Người đăng:
+                        {t("profileDetail.author")}
                       </Box>
                       <Box
                         component="div"
@@ -210,7 +207,9 @@ const Profile = () => {
                           title="Projects by Ly Van Loi"
                           rel="author"
                         >
-                          <Box component="span">Ly Van Loi</Box>
+                          <Box component="span">
+                            {t("conservation.profile.post1.profile_detail.author")}
+                          </Box>
                         </Link>
                       </Box>
                     </Box>
@@ -219,14 +218,14 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Ngày đăng
+                       {t("profileDetail.date")}
                       </Box>
                       <Box
                         component="div"
                         className="profile_details_item_desc"
                       >
-                        <Box component="abbr" title="26 Tháng Năm, 2023">
-                          26 Tháng Năm, 2023
+                        <Box component="abbr" title={t("conservation.profile.post1.profile_detail.date")}>
+                        {t("conservation.profile.post1.profile_detail.date")}
                         </Box>
                       </Box>
                     </Box>
@@ -235,7 +234,7 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Chuyên mục:
+                        {t("profileDetail.categories")}
                       </Box>
                       <Box
                         component="div"
@@ -250,7 +249,7 @@ const Profile = () => {
                             className="cmsmasters_cat_color cmsmasters_cat_153"
                             rel="category tag"
                           >
-                            Bảo tồn
+                           {t("conservation.profile.post1.profile_detail.categories")}
                           </Link>
                         </Box>
                       </Box>
@@ -260,13 +259,13 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Triển khai:
+                        {t("profileDetail.implemented")}
                       </Box>
                       <Box
                         component="div"
                         className="profile_details_item_desc"
                       >
-                        MCF
+                        {t("conservation.profile.post1.profile_detail.implemented")}
                       </Box>
                     </Box>
                     <Box component="div" className="profile_details_item">
@@ -274,13 +273,13 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Kết thúc:
+                        {t("profileDetail.end_date")}
                       </Box>
                       <Box
                         component="div"
                         className="profile_details_item_desc"
                       >
-                        2022
+                        {t("conservation.profile.post1.profile_detail.end_date")}
                       </Box>
                     </Box>
                     <Box component="div" className="profile_details_item">
@@ -288,13 +287,13 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Địa điểm:
+                        {t("profileDetail.location")}
                       </Box>
                       <Box
                         component="div"
                         className="profile_details_item_desc"
                       >
-                        Vườn Quốc gia Tràm Chim
+                        {t("conservation.profile.post1.profile_detail.location")}
                       </Box>
                     </Box>
                     <Box component="div" className="profile_details_item">
@@ -302,13 +301,13 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Tài trợ:
+                        {t("profileDetail.funded")}
                       </Box>
                       <Box
                         component="div"
                         className="profile_details_item_desc"
                       >
-                        WWF - Việt Nam
+                        {t("conservation.profile.post1.profile_detail.funded")}
                       </Box>
                     </Box>
                     <Box component="div" className="profile_details_item">
@@ -316,13 +315,13 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Tình trạng:
+                        {t("profileDetail.status")}
                       </Box>
                       <Box
                         component="div"
                         className="profile_details_item_desc"
                       >
-                        Đã hoàn thành
+                        {t("conservation.profile.post1.profile_detail.status")}
                       </Box>
                     </Box>
                   </Box>
@@ -363,7 +362,7 @@ const Profile = () => {
               rel="prev"
               className="icon-angle-left"
             >
-              Dòng chảy của Văn hóa và Sự sống
+              {t("conservation.profile.post2.title")}
             </Link>
           </Box>
           <Box

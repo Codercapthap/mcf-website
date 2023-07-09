@@ -9,6 +9,8 @@ import { PageType, mainPages } from "@/shared";
 import Search from "@/components/Search";
 import { theme } from "@/styles";
 import "./Header.scss";
+
+import i18n from "i18next";
 import { useTranslation } from "react-i18next";
 type Props = {};
 
@@ -46,6 +48,14 @@ function Header({}: Props) {
       .join(" ");
     setActive(currentTag);
   }, [pathname]);
+
+  const changeLanguage = (
+    event: React.MouseEvent<HTMLButtonElement, MouseEvent>
+  ) => {
+    i18n.changeLanguage(
+      event.currentTarget.innerText === "ENGLISH" ? "en" : "vi"
+    );
+  };
 
   return (
     <Box
@@ -239,7 +249,7 @@ function Header({}: Props) {
               },
             }}
           >
-            {t("nav.language")}
+            <span onClick={changeLanguage}>{t("nav.language")}</span>
           </ListItem>
         </List>
       </Box>

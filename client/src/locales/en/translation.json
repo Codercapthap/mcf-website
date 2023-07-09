@@ -1,14 +1,13 @@
 {
   "nav": {
-    "home": "HOME",
-    "about-us": "ABOUT US",
-    "conservation": "CONSERVATION",
-    "livelihoods": "LIVELIHOODS",
-    "museum": "MUSEUM",
-    "stories": "STORIES",
-    "contact-us": "CONTACT US",
-    "language": "TIẾNG VIỆT",
-    "search": "Search..."
+    "home": "Home",
+    "about-us": "About us",
+    "conservation": "Conservation",
+    "livelihoods": "Livelihoods",
+    "museum": "Museum",
+    "stories": "Stories",
+    "contact-us": "Contact us",
+    "language": "TIẾNG VIỆT"
   },
   "categories": {
     "all_categories": "ALL CATEGORIES",
@@ -274,5 +273,12 @@
       "work": "Monday - Friday: 7:00am - 5:00pm"
     }
   },
+  "stories": "Coming soon!!",
+  "search": {
+    "search": "Search...",
+    "not_found": "search result for:",
+    "message": "SORRY, BUT NOTHING MATCHED YOUR SEARCH TERMS. PLEASE TRY AGAIN WITH SOME DIFFERENT KEYWORDS."
+  },
+  "page-not-found": "We're sorry, but the page you were looking for doesn't exist.",
   "footer": "MCF © 2020 | ALL RIGHTS RESERVED"
 }

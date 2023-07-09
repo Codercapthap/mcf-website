@@ -5,8 +5,11 @@ import ToggleModalImg from "@/components/ToggleModalImg";
 import { Box, Link, Typography } from "@mui/material";
 import "../Profile.scss";
 import Footer from "@/components/Footer";
-
+import { useTranslation } from "react-i18next";
 const Profile = () => {
+  const { t } = useTranslation();
+  document.title=`${t("livelihoods.profile.post3.title")} - MCF`
+
   const [toggleModal, setToggleModal] = useState(false);
   return (
     <>
@@ -22,7 +25,7 @@ const Profile = () => {
                       <Link
                         // href="https://mcf.com.vn/wp-content/uploads/2015/04/Vu-Van-Hieu.png"
                         rel="ilightbox[img_12627_64987034241fd]"
-                        title="CẢI THIỆN SINH KẾ"
+                        title={t("livelihoods.profile.post3.title")}
                         className="preloader highImg"
                         onClick={() => {
                           document.body.style.overflow = "hidden";
@@ -31,9 +34,9 @@ const Profile = () => {
                       >
                         <Box
                           component="img"
-                          alt="CẢI THIỆN SINH KẾ"
+                          alt={t("livelihoods.profile.post3.title")}
                           src="http://localhost:5173/images/livelihoods/profile/bai-viet-sinh-ke-01/sinhke.png"
-                          title="CẢI THIỆN SINH KẾ"
+                          title={t("livelihoods.profile.post3.title")}
                           srcSet="http://localhost:5173/images/livelihoods/profile/bai-viet-sinh-ke-01/sinhke.png 679w, http://localhost:5173/images/livelihoods/profile/bai-viet-sinh-ke-01/sinhke-440x318.png 440w, http://localhost:5173/images/livelihoods/profile/bai-viet-sinh-ke-01/sinhke-300x217.png 300w, http://localhost:5173/images/livelihoods/profile/bai-viet-sinh-ke-01/sinhke-580x419.png 580w"
                           sizes="(max-width: 679px) 100vw, 679px"
                         ></Box>
@@ -56,7 +59,7 @@ const Profile = () => {
                           textDecoration: "none",
                         }}
                       >
-                        CẢI THIỆN SINH KẾ
+                        {t("livelihoods.profile.post3.title")}
                       </Typography>
                       {/* <Typography
                         variant="h4"
@@ -96,24 +99,12 @@ const Profile = () => {
                               component="div"
                               className="cmsmasters_column one_first"
                             >
-                              <Box component="div">
-                                <Box component="p">
-                                  <strong>
-                                    Dự án cải thiện sinh kế vùng đệm VQG Tràm
-                                    Chim.
-                                  </strong>{" "}
-                                  Từ năm 1995, dự án hướng đến các gia đình có
-                                  thu nhập thấp. Bắt đầu với việc đào tạo kỹ
-                                  thuật liên quan đến nông nghiệp, nuôi trồng
-                                  thủy sản, sản xuất chăn nuôi, kinh doanh nhỏ,
-                                  thủ công mỹ nghệ và các dịch vụ địa phương.
-                                  Tiếp theo với các khoản vay nhỏ từ 50-100 USD
-                                  để thực hiện ứng dụng các kiến ​​thức đã đạt
-                                  được. Dưới các nguồn tài trợ khác nhau của các
-                                  Đại sứ quán Anh và Đan Mạch tại Việt Nam, các
-                                  tổ chức VHI, VNHELP và cá nhân người Úc. Hiện
-                                  nay, dự án đang được MCF tiếp tục hỗ trợ.
-                                </Box>
+                              <Box component="div"
+                               dangerouslySetInnerHTML={{
+                                __html: `${t("livelihoods.profile.post3.content")}`
+                               }}
+                              >
+                                
                               </Box>
                             </Box>
                           </Box>
@@ -138,7 +129,7 @@ const Profile = () => {
                           letterSpacing: ".1em",
                         }}
                       >
-                        Bạn thích hồ sơ này?
+                        {t("profileDetail.like_this_profile")}
                       </Typography>
                       <Box component="div" className="share_posts_inner">
                         <Link href="https://www.facebook.com/sharer/sharer.php?display=popup&u=https%3A%2F%2Fmcf.com.vn%2Fprofile%2Fvu-van-hieu-2%2F">
@@ -157,13 +148,13 @@ const Profile = () => {
                         variant="h4"
                         className="cmsmasters_single_slider_title"
                       >
-                        Các dự án khác
+                       {t("profileDetail.more_projects")}
                       </Typography>
                       <Typography
                         variant="h5"
                         className="cmsmasters_single_slider_no_items"
                       >
-                        Danh sách trống
+                        {t("profileDetail.project_found")}
                       </Typography>
                     </Box>
                   </Box>
@@ -171,14 +162,14 @@ const Profile = () => {
                 <Box component="div" className="profile_sidebar">
                   <Box component="div" className="profile_details">
                     <Typography variant="h4" className="profile_details_title">
-                      Thông tin dự án
+                    {t("profileDetail.project_info")}
                     </Typography>
                     <Box component="div" className="profile_details_item">
                       <Box
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Lượt thích:
+                        {t("profileDetail.likes")}
                       </Box>
                       <Box
                         component="div"
@@ -203,7 +194,7 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Người đăng:
+                       {t("profileDetail.author")}
                       </Box>
                       <Box
                         component="div"
@@ -214,7 +205,7 @@ const Profile = () => {
                           title="Projects by Ly Van Loi"
                           rel="author"
                         >
-                          <Box component="span">mcf_admin</Box>
+                          <Box component="span">{t("livelihoods.profile.post3.profile_detail.author")}</Box>
                         </Link>
                       </Box>
                     </Box>
@@ -223,14 +214,14 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Ngày đăng
+                        {t("profileDetail.date")}
                       </Box>
                       <Box
                         component="div"
                         className="profile_details_item_desc"
                       >
-                        <Box component="abbr" title="18 Tháng Hai, 2021">
-                          18 Tháng Hai, 2021
+                        <Box component="abbr" title={t("livelihoods.profile.post3.profile_detail.date")}>
+                        {t("livelihoods.profile.post3.profile_detail.date")}
                         </Box>
                       </Box>
                     </Box>
@@ -239,7 +230,7 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Chuyên mục:
+                        {t("profileDetail.categories")}
                       </Box>
                       <Box
                         component="div"
@@ -254,7 +245,7 @@ const Profile = () => {
                             className="cmsmasters_cat_color cmsmasters_cat_153"
                             rel="category tag"
                           >
-                            Sinh kế
+                            {t("livelihoods.profile.post3.profile_detail.categories")}
                           </Link>
                         </Box>
                       </Box>
@@ -379,8 +370,7 @@ const Profile = () => {
               rel="next"
               className="icon-angle-right"
             >
-              Công tác kiểm kê, khảo sát vườn chim Vạc tại xã Tân Mỹ, huyện Trà
-              Ôn, tỉnh Vĩnh Long
+              {t("conservation.profile.post4.title")}
             </Link>
           </Box>
         </Box>

@@ -13,7 +13,10 @@ import {
 } from "@mui/material";
 import "../Profile.scss";
 import Footer from "@/components/Footer";
+import { useTranslation } from "react-i18next";
 const Profile = () => {
+  const { t } = useTranslation();
+  document.title=`${t("museum.profile.post1.title")} - MCF`
   const [toggleModal, setToggleModal] = useState(false);
   return (
     <>
@@ -26,10 +29,10 @@ const Profile = () => {
                 <Box component="div" className="profile_content with_sidebar">
                   <Box component="div" className="cmsmasters_profile_content">
                     <Box component="figure" className="cmsmasters_img_wrap">
-                      <Link
+                      <Link 
                         // href="https://mcf.com.vn/wp-content/uploads/2015/04/Vu-Van-Hieu.png"
                         rel="ilightbox[img_12627_64987034241fd]"
-                        title="Tiến trình của Bảo tàng Lịch sử Tự nhiên Mekong"
+                        title={t("museum.profile.post1.title")}
                         className="preloader highImg"
                         onClick={() => {
                           document.body.style.overflow = "hidden";
@@ -40,9 +43,9 @@ const Profile = () => {
                           component="img"
                           width="334"
                           height="250"
-                          alt="Tiến trình của Bảo tàng Lịch sử Tự nhiên Mekong"
+                          alt={t("museum.profile.post1.title")}
                           src="http://localhost:5173/images/museum/post1/bao-tang_ky-ket-voi-usa.png"
-                          title="Tiến trình của Bảo tàng Lịch sử Tự nhiên Mekong"
+                          title={t("museum.profile.post1.title")}
                           srcSet="http://localhost:5173/images/museum/post1/bao-tang_ky-ket-voi-usa.png 334w, http://localhost:5173/images/museum/post1/bao-tang_ky-ket-voi-usa-300x225.png 300w"
                           sizes="(max-width: 334px) 100vw, 334px"
                         ></Box>
@@ -65,7 +68,7 @@ const Profile = () => {
                           textDecoration: "none",
                         }}
                       >
-                        Tiến trình của Bảo tàng Lịch sử Tự nhiên Mekong
+                        {t("museum.profile.post1.title")}
                       </Typography>
                       {/* <Typography
                         variant="h4"
@@ -106,50 +109,11 @@ const Profile = () => {
                               className="cmsmasters_column one_first"
                             >
                               <Box component="div">
-                                <Box component="p">
-                                  Bảo tàng Lịch sử Tự nhiên Mê Kông (MNHM) lần
-                                  đầu tiên được công bố trong Kế hoạch Hành động
-                                  của Ủy ban hợp tác KH&CN Việt Nam (JCM)
-                                  2013-2015 (
-                                  <em>4. Khoa học Bảo tồn, phần 4.5</em>), và
-                                  được cập nhật bằng Thư đề nghị (LoI) ký ngày
-                                  23 Tháng 5 năm 2016, do bốn bên: Đại sứ quán
-                                  Hoa Kỳ tại Việt Nam đại diện cho Bộ Ngoại giao
-                                  Hoa Kỳ, Cơ quan Khảo sát Địa chất Hoa Kỳ
-                                  (USGS), Smithsonian và Đại học Cantho (CTU)
-                                  của Việt Nam.
-                                </Box>
-                                <Box component="p">
-                                  Để theo đuổi mục tiêu này, Đại học Cần Thơ đã
-                                  hỗ trợ thành lập một tổ chức Phi chính phủ,
-                                  lấy tên là Quỹ Hỗ trợ Nghiên cứu và Bảo tồn
-                                  Mekong (MCF), MCF đã đăng ký tại Việt Nam và
-                                  nhận được giấy phép vào năm 2018.
-                                </Box>
-                                <Box component="p">
-                                  Cho đến nay, CTU / MCF đã kết nối mạng lưới 14
-                                  trường Đại học tại Đồng bằng sông Cửu Long của
-                                  Việt Nam, 20 trường Đại học khu vực sông Mê
-                                  Kông bao phủ toàn bộ sáu quốc gia Trung Quốc,
-                                  Myanmar, Thái Lan, CHDCND Lào, Campuchia và
-                                  Việt Nam. Ngoài ra còn có 4 trường đại học tại
-                                  Hoa Kỳ tham gia vào mạng lưới. Với hàng trăm
-                                  nhà khoa học từ USGS, NOAA và các trường Đại
-                                  học trong Mạng lưới, đứng đầu là CTU và MCF,
-                                  dữ liệu và thông tin về Địa chất, Đất, Thủy
-                                  văn, Đa dạng sinh học, Lịch sử sử dụng đất,
-                                  Kinh nghiệm truyền thống và Văn hóa bản địa
-                                  đang được các chương trình thu thập/quản lý.
-                                  Tất cả các chi phí cho dữ liệu và thông tin
-                                  tổng hợp được tài trợ bởi các khu vực tư nhân.
-                                </Box>
-                                <Box component="p">
-                                  Trong quá trình thu thập dữ liệu và thông tin,
-                                  CTU / MCF cũng đang làm việc trên một nền tảng
-                                  bảo tàng ảo. Chúng tôi cũng đang thảo luận với
-                                  Chính quyền thành phố Cần Thơ về vị trí đất
-                                  của Bảo tàng Lịch sử Tự nhiên Mekong.
-                                </Box>
+                                <Box component="div" 
+                                 dangerouslySetInnerHTML={{
+                                  __html: `${t("conservation.profile.post1.content")}`
+                                 }}
+                                ></Box>
                                 <Box
                                   component="div"
                                   sx={{
@@ -179,11 +143,7 @@ const Profile = () => {
                                           verticalAlign: "top",
                                         }}
                                       >
-                                        Ý định thư (LoI) được ký bởi bốn bên: Bộ
-                                        Ngoại giao Hoa Kỳ, USGS, Smithsonian và
-                                        Đại học Cần Thơ tại Hà Nội, Việt Nam
-                                        nhân chuyến thăm của Tổng thống Hoa Kỳ
-                                        Obama tới Việt Nam.
+                                        {t("museum.profile.post1.letter")}
                                       </TableCell>
                                     </TableBody>
                                   </Table>
@@ -210,7 +170,7 @@ const Profile = () => {
                           letterSpacing: ".1em",
                         }}
                       >
-                        Bạn thích hồ sơ này?
+                        {t("profileDetail.like_this_profile")}
                       </Typography>
                       <Box component="div" className="share_posts_inner">
                         <Link href="https://www.facebook.com/sharer/sharer.php?display=popup&u=https%3A%2F%2Fmcf.com.vn%2Fprofile%2Fvu-van-hieu-2%2F">
@@ -229,13 +189,13 @@ const Profile = () => {
                         variant="h4"
                         className="cmsmasters_single_slider_title"
                       >
-                        Các dự án khác
+                        {t("profileDetail.more_projects")}
                       </Typography>
                       <Typography
                         variant="h5"
                         className="cmsmasters_single_slider_no_items"
                       >
-                        Danh sách trống
+                       {t("profileDetail.project_found")}
                       </Typography>
                     </Box>
                   </Box>
@@ -243,14 +203,14 @@ const Profile = () => {
                 <Box component="div" className="profile_sidebar">
                   <Box component="div" className="profile_details">
                     <Typography variant="h4" className="profile_details_title">
-                      PROJECT DETAILS
+                    {t("profileDetail.project_info")}
                     </Typography>
                     <Box component="div" className="profile_details_item">
                       <Box
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Lượt thích:
+                        {t("profileDetail.likes")}
                       </Box>
                       <Box
                         component="div"
@@ -275,7 +235,7 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Người đăng:
+                        {t("profileDetail.author")}
                       </Box>
                       <Box
                         component="div"
@@ -286,7 +246,7 @@ const Profile = () => {
                           title="Projects by Ly Van Loi"
                           rel="author"
                         >
-                          <Box component="span">Ly Van Loi</Box>
+                          <Box component="span">{t("museum.profile.post1.profile_detail.author")}</Box>
                         </Link>
                       </Box>
                     </Box>
@@ -295,14 +255,14 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Ngày đăng
+                       {t("profileDetail.date")}
                       </Box>
                       <Box
                         component="div"
                         className="profile_details_item_desc"
                       >
-                        <Box component="abbr" title="11 Tháng Sáu, 2021">
-                          11 Tháng Sáu, 2021
+                        <Box component="abbr" title={t("museum.profile.post1.profile_detail.date")}>
+                        {t("museum.profile.post1.profile_detail.date")}
                         </Box>
                       </Box>
                     </Box>
@@ -311,7 +271,7 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Chuyên mục:
+                        {t("profileDetail.categories")}
                       </Box>
                       <Box
                         component="div"
@@ -326,7 +286,7 @@ const Profile = () => {
                             className="cmsmasters_cat_color cmsmasters_cat_153"
                             rel="category tag"
                           >
-                            Bảo tàng
+                            {t("museum.profile.post1.profile_detail.categories")}
                           </Link>
                         </Box>
                       </Box>
@@ -439,7 +399,7 @@ const Profile = () => {
               rel="prev"
               className="icon-angle-left"
             >
-              Ký kết đào tạo sinh viên thực hành ngắn hạn
+              {t("livelihoods.profile.post1.title")}
             </Link>
           </Box>
           <Box
@@ -451,7 +411,7 @@ const Profile = () => {
               rel="next"
               className="icon-angle-right"
             >
-              Dòng chảy của Văn hóa và Sự sống
+              {t("conservation.profile.post2.title")}
             </Link>
           </Box>
         </Box>

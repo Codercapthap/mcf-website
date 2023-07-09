@@ -5,8 +5,11 @@ import ToggleModalImg from "@/components/ToggleModalImg";
 import { Box, Link, Typography } from "@mui/material";
 import "../Profile.scss";
 import Footer from "@/components/Footer";
-
+import { useTranslation } from "react-i18next";
 const Profile = () => {
+  const { t } = useTranslation();
+  document.title = `${t("about-us.member_of_mcf.truong-hoang-dan.name")} - MCF`;
+
   const [toggleModal, setToggleModal] = useState(false);
   return (
     <>
@@ -22,7 +25,7 @@ const Profile = () => {
                       <Link
                         // href="https://mcf.com.vn/wp-content/uploads/2015/04/Vu-Van-Hieu.png"
                         rel="ilightbox[img_12627_64987034241fd]"
-                        title="PGS.TS. Trương Hoàng Đan"
+                        title={t("about-us.member_of_mcf.truong-hoang-dan.name")}
                         className="preloader highImg"
                         onClick={() => {
                           document.body.style.overflow = "hidden";
@@ -33,9 +36,9 @@ const Profile = () => {
                           component="img"
                           width="100%"
                           height="100%"
-                          alt="PGS.TS. Trương Hoàng Đan"
+                          alt={t("about-us.member_of_mcf.truong-hoang-dan.name")}
                           src="http://localhost:5173/images/people/Truong-Hoang-Dan_gioithieu-1160x610.jpg"
-                          title="PGS.TS. Trương Hoàng Đan"
+                          title={t("about-us.member_of_mcf.truong-hoang-dan.name")}
                           sizes="(max-width: 410px) 100vw, 410px"
                         ></Box>
                       </Link>
@@ -57,7 +60,7 @@ const Profile = () => {
                           textDecoration: "none",
                         }}
                       >
-                        PGS.TS. Trương Hoàng Đan
+                        {t("about-us.member_of_mcf.truong-hoang-dan.name")}
                       </Typography>
                       {/* <Typography
                         variant="h4"
@@ -98,24 +101,13 @@ const Profile = () => {
                               className="cmsmasters_column one_first"
                             >
                               <Box component="div">
-                                <Box component="p">
-                                  Với nhiều năm kinh nghiệm trong các lĩnh vực
-                                  Khoa học Môi trường, Đa dạng sinh học, Khoa
-                                  học trái đất và khoa học môi trường có liên
-                                  quan khác. Đan đã thực hiện nhiều đề tài
-                                  nghiên cứu như Tư vấn lập báo cáo kỹ thuật Đất
-                                  ngập nước Búng Bình Thiên để thống kê đa dạng
-                                  sinh học và giải quyết vấn đề ô nhiễm môi
-                                  trường nước; Điều tra cơ bản, đánh giá thực
-                                  trạng đa dạng sinh học Khu bảo tồn thiên nhiên
-                                  Lung Ngọc Hoàng và xác định các vấn đề ưu
-                                  tiên; Đánh giá lượng cacbon tích lũy trên bề
-                                  mặt đất của một số trạng thái rừng tràm tại U
-                                  Minh Thượng; Sự thích nghi của thủy sinh thực
-                                  vật trong các thủy vực ô nhiễm hữu cơ ở một số
-                                  vùng ĐBSCL. Ngoài ra, Đan cũng là tác giả và
-                                  đồng tác giả của nhiều ấn phẩm Sách liên quan
-                                  đến lĩnh vực môi trường, đất ngập nước.
+                                <Box component="p"
+                                 dangerouslySetInnerHTML={{
+                                  __html: `${t(
+                                    "about-us.member_of_mcf.truong-hoang-dan.story"
+                                  )}`,
+                                }}
+                                >
                                 </Box>
                               </Box>
                             </Box>
@@ -141,7 +133,7 @@ const Profile = () => {
                           letterSpacing: ".1em",
                         }}
                       >
-                        Bạn thích hồ sơ này?
+                        {t("profileDetail.like_this_profile")}
                       </Typography>
                       <Box component="div" className="share_posts_inner">
                         <Link href="https://www.facebook.com/sharer/sharer.php?display=popup&u=https%3A%2F%2Fmcf.com.vn%2Fprofile%2Fvu-van-hieu-2%2F">
@@ -160,14 +152,14 @@ const Profile = () => {
                 <Box component="div" className="profile_sidebar">
                   <Box component="div" className="profile_details">
                     <Typography variant="h4" className="profile_details_title">
-                      Profile details
+                    {t("profileDetail.profile_detail")}
                     </Typography>
                     <Box component="div" className="profile_details_item">
                       <Box
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Lượt thích:
+                        {t("profileDetail.likes")}
                       </Box>
                       <Box
                         component="div"
@@ -192,7 +184,7 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Email:
+                       {t("profileDetail.email")}
                       </Box>
                       <Box
                         component="div"
@@ -206,7 +198,7 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_title"
                       >
-                        Chuyên mục:
+                        {t("profileDetail.categories")}
                       </Box>
                       <Box
                         component="div"
@@ -221,7 +213,7 @@ const Profile = () => {
                             className="cmsmasters_cat_color cmsmasters_cat_153"
                             rel="category tag"
                           >
-                            THÀNH VIÊN MCF
+                            {t("about-us.member_of_mcf.member_of_mcf")}
                           </Link>
                         </Box>
                       </Box>
@@ -232,7 +224,7 @@ const Profile = () => {
                       variant="h4"
                       className="profile_social_icons_title"
                     >
-                      Liên kết
+                      {t("profileDetail.social")}
                     </Typography>
                     <Box component="ul" className="profile_social_icons_list">
                       <Box component="li">
@@ -264,7 +256,7 @@ const Profile = () => {
               rel="prev"
               className="icon-angle-left"
             >
-              PGS.TS Lê Anh Tuấn
+              {t("about-us.member_of_mcf.le-anh-tuan.name")}
             </Link>
           </Box>
           <Box
