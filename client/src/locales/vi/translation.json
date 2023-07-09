@@ -1,0 +1,276 @@
+{
+    "nav": {
+        "home": "TRANG CHỦ",
+        "about-us": "GIỚI THIỆU",
+        "conservation": "BẢO TỒN",
+        "livelihoods": "SINH KẾ",
+        "museum": "BẢO TÀNG",
+        "stories": "CÂU CHUYỆN",
+        "contact-us": "LIÊN HỆ",
+        "language": "ENGLISH"
+    },
+    "categories": {
+        "all_categories": "CHUYÊN MỤC",
+        "conservation": "BẢO TỒN"
+    },
+    "profileDetail":{
+        "profile_detail": "CHI TIẾT HỒ SƠ",
+        "project_info":"THÔNG TIN DỰ ÁN",
+
+        "likes": "LƯỢT THÍCH:",
+        "email": "EMAIL:",
+        "categories": "CHUYÊN MỤC:",
+        "author": "NGƯỜI ĐĂNG:",
+        "date": "NGÀY ĐĂNG:",
+        "implemented": "TRIỂN KHAI:",
+        "end_date": "KẾT THÚC:",
+        "location": "ĐỊA ĐIỂM",
+        "funded": "TÀI TRỢ:",
+
+        "fund_mount": "TỔNG KINH PHÍ",
+
+        "time": "THỜI GIAN:",
+        "budget": "KINH PHÍ:",
+        "investor": "CHỦ QUẢN:",
+        "implementation": "THỰC HIỆN:",
+        "consultant": "TƯ VẤN",
+
+        "status": "TÌNH TRẠNG:",
+
+        "social": "LIÊN KẾT",
+        "like_this_profile": "BẠN THÍCH HỒ SƠ NÀY?",
+        "more_projects":"CÁC DỰ ÁN KHÁC",
+        "project_found":"DANH SÁCH TRỐNG"
+    },
+    "sort": {
+        "name": "TÊN",
+        "date": "NGÀY ĐĂNG"
+    },
+    "home": {
+        "slide": [
+            {
+                "title": "Bảo tàng lịch sử tự nhiên Đồng bằng sông Cửu Long",
+                "info": "TÌM HIỂU NGAY"
+            },
+            {
+                "title": "Cải thiện sinh kế cộng đồng",
+                "info": "TÌM HIỂU NGAY"
+            },
+            {
+                "title": "Bảo tồn thiên nhiên",
+                "info": "TÌM HIỂU NGAY"
+            }
+        ],
+        "title": "ĐỒNG BẰNG SÔNG CỬU LONG",
+        "content1": "Đồng bằng sông Cửu Long là trung tâm sản xuất lúa, cá, trái cây và rau quả của Việt Nam. Với diện tích khoảng 40 nghìn km<sup>2</sup> và 20 triệu dân, nó được mệnh danh là ‘vựa lúa’ của Việt Nam. Mặc dù có vị trí trung tâm đối với nền kinh tế Việt Nam, nhưng đồng bằng lại dễ bị tổn thương trước áp lực từ sự gia tăng của biến đổi khí hậu và các tác động phát triển khu vực. Các thách thức như mực nước biển dâng và phát triển thủy điện gây ra xói mòn, lũ lụt, hạn hán, và sụt lún đất cũng như nghèo đói và di dân.",
+        "content2": "Nghị quyết 120/NQ-CP và qui hoạch Đồng bằng Sông Cửu Long ứng phó với biến đổi khí hậu đến năm 2050 chia đồng bằng thành 03 vùng sinh thái lớn: vùng nước mặn thường xuyên, vùng chuyển tiếp mặn – ngọt, và vùng nước ngọt. Trên mỗi vùng sinh thái cần chuyển đổi hệ thống nông nghiệp bền vững và thích nghi với biến đổi khí hậu.",
+        "information": "TÌM HIỂU THÊM",
+        "news": "Tin mới nhất"
+    },
+    "about-us": {
+        "title": "QUỸ HỖ TRỢ NGHIÊN CỨU VÀ BẢO TỒN ĐBSCL",
+        "heading": "Quỹ Bảo tồn Mekong – MCF",
+        "content": "Quỹ hỗ trợ Nghiên cứu & Bảo tồn Mekong (MCF) được thành lập và hoạt động theo Quyết định số 567/QĐ/BNV ngày 24 tháng 07 năm 2019. MCF đặt mục tiêu hoạt động chính vào nghiên cứu và hỗ trợ giải quyết các vấn đề về Sinh kế, Giáo dục, Môi trường & Tài nguyên thiên nhiên để góp phần thúc đẩy phát triển bền vững vùng Đồng bằng Sông Cửu Long. Đến nay, MCF đã thực hiện nhiều dự án thuộc các lĩnh vực nêu trên và thông qua đó đã tạo được mạng lưới rộng lớn với nhiều đối tác trong và ngoài nước.",
+        "mcf_council": "HỘI ĐỒNG MCF",
+        "the_mcf_council": {
+        "the_mcf_council": "HỘI ĐỒNG MCF",
+            "duong-van-ni":{
+                "name": "Tiến sĩ Dương Văn Ni",
+                "position": "CHỦ TỊCH HỘI ĐỒNG MCF KIÊM GIÁM ĐỐC",
+                "brief": "",
+                "story": "<strong>Chủ tịch Hội đồng MCF kiêm Giám đốc: Tiến sĩ Dương Văn Ni</strong> là Giám đốc Mạng lưới các trường Đại học Đất ngập nước bao gồm 24 trường Đại học trên 7 quốc gia trong khu vực sông MeKong, đồng thời là Giám đốc Trung tâm Nghiên cứu Hoà An của Đại học Cần Thơ. Là giảng viên khoa Môi trường và Tài nguyên thiên nhiên của Đại học Cần Thơ, nghiên cứu của Ông tập trung vào vấn đề biến đổi khí hậu ở vùng sông Mekong và xóa đói giảm nghèo."
+            },
+            "vu-van-hieu":{
+                "name": "Ông Vũ Văn Hiệu",
+                "position": "PHÓ CHỦ TỊCH HỘI ĐỒNG MCF",
+                "brief": "Ông Vũ Văn Hiếu là đồng sáng lập và giám đốc của công ty Úc Titan Dealer Management Solutions.",
+                "story": "<strong>Ông Vũ Văn Hiệu</strong> là đồng sáng lập kiêm Giám đốc Công ty Titan tại Úc – Các giải pháp Quản lý Đại lý, một nhà phát triển phần mềm hàng đầu trong ngành ô tô phục vụ khách hàng trên toàn cầu. Ông từng nhận được học bổng kế hoạch Colombo và nhận bằng cử nhân của Đại học Tây Úc chuyên ngành khoa học máy tính và toán học."
+            },
+            "nguyen-thi-kieu-vuong":{
+                "name": "Bà Nguyễn Thị Kiều Vương",
+                "position": "PHÓ CHỦ TỊCH HỘI ĐỒNG MCF",
+                "brief": "Bà Nguyễn Thị Kiều Vương là luật sư của Liên đoàn Luật sư Việt Nam và Đoàn Luật sư Thành phố Hồ Chí Minh và có hơn 18 năm kinh nghiệm pháp lý.",
+                "story": "<strong>Bà Nguyễn Thị Kiều Vương</strong> là Luật sư của Liên đoàn Luật sư Việt Nam, Đoàn Luật sư Thành phố Hồ Chí Minh và có hơn 18 năm kinh nghiệm trong lĩnh vực pháp luật. Bà là người sáng lập kiêm Tổng Giám đốc Công ty Luật Phúc Gia Nguyễn, chuyên tư vấn pháp luật về đầu tư tại Việt Nam. Bà cũng là trọng tài viên tại Trung tâm Trọng tài Quốc tế Thái Bình Dương và tích cực hoạt động từ thiện hỗ trợ những người có hoàn cảnh khó khăn về các vấn đề pháp lý ở miền Nam và miền Trung Việt Nam."
+            }
+        },
+        "supervisory_council": "HỘI ĐỒNG GIÁM SÁT",
+        "the_supervisory_council": {
+        "the_supervisory_council": "HỘI ĐỒNG GIÁM SÁT",
+            "david-wilmoth":{
+                "name": "Tiến sĩ David Wilmoth",
+                "position": "CHỦ TỊCH HỘI ĐỒNG GIÁM SÁT",
+                "story": "<strong>Tiến sĩ David Wilmoth</strong> tốt nghiệp Thạc sĩ tại Đại học Sydney và Tiến sĩ tại Berkeley. Ông là Giáo sư danh dự tại Đại học RMIT và là cựu Phó Hiệu trưởng chuyên nghiệp (Quản trị Tập đoàn). Ông đã lãnh đạo công ty khởi nghiệp của Đại học RMIT tại Việt Nam, một nhánh đại học quốc tế lớn nhất thế giới. Ông cũng là giám đốc của Hiệp hội Xúc tiến Giáo dục Việt – Úc, Chủ tịch Học tập các Thành phố Quốc tế, và Chủ tịch Hội đồng Học thuật của Đại học Torren Úc."
+            },
+            "ho-le-khoa":{
+                "name": "Tiến sĩ Hồ Lê Khoa",
+                "position": "THÀNH VIÊN HỘI ĐỒNG GIÁM SÁT",
+                "story": "<strong>Tiến sĩ Hồ Lê Khoa</strong> là người sáng lập Abaki, một công ty phần mềm có trụ sở tại Úc cung cấp các giải pháp công nghệ thông tin cho các Dịch vụ Y tế. Ông từng nhận học bổng kế hoạch Colombo và có bằng cử nhân và tiến sĩ về kỹ thuật cơ khí tại Đại học Monash. Ông là thành viên của Hiệp hội Khuyến học Úc – Việt Nam và Những người bạn của Giáo dục Việt Nam. Ông có nhiều năm kinh nghiệm trong công nghiệp, làm việc trong lĩnh vực máy tính cho Telecom Australia và Tổ chức Nghiên cứu Công nghiệp và Khoa học liên bang."
+            }
+        },
+        "member": "THÀNH VIÊN",
+        "member_of_mcf": {
+        "member_of_mcf": "THÀNH VIÊN MCF",
+            "ly-van-loi":{
+                "name": "Ông Lý Văn Lợi",
+                "story": "<strong>Ông Lý Văn Lợi</strong> là nhà nghiên cứu trẻ tại Bộ môn Quản lý Môi trường, Khoa Môi trường & Tài nguyên Thiên nhiên, Đại học Cần Thơ. Ông quan tâm đến công tác bảo tồn đa dạng sinh học, sử dụng hợp lý đất ngập nước, quản lý nước và thích ứng với biến đổi khí hậu ở Đồng bằng sông Cửu Long. Lợi đã có kinh nghiệm thực tế với nhiều khu bảo tồn từ 10 năm trước. Giờ đây, Ông đang nâng cao kiến ​​thức của mình bằng cách đăng ký nghiên cứu sinh Tiến sĩ tại Đại học Mahidol, Thái Lan. Bên cạnh đó, ông có một niềm đam mê xây dựng “Mạng lưới các nhà khoa học trẻ” nhằm kết nối các nhà nghiên cứu trẻ trên toàn thế giới để hỗ trợ phát triển bền vững ở khu vực sông Mekong."
+            },
+            "le-anh-tuan":{
+                "name": "PGS.TS Lê Anh Tuấn",
+                "story": "<strong>Tiến sĩ Lê Anh Tuấn</strong> công tác tại Trường Đại học Cần Thơ từ năm 1982 và hiện đang giữ chức vụ Giảng viên chính Khoa Môi trường và Tài nguyên. Ông cũng là Nguyên Phó Viện trưởng Viện Nghiên cứu Biến đổi Khí hậu – Trường Đại học Cần Thơ, Việt Nam. Tiến sĩ Tuấn hiện là thành viên Ban cố vấn của Mạng lưới sông ngòi Việt Nam. Ông cũng là điều phối viên của Mạng lưới Bảo vệ Môi trường và Thích ứng với Biến đổi Khí hậu Đồng bằng sông Cửu Long (MekongNet)."
+            },
+            "nguyen-thanh-tung":{
+                "name": "PGS.TS Nguyễn Thanh Tùng",
+                "story": "<strong>PGS.TS Nguyễn Thanh Tùng</strong> hiện đang là Giảng viên chính tại Bộ môn Sinh học, Khoa Sư phạm, Trường Đại học Cần Thơ. Ông có hơn 14 năm kinh nghiệm làm việc trong lĩnh vực bảo tồn đa dạng sinh học và phân loại giun đất. Ông đã xuất bản 35 bài báo khoa học và một sách chuyên khảo."
+            },
+            "nguyen-hoai-bao":{
+                "name": "Ông Nguyễn Hoài Bảo",
+                "story": "<strong>Ông Nguyễn Hoài Bảo</strong> là giảng viên bộ môn điểu học của trường Đại học Khoa học Tự nhiên thuộc Đại học Quốc gia Thành phố Hồ Chí Minh. Ông là người sáng lập và là Giám đốc điều hành của Công ty Wild Tour đã có hơn 15 năm hoạt động tại Việt Nam và các nước. Ông có hơn 15 năm kinh nghiệm làm việc trong lĩnh vực bảo tồn động vật hoang dã và hợp tác với các tổ chức quốc tế để nghiên cứu về hệ sinh thái chim ở Đông Nam Á. Ông cũng đã xuất bản một số cuốn sách về điểu học."
+            },
+            "truong-hoang-dan":{
+                "name": "PGS.TS. Trương Hoàng Đan",
+                "story": "Với nhiều năm kinh nghiệm trong các lĩnh vực Khoa học Môi trường, Đa dạng sinh học, Khoa học trái đất và khoa học môi trường có liên quan khác. Đan đã thực hiện nhiều đề tài nghiên cứu như Tư vấn lập báo cáo kỹ thuật Đất ngập nước Búng Bình Thiên để thống kê đa dạng sinh học và giải quyết vấn đề ô nhiễm môi trường nước; Điều tra cơ bản, đánh giá thực trạng đa dạng sinh học Khu bảo tồn thiên nhiên Lung Ngọc Hoàng và xác định các vấn đề ưu tiên; Đánh giá lượng cacbon tích lũy trên bề mặt đất của một số trạng thái rừng tràm tại U Minh Thượng; Sự thích nghi của thủy sinh thực vật trong các thủy vực ô nhiễm hữu cơ ở một số vùng ĐBSCL. Ngoài ra, Đan cũng là tác giả và đồng tác giả của nhiều ấn phẩm Sách liên quan đến lĩnh vực môi trường, đất ngập nước."
+            }
+        }
+    },
+    "conservation": {
+        "profile": {
+            "post1":{
+                "title": "Cập nhật chiến lược quản lý nước để phục hồi sinh cảnh đất ngập nước Vườn quốc gia Tràm chim trong bối cảnh biến đổi khí hậu và phát triển ở thượng nguồn",
+                "content": "<p>Vườn quốc gia Tràm Chim (VQG Tràm Chim) là một trong những khu bảo tồn đa dạng sinh học quan trọng trong hệ thống các khu bảo tồn của Việt Nam. VQG Tràm Chim là vùng đất tự nhiên lớn nhất còn lại của vùng Đồng Tháp Mười, hệ sinh thái vùng ngập lũ sông Cửu Long. Vì vậy, bảo tồn đa dạng sinh học trong VQG Tràm Chim có tầm quan trọng không chỉ đối với Việt Nam mà còn đối với toàn bộ lưu vực sông Mekong. Ở Tràm Chim, nước lũ và đất chua là hai điều kiện môi trường độc đáo và quan trọng nhất. Trong năm, nước có thể thay đổi từ pH trung tính đến rất axit (pH thấp hơn 4). Chênh lệch mực nước giữa mùa lũ và mùa khô ở Tràm Chim có thể lên đến 4 mét hoặc hơn. Nước lũ cũng là con đường nối Tràm Chim với sông Cửu Long. Vào cao điểm mùa lũ, nước từ sông Cửu Long đổ về Tràm Chim với khối lượng lớn, đầy chất dinh dưỡng. Vào cuối mùa mưa, nước từ Tràm Chim chảy ngược ra sông, giúp thải ra nhiều chất cặn bã từ rừng. Cùng với sự chuyển động của nước là sự di chuyển của thực vật phù du, tôm cá, góp phần tạo nên sự đa dạng và độc đáo của hệ sinh vật. Sự xen kẽ giữa khô và ngập, giữa “chua” và “ngọt”, và sự kết nối với sông Mekong là những đặc điểm sinh thái cơ bản nhất của VQG Tràm Chim. Bảo tồn đa dạng sinh học ở Tràm Chim dựa trên cơ sở khôi phục và duy trì các điều kiện sinh thái cơ bản.</p><p>Vì vậy, công tác quản lý đa dạng sinh học ở Tràm Chim không chỉ giới hạn ở việc thống kê thành phần, độ phong phú của các loài sinh vật mà còn đòi hỏi sự hiểu biết sâu sắc về điều kiện môi trường, đặc biệt là chế độ thủy văn, cháy rừng, điều kiện môi trường đất và nước. Bên cạnh đó, biến đổi khí hậu ngày càng bộc lộ những tác động nghiêm trọng đến đa dạng sinh học của VQG Tràm Chim. Trong những năm gần đây, các yếu tố khí hậu như nắng nóng, lượng mưa, các công trình trên thượng nguồn sông Mekong đã dẫn đến những thay đổi đột ngột, khó lường và chế độ thủy văn không còn tuân theo quy luật tự nhiên. Việc quản lý để đáp ứng tất cả các mục tiêu bảo tồn đa dạng sinh học, phòng chống cháy rừng và thu hút sếu đầu đỏ vào VQG Tràm Chim đòi hỏi phải có những kế hoạch cụ thể và linh hoạt mới, đặc biệt là quản lý chế độ nước trong VQG. Nghiên cứu này được thực hiện nhằm cập nhật chiến lược quản lý nước để phục hồi các sinh cảnh đất ngập nước trong VQG Tràm Chim trong bối cảnh biến đổi khí hậu và phát triển thượng nguồn.</p>",
+                "profile_detail":{
+                    "author": "Lý Văn Lợi",
+                    "date": "26 Tháng Năm, 2023",
+                    "categories": "Bảo tồn",
+                    "implemented": "MCF",
+                    "end_date":"2022",
+                    "location": "Vườn Quốc gia Tràm Chim",
+                    "funded": "WWF - Việt Nam",
+                    "status": "Đã hoàn thành"
+                }
+            },
+            "post2":{
+                "title": "Dòng chảy của Văn hóa và Sự sống",
+                "content": "<p>Nguồn nước đại diện cho một thành phần cơ bản của nền kinh tế trong khu vực, ngoài nhu cầu tiêu dùng cho sinh hoạt, nước còn được sử dụng cho nông nghiệp, công nghiệp và dịch vụ. Sông và các khu vực ven sông cũng góp phần tạo nên cảnh quan cho khu vực và phát triển các dịch vụ du lịch khác. Bên cạnh đó, dòng sông còn là sự kết nối và tạo môi trường sống của nhiều sinh vật trên cạn và dưới nước và tạo nên các giá trị thẩm mỹ và giải trí khác. Tại đồng bằng sông Cửu Long (ĐBSCL), sông Mekong được coi là nguồn cung cấp nước và các dịch vụ hệ sinh thái quan trọng nhất bởi nó cung cấp khoảng 90% lưu lượng nước cho ĐBSCL, đặc biệt vào mùa khô lượng nước hoàn toàn phụ thuộc vào vùng thượng lưu Mekong. Tuy nhiên, các lưu vực sông đã và đang bị khai thác quá mức để phục vụ cho mục tiêu phát triển kinh tế – xã hội, từ đó gây ra các áp lực cho hệ sinh thái. Trong khi đó, nhiều cộng đồng nông thôn và đồng bào dân tộc thiểu số vẫn phụ thuộc nhiều vào nguồn nước sông. Hiện nay các giá trị dịch vụ hệ sinh thái dòng sống cung cấp cho cộng đồng đã dần bị lãng quên dẫn đến các hoạt động gây nhiều ảnh hưởng xấu cho dòng sông thường xuyên xảy ra. Vì vậy, dự án đã đánh giá các dịch vụ hệ sinh thái mà dòng sông thật sự cung cấp cho con người nhằm thay đổi tư duy quản trị sông hiện nay.</p><p>Kết quả nghiên cứu cho thấy các dịch vụ hệ sinh thái trên sông Hậu rất đa dạng và đóng vai trò rất quan trọng đối với sự phát triển của cả vùng Đồng bằng sông Cửu Long. Nơi đây là nguồn cung cấp nước và thực phẩm cho nhiều hoạt động của vùng. Sông Hậu đã cung cấp trực tiếp và gián tiếp các dịch vụ về điều tiết và hỗ trợ khác nhau, như điều hoà khí hậu, chất dinh dưỡng,…Hơn nữa, đây được xem là nơi diễn ra nhiều lễ hội, các hoạt động tín ngưỡng trên sông, đặc trưng với nhiều hoạt động du lịch sinh thái và các loại hình du lịch trải nghiệm. Vai trò của dịch vụ cung cấp được người dân quan tâm nhiều nhất trong quá trình khảo sát. Tuy nhiên, các dịch vụ này đã ngày càng bị suy giảm bởi nhiều yếu tố khác nhau như sự thay đổi thuỷ văn, chất lượng, trữ lượng môi trường nước giảm và các chính sách phát triển liên quan đến dòng sông. Trong đó, sự thay đổi về chất lượng và trữ lượng nước là một trong những nguyên nhân chính dẫn đế sự thay đổi của các dịch vụ hệ sinh thái trên sông.</p>",
+                "profile_detail":{
+                    "author": "Lý Văn Lợi",
+                    "date": "26 Tháng Năm, 2023",
+                    "categories": "Bảo tồn",
+                    "implemented": "MCF",
+                    "end_date":"2022",
+                    "location": "Đồng Tháp, Cần Thơ, Vĩnh Long, Sóc Trăng",
+                    "funded": "OXFAM",
+                    "status": "Hoàn thành"
+                }
+            },
+            "post3":{
+                "title": "Vai trò của Đất ngập nước đối với an ninh nguồn nước cho khu vực sông Mekong",
+                "content": "<p>Đất ngập nước rất quan trọng đối với mối quan hệ lương thực-năng lượng-nước của khu vực sông Mekong. An ninh nguồn nước nông thôn là mối quan tâm lớn đối với các nước khu vực sông Mê Kông vì các ngành kinh tế nông thôn giữ vai trò chủ lực của tất cả các nước, đặc biệt là nông nghiệp và nuôi trồng thủy sản, cũng như các nguồn nước chính cho sinh hoạt gia đình và cấp nước công cộng, phụ thuộc vào nước từ các vùng đất ngập nước. Những người bị ảnh hưởng nhiều nhất, đặc biệt là phụ nữ, trẻ em và người cao tuổi, là những nhóm dễ bị tổn thương do sinh kế của họ phụ thuộc nhiều vào đất ngập nước. Để chuẩn bị ứng phó cho các tác động từ biến đổi toàn cầu và tăng cường quản lý nước ở khu vực sông Mê Kông, định lượng các dịch vụ hệ sinh thái từ các vùng đất ngập nước là điều cấp bách cần được thực hiện.</p><p>Mối quan tâm cụ thể của chúng tôi là vai trò của đất ngập nước đối với an ninh nguồn nước. Các mục tiêu cụ thể của nghiên cứu này:</p><ul><li className=\"icon-angle-right-before\">Xác định đối với mỗi loại đất ngập nước ở khu vực sông Mekong thì trữ lượng nước, chất lượng nước cung cấp và cộng đồng có mối quan hệ như thế nào với các dịch vụ hệ sinh thái.</li><li className=\"icon-angle-right-before\">Dự báo tác động của sự thay đổi toàn cầu và khu vực về an ninh nước cho cộng đồng thông qua những thay đổi trong các dịch vụ đó.</li></ul><p>Chúng tôi sẽ chọn bốn vùng đất ngập nước, một vùng cho mỗi quốc gia trong số bốn nước Hạ lưu sông Mê Kông làm địa điểm nghiên cứu của chúng tôi. Mỗi vùng đất ngập nước sẽ đại diện cho trữ lượng nước đáng kể của khu vực và cách các nhóm cộng đồng địa phương khác nhau sử dụng tài nguyên nước. Các vùng đó bao gồm:</p><ul><li className=\"icon-angle-right-before\">Vùng đất ngập nước ở Campuchia.</li><li className=\"icon-angle-right-before\">Đầm lầy cạn do nước ngầm cung cấp ở CHDCND Lào.</li><li className=\"icon-angle-right-before\">Khu hổn hợp rừng – đầm lầy cửa sông ở Thái Lan</li><li className=\"icon-angle-right-before\">Khu rừng đầm lầy than bùn ở Việt Nam.</li></ul><p>Chúng tôi sẽ sử dụng các phép đo thực địa về các tham số thủy văn, các thông số chất lượng nước và các mô hình đơn giản từ dữ liệu đã được công bố để định lượng trữ lượng nước, sử dụng dữ liệu vệ tinh và đo đạc thực địa để xác định cấu trúc thảm thực vật, sử dụng các đợt điều tra cộng đồng và kinh tế xã hội để mô tả việc sử dụng đất và các nhóm sử dụng nước tại địa phương. Chúng tôi sẽ xem xét sự tương tác của các hệ thống này (tự nhiên và con người) bằng cách xác định các dịch vụ hệ sinh thái nước chính từ các bộ dữ liệu kinh tế xã hội và lý sinh kết hợp, đồng thời sử dụng các trò chơi để đánh giá sự phụ thuộc và phản ứng của cộng đồng đối với thay đổi, nhấn mạnh vai trò của các yếu tố kinh tế xã hội, vai trò giới, và tương tác giữa các nhóm người dùng. Chúng tôi sẽ điều tra vai trò của phụ nữ trong việc sử dụng nước và duy trì an ninh nguồn nước, đồng thời xác định các phương thức để tăng cường những vai trò này. Các địa điểm nghiên cứu này đại diện cho các điều kiện kinh tế xã hội nông thôn khu vực sông Mê Kông, bao gồm xung đột trong sử dụng và quản lý nước chung giữa các nhóm, công bằng xã hội và bình đẳng giới, giảm nghèo ở nông thôn và vai trò của nước từ đất ngập nước trong việc tăng cường kinh tế hộ gia đình và sinh kế, cũng như giảm bớt sự phụ thuộc của địa phương vào tài nguyên tự nhiên. Chúng tôi sẽ tích hợp các kết quả nghiên cứu vào một dự án đang thực hiện để kết hợp các nhà khoa học đất ngập nước với các nhà quản lý đất ngập nước địa phương: dự án đó sẽ cung cấp thông tin cho nghiên cứu này bằng cách cải thiện nguồn thông tin giữa các nhóm sử dụng nước địa phương (bao gồm nam giới, phụ nữ, người cao tuổi, trẻ em) và các nhà nghiên cứu của dự án sau đó sẽ có thể tận dụng các phát hiện của mình bằng cách kết nối với các nhà quản lý đất ngập nước địa phương. Trong suốt dự án, chúng tôi sẽ liên lạc với các nhóm địa phương (thông tin liên lạc được thiết lập thông qua các đối tác đã có từ trước của chúng tôi và các đối tác mới được xác định thông qua khảo sát cộng đồng) để giúp họ nhận thức và quản lý tốt hơn sự phụ thuộc của cấu trúc xã hội vào các dịch vụ nước có nguồn gốc từ đất ngập nước, sử dụng cách tiếp cần về quyền con người. Chúng tôi sẽ hoàn thành công việc này bằng cách sử dụng các nhóm địa phương bao gồm giảng viên địa phương và sinh viên sau đại học, cùng với nhóm quản lí khu vực bao gồm giám đốc và điều phối viên dự án. Nghiên cứu này cần 30 tháng để hoàn thành tất cả các sản phẩm của dự án.</p>",
+                "profile_detail":{
+                    "author": "Lý Văn Lợi",
+                    "date": "11 Tháng Sáu, 2021",
+                    "categories": "Bảo tồn",
+                    "implemented": "MCF",
+                    "end_date":"31/12/2022",
+                    "location": "Việt Nam, Lào, Camphuchia và Thái Lan",
+                    "funded": "Stiftelsen The Stockholm Environment Institute",
+                    "fund_mount": "SEK 1,000,000",
+                    "status": "Đang thực hiện"
+                }
+            },
+            "post4":{
+                "title": "Công tác kiểm kê, khảo sát vườn chim Vạc tại xã Tân Mỹ, huyện Trà Ôn, tỉnh Vĩnh Long",
+                "content": "<p>Đồng bằng sông Cửu Long là vùng giàu tiềm năng về đa dạng sinh học (ĐDSH), trong đó quần thể chim nước rất phong phú về số loài và số cá thể. Hiện nay, quần thể chim nước xuất hiện chủ yếu tại các nơi đã có kế hoạch bảo tồn ở cấp tỉnh hay cấp quốc gia như Vườn quốc gia Tràm Chim (Đồng Tháp), U-Minh Thượng (Kiên Giang), Mũi Cà Mau; hay các Khu bảo tồn như Láng Sen (Long An), Lung Ngọc Hoàng (Hậu Giang), Phú Mỹ (Kiên Giang); hoặc có qui mô nhỏ hơn như các sân chim Cái Nước (Cà Mau), sân chim Bạc Liêu, Vàm Hồ (Bến Tre); đặc biệt là các quần thể chim định cư rãi rác khắp ĐBSCL mà người dân hay gọi là “Vườn Cò”. Những vườn cò nầy có qui mô diện tích nhỏ hơn như vườn cò Bằng Lăng (Cần Thơ), Trung tâm Nông nghiệp Mùa Xuân (Hậu Giang).</p><p>Ngoài ra, kiểm kê vườn Vạc nhằm thực hiện đúng theo mục tiêu và Phương pháp quy hoạch được UBND tỉnh phê duyệt tại Quyết định số 2269/QĐ-UBND ngày 27/9/2016 về việc phê duyệt Quy hoạch bảo tồn đa dạng sinh học tỉnh Vĩnh Long giai đoạn 2015 – 2020 và định hướng đến năm 2030</p><p><strong>Mục tiêu của đề tài:&nbsp;</strong></p><p>Khảo sát và đánh giá hiện trạng đa dạng loài của quần thể chim nước. Dựa vào tập tính sinh học của từng loài và mật độ cá thể biến động trong năm để phân tích khả năng hiện diện theo mùa hay thường xuyên và những mối đe dọa đối với các loài chim, nhằm đề xuất kế hoạch quản lý và bảo tồn bền vững.</p><h3>Video đàn chim bay về tổ</h3>",
+                "profile_detail":{
+                    "author": "Ly Van Loi",
+                    "date": "17 Tháng Ba, 2021",
+                    "categories": "Bảo tồn",
+                    "time": "01-10/2021",
+                    "budget": "200.000.000",
+                    "investor": "Sở Nông nghiệp và Phát triển Nông thôn tỉnh Vĩnh Long",
+                    "implemented": "Chi cục Kiểm lâm và Quản lý Chất lượng Nông lâm Thủy sản Vĩnh Long",
+                    "consultant": "MCF",
+                    "status": "Đã hoàn thành"
+                }
+            }
+        }
+    },
+    "livelihoods": {
+        "profile": {
+            "post1":{
+                "title": "Ký kết đào tạo sinh viên thực hành ngắn hạn",
+                "content": "<p>Tạo điều kiện cho học sinh, sinh viên (HSSV) các trường cao đẳng và đại học trong vùng Đồng bằng sông Cửu Long, có cơ hội được tiếp cận với môi trường làm việc chuyên sâu; thông qua các hoạt động thực tế như</p><ul style='list-style-type: circle;'><li className=\"icon-angle-right-before\">Tham gia thực tập từ khảo sát môi trường tự nhiên đất-nước-không khí;</li><li className=\"icon-angle-right-before\">Quyết định chọn cây trồng vật nuôi, để xây dựng hệ thống canh tác thông minh;</li><li className=\"icon-angle-right-before\">Xây dựng và thực hành qui trình sản xuất sạch và sản phẩm an toàn cho người tiêu dùng và cho môi trường;</li><li className=\"icon-angle-right-before\">Tham gia sản xuất, thiết kế và xây dựng các mô hình thực nghiệm và dây chuyền kinh doanh, phân phối tại Công ty Hai Lúa Vàng, Công ty xuất khẩu hàng tiểu thủ công nghiệp Việt Nam Housewares;</li><li className=\"icon-angle-right-before\">Các dự án Xóa đói giảm nghèo, Phát triển nông thôn và Bảo tồn Tài nguyên thiên nhiên và Môi trường của Quỹ MCF.</li></ul><p>Thông qua các hoạt động nầy sẽ giúp cho HSSV củng cố và hoàn thiện kiến thức chuyên môn đã học, rèn luyện nâng cao kỹ năng mềm, như:</p><ul style='list-style-type: circle;''><li className=\"icon-angle-right-before\">Có khả năng tìm thông tin và tự nghiên cứu để giải quyết những vấn đề khó khăn và nâng cao trình độ chuyên môn;</li><li className=\"icon-angle-right-before\">Có động cơ và thái độ học tập, làm việc đúng đắn và nghiêm túc;</li><li className=\"icon-angle-right-before\">Có kỹ năng truyền đạt, giao tiếp, thuyết phục hay đàm phán để chuyển giao khoa học kỹ thuật đến người dân;</li><li className=\"icon-angle-right-before\">Có khả năng tập hợp và tổ chức làm việc theo nhóm, có bản lĩnh trí tuệ vững vàng đáp ứng đủ các yếu tố chuẩn đầu ra của chương trình đào tạo, đáp ứng yêu cầu ngày càng cao của nhà tuyển dụng, có khả năng tự thích nghi vào công việc và môi trường làm việc mới.</li></ul><p><strong>Một số hình ảnh thực tế</strong></p>",
+                "titleImg-1": "Sinh viên khoan lấy mẫu đất",
+                "titleImg-2": "Thực hành dệt tại nhóm Gia Dụng Việt",
+                "profile_detail":{
+                    "author": "Lý Văn Lợi",
+                    "date": "11 Tháng Sáu, 2021",
+                    "categories":"Sinh kế"
+                }
+            },
+            "post2":{
+                "title": "Thành lập Công ty cổ phần MLS Việt Nam",
+                "content": "<h2><strong>I. Giới thiệu về công ty</strong></h2><p>Công ty Cổ phần Giải pháp sinh kế cho Đồng bằng sông Cửu Long (MLS) được thành lập vào ngày 20/02/2021, là công ty hoạt động trong lĩnh vực sản xuất, phát triển nông nghiệp, tư vấn về nông học, khoa học về khí hậu và biến đổi khí hậu, cung cấp dịch vụ nghiên cứu, khảo sát khoa học về các lĩnh vực khoa học nông nghiệp, khoa học tự nhiên nhằm mục đích hỗ trợ phát triển nông nghiệp cho người nông dân, phát triển kinh tế gắn liền với bảo vệ môi trường và đa dạng sinh học.</p><p>Công ty Cổ phần MLS vừa là cầu nối gắn kết giữa các tổ chức nghiên cứu, các tổ chức phi lợi nhuận trong lĩnh vực tư vấn phát triển nông nghiệp bền vững với người nông dân vừa là trung gian thương mại, hỗ trợ người nông dân trong quá trình phân phối, tiêu thụ sản phẩm.</p><p>Công ty Cổ phần MLS định hướng phát triển trong tương lai là trở thành một trong những công ty hàng đầu tại khu vực đồng bằng Sông Cửu Long tiên phong trong việc phát triển kinh tế nông nghiệp bền vững đi liền với việc bảo vệ môi trường và đa dạng sinh học, tạo ra sự hài hòa giữa con người và tự nhiên, góp phần chống lại và thích nghi với các tác động của việc biến đổi khí hậu tại khu vực.</p><h2><strong>II. Lĩnh vực kinh doanh</strong></h2>",
+                "tableHeader-col1": "Mã ngành",
+                "tableHeader-col2": "Tên ngành, nghề kinh doang",
+                "row-1":"\"0118 (Chính)\",\"Trồng rau, đậu các loại và trồng hoa\"",
+                "row-2":"\"0161\",\"Hoạt động dịch vụ trồng trọt\"",
+                "row-3":"\"0162\",\"Hoạt động dịch vụ chăn nuôi\"",
+                "row-4":"\"0163\",\"Hoạt động dịch vụ sau thu hoạch\"",
+                "row-5":"\"0322\",\"Nuôi trồng thuỷ sản nội địa\"",
+                "row-6":"\"1629\",\"Sản xuất sản phẩm khác từ gỗ; sản xuất sản phẩm từ tre, nứa, rơm, rạ và vật liệu tết bện\"",
+                "row-7":"\"4632\",\"Bán buôn thực phẩm\"",
+                "row-8":"\"4669\",\"Bán buôn chuyên doanh khác chưa được phân vào đâu\"",
+                "row-9":"\"7020\",\"Hoạt động tư vấn quản lý\"",
+                "row-10":"\"7490\",\"Hoạt động chuyên môn, khoa học và công nghệ khác chưa được phân vào đâu <p>Chi tiết: Tư vấn nông học, tư vấn khoa học về khí hậu và biến đổi khí hậu, cung cấp dịch vụ nghiên cứu, khảo sát khoa học về các lĩnh vực khoa học nông nghiệp, khoa học tự nhiên</p>\"",
+                "table":"<table style=\"width: 100%; border-collapse: collapse; border-style: solid; background-color: #e3dede;\"><tbody><tr><td style=\"width: 100%;\"><h3>CÔNG TY CỔ PHẦN MLS VIỆT NAM</h3><p>Ấp Thạnh Long, Xã Đông Thạnh, Huyện Châu Thành, Tỉnh Hậu Giang, Việt Nam</p><p>Điện thoại: 0937128716</p><p>Email: <span style=\"color: #3366ff;\">lskieuvuong.2016@gmail.com</span></p></td></tr></tbody></table>",
+                "profile_detail":{
+                    "author": "Lý Văn Lợi",
+                    "date": "11 Tháng Sáu, 2021",
+                    "categories":"Sinh kế"
+                }
+
+            },
+            "post3":{
+                "title": "CẢI THIỆN SINH KẾ",
+                "content": "<p><strong>Dự án cải thiện sinh kế vùng đệm VQG Tràm&nbsp;Chim.&nbsp;</strong>Từ năm 1995, dự án hướng đến các gia đình có thu nhập thấp.&nbsp;Bắt đầu với việc đào tạo kỹ thuật liên quan đến nông nghiệp, nuôi trồng thủy sản, sản xuất chăn nuôi, kinh doanh nhỏ,&nbsp;thủ công mỹ nghệ&nbsp;và các dịch vụ địa phương.&nbsp;Tiếp theo với các khoản vay nhỏ từ 50-100 USD để thực hiện ứng dụng các kiến ​​thức đã đạt được.&nbsp;Dưới các nguồn tài trợ khác nhau của các Đại sứ quán Anh và Đan Mạch tại Việt Nam, các tổ chức VHI, VNHELP và cá nhân người Úc.&nbsp;Hiện nay, dự án đang được MCF tiếp tục hỗ trợ.</p>",
+                "profile_detail":{
+                    "author": "mcf_admin",
+                    "date": "18 Tháng Hai, 2021",
+                    "categories":"Sinh kế"
+                }
+            }
+        }
+    },
+    "museum": {
+        "profile": {
+            "post1":{
+                "title": "Tiến trình của Bảo tàng Lịch sử Tự nhiên Mekong",
+                "content": "<p>Bảo tàng Lịch sử Tự nhiên Mê Kông (MNHM) lần đầu tiên được công bố trong Kế hoạch Hành động của Ủy ban hợp tác KH&amp;CN Việt Nam (JCM) 2013-2015 (<em>4. Khoa học Bảo tồn, phần 4.5</em>), và được cập nhật bằng Thư đề nghị (LoI) ký ngày 23 Tháng 5 năm 2016, do bốn bên: Đại sứ quán Hoa Kỳ tại Việt Nam đại diện cho Bộ Ngoại giao Hoa Kỳ, Cơ quan Khảo sát Địa chất Hoa Kỳ (USGS), Smithsonian và Đại học Cantho (CTU) của Việt Nam.</p><p>Để theo đuổi mục tiêu này, Đại học Cần Thơ đã hỗ trợ thành lập một tổ chức Phi chính phủ, lấy tên là Quỹ Hỗ trợ Nghiên cứu và Bảo tồn Mekong (MCF), MCF đã đăng ký tại Việt Nam và nhận được giấy phép vào năm 2018.</p><p>Cho đến nay, CTU / MCF đã kết nối mạng lưới 14 trường Đại học tại Đồng bằng sông Cửu Long của Việt Nam, 20 trường Đại học khu vực sông Mê Kông bao phủ toàn bộ sáu quốc gia Trung Quốc, Myanmar, Thái Lan, CHDCND Lào, Campuchia và Việt Nam. Ngoài ra còn có 4 trường đại học tại Hoa Kỳ tham gia vào mạng lưới. Với hàng trăm nhà khoa học từ USGS, NOAA và các trường Đại học trong Mạng lưới, đứng đầu là CTU và MCF, dữ liệu và thông tin về Địa chất, Đất, Thủy văn, Đa dạng sinh học, Lịch sử sử dụng đất, Kinh nghiệm truyền thống và Văn hóa bản địa đang được các chương trình thu thập/quản lý. Tất cả các chi phí cho dữ liệu và thông tin tổng hợp được tài trợ bởi các khu vực tư nhân.</p><p>Trong quá trình thu thập dữ liệu và thông tin, CTU / MCF cũng đang làm việc trên một nền tảng bảo tàng ảo. Chúng tôi cũng đang thảo luận với Chính quyền thành phố Cần Thơ về vị trí đất của Bảo tàng Lịch sử Tự nhiên Mekong.</p>",
+                "letter": "Ý định thư (LoI) được ký bởi bốn bên: Bộ Ngoại giao Hoa Kỳ, USGS, Smithsonian và Đại học Cần Thơ tại Hà Nội, Việt Nam nhân chuyến thăm của Tổng thống Hoa Kỳ Obama tới Việt Nam.",
+                "profile_detail":{
+                    "author": "Lý Văn Lợi",
+                    "date": "11 Tháng Sáu, 2021",
+                    "categories":"Bảo tàng"
+                }
+            }
+        }
+    },
+    "contact-us": {
+        "heading": "Vui lòng điền đầy đủ thông tin của bạn bên dưới, chúng tôi sẽ liên lạc với bạn trong vòng 24 giờ",
+        "form": {
+            "name": "TÊN CỦA BẠN",
+            "email": "EMAIL",
+            "subject": "TIÊU ĐỀ",
+            "message": "LỜI NHẮN (TÙY CHỌN)",
+            "send": "GỬI NGAY"
+        },
+        "info": {
+            "contact_info": "THÔNG TIN LIÊN HỆ",
+            "phone": "+84 909 987 887",
+            "address": "Phòng 216, Khoa Môi trường & TNTN, Đại học Cần Thơ khu II, đường 3/2, Xuân Khánh, Ninh Kiều, Cần Thơ, Việt Nam",
+            "email": "duongvani@gmail.com",
+            "work": "Thứ 2 - Thứ 6: 7:00am - 5:00pm"
+        }
+    },
+    "footer": "MCF © 2020 | ĐÃ ĐĂNG KÝ BẢN QUYỀN"
+}

@@ -107,7 +107,7 @@ const Profile = () => {
                                   component="p"
                                   dangerouslySetInnerHTML={{
                                     __html: `${t(
-                                      "about-us.the_mcf_council.dvni.story"
+                                      "about-us.the_mcf_council.duong-van-ni.story"
                                     )}`,
                                   }}
                                 ></Box>

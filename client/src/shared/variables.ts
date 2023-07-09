@@ -30,6 +30,9 @@ import PostLH3 from "@/pages/ProfileLiveHoods/Post3";
 
 import PostMuseum1 from "@/pages/ProfileMuseum/Post1";
 
+import "@/i18n.tsx";
+import i18next from "i18next";
+
 import { PageType, Projects, Status, Project } from "@/shared";
 
 export const projects: Projects = {
@@ -43,8 +46,8 @@ export const projects: Projects = {
       categoryLink: "/conservation",
       thumbnail:
         "/images/conservation/chien-luoc-quan-li-nuoc_Bao-ton-580x490.jpg",
-      title:
-        "Updating water management strategy for restoring wetland habitats in Tram chim National park in the context of climate change and upstream development",
+      title: `${i18next.t("conservation.profile.post1.title")}`,
+      // "Updating water management strategy for restoring wetland habitats in Tram chim National park in the context of climate change and upstream development",
       description:
         "Tram Chim National Park (TCNP) is one of the important biodiversity conservation areas in the system of protected areas of Vietnam. TCNP is the largest remaining natural area of ​​the Plain of Reeds region, the floodplain ecosystem of the Mekong River. Biodiversity conservation in TCNP is therefore of importance not only for Vietnam but also...",
       implemented: "MCF",
