@@ -167,23 +167,27 @@ const CardTemplate = ({ projectsProp, type }: Props) => {
                   sx={{ display: "flex", flexDirection: "column" }}
                   key={information.title}
                 >
-                  <CardMedia
-                    image={information.thumbnail}
-                    className="card-media"
-                  >
-                    <Box className="card-hover">
-                      <Box className="icon-leaf"></Box>
-                    </Box>
-                  </CardMedia>
-                  <CardContent className="card-content">
-                    <Typography
-                      variant="h5"
-                      component="div"
-                      gutterBottom
-                      className="card-title"
+                  <Box component={Link} to={information.link}>
+                    <CardMedia
+                      image={information.thumbnail}
+                      className="card-media"
                     >
-                      {information.title}
-                    </Typography>
+                      <Box className="card-hover">
+                        <Box className="icon-leaf"></Box>
+                      </Box>
+                    </CardMedia>
+                  </Box>
+                  <CardContent className="card-content">
+                    <Box component={Link} to={information.link}>
+                      <Typography
+                        variant="h5"
+                        component="div"
+                        gutterBottom
+                        className="card-title"
+                      >
+                        {information.title}
+                      </Typography>
+                    </Box>
                     <Box
                       component={Link}
                       to={`/pj-categs/${type.toLowerCase()}`}

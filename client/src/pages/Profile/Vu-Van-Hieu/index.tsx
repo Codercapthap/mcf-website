@@ -20,12 +20,12 @@ const Profile = () => {
                   <Box component="div" className="cmsmasters_profile_content">
                     <Box component="figure" className="cmsmasters_img_wrap">
                       <Link
-                        // href="http://localhost:5173/public/images/people/Vu-Van-Hieu.png"
+                        // href="http://localhost:5173/images/people/Vu-Van-Hieu.png"
                         rel="ilightbox[img_12462_647d8bee23d81]"
                         title="Ông Vũ Văn Hiệu"
                         className="preloader highImg"
                         onClick={() => {
-                          document.body.style.overflow = "hidden"
+                          document.body.style.overflow = "hidden";
                           setToggleModal(true);
                         }}
                       >
@@ -34,10 +34,10 @@ const Profile = () => {
                           width="410px"
                           height="380px"
                           alt="Ông Vũ Văn Hiệu"
-                          src="http://localhost:5173/public/images/people/Vu-Van-Hieu.png"
+                          src="http://localhost:5173/images/people/Vu-Van-Hieu.png"
                           title="Ông Vũ Văn Hiệu"
                           sizes="(max-width: 410px) 100vw, 410px"
-                          srcSet="http://localhost:5173/public/images/people/Vu-Van-Hieu.png 410w, https://mcf.com.vn/wp-content/uploads/2015/04/Vu-Van-Hieu-300x278.png 300w"
+                          srcSet="http://localhost:5173/images/people/Vu-Van-Hieu.png 410w, https://mcf.com.vn/wp-content/uploads/2015/04/Vu-Van-Hieu-300x278.png 300w"
                         ></Box>
                       </Link>
                     </Box>
@@ -260,11 +260,12 @@ const Profile = () => {
         </Box>
       </Box>
       <AnimatePresence>
-        {toggleModal &&
-          (<ToggleModalImg src="http://localhost:5173/public/images/people/Vu-Van-Hieu.png" setToggleModal={setToggleModal}></ToggleModalImg>
-          )
-        }
-        
+        {toggleModal && (
+          <ToggleModalImg
+            src="http://localhost:5173/images/people/Vu-Van-Hieu.png"
+            setToggleModal={setToggleModal}
+          ></ToggleModalImg>
+        )}
       </AnimatePresence>
       <Footer></Footer>
     </>

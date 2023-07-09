@@ -25,7 +25,7 @@ const Profile = () => {
                         title="Tiến sĩ David Wilmoth"
                         className="preloader highImg"
                         onClick={() => {
-                          document.body.style.overflow = "hidden"
+                          document.body.style.overflow = "hidden";
                           setToggleModal(true);
                         }}
                       >
@@ -34,9 +34,9 @@ const Profile = () => {
                           width="400px"
                           height="500px"
                           alt="Tiến sĩ David Wilmoth"
-                          src="http://localhost:5173/public/images/people/david-wilmoth.jpg"
+                          src="http://localhost:5173/images/people/david-wilmoth.jpg"
                           title="Tiến sĩ David Wilmoth"
-                          srcSet="http://localhost:5173/public/images/people/david-wilmoth.jpg 400w, http://localhost:5173/public/images/people/david-wilmoth-240x300.jpg"
+                          srcSet="http://localhost:5173/images/people/david-wilmoth.jpg 400w, http://localhost:5173/images/people/david-wilmoth-240x300.jpg"
                           sizes="(max-width: 410px) 100vw, 410px"
                         ></Box>
                       </Link>
@@ -77,7 +77,7 @@ const Profile = () => {
                           letterSpacing: ".1em",
                         }}
                       >
-                      Chủ tịch Hội đồng giám sát
+                        Chủ tịch Hội đồng giám sát
                       </Typography>
                     </Box>
                     <Box
@@ -100,7 +100,17 @@ const Profile = () => {
                             >
                               <Box component="div">
                                 <Box component="p">
-                                <strong>Tiến sĩ David Wilmoth </strong>tốt nghiệp Thạc sĩ tại Đại học Sydney và Tiến sĩ tại Berkeley. Ông là Giáo sư danh dự tại Đại học RMIT và là cựu Phó Hiệu trưởng chuyên nghiệp (Quản trị Tập đoàn). Ông đã lãnh đạo công ty khởi nghiệp của Đại học RMIT tại Việt Nam, một nhánh đại học quốc tế lớn nhất thế giới. Ông cũng là giám đốc của Hiệp hội Xúc tiến Giáo dục Việt – Úc, Chủ tịch Học tập các Thành phố Quốc tế, và Chủ tịch Hội đồng Học thuật của Đại học Torren Úc.
+                                  <strong>Tiến sĩ David Wilmoth </strong>tốt
+                                  nghiệp Thạc sĩ tại Đại học Sydney và Tiến sĩ
+                                  tại Berkeley. Ông là Giáo sư danh dự tại Đại
+                                  học RMIT và là cựu Phó Hiệu trưởng chuyên
+                                  nghiệp (Quản trị Tập đoàn). Ông đã lãnh đạo
+                                  công ty khởi nghiệp của Đại học RMIT tại Việt
+                                  Nam, một nhánh đại học quốc tế lớn nhất thế
+                                  giới. Ông cũng là giám đốc của Hiệp hội Xúc
+                                  tiến Giáo dục Việt – Úc, Chủ tịch Học tập các
+                                  Thành phố Quốc tế, và Chủ tịch Hội đồng Học
+                                  thuật của Đại học Torren Úc.
                                 </Box>
                               </Box>
                             </Box>
@@ -267,11 +277,12 @@ const Profile = () => {
         </Box>
       </Box>
       <AnimatePresence>
-        {toggleModal &&
-          (<ToggleModalImg src="http://localhost:5173/public/images/people/david-wilmoth.jpg" setToggleModal={setToggleModal}></ToggleModalImg>
-          )
-        }
-        
+        {toggleModal && (
+          <ToggleModalImg
+            src="http://localhost:5173/images/people/david-wilmoth.jpg"
+            setToggleModal={setToggleModal}
+          ></ToggleModalImg>
+        )}
       </AnimatePresence>
       <Footer></Footer>
     </>

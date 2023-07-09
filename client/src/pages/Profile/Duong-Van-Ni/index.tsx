@@ -6,10 +6,10 @@ import { Box, Link, Typography } from "@mui/material";
 import "../Profile.scss";
 import Footer from "@/components/Footer";
 
-import { useTranslation } from "react-i18next"
+import { useTranslation } from "react-i18next";
 
 const Profile = () => {
-const {t} = useTranslation()
+  const { t } = useTranslation();
 
   const [toggleModal, setToggleModal] = useState(false);
   return (
@@ -29,7 +29,7 @@ const {t} = useTranslation()
                         title="Bà Nguyễn Thị Kiều Vương"
                         className="preloader highImg"
                         onClick={() => {
-                          document.body.style.overflow = "hidden"
+                          document.body.style.overflow = "hidden";
                           setToggleModal(true);
                         }}
                       >
@@ -38,10 +38,10 @@ const {t} = useTranslation()
                           width="410px"
                           height="380px"
                           alt="Tiến sĩ Dương Văn Ni"
-                          src="http://localhost:5173/public/images/people/Duong-Van-Ni.png"
+                          src="http://localhost:5173/images/people/Duong-Van-Ni.png"
                           title="Tiến sĩ Dương Văn Ni"
                           sizes="(max-width: 410px) 100vw, 410px"
-                          srcSet="http://localhost:5173/public/images/people/Duong-Van-Ni.png"
+                          srcSet="http://localhost:5173/images/people/Duong-Van-Ni.png"
                         ></Box>
                       </Link>
                     </Box>
@@ -103,8 +103,14 @@ const {t} = useTranslation()
                               className="cmsmasters_column one_first"
                             >
                               <Box component="div">
-                                <Box component="p" dangerouslySetInnerHTML={{__html: `${t('about-us.the_mcf_council.dvni.story')}`}}>
-                                </Box>
+                                <Box
+                                  component="p"
+                                  dangerouslySetInnerHTML={{
+                                    __html: `${t(
+                                      "about-us.the_mcf_council.dvni.story"
+                                    )}`,
+                                  }}
+                                ></Box>
                               </Box>
                             </Box>
                           </Box>
@@ -270,11 +276,12 @@ const {t} = useTranslation()
         </Box>
       </Box>
       <AnimatePresence>
-        {toggleModal &&
-          (<ToggleModalImg src="http://localhost:5173/public/images/people/Duong-Van-Ni.png" setToggleModal={setToggleModal}></ToggleModalImg>
-          )
-        }
-        
+        {toggleModal && (
+          <ToggleModalImg
+            src="http://localhost:5173/images/people/Duong-Van-Ni.png"
+            setToggleModal={setToggleModal}
+          ></ToggleModalImg>
+        )}
       </AnimatePresence>
       <Footer></Footer>
     </>

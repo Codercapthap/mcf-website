@@ -79,7 +79,14 @@ body {
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
 }
-a{
+a {
   outline: 0;
   text-decoration: none !important;
+}
+
+.FullScreen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: black;
 }

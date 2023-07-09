@@ -5,10 +5,10 @@ import ToggleModalImg from "@/components/ToggleModalImg";
 import { Box, Link, Typography } from "@mui/material";
 import "../Profile.scss";
 import Footer from "@/components/Footer";
-import { useTranslation } from "react-i18next"
+import { useTranslation } from "react-i18next";
 
 const Profile = () => {
-const {t} = useTranslation()
+  const { t } = useTranslation();
 
   const [toggleModal, setToggleModal] = useState(false);
   return (
@@ -28,7 +28,7 @@ const {t} = useTranslation()
                         title="Cập nhật chiến lược quản lý nước để phục hồi sinh cảnh đất ngập nước Vườn quốc gia Tràm chim trong bối cảnh biến đổi khí hậu và phát triển ở thượng nguồn"
                         className="preloader highImg"
                         onClick={() => {
-                          document.body.style.overflow = "hidden"
+                          document.body.style.overflow = "hidden";
                           setToggleModal(true);
                         }}
                       >
@@ -37,9 +37,9 @@ const {t} = useTranslation()
                           width="100%"
                           height="100%"
                           alt="Cập nhật chiến lược quản lý nước để phục hồi sinh cảnh đất ngập nước Vườn quốc gia Tràm chim trong bối cảnh biến đổi khí hậu và phát triển ở thượng nguồn"
-                          src="http://localhost:5173/public/images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-1160x635.jpg"
+                          src="http://localhost:5173/images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-1160x635.jpg"
                           title="Cập nhật chiến lược quản lý nước để phục hồi sinh cảnh đất ngập nước Vườn quốc gia Tràm chim trong bối cảnh biến đổi khí hậu và phát triển ở thượng nguồn"
-                          srcSet="http://localhost:5173/public/images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-1160x635.jpg 1160w, http://localhost:5173/public/images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-300x164.jpg 300w, http://localhost:5173/public/images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-1024x560.jpg 1024w, http://localhost:5173/public/images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-768x420.jpg 768w, http://localhost:5173/public/images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-1536x840.jpg 1536w, http://localhost:5173/public/images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-2048x1121.jpg 2048w, http://localhost:5173/public/images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-580x317.jpg 580w, http://localhost:5173/public/images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-860x471.jpg 860w, http://localhost:5173/public/images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-1440x788.jpg 1440w, http://localhost:5173/public/images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-440x241.jpg 440w"
+                          srcSet="http://localhost:5173/images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-1160x635.jpg 1160w, http://localhost:5173/images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-300x164.jpg 300w, http://localhost:5173/images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-1024x560.jpg 1024w, http://localhost:5173/images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-768x420.jpg 768w, http://localhost:5173/images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-1536x840.jpg 1536w, http://localhost:5173/images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-2048x1121.jpg 2048w, http://localhost:5173/images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-580x317.jpg 580w, http://localhost:5173/images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-860x471.jpg 860w, http://localhost:5173/images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-1440x788.jpg 1440w, http://localhost:5173/images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-440x241.jpg 440w"
                           sizes="(max-width: 1160px) 100vw, 1160px"
                         ></Box>
                       </Link>
@@ -61,7 +61,9 @@ const {t} = useTranslation()
                           textDecoration: "none",
                         }}
                       >
-                        Cập nhật chiến lược quản lý nước để phục hồi sinh cảnh đất ngập nước Vườn quốc gia Tràm chim trong bối cảnh biến đổi khí hậu và phát triển ở thượng nguồn
+                        Cập nhật chiến lược quản lý nước để phục hồi sinh cảnh
+                        đất ngập nước Vườn quốc gia Tràm chim trong bối cảnh
+                        biến đổi khí hậu và phát triển ở thượng nguồn
                       </Typography>
                       {/* <Typography
                         variant="h4"
@@ -101,9 +103,14 @@ const {t} = useTranslation()
                               component="div"
                               className="cmsmasters_column one_first"
                             >
-                              <Box component="div" dangerouslySetInnerHTML={{__html: `${t('conservation.profile.post1.content')}`}}>
-                                
-                              </Box>
+                              <Box
+                                component="div"
+                                dangerouslySetInnerHTML={{
+                                  __html: `${t(
+                                    "conservation.profile.post1.content"
+                                  )}`,
+                                }}
+                              ></Box>
                             </Box>
                           </Box>
                         </Box>
@@ -142,8 +149,18 @@ const {t} = useTranslation()
                       </Box>
                     </Box>
                     <Box component="aside" className="cmsmasters_single_slider">
-                      <Typography variant="h4" className="cmsmasters_single_slider_title">Các dự án khác</Typography>
-                      <Typography variant="h5" className="cmsmasters_single_slider_no_items">Danh sách trống</Typography>
+                      <Typography
+                        variant="h4"
+                        className="cmsmasters_single_slider_title"
+                      >
+                        Các dự án khác
+                      </Typography>
+                      <Typography
+                        variant="h5"
+                        className="cmsmasters_single_slider_no_items"
+                      >
+                        Danh sách trống
+                      </Typography>
                     </Box>
                   </Box>
                 </Box>
@@ -188,10 +205,11 @@ const {t} = useTranslation()
                         component="div"
                         className="profile_details_item_desc"
                       >
-                        <Link 
-                        href="http://localhost:5173/author/lvloi/"
-                        title="Projects by Ly Van Loi"
-                        rel="author">
+                        <Link
+                          href="http://localhost:5173/author/lvloi/"
+                          title="Projects by Ly Van Loi"
+                          rel="author"
+                        >
                           <Box component="span">Ly Van Loi</Box>
                         </Link>
                       </Box>
@@ -207,7 +225,9 @@ const {t} = useTranslation()
                         component="div"
                         className="profile_details_item_desc"
                       >
-                        <Box component="abbr" title="26 Tháng Năm, 2023">26 Tháng Năm, 2023</Box>
+                        <Box component="abbr" title="26 Tháng Năm, 2023">
+                          26 Tháng Năm, 2023
+                        </Box>
                       </Box>
                     </Box>
                     <Box component="div" className="profile_details_item">
@@ -343,7 +363,7 @@ const {t} = useTranslation()
               rel="prev"
               className="icon-angle-left"
             >
-             Dòng chảy của Văn hóa và Sự sống
+              Dòng chảy của Văn hóa và Sự sống
             </Link>
           </Box>
           <Box
@@ -361,16 +381,12 @@ const {t} = useTranslation()
         </Box>
       </Box>
       <AnimatePresence>
-        {toggleModal &&
-          (<ToggleModalImg 
-            src="http://localhost:5173/public/images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-1160x635.jpg"
+        {toggleModal && (
+          <ToggleModalImg
+            src="http://localhost:5173/images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-1160x635.jpg"
             setToggleModal={setToggleModal}
-            >
-
-            </ToggleModalImg>
-          )
-        }
-        
+          ></ToggleModalImg>
+        )}
       </AnimatePresence>
       <Footer></Footer>
     </>

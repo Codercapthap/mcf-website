@@ -25,7 +25,7 @@ const Profile = () => {
                         title="Bà Nguyễn Thị Kiều Vương"
                         className="preloader highImg"
                         onClick={() => {
-                          document.body.style.overflow = "hidden"
+                          document.body.style.overflow = "hidden";
                           setToggleModal(true);
                         }}
                       >
@@ -34,10 +34,10 @@ const Profile = () => {
                           width="410px"
                           height="380px"
                           alt="Bà Nguyễn Thị Kiều Vương"
-                          src="http://localhost:5173/public/images/people/Nguyen-Thi-Kieu-Vuong.png"
+                          src="http://localhost:5173/images/people/Nguyen-Thi-Kieu-Vuong.png"
                           title="Bà Nguyễn Thị Kiều Vương"
                           sizes="(max-width: 410px) 100vw, 410px"
-                          srcSet="http://localhost:5173/public/images/people/Nguyen-Thi-Kieu-Vuong.png 290w, https://mcf.com.vn/wp-content/uploads/2015/04/Nguyen-Thi-Kieu-Vuong.png 366w"
+                          srcSet="http://localhost:5173/images/people/Nguyen-Thi-Kieu-Vuong.png 290w, https://mcf.com.vn/wp-content/uploads/2015/04/Nguyen-Thi-Kieu-Vuong.png 366w"
                         ></Box>
                       </Link>
                     </Box>
@@ -100,8 +100,18 @@ const Profile = () => {
                             >
                               <Box component="div">
                                 <Box component="p">
-                                  <strong>Bà Nguyễn Thị Kiều Vương </strong> là đồng sáng
-                                  là Luật sư của Liên đoàn Luật sư Việt Nam, Đoàn Luật sư Thành phố Hồ Chí Minh và có hơn 18 năm kinh nghiệm trong lĩnh vực pháp luật. Bà là người sáng lập kiêm Tổng Giám đốc Công ty Luật Phúc Gia Nguyễn, chuyên tư vấn pháp luật về đầu tư tại Việt Nam. Bà cũng là trọng tài viên tại Trung tâm Trọng tài Quốc tế Thái Bình Dương và tích cực hoạt động từ thiện hỗ trợ những người có hoàn cảnh khó khăn về các vấn đề pháp lý ở miền Nam và miền Trung Việt Nam.
+                                  <strong>Bà Nguyễn Thị Kiều Vương </strong> là
+                                  đồng sáng là Luật sư của Liên đoàn Luật sư
+                                  Việt Nam, Đoàn Luật sư Thành phố Hồ Chí Minh
+                                  và có hơn 18 năm kinh nghiệm trong lĩnh vực
+                                  pháp luật. Bà là người sáng lập kiêm Tổng Giám
+                                  đốc Công ty Luật Phúc Gia Nguyễn, chuyên tư
+                                  vấn pháp luật về đầu tư tại Việt Nam. Bà cũng
+                                  là trọng tài viên tại Trung tâm Trọng tài Quốc
+                                  tế Thái Bình Dương và tích cực hoạt động từ
+                                  thiện hỗ trợ những người có hoàn cảnh khó khăn
+                                  về các vấn đề pháp lý ở miền Nam và miền Trung
+                                  Việt Nam.
                                 </Box>
                               </Box>
                             </Box>
@@ -254,10 +264,12 @@ const Profile = () => {
         </Box>
       </Box>
       <AnimatePresence>
-        {toggleModal &&
-          (<ToggleModalImg src="http://localhost:5173/public/images/people/Nguyen-Thi-Kieu-Vuong.png" setToggleModal={setToggleModal}></ToggleModalImg>
-          )
-        }
+        {toggleModal && (
+          <ToggleModalImg
+            src="http://localhost:5173/images/people/Nguyen-Thi-Kieu-Vuong.png"
+            setToggleModal={setToggleModal}
+          ></ToggleModalImg>
+        )}
       </AnimatePresence>
       <Footer></Footer>
     </>

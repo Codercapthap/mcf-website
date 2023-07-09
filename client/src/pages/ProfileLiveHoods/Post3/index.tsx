@@ -25,16 +25,16 @@ const Profile = () => {
                         title="CẢI THIỆN SINH KẾ"
                         className="preloader highImg"
                         onClick={() => {
-                          document.body.style.overflow = "hidden"
+                          document.body.style.overflow = "hidden";
                           setToggleModal(true);
                         }}
                       >
                         <Box
                           component="img"
                           alt="CẢI THIỆN SINH KẾ"
-                          src="http://localhost:5173/public/images/livelihoods/profile/bai-viet-sinh-ke-01/sinhke.png"
+                          src="http://localhost:5173/images/livelihoods/profile/bai-viet-sinh-ke-01/sinhke.png"
                           title="CẢI THIỆN SINH KẾ"
-                          srcSet="http://localhost:5173/public/images/livelihoods/profile/bai-viet-sinh-ke-01/sinhke.png 679w, http://localhost:5173/public/images/livelihoods/profile/bai-viet-sinh-ke-01/sinhke-440x318.png 440w, http://localhost:5173/public/images/livelihoods/profile/bai-viet-sinh-ke-01/sinhke-300x217.png 300w, http://localhost:5173/public/images/livelihoods/profile/bai-viet-sinh-ke-01/sinhke-580x419.png 580w"
+                          srcSet="http://localhost:5173/images/livelihoods/profile/bai-viet-sinh-ke-01/sinhke.png 679w, http://localhost:5173/images/livelihoods/profile/bai-viet-sinh-ke-01/sinhke-440x318.png 440w, http://localhost:5173/images/livelihoods/profile/bai-viet-sinh-ke-01/sinhke-300x217.png 300w, http://localhost:5173/images/livelihoods/profile/bai-viet-sinh-ke-01/sinhke-580x419.png 580w"
                           sizes="(max-width: 679px) 100vw, 679px"
                         ></Box>
                       </Link>
@@ -98,7 +98,21 @@ const Profile = () => {
                             >
                               <Box component="div">
                                 <Box component="p">
-                                <strong>Dự án cải thiện sinh kế vùng đệm VQG Tràm Chim.</strong> Từ năm 1995, dự án hướng đến các gia đình có thu nhập thấp. Bắt đầu với việc đào tạo kỹ thuật liên quan đến nông nghiệp, nuôi trồng thủy sản, sản xuất chăn nuôi, kinh doanh nhỏ, thủ công mỹ nghệ và các dịch vụ địa phương. Tiếp theo với các khoản vay nhỏ từ 50-100 USD để thực hiện ứng dụng các kiến ​​thức đã đạt được. Dưới các nguồn tài trợ khác nhau của các Đại sứ quán Anh và Đan Mạch tại Việt Nam, các tổ chức VHI, VNHELP và cá nhân người Úc. Hiện nay, dự án đang được MCF tiếp tục hỗ trợ.
+                                  <strong>
+                                    Dự án cải thiện sinh kế vùng đệm VQG Tràm
+                                    Chim.
+                                  </strong>{" "}
+                                  Từ năm 1995, dự án hướng đến các gia đình có
+                                  thu nhập thấp. Bắt đầu với việc đào tạo kỹ
+                                  thuật liên quan đến nông nghiệp, nuôi trồng
+                                  thủy sản, sản xuất chăn nuôi, kinh doanh nhỏ,
+                                  thủ công mỹ nghệ và các dịch vụ địa phương.
+                                  Tiếp theo với các khoản vay nhỏ từ 50-100 USD
+                                  để thực hiện ứng dụng các kiến ​​thức đã đạt
+                                  được. Dưới các nguồn tài trợ khác nhau của các
+                                  Đại sứ quán Anh và Đan Mạch tại Việt Nam, các
+                                  tổ chức VHI, VNHELP và cá nhân người Úc. Hiện
+                                  nay, dự án đang được MCF tiếp tục hỗ trợ.
                                 </Box>
                               </Box>
                             </Box>
@@ -139,8 +153,18 @@ const Profile = () => {
                       </Box>
                     </Box>
                     <Box component="aside" className="cmsmasters_single_slider">
-                      <Typography variant="h4" className="cmsmasters_single_slider_title">Các dự án khác</Typography>
-                      <Typography variant="h5" className="cmsmasters_single_slider_no_items">Danh sách trống</Typography>
+                      <Typography
+                        variant="h4"
+                        className="cmsmasters_single_slider_title"
+                      >
+                        Các dự án khác
+                      </Typography>
+                      <Typography
+                        variant="h5"
+                        className="cmsmasters_single_slider_no_items"
+                      >
+                        Danh sách trống
+                      </Typography>
                     </Box>
                   </Box>
                 </Box>
@@ -185,10 +209,11 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_desc"
                       >
-                        <Link 
-                        href="http://localhost:5173/author/mcf_admin/"
-                        title="Projects by Ly Van Loi"
-                        rel="author">
+                        <Link
+                          href="http://localhost:5173/author/mcf_admin/"
+                          title="Projects by Ly Van Loi"
+                          rel="author"
+                        >
                           <Box component="span">mcf_admin</Box>
                         </Link>
                       </Box>
@@ -204,7 +229,9 @@ const Profile = () => {
                         component="div"
                         className="profile_details_item_desc"
                       >
-                        <Box component="abbr" title="18 Tháng Hai, 2021">18 Tháng Hai, 2021</Box>
+                        <Box component="abbr" title="18 Tháng Hai, 2021">
+                          18 Tháng Hai, 2021
+                        </Box>
                       </Box>
                     </Box>
                     <Box component="div" className="profile_details_item">
@@ -352,22 +379,19 @@ const Profile = () => {
               rel="next"
               className="icon-angle-right"
             >
-              Công tác kiểm kê, khảo sát vườn chim Vạc tại xã Tân Mỹ, huyện Trà Ôn, tỉnh Vĩnh Long
+              Công tác kiểm kê, khảo sát vườn chim Vạc tại xã Tân Mỹ, huyện Trà
+              Ôn, tỉnh Vĩnh Long
             </Link>
           </Box>
         </Box>
       </Box>
       <AnimatePresence>
-        {toggleModal &&
-          (<ToggleModalImg 
-            src="http://localhost:5173/public/images/livelihoods/profile/bai-viet-sinh-ke-01/sinhke.png"
+        {toggleModal && (
+          <ToggleModalImg
+            src="http://localhost:5173/images/livelihoods/profile/bai-viet-sinh-ke-01/sinhke.png"
             setToggleModal={setToggleModal}
-            >
-
-            </ToggleModalImg>
-          )
-        }
-        
+          ></ToggleModalImg>
+        )}
       </AnimatePresence>
       <Footer></Footer>
     </>

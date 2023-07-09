@@ -25,7 +25,7 @@ const Profile = () => {
                         title="PGS.TS Lê Anh Tuấn"
                         className="preloader highImg"
                         onClick={() => {
-                          document.body.style.overflow = "hidden"
+                          document.body.style.overflow = "hidden";
                           setToggleModal(true);
                         }}
                       >
@@ -34,7 +34,7 @@ const Profile = () => {
                           width="100%"
                           height="100%"
                           alt="PGS.TS Lê Anh Tuấn"
-                          src="http://localhost:5173/public/images/people/le-anh-tuan-1-960x610.jpg"
+                          src="http://localhost:5173/images/people/le-anh-tuan-1-960x610.jpg"
                           title="PGS.TS Lê Anh Tuấn"
                           sizes="(max-width: 410px) 100vw, 410px"
                         ></Box>
@@ -99,7 +99,17 @@ const Profile = () => {
                             >
                               <Box component="div">
                                 <Box component="p">
-                                  <strong>Tiến sĩ Lê Anh Tuấn </strong> công tác tại Trường Đại học Cần Thơ từ năm 1982 và hiện đang giữ chức vụ Giảng viên chính Khoa Môi trường và Tài nguyên. Ông cũng là Nguyên Phó Viện trưởng Viện Nghiên cứu Biến đổi Khí hậu – Trường Đại học Cần Thơ, Việt Nam. Tiến sĩ Tuấn hiện là thành viên Ban cố vấn của Mạng lưới sông ngòi Việt Nam. Ông cũng là điều phối viên của Mạng lưới Bảo vệ Môi trường và Thích ứng với Biến đổi Khí hậu Đồng bằng sông Cửu Long (MekongNet).
+                                  <strong>Tiến sĩ Lê Anh Tuấn </strong> công tác
+                                  tại Trường Đại học Cần Thơ từ năm 1982 và hiện
+                                  đang giữ chức vụ Giảng viên chính Khoa Môi
+                                  trường và Tài nguyên. Ông cũng là Nguyên Phó
+                                  Viện trưởng Viện Nghiên cứu Biến đổi Khí hậu –
+                                  Trường Đại học Cần Thơ, Việt Nam. Tiến sĩ Tuấn
+                                  hiện là thành viên Ban cố vấn của Mạng lưới
+                                  sông ngòi Việt Nam. Ông cũng là điều phối viên
+                                  của Mạng lưới Bảo vệ Môi trường và Thích ứng
+                                  với Biến đổi Khí hậu Đồng bằng sông Cửu Long
+                                  (MekongNet).
                                 </Box>
                               </Box>
                             </Box>
@@ -266,11 +276,12 @@ const Profile = () => {
         </Box>
       </Box>
       <AnimatePresence>
-        {toggleModal &&
-          (<ToggleModalImg src="http://localhost:5173/public/images/people/nguyen-thanh-tung-1-e1624288880348-1160x610.jpg" setToggleModal={setToggleModal}></ToggleModalImg>
-          )
-        }
-        
+        {toggleModal && (
+          <ToggleModalImg
+            src="http://localhost:5173/images/people/nguyen-thanh-tung-1-e1624288880348-1160x610.jpg"
+            setToggleModal={setToggleModal}
+          ></ToggleModalImg>
+        )}
       </AnimatePresence>
       <Footer></Footer>
     </>

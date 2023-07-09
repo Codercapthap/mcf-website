@@ -1,17 +1,17 @@
-.middle_inner{
+.middle_inner {
   font-family: roboto, Tahoma, Geneva, Kalimati, sans-serif;
   font-size: 16px;
   line-height: 30px;
   font-weight: 300;
   font-style: normal;
-  p{
+  p {
     text-align: justify;
   }
   a {
     outline: 0;
     text-decoration: none !important;
   }
-  
+
   h4 {
     color: #343434;
     font-family: roboto, Tahoma, Geneva, Kalimati, sans-serif !important;
@@ -23,7 +23,7 @@
     text-decoration: none;
     letter-spacing: 0.1em !important;
   }
-  
+
   h2,
   h4,
   figure,
@@ -38,7 +38,6 @@
   }
 }
 
-
 a::selection {
   background-color: var(--btn-hover-bg) !important;
   color: var(--text-white) !important;
@@ -50,7 +49,6 @@ a::selection {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
 
 .middle_inner {
   width: 100%;
@@ -66,7 +64,7 @@ a::selection {
 .cmsmasters_row_margin::after,
 .cmsmasters_column::after,
 #middle ul::after {
-  content: '.';
+  content: ".";
   display: block;
   clear: both;
   height: 0;
@@ -101,7 +99,6 @@ a::selection {
 }
 
 @media only screen and (min-width: 1440px) {
-
   .post-password-form,
   .header_top_inner,
   .header_mid_inner,
@@ -117,7 +114,6 @@ a::selection {
 }
 
 @media only screen and (max-width: 1024px) {
-
   .post-password-form,
   .header_top_inner,
   .header_mid_inner,
@@ -131,8 +127,6 @@ a::selection {
     width: 100%;
   }
 }
-
-
 
 // .content_wrap {
 //   position: relative;
@@ -149,7 +143,6 @@ a::selection {
 //     overflow: hidden;
 //   }
 // }
-
 
 .profile_page .middle_content {
   padding-top: 0;
@@ -285,7 +278,7 @@ a::selection {
     clear: both;
   }
 
-  .profile_sidebar>div:not(:last-of-type) {
+  .profile_sidebar > div:not(:last-of-type) {
     margin-bottom: 54px;
   }
 
@@ -336,10 +329,10 @@ a::selection {
     }
 
     li {
-      display: inline-block;
+      display: inline-block !important;
       vertical-align: middle;
       margin: 0;
-      padding: 0;
+      padding: 0 !important;
       position: relative;
     }
 
@@ -376,7 +369,7 @@ a::selection {
     overflow: hidden;
   }
 }
-.cmsmasters_profile_header h4{
+.cmsmasters_profile_header h4 {
   color: var(--btn-primary-bg) !important;
 }
 article {
@@ -393,7 +386,6 @@ article {
     cursor: pointer;
   }
 }
-
 
 figure {
   background-image: none !important;
@@ -443,7 +435,7 @@ img {
   overflow: clip;
 }
 
-.cmsmasters_open_profile .cmsmasters_img_wrap+.cmsmasters_profile_header {
+.cmsmasters_open_profile .cmsmasters_img_wrap + .cmsmasters_profile_header {
   padding-top: 40px;
 }
 
@@ -697,7 +689,8 @@ html.csstransitions #page .cmsmasters_social_icon {
   span a {
     color: #f8f8f8;
     background-color: var(--btn-primary-bg);
-    -webkit-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    -webkit-transition: color 0.3s ease-in-out,
+      background-color 0.3s ease-in-out;
     -moz-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
     -ms-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
     -o-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
@@ -730,7 +723,7 @@ html.csstransitions #page .cmsmasters_social_icon {
   }
 }
 
-.post_nav>span {
+.post_nav > span {
   height: 100%;
   width: 50%;
   display: block;
@@ -739,33 +732,32 @@ html.csstransitions #page .cmsmasters_social_icon {
 }
 
 @media only screen and (max-width: 950px) {
-  .post_nav>span {
+  .post_nav > span {
     width: 100% !important;
   }
 
-  .post_nav>span.cmsmasters_prev_post>a {
+  .post_nav > span.cmsmasters_prev_post > a {
     text-align: left;
   }
 
-  .post_nav>span>a {
+  .post_nav > span > a {
     padding: 34px 20px !important;
   }
 
-  .post_nav>span.cmsmasters_next_post>a {
+  .post_nav > span.cmsmasters_next_post > a {
     text-align: right;
   }
 }
 
-
-.post_nav>span.cmsmasters_prev_post {
+.post_nav > span.cmsmasters_prev_post {
   float: left;
 }
 
-.post_nav>span.cmsmasters_next_post {
+.post_nav > span.cmsmasters_next_post {
   float: right;
 }
 
-.post_nav>span>a {
+.post_nav > span > a {
   padding: 34px 0;
   width: 100%;
   height: 100%;
@@ -804,13 +796,11 @@ html.csstransitions #page .cmsmasters_social_icon {
         content: none;
       }
     }
-
   }
 }
 
 // them moi
 @media only screen and (max-width: 950px) {
-
   .cmsmasters_open_profile .profile_content,
   .cmsmasters_open_profile .profile_sidebar {
     padding-top: 60px;
@@ -819,23 +809,18 @@ html.csstransitions #page .cmsmasters_social_icon {
     float: none;
     padding-right: 0;
     padding-left: 0;
-
   }
-
 }
 
 @media only screen and (max-width: 950px) {
-
-  .content+.sidebar,
-  #page .project_content+.project_sidebar,
-  .profile_content+.profile_sidebar {
+  .content + .sidebar,
+  #page .project_content + .project_sidebar,
+  .profile_content + .profile_sidebar {
     padding-top: 0;
   }
-
 }
 
 @media only screen and (max-width: 950px) {
-
   .cmsmasters_open_profile .profile_content.with_sidebar:before,
   .cmsmasters_open_profile .profile_sidebar::before {
     content: none !important;

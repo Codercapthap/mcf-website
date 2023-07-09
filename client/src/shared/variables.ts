@@ -30,7 +30,6 @@ import PostLH3 from "@/pages/ProfileLiveHoods/Post3";
 
 import PostMuseum1 from "@/pages/ProfileMuseum/Post1";
 
-
 import { PageType, Projects, Status, Project } from "@/shared";
 
 export const projects: Projects = {
@@ -53,6 +52,7 @@ export const projects: Projects = {
       location: "Tram Chim national park",
       funder: "WWF - Viet Nam",
       status: Status.Completed,
+      link: "/project/cap-nhat-chien-luoc-quan-ly-nuoc-de-phuc-hoi-sinh-canh-dat-ngap-nuoc-vuon-quoc-gia-tram-chim-trong-boi-canh-bien-doi-khi-hau-va-phat-trien-o-thuong-nguon",
     },
     {
       likes: 0,
@@ -71,6 +71,7 @@ export const projects: Projects = {
       location: "Đong Thap, Can Tho, Vinh Long, Soc Trang",
       funder: "OXFAM",
       status: Status.Completed,
+      link: "/project/dong-chay-cua-van-hoa-va-su-song",
     },
     {
       likes: 0,
@@ -90,6 +91,7 @@ export const projects: Projects = {
         "Forest Protection and Quality Control Department of Agriculture, Forestry and Fisheries of Vinh Long",
       consultant: "MCF",
       status: Status.Completed,
+      link: "/project/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/",
     },
     {
       likes: 0,
@@ -108,6 +110,7 @@ export const projects: Projects = {
       fundedBy: "Stiftelsen The Stockholm Environment Institute",
       fundMount: "SEK 1,000,000",
       status: Status.Pending,
+      link: "/project/vai-tro-cua-dat-ngap-nuoc-doi-voi-an-ninh-nguon-nuoc-cho-khu-vuc-song-mekong",
     },
   ],
   Livelihoods: [
@@ -120,6 +123,7 @@ export const projects: Projects = {
       categoryLink: "/livelihoods",
       thumbnail: "/images/livelihoods/sinh-ke_sinh-ke-580x490.jpg",
       title: "Established MLS Joint Stock Company",
+      link: "/project/thanh-lap-cong-ty-co-phan-mcf-viet-nam/",
     },
     {
       likes: 0,
@@ -130,6 +134,7 @@ export const projects: Projects = {
       categoryLink: "/livelihoods",
       thumbnail: "/images/livelihoods/sinh-ke-580x490.jpg",
       title: "Signing short-term hands-on training for students",
+      link: "/project/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/",
     },
     {
       likes: 0,
@@ -140,6 +145,7 @@ export const projects: Projects = {
       categoryLink: "/livelihoods",
       thumbnail: "/images/livelihoods/sinhke-580x490.png",
       title: "Improve Livelihoods",
+      link: "/project/bai-viet-sinh-ke-01/",
     },
   ],
   Museums: [
@@ -152,6 +158,7 @@ export const projects: Projects = {
       categoryLink: "/museum",
       thumbnail: "/images/museum/bao-tang_ky-ket-voi-usa.png",
       title: "The Mekong Natural History Museum progress",
+      link: "/project/tien-trinh-cua-bao-tang-lich-su-tu-nhien-mekong",
     },
   ],
 };
@@ -304,7 +311,7 @@ const pjCategsLinks: Array<PageType> = Object.keys(projects).map(
       link: `/pj-categs/${element.toLowerCase()}/`,
       title: `Project Category: ${element}`,
       component: Category,
-      props: { projects: projects[element], title: element },
+      props: { resultProjects: projects[element], title: element },
     };
   }
 );

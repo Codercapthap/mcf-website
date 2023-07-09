@@ -25,7 +25,7 @@ const Profile = () => {
                         title="PGS.TS Nguyễn Thanh Tùng"
                         className="preloader highImg"
                         onClick={() => {
-                          document.body.style.overflow = "hidden"
+                          document.body.style.overflow = "hidden";
                           setToggleModal(true);
                         }}
                       >
@@ -34,7 +34,7 @@ const Profile = () => {
                           width="100%"
                           height="100%"
                           alt="PGS.TS Nguyễn Thanh Tùng"
-                          src="http://localhost:5173/public/images/people/nguyen-thanh-tung-1-e1624288880348-1160x610.jpg"
+                          src="http://localhost:5173/images/people/nguyen-thanh-tung-1-e1624288880348-1160x610.jpg"
                           title="PGS.TS Nguyễn Thanh Tùng"
                           sizes="(max-width: 410px) 100vw, 410px"
                         ></Box>
@@ -99,7 +99,13 @@ const Profile = () => {
                             >
                               <Box component="div">
                                 <Box component="p">
-                                  <strong>PGS.TS Nguyễn Thanh Tùng </strong> hiện đang là Giảng viên chính tại Bộ môn Sinh học, Khoa Sư phạm, Trường Đại học Cần Thơ. Ông có hơn 14 năm kinh nghiệm làm việc trong lĩnh vực bảo tồn đa dạng sinh học và phân loại giun đất. Ông đã xuất bản 35 bài báo khoa học và một sách chuyên khảo.
+                                  <strong>PGS.TS Nguyễn Thanh Tùng </strong>{" "}
+                                  hiện đang là Giảng viên chính tại Bộ môn Sinh
+                                  học, Khoa Sư phạm, Trường Đại học Cần Thơ. Ông
+                                  có hơn 14 năm kinh nghiệm làm việc trong lĩnh
+                                  vực bảo tồn đa dạng sinh học và phân loại giun
+                                  đất. Ông đã xuất bản 35 bài báo khoa học và
+                                  một sách chuyên khảo.
                                 </Box>
                               </Box>
                             </Box>
@@ -266,11 +272,12 @@ const Profile = () => {
         </Box>
       </Box>
       <AnimatePresence>
-        {toggleModal &&
-          (<ToggleModalImg src="http://localhost:5173/public/images/people/nguyen-thanh-tung-1-e1624288880348-1160x610.jpg" setToggleModal={setToggleModal}></ToggleModalImg>
-          )
-        }
-        
+        {toggleModal && (
+          <ToggleModalImg
+            src="http://localhost:5173/images/people/nguyen-thanh-tung-1-e1624288880348-1160x610.jpg"
+            setToggleModal={setToggleModal}
+          ></ToggleModalImg>
+        )}
       </AnimatePresence>
       <Footer></Footer>
     </>

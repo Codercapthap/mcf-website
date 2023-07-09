@@ -19,6 +19,7 @@ const TheMcfCouncil = [
     image: "images/people/Duong-Van-Ni.png",
     position: "CHAIRPERSON AND DIRECTOR",
     description: "",
+    link: "/profile/dvni",
   },
   {
     name: "Mr Vu Van Hieu",
@@ -26,6 +27,7 @@ const TheMcfCouncil = [
     position: "VICE CHAIRPERSON",
     description:
       "Mr Vu Van Hieu is the cofounder and a director of the Australian company Titan Dealer Management Solutions",
+    link: "/profile/vu-van-hieu",
   },
   {
     name: "Ms Nguyen Thi Kieu Vuong",
@@ -33,6 +35,7 @@ const TheMcfCouncil = [
     position: "VICE CHAIRPERSON",
     description:
       "Ms Nguyen Thi Kieu Vuong is a lawyer of the Vietnam Bar Federation and Ho Chi Minh City Bar Association and has over 18 years legal experience",
+    link: "/profile/nguyen-thi-kieu-vuong",
   },
 ];
 
@@ -41,11 +44,13 @@ const TheSupervisoryCouncil = [
     name: "Dr David Wilmoth",
     image: "images/people/david-wilmoth-400x490.jpg",
     position: "CHAIRPERSON OF THE SUPERVISORY COUNCIL",
+    link: "/profile/ts-david-wilmoth",
   },
   {
     name: "Dr Ho Le Khoa",
     image: "images/people/Ho-Van-Khoa-580x490.jpg",
     position: "MEMBER OF THE SUPERVISORY COUNCIL",
+    link: "/profile/tien-si-ho-le-khoa",
   },
 ];
 
@@ -53,22 +58,27 @@ const MemberOfMcf = [
   {
     name: "Mr. Ly Van Loi",
     image: "images/people/ly-van-loi-1-580x490.jpg",
+    link: "/profile/ong-ly-van-loi",
   },
   {
     name: "Assoc. Prof. Dr LE ANH TUAN",
     image: "images/people/le-anh-tuan-1-580x490.jpg",
+    link: "/profile/pgs-ts-le-anh-tuan",
   },
   {
     name: "Assoc. Prof. Dr. NGUYEN THANH TUNG",
     image: "images/people/nguyen-thanh-tung-1-e1624288880348-580x490.jpg",
+    link: "/profile/pgs-ts-nguyen-thanh-tung",
   },
   {
     name: "Mr Nguyen Hoai Bao",
     image: "images/people/nguyen-hoai-bao.jpg",
+    link: "/profile/ong-nguyen-hoai-bao",
   },
   {
     name: "Assoc. Prof. Truong Hoang Dan",
     image: "images/people/Truong-Hoang-Dan_gioithieu-580x490.jpg",
+    link: "/profile/pgs-ts-truong-hoang-dan",
   },
 ];
 
@@ -129,7 +139,7 @@ const AboutUs = () => {
       >
         <Wrapper>
           <Box paddingTop="130px">
-            <Typography fontWeight="300" variant="h3" textAlign= "center">
+            <Typography fontWeight="300" variant="h3" textAlign="center">
               THE MCF COUNCIL
             </Typography>
             <Box
@@ -146,18 +156,25 @@ const AboutUs = () => {
               {TheMcfCouncil.map((information) => {
                 return (
                   <Card sx={{ display: "flex", flexDirection: "column" }}>
-                    <CardMedia image={information.image} className="card-media">
-                      <Box className="card-hover"></Box>
-                    </CardMedia>
-                    <CardContent className="card-content">
-                      <Typography
-                        variant="h5"
-                        component="div"
-                        gutterBottom
-                        className="card-title"
+                    <Box component={Link} to={information.link}>
+                      <CardMedia
+                        image={information.image}
+                        className="card-media"
                       >
-                        {information.name}
-                      </Typography>
+                        <Box className="card-hover"></Box>
+                      </CardMedia>
+                    </Box>
+                    <CardContent className="card-content">
+                      <Box component={Link} to={information.link}>
+                        <Typography
+                          variant="h5"
+                          component="div"
+                          gutterBottom
+                          className="card-title"
+                        >
+                          {information.name}
+                        </Typography>
+                      </Box>
                       <Typography
                         color="var(--btn-primary-bg)"
                         variant="h6"
@@ -200,7 +217,7 @@ const AboutUs = () => {
             </Box>
           </Box>
           <Box paddingTop="130px">
-            <Typography fontWeight="300" variant="h3" textAlign= "center">
+            <Typography fontWeight="300" variant="h3" textAlign="center">
               THE SUPERVISORY COUNCIL
             </Typography>
             <Box
@@ -217,18 +234,25 @@ const AboutUs = () => {
               {TheSupervisoryCouncil.map((information) => {
                 return (
                   <Card sx={{ display: "flex", flexDirection: "column" }}>
-                    <CardMedia image={information.image} className="card-media">
-                      <Box className="card-hover"></Box>
-                    </CardMedia>
-                    <CardContent className="card-content">
-                      <Typography
-                        variant="h5"
-                        component="div"
-                        gutterBottom
-                        className="card-title"
+                    <Box component={Link} to={information.link}>
+                      <CardMedia
+                        image={information.image}
+                        className="card-media"
                       >
-                        {information.name}
-                      </Typography>
+                        <Box className="card-hover"></Box>
+                      </CardMedia>
+                    </Box>
+                    <CardContent className="card-content">
+                      <Box component={Link} to={information.link}>
+                        <Typography
+                          variant="h5"
+                          component="div"
+                          gutterBottom
+                          className="card-title"
+                        >
+                          {information.name}
+                        </Typography>
+                      </Box>
                       <Typography
                         color="var(--btn-primary-bg)"
                         variant="h6"
@@ -247,7 +271,7 @@ const AboutUs = () => {
             </Box>
           </Box>
           <Box paddingTop="130px">
-            <Typography fontWeight="300" variant="h3" textAlign= "center">
+            <Typography fontWeight="300" variant="h3" textAlign="center">
               MEMBER OF MCF
             </Typography>
             <Box
@@ -267,18 +291,25 @@ const AboutUs = () => {
               {MemberOfMcf.map((information) => {
                 return (
                   <Card sx={{ display: "flex", flexDirection: "column" }}>
-                    <CardMedia image={information.image} className="card-media">
-                      <Box className="card-hover"></Box>
-                    </CardMedia>
-                    <CardContent className="card-content">
-                      <Typography
-                        variant="h5"
-                        component="div"
-                        gutterBottom
-                        className="card-title"
+                    <Box component={Link} to={information.link}>
+                      <CardMedia
+                        image={information.image}
+                        className="card-media"
                       >
-                        {information.name}
-                      </Typography>
+                        <Box className="card-hover"></Box>
+                      </CardMedia>
+                    </Box>
+                    <CardContent className="card-content">
+                      <Box component={Link} to={information.link}>
+                        <Typography
+                          variant="h5"
+                          component="div"
+                          gutterBottom
+                          className="card-title"
+                        >
+                          {information.name}
+                        </Typography>
+                      </Box>
                     </CardContent>
                   </Card>
                 );

@@ -25,7 +25,7 @@ const Profile = () => {
                         title="Ông Lý Văn Lợi"
                         className="preloader highImg"
                         onClick={() => {
-                          document.body.style.overflow = "hidden"
+                          document.body.style.overflow = "hidden";
                           setToggleModal(true);
                         }}
                       >
@@ -34,7 +34,7 @@ const Profile = () => {
                           width="100%"
                           height="100%"
                           alt="Ông Lý Văn Lợi"
-                          src="http://localhost:5173/public/images/people/ly-van-loi-1-960x610.jpg"
+                          src="http://localhost:5173/images/people/ly-van-loi-1-960x610.jpg"
                           title="Ông Lý Văn Lợi"
                           sizes="(max-width: 410px) 100vw, 410px"
                         ></Box>
@@ -99,7 +99,21 @@ const Profile = () => {
                             >
                               <Box component="div">
                                 <Box component="p">
-                                  <strong>Ông Lý Văn Lợi </strong> là nhà nghiên cứu trẻ tại Bộ môn Quản lý Môi trường, Khoa Môi trường & Tài nguyên Thiên nhiên, Đại học Cần Thơ. Ông quan tâm đến công tác bảo tồn đa dạng sinh học, sử dụng hợp lý đất ngập nước, quản lý nước và thích ứng với biến đổi khí hậu ở Đồng bằng sông Cửu Long. Lợi đã có kinh nghiệm thực tế với nhiều khu bảo tồn từ 10 năm trước. Giờ đây, Ông đang nâng cao kiến ​​thức của mình bằng cách đăng ký nghiên cứu sinh Tiến sĩ tại Đại học Mahidol, Thái Lan. Bên cạnh đó, ông có một niềm đam mê xây dựng “Mạng lưới các nhà khoa học trẻ” nhằm kết nối các nhà nghiên cứu trẻ trên toàn thế giới để hỗ trợ phát triển bền vững ở khu vực sông Mekong.
+                                  <strong>Ông Lý Văn Lợi </strong> là nhà nghiên
+                                  cứu trẻ tại Bộ môn Quản lý Môi trường, Khoa
+                                  Môi trường & Tài nguyên Thiên nhiên, Đại học
+                                  Cần Thơ. Ông quan tâm đến công tác bảo tồn đa
+                                  dạng sinh học, sử dụng hợp lý đất ngập nước,
+                                  quản lý nước và thích ứng với biến đổi khí hậu
+                                  ở Đồng bằng sông Cửu Long. Lợi đã có kinh
+                                  nghiệm thực tế với nhiều khu bảo tồn từ 10 năm
+                                  trước. Giờ đây, Ông đang nâng cao kiến ​​thức
+                                  của mình bằng cách đăng ký nghiên cứu sinh
+                                  Tiến sĩ tại Đại học Mahidol, Thái Lan. Bên
+                                  cạnh đó, ông có một niềm đam mê xây dựng “Mạng
+                                  lưới các nhà khoa học trẻ” nhằm kết nối các
+                                  nhà nghiên cứu trẻ trên toàn thế giới để hỗ
+                                  trợ phát triển bền vững ở khu vực sông Mekong.
                                 </Box>
                               </Box>
                             </Box>
@@ -266,11 +280,12 @@ const Profile = () => {
         </Box>
       </Box>
       <AnimatePresence>
-        {toggleModal &&
-          (<ToggleModalImg src="http://localhost:5173/public/images/people/ly-van-loi-1-960x610.jpg" setToggleModal={setToggleModal}></ToggleModalImg>
-          )
-        }
-        
+        {toggleModal && (
+          <ToggleModalImg
+            src="http://localhost:5173/images/people/ly-van-loi-1-960x610.jpg"
+            setToggleModal={setToggleModal}
+          ></ToggleModalImg>
+        )}
       </AnimatePresence>
       <Footer></Footer>
     </>
