@@ -6,7 +6,7 @@ import { FormEvent, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { projects, Project } from "@/shared";
 import { useTranslation, withTranslation } from "react-i18next";
-import T from "react-i18next";
+import i18next from "i18next";
 type Props = {
   setToggleModal: Function;
 };
@@ -93,7 +93,7 @@ function Search({ setToggleModal }: Props) {
           setSearchInput(e.currentTarget.value);
         }}
         onKeyDown={search}
-        placeholder={t("search.search")}
+        placeholder="Search..."
       ></Box>
     </Box>,
     document.querySelector("body") as HTMLElement
