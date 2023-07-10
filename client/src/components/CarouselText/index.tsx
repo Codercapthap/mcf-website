@@ -74,6 +74,7 @@ const index = ({
         }}
         // style={{ marginLeft: `${marginLeftVw}vw` || "5vw" }}
         marginLeft={`${marginLeftVw}vw` || "5vw"}
+        sx={{ cursor: "pointer" }}
       >
         {t("home.slide.0.info")}
       </Box>
