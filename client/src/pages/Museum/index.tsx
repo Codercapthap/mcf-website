@@ -11,17 +11,17 @@ type props = {
 
 const Museum = ({ museums }: props) => {
   const { t } = useTranslation();
-  document.title = `${t("nav.museum")} - MCF`;
+  document.title = `${t("nav.museums")} - MCF`;
   return (
     <>
       <Header></Header>
       <Headline
         image="images/headlines/banner_bg.jpg"
-        title={t("nav.museum")}
+        title={t("nav.museums")}
       ></Headline>
       <CardTemplate
         projectsProp={museums}
-        type={t("nav.museum")}
+        type={t("nav.museums")}
       ></CardTemplate>
       <Footer></Footer>
     </>

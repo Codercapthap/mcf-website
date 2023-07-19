@@ -351,7 +351,7 @@ function fill() {
     {
       link: "/museum",
       // title: "Museum",
-      title: `${i18next.t("nav.museum")}`,
+      title: `${i18next.t("nav.museums")}`,
       component: Museum,
       props: { museums: projects.Museums },
     },
