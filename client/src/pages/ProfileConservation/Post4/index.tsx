@@ -1,10 +1,7 @@
-import { useState } from "react";
-import { AnimatePresence } from "framer-motion";
-import Header from "@/components/Header";
-import ToggleModalImg from "@/components/ToggleModalImg";
+import Header from "../../../components/Header";
 import { Box, Typography } from "@mui/material";
 import "../Profile.scss";
-import Footer from "@/components/Footer";
+import Footer from "../../../components/Footer";
 import Carousel from "react-material-ui-carousel";
 import { Paper } from "@mui/material";
 // import { useSwipeable } from 'react-swipeable';
@@ -16,25 +13,24 @@ const Profile = () => {
   const { t } = useTranslation();
   document.title = `${t("conservation.profile.post4.title")} - MCF`;
 
-  const [toggleModal, setToggleModal] = useState(false);
   const carousel = [
     {
-      src: "http://localhost:5173/images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3165-1160x773.jpg",
+      src: "/images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3165-1160x773.jpg",
     },
     {
-      src: "http://localhost:5173/images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3180-1440x960.jpg",
+      src: "/images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3180-1440x960.jpg",
     },
     {
-      src: "http://localhost:5173/images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3146-1440x960.jpg",
+      src: "/images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3146-1440x960.jpg",
     },
     {
-      src: "http://localhost:5173/images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3147-1440x960.jpg",
+      src: "/images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3147-1440x960.jpg",
     },
     {
-      src: "http://localhost:5173/images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3134-1440x960.jpg",
+      src: "/images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3134-1440x960.jpg",
     },
     {
-      src: "http://localhost:5173/images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3163-1-1440x960.jpg",
+      src: "/images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3163-1-1440x960.jpg",
     },
   ];
   // const [activeStep, setActiveStep] = React.useState(0);
@@ -117,10 +113,6 @@ const Profile = () => {
                               rel="ilightbox[img_12627_64987034241fd]"
                               title={t("conservation.profile.post4.title")}
                               className="preloader highImg"
-                              onClick={() => {
-                                document.body.style.overflow = "hidden";
-                                setToggleModal(true);
-                              }}
                             >
                               <Box
                                 component="img"
@@ -129,7 +121,7 @@ const Profile = () => {
                                 alt={t("conservation.profile.post4.title")}
                                 src={`${img.src}`}
                                 title={t("conservation.profile.post4.title")}
-                                // srcSet="http://localhost:5173/images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3165-1160x773.jpg 1160w, http://localhost:5173/images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3165-300x200.jpg 300w, http://localhost:5173/images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3165-1024x683.jpg 1024w, http://localhost:5173/images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3165-768x512.jpg 768w, http://localhost:5173/images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3165-1536x1024.jpg 1536w, http://localhost:5173/images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3165-2048x1365.jpg 2048w, http://localhost:5173/images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3165-580x387.jpg 580w, http://localhost:5173/images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3165-860x573.jpg 860w, http://localhost:5173/images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3165-1440x960.jpg 1440w, http://localhost:5173/images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3165-440x293.jpg 440w"
+                                // srcSet="/images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3165-1160x773.jpg 1160w, /images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3165-300x200.jpg 300w, /images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3165-1024x683.jpg 1024w, /images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3165-768x512.jpg 768w, /images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3165-1536x1024.jpg 1536w, /images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3165-2048x1365.jpg 2048w, /images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3165-580x387.jpg 580w, /images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3165-860x573.jpg 860w, /images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3165-1440x960.jpg 1440w, /images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/MG_3165-440x293.jpg 440w"
                                 sizes="(max-width: 1160px) 100vw, 1160px"
                               ></Box>
                             </Link>
@@ -512,7 +504,7 @@ const Profile = () => {
       {/* <AnimatePresence>
         {toggleModal &&
           (<ToggleModalImg
-            src="http://localhost:5173/images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/.jpg"
+            src="/images/conservation/cong-tac-kiem-ke-khao-sat-vuon-chim-vac-tai-xa-tan-my-huyen-tra-on-tinh-vinh-long/.jpg"
             setToggleModal={setToggleModal}
           >
 

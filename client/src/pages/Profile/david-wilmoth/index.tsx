@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
-import Header from "@/components/Header";
-import ToggleModalImg from "@/components/ToggleModalImg";
+import Header from "../../../components/Header";
+import ToggleModalImg from "../../../components/ToggleModalImg";
 import { Box, Typography } from "@mui/material";
 import "../Profile.scss";
-import Footer from "@/components/Footer";
+import Footer from "../../../components/Footer";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
@@ -45,11 +45,11 @@ const Profile = () => {
                           alt={`${t(
                             "about-us.the_supervisory_council.david-wilmoth.name"
                           )}`}
-                          src="http://localhost:5173/images/people/david-wilmoth.jpg"
+                          src="/images/people/david-wilmoth.jpg"
                           title={`${t(
                             "about-us.the_supervisory_council.david-wilmoth.name"
                           )}`}
-                          srcSet="http://localhost:5173/images/people/david-wilmoth.jpg 400w, http://localhost:5173/images/people/david-wilmoth-240x300.jpg"
+                          srcSet="/images/people/david-wilmoth.jpg 400w, /images/people/david-wilmoth-240x300.jpg"
                           sizes="(max-width: 410px) 100vw, 410px"
                         ></Box>
                       </Link>
@@ -292,7 +292,7 @@ const Profile = () => {
       <AnimatePresence>
         {toggleModal && (
           <ToggleModalImg
-            src="http://localhost:5173/images/people/david-wilmoth.jpg"
+            src="/images/people/david-wilmoth.jpg"
             setToggleModal={setToggleModal}
           ></ToggleModalImg>
         )}

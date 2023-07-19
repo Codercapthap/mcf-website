@@ -5,7 +5,7 @@ import { AnimatePresence } from "framer-motion";
 import { Box } from "@mui/material";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import CarouselText from "@/components/CarouselText";
+import CarouselText from "../CarouselText";
 import { useTranslation } from "react-i18next";
 
 const Carousel = () => {
@@ -47,7 +47,7 @@ const Carousel = () => {
     <Box maxHeight="100vh">
       <Slider
         {...settings}
-        beforeChange={(currentSlide: number, nextSlide: number) => {
+        beforeChange={(_currentSlide: number, nextSlide: number) => {
           setNextDisplay(nextSlide);
         }}
         ref={sliderRef}

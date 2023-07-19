@@ -7,8 +7,8 @@ import {
   Typography,
 } from "@mui/material";
 
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 import "./Contact.scss";
 
 import { useTranslation } from "react-i18next";

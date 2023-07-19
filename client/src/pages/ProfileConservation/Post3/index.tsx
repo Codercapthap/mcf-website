@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
-import Header from "@/components/Header";
-import ToggleModalImg from "@/components/ToggleModalImg";
+import Header from "../../../components/Header";
+import ToggleModalImg from "../../../components/ToggleModalImg";
 import { Box, Typography } from "@mui/material";
 import "../Profile.scss";
-import Footer from "@/components/Footer";
+import Footer from "../../../components/Footer";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 const Profile = () => {
@@ -39,9 +39,9 @@ const Profile = () => {
                           width="100%"
                           height="100%"
                           alt={t("conservation.profile.post3.title")}
-                          src="http://localhost:5173/images/conservation/vai-tro-cua-dat-ngap-nuoc-doi-voi-an-ninh-nguon-nuoc-cho-khu-vuc-song-mekong/sumernet_map.jpg"
+                          src="/images/conservation/vai-tro-cua-dat-ngap-nuoc-doi-voi-an-ninh-nguon-nuoc-cho-khu-vuc-song-mekong/sumernet_map.jpg"
                           title={t("conservation.profile.post3.title")}
-                          srcSet="http://localhost:5173/images/conservation/vai-tro-cua-dat-ngap-nuoc-doi-voi-an-ninh-nguon-nuoc-cho-khu-vuc-song-mekong/sumernet_map.jpg 1116w, http://localhost:5173/images/conservation/vai-tro-cua-dat-ngap-nuoc-doi-voi-an-ninh-nguon-nuoc-cho-khu-vuc-song-mekong/sumernet_map-300x170.jpg 300w, http://localhost:5173/images/conservation/vai-tro-cua-dat-ngap-nuoc-doi-voi-an-ninh-nguon-nuoc-cho-khu-vuc-song-mekong/sumernet_map-1024x580.jpg 1024w, http://localhost:5173/images/conservation/vai-tro-cua-dat-ngap-nuoc-doi-voi-an-ninh-nguon-nuoc-cho-khu-vuc-song-mekong/sumernet_map-768x435.jpg 768w, http://localhost:5173/images/conservation/vai-tro-cua-dat-ngap-nuoc-doi-voi-an-ninh-nguon-nuoc-cho-khu-vuc-song-mekong/sumernet_map-580x328.jpg 580w, http://localhost:5173/images/conservation/vai-tro-cua-dat-ngap-nuoc-doi-voi-an-ninh-nguon-nuoc-cho-khu-vuc-song-mekong/sumernet_map-860x487.jpg 860w, http://localhost:5173/images/conservation/vai-tro-cua-dat-ngap-nuoc-doi-voi-an-ninh-nguon-nuoc-cho-khu-vuc-song-mekong/sumernet_map-440x249.jpg 440w"
+                          srcSet="/images/conservation/vai-tro-cua-dat-ngap-nuoc-doi-voi-an-ninh-nguon-nuoc-cho-khu-vuc-song-mekong/sumernet_map.jpg 1116w, /images/conservation/vai-tro-cua-dat-ngap-nuoc-doi-voi-an-ninh-nguon-nuoc-cho-khu-vuc-song-mekong/sumernet_map-300x170.jpg 300w, /images/conservation/vai-tro-cua-dat-ngap-nuoc-doi-voi-an-ninh-nguon-nuoc-cho-khu-vuc-song-mekong/sumernet_map-1024x580.jpg 1024w, /images/conservation/vai-tro-cua-dat-ngap-nuoc-doi-voi-an-ninh-nguon-nuoc-cho-khu-vuc-song-mekong/sumernet_map-768x435.jpg 768w, /images/conservation/vai-tro-cua-dat-ngap-nuoc-doi-voi-an-ninh-nguon-nuoc-cho-khu-vuc-song-mekong/sumernet_map-580x328.jpg 580w, /images/conservation/vai-tro-cua-dat-ngap-nuoc-doi-voi-an-ninh-nguon-nuoc-cho-khu-vuc-song-mekong/sumernet_map-860x487.jpg 860w, /images/conservation/vai-tro-cua-dat-ngap-nuoc-doi-voi-an-ninh-nguon-nuoc-cho-khu-vuc-song-mekong/sumernet_map-440x249.jpg 440w"
                           sizes="(max-width: 1160px) 100vw, 1160px"
                         ></Box>
                       </Link>
@@ -415,7 +415,7 @@ const Profile = () => {
       <AnimatePresence>
         {isToggleModal && (
           <ToggleModalImg
-            src="http://localhost:5173/images/conservation/vai-tro-cua-dat-ngap-nuoc-doi-voi-an-ninh-nguon-nuoc-cho-khu-vuc-song-mekong/sumernet_map.jpg"
+            src="/images/conservation/vai-tro-cua-dat-ngap-nuoc-doi-voi-an-ninh-nguon-nuoc-cho-khu-vuc-song-mekong/sumernet_map.jpg"
             setToggleModal={setToggleModal}
           ></ToggleModalImg>
         )}

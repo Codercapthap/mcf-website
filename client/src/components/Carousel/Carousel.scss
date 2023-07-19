@@ -34,11 +34,11 @@
       display: block;
       width: 40px;
       height: 50px;
-      background-image: url(images/others/skin.png);
+      background-image: url(/images/others/skin.png);
       background-position: -150px 0;
       // display: none;
       &:hover {
-        background-image: url(images/others/skin.png);
+        background-image: url(/images/others/skin.png);
         color: unset;
         outline: unset;
         background-position: -150px -75px;
@@ -52,11 +52,11 @@
       display: block;
       width: 40px;
       height: 50px;
-      background-image: url(images/others/skin.png);
+      background-image: url(/images/others/skin.png);
       background-position: 0 0;
       // display: none;
       &:hover {
-        background-image: url(images/others/skin.png);
+        background-image: url(/images/others/skin.png);
         color: unset;
         outline: unset;
         background-position: 0 -75px;
@@ -84,11 +84,11 @@
   }
 }
 
-$images: "images/carousel/Bao-tang_home.jpg" 2,
-  "images/carousel/Sinh-ke_trangchu-2048x1110.jpg" 3,
-  "images/carousel/Bao-ton_home-2048x1365.jpg" 4;
+$images: "/images/carousel/Bao-tang_home.jpg" 2,
+  "/images/carousel/Sinh-ke_trangchu-2048x1110.jpg" 3,
+  "/images/carousel/Bao-ton_home-2048x1365.jpg" 4;
 @each $image, $i in $images {
-.carousel  ul > li:nth-child(#{$i}) {
+  .carousel ul > li:nth-child(#{$i}) {
     &:hover {
       &::after {
         opacity: 1;
@@ -188,7 +188,7 @@ $images: "images/carousel/Bao-tang_home.jpg" 2,
     width: 25px;
     height: 20px;
     margin: 0 2px !important;
-    background-image: url(images/others/skin.png);
+    background-image: url(/images/others/skin.png);
     cursor: pointer;
     &.slick-active {
       background-position: -75px -150px;

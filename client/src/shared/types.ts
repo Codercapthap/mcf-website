@@ -1,8 +1,8 @@
 export interface PageType {
-  link: string;
-  title: string;
-  component: React.ReactNode;
-  props?: Array<any>;
+  link?: string;
+  title?: string;
+  component?: any;
+  props?: any;
 }
 
 export interface ImageSliderType {
@@ -27,6 +27,7 @@ export interface Project {
   thumbnail: string;
   title: string;
   description?: string;
+  link: string;
 }
 export interface Museum extends Project {}
 
@@ -38,7 +39,7 @@ export interface Conservation extends Project {
   location?: string;
   funder?: string;
   time?: string;
-  budget?: Number;
+  budget?: string;
   investor?: string;
   implementation?: string;
   consultant?: string;
@@ -50,5 +51,8 @@ export interface Conservation extends Project {
 }
 
 export interface Projects {
-  [index: string]: Array<Project>;
+  // [index: string]: Array<Project>;
+  Conservation?: Array<Conservation>;
+  Livelihoods?: Array<Livelihood>;
+  Museums?: Array<Museum>;
 }

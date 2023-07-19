@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
-import Header from "@/components/Header";
-import ToggleModalImg from "@/components/ToggleModalImg";
+import Header from "../../../components/Header";
+import ToggleModalImg from "../../../components/ToggleModalImg";
 import { Box, Typography } from "@mui/material";
 import "../Profile.scss";
-import Footer from "@/components/Footer";
+import Footer from "../../../components/Footer";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 const Profile = () => {
@@ -37,7 +37,7 @@ const Profile = () => {
                           width="100%"
                           height="100%"
                           alt={t("about-us.member_of_mcf.ly-van-loi.name")}
-                          src="http://localhost:5173/images/people/ly-van-loi-1-960x610.jpg"
+                          src="/images/people/ly-van-loi-1-960x610.jpg"
                           title={t("about-us.member_of_mcf.ly-van-loi.name")}
                           sizes="(max-width: 410px) 100vw, 410px"
                         ></Box>
@@ -275,7 +275,7 @@ const Profile = () => {
       <AnimatePresence>
         {toggleModal && (
           <ToggleModalImg
-            src="http://localhost:5173/images/people/ly-van-loi-1-960x610.jpg"
+            src="/images/people/ly-van-loi-1-960x610.jpg"
             setToggleModal={setToggleModal}
           ></ToggleModalImg>
         )}

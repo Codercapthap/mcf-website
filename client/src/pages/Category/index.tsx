@@ -1,11 +1,11 @@
-import { projects, Project } from "@/shared";
-import Headline from "@/components/Headline";
-import Header from "@/components/Header";
-import CategoryCard from "@/components/CategoryCard";
-import { Wrapper } from "@/styles";
-import Footer from "@/components/Footer";
+import { projects, Project } from "../../shared";
+import Headline from "../../components/Headline";
+import Header from "../../components/Header";
+import CategoryCard from "../../components/CategoryCard";
+import { Wrapper } from "../../styles";
+import Footer from "../../components/Footer";
 import SearchIcon from "@mui/icons-material/Search";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { Box, Typography } from "@mui/material";
 import { FormEvent, useState } from "react";
 import { useTranslation } from "react-i18next";

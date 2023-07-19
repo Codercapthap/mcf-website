@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
-import Header from "@/components/Header";
-import ToggleModalImg from "@/components/ToggleModalImg";
+import Header from "../../../components/Header";
+import ToggleModalImg from "../../../components/ToggleModalImg";
 import { Box, Typography } from "@mui/material";
 import "../Profile.scss";
-import Footer from "@/components/Footer";
+import Footer from "../../../components/Footer";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
@@ -46,7 +46,7 @@ const Profile = () => {
                           alt={t(
                             "about-us.the_supervisory_council.ho-le-khoa.name"
                           )}
-                          src="http://localhost:5173/images/people/Ho-Van-Khoa-580x490.jpg"
+                          src="/images/people/Ho-Van-Khoa-580x490.jpg"
                           title={t(
                             "about-us.the_supervisory_council.ho-le-khoa.name"
                           )}
@@ -290,7 +290,7 @@ const Profile = () => {
       <AnimatePresence>
         {toggleModal && (
           <ToggleModalImg
-            src="http://localhost:5173/images/people/Ho-Van-Khoa-580x490.jpg"
+            src="/images/people/Ho-Van-Khoa-580x490.jpg"
             setToggleModal={setToggleModal}
           ></ToggleModalImg>
         )}

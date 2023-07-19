@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
-import Header from "@/components/Header";
-import ToggleModalImg from "@/components/ToggleModalImg";
+import Header from "../../../components/Header";
+import ToggleModalImg from "../../../components/ToggleModalImg";
 import { Box, Typography } from "@mui/material";
 import "../Profile.scss";
-import Footer from "@/components/Footer";
+import Footer from "../../../components/Footer";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
@@ -45,12 +45,12 @@ const Profile = () => {
                           alt={t(
                             "about-us.the_mcf_council.nguyen-thi-kieu-vuong.name"
                           )}
-                          src="http://localhost:5173/images/people/Nguyen-Thi-Kieu-Vuong.png"
+                          src="/images/people/Nguyen-Thi-Kieu-Vuong.png"
                           title={t(
                             "about-us.the_mcf_council.nguyen-thi-kieu-vuong.name"
                           )}
                           sizes="(max-width: 410px) 100vw, 410px"
-                          srcSet="http://localhost:5173/images/people/Nguyen-Thi-Kieu-Vuong.png 290w, https://mcf.com.vn/wp-content/uploads/2015/04/Nguyen-Thi-Kieu-Vuong.png 366w"
+                          srcSet="/images/people/Nguyen-Thi-Kieu-Vuong.png 290w, https://mcf.com.vn/wp-content/uploads/2015/04/Nguyen-Thi-Kieu-Vuong.png 366w"
                         ></Box>
                       </Link>
                     </Box>
@@ -272,7 +272,7 @@ const Profile = () => {
       <AnimatePresence>
         {toggleModal && (
           <ToggleModalImg
-            src="http://localhost:5173/images/people/Nguyen-Thi-Kieu-Vuong.png"
+            src="/images/people/Nguyen-Thi-Kieu-Vuong.png"
             setToggleModal={setToggleModal}
           ></ToggleModalImg>
         )}

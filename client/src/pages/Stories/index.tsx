@@ -1,7 +1,7 @@
-import Header from "@/components/Header";
-import Headline from "@/components/Headline";
-import Footer from "@/components/Footer";
-import { Wrapper } from "@/styles";
+import Header from "../../components/Header";
+import Headline from "../../components/Headline";
+import Footer from "../../components/Footer";
+import { Wrapper } from "../../styles";
 import { Typography } from "@mui/material";
 import { useTranslation } from "react-i18next";
 

@@ -1,12 +1,12 @@
 import { Box, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
-import { Wrapper } from "@/styles";
-import { theme } from "@/styles";
+import { Wrapper } from "../../styles";
+import { theme } from "../../styles";
 import { useTranslation } from "react-i18next";
 
 type props = {
   image?: string;
-  name: string;
+  name?: string;
   title: string;
 };
 

@@ -1,17 +1,10 @@
 import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
-import Header from "@/components/Header";
-import ToggleModalImg from "@/components/ToggleModalImg";
-import {
-  Box,
-  Typography,
-  Table,
-  TableBody,
-  TableCell,
-  TableRow,
-} from "@mui/material";
+import Header from "../../../components/Header";
+import ToggleModalImg from "../../../components/ToggleModalImg";
+import { Box, Typography, Table, TableBody, TableCell } from "@mui/material";
 import "../Profile.scss";
-import Footer from "@/components/Footer";
+import Footer from "../../../components/Footer";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 const Profile = () => {
@@ -44,9 +37,9 @@ const Profile = () => {
                           width="334"
                           height="250"
                           alt={t("museum.profile.post1.title")}
-                          src="http://localhost:5173/images/museum/post1/bao-tang_ky-ket-voi-usa.png"
+                          src="/images/museum/post1/bao-tang_ky-ket-voi-usa.png"
                           title={t("museum.profile.post1.title")}
-                          srcSet="http://localhost:5173/images/museum/post1/bao-tang_ky-ket-voi-usa.png 334w, http://localhost:5173/images/museum/post1/bao-tang_ky-ket-voi-usa-300x225.png 300w"
+                          srcSet="/images/museum/post1/bao-tang_ky-ket-voi-usa.png 334w, /images/museum/post1/bao-tang_ky-ket-voi-usa-300x225.png 300w"
                           sizes="(max-width: 334px) 100vw, 334px"
                         ></Box>
                       </Link>
@@ -131,7 +124,7 @@ const Profile = () => {
                                         <Box component="p">
                                           <Box
                                             component="img"
-                                            src="http://localhost:5173/images/museum/post1/bao-tang_ky-ket-voi-usa_1.jpg"
+                                            src="/images/museum/post1/bao-tang_ky-ket-voi-usa_1.jpg"
                                           ></Box>
                                         </Box>
                                       </TableCell>
@@ -428,7 +421,7 @@ const Profile = () => {
       <AnimatePresence>
         {toggleModal && (
           <ToggleModalImg
-            src="http://localhost:5173/images/museum/post1/bao-tang_ky-ket-voi-usa.png"
+            src="/images/museum/post1/bao-tang_ky-ket-voi-usa.png"
             setToggleModal={setToggleModal}
           ></ToggleModalImg>
         )}

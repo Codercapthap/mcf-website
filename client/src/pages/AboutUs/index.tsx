@@ -1,5 +1,5 @@
-import Header from "@/components/Header";
-import Headline from "@/components/Headline";
+import Header from "../../components/Header";
+import Headline from "../../components/Headline";
 import {
   Card,
   CardMedia,
@@ -8,12 +8,11 @@ import {
   Box,
   Typography,
 } from "@mui/material";
-import { Wrapper, theme } from "@/styles";
+import { Wrapper, theme } from "../../styles";
 import "./AboutUs.scss";
 import { Link } from "react-router-dom";
-import Footer from "@/components/Footer";
+import Footer from "../../components/Footer";
 import { useTranslation } from "react-i18next";
-
 
 const AboutUs = () => {
   const { t } = useTranslation();
@@ -31,14 +30,18 @@ const AboutUs = () => {
       name: `${t("about-us.the_mcf_council.vu-van-hieu.name")}`,
       image: "images/people/Vu-Van-Hieu.png",
       position: `${t("about-us.the_mcf_council.vu-van-hieu.position")}`,
-      description:`${t("about-us.the_mcf_council.vu-van-hieu.brief")}`,
+      description: `${t("about-us.the_mcf_council.vu-van-hieu.brief")}`,
       link: "/profile/vu-van-hieu",
     },
     {
       name: `${t("about-us.the_mcf_council.nguyen-thi-kieu-vuong.name")}`,
       image: "images/people/Nguyen-Thi-Kieu-Vuong.png",
-      position: `${t("about-us.the_mcf_council.nguyen-thi-kieu-vuong.position")}`,
-      description:`${t("about-us.the_mcf_council.nguyen-thi-kieu-vuong.brief")}`,
+      position: `${t(
+        "about-us.the_mcf_council.nguyen-thi-kieu-vuong.position"
+      )}`,
+      description: `${t(
+        "about-us.the_mcf_council.nguyen-thi-kieu-vuong.brief"
+      )}`,
       link: "/profile/nguyen-thi-kieu-vuong",
     },
   ];
@@ -46,7 +49,9 @@ const AboutUs = () => {
     {
       name: `${t("about-us.the_supervisory_council.david-wilmoth.name")}`,
       image: "images/people/david-wilmoth-400x490.jpg",
-      position: `${t("about-us.the_supervisory_council.david-wilmoth.position")}`,
+      position: `${t(
+        "about-us.the_supervisory_council.david-wilmoth.position"
+      )}`,
       link: "/profile/ts-david-wilmoth",
     },
     {
@@ -56,33 +61,33 @@ const AboutUs = () => {
       link: "/profile/tien-si-ho-le-khoa",
     },
   ];
-const MemberOfMcf = [
-  {
-    name: `${t("about-us.member_of_mcf.ly-van-loi.name")}`,
-    image: "images/people/ly-van-loi-1-580x490.jpg",
-    link: "/profile/ong-ly-van-loi",
-  },
-  {
-    name: `${t("about-us.member_of_mcf.le-anh-tuan.name")}`,
-    image: "images/people/le-anh-tuan-1-580x490.jpg",
-    link: "/profile/pgs-ts-le-anh-tuan",
-  },
-  {
-    name: `${t("about-us.member_of_mcf.nguyen-thanh-tung.name")}`,
-    image: "images/people/nguyen-thanh-tung-1-e1624288880348-580x490.jpg",
-    link: "/profile/pgs-ts-nguyen-thanh-tung",
-  },
-  {
-    name: `${t("about-us.member_of_mcf.nguyen-hoai-bao.name")}`,
-    image: "images/people/nguyen-hoai-bao.jpg",
-    link: "/profile/ong-nguyen-hoai-bao",
-  },
-  {
-    name: `${t("about-us.member_of_mcf.truong-hoang-dan.name")}`,
-    image: "images/people/Truong-Hoang-Dan_gioithieu-580x490.jpg",
-    link: "/profile/pgs-ts-truong-hoang-dan",
-  },
-];
+  const MemberOfMcf = [
+    {
+      name: `${t("about-us.member_of_mcf.ly-van-loi.name")}`,
+      image: "images/people/ly-van-loi-1-580x490.jpg",
+      link: "/profile/ong-ly-van-loi",
+    },
+    {
+      name: `${t("about-us.member_of_mcf.le-anh-tuan.name")}`,
+      image: "images/people/le-anh-tuan-1-580x490.jpg",
+      link: "/profile/pgs-ts-le-anh-tuan",
+    },
+    {
+      name: `${t("about-us.member_of_mcf.nguyen-thanh-tung.name")}`,
+      image: "images/people/nguyen-thanh-tung-1-e1624288880348-580x490.jpg",
+      link: "/profile/pgs-ts-nguyen-thanh-tung",
+    },
+    {
+      name: `${t("about-us.member_of_mcf.nguyen-hoai-bao.name")}`,
+      image: "images/people/nguyen-hoai-bao.jpg",
+      link: "/profile/ong-nguyen-hoai-bao",
+    },
+    {
+      name: `${t("about-us.member_of_mcf.truong-hoang-dan.name")}`,
+      image: "images/people/Truong-Hoang-Dan_gioithieu-580x490.jpg",
+      link: "/profile/pgs-ts-truong-hoang-dan",
+    },
+  ];
   return (
     <>
       <Header></Header>
@@ -107,7 +112,7 @@ const MemberOfMcf = [
               {t("about-us.title")}
             </Typography>
             <Typography fontWeight="300" variant="h6" marginBottom="20px">
-            {t("about-us.heading")}
+              {t("about-us.heading")}
             </Typography>
           </Box>
           <Box
@@ -117,7 +122,7 @@ const MemberOfMcf = [
           ></Box>
           <Box color="var(--text-grey)" marginTop="50px">
             <Typography fontWeight="300" variant="body1">
-            {t("about-us.content")}
+              {t("about-us.content")}
             </Typography>
           </Box>
         </Box>
@@ -132,7 +137,7 @@ const MemberOfMcf = [
         <Wrapper>
           <Box paddingTop="130px">
             <Typography fontWeight="300" variant="h3" textAlign="center">
-            {t("about-us.mcf_council")}
+              {t("about-us.mcf_council")}
             </Typography>
             <Box
               display="grid"
@@ -182,13 +187,10 @@ const MemberOfMcf = [
                         fontWeight="300"
                         sx={{ color: "var(--text-grey)" }}
                         paddingTop="18px"
-
                         dangerouslySetInnerHTML={{
-                          __html: `${information.description}`
+                          __html: `${information.description}`,
                         }}
-                      >
-                       
-                      </Typography>
+                      ></Typography>
                       <CardActions
                         sx={{
                           justifyContent: "center",
@@ -214,7 +216,7 @@ const MemberOfMcf = [
           </Box>
           <Box paddingTop="130px">
             <Typography fontWeight="300" variant="h3" textAlign="center">
-            {t("about-us.supervisory_council")}
+              {t("about-us.supervisory_council")}
             </Typography>
             <Box
               display="grid"
@@ -268,7 +270,7 @@ const MemberOfMcf = [
           </Box>
           <Box paddingTop="130px">
             <Typography fontWeight="300" variant="h3" textAlign="center">
-            {t("about-us.member")}
+              {t("about-us.member")}
             </Typography>
             <Box
               display="grid"

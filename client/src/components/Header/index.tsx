@@ -1,20 +1,19 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, ElementType } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Box, useMediaQuery, ListItem, List } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { AnimatePresence } from "framer-motion";
-import { PageType, mainPages } from "@/shared";
-import Search from "@/components/Search";
-import { theme } from "@/styles";
+import { PageType, mainPages } from "../../shared";
+import Search from "../Search";
+import { theme } from "../../styles";
 import "./Header.scss";
 
 import i18n from "i18next";
 import { useTranslation, withTranslation } from "react-i18next";
-type Props = {};
 
-function Header({}: Props) {
+function Header() {
   const isMediumScreenAndBelow = useMediaQuery("(max-width: 1024px)");
   const isMobileScreens = useMediaQuery("(max-width: 768px)");
   const [toggleModal, setToggleModal] = useState(false);
@@ -49,9 +48,7 @@ function Header({}: Props) {
     setActive(currentTag);
   }, [pathname]);
 
-  const changeLanguage = (
-    event: React.MouseEvent<HTMLButtonElement, MouseEvent>
-  ) => {
+  const changeLanguage = (event: any) => {
     i18n.changeLanguage(
       event.currentTarget.innerText === "ENGLISH" ? "en" : "vi"
     );
@@ -222,11 +219,11 @@ function Header({}: Props) {
               <ListItem
                 className="header-nav-item"
                 key={page.title}
-                component={Link}
+                component={Link as ElementType}
                 to={page.link}
                 sx={{
                   color:
-                    active === page.link.substring(1)
+                    active === page.link?.substring(1)
                       ? "var(--btn-primary-bg)"
                       : "var(--text-black)",
                   [theme.breakpoints.down("laptop")]: {
@@ -248,8 +245,9 @@ function Header({}: Props) {
                 paddingX: "0",
               },
             }}
+            onClick={changeLanguage}
           >
-            <span onClick={changeLanguage}>{t("nav.language")}</span>
+            <span>{t("nav.language")}</span>
           </ListItem>
         </List>
       </Box>

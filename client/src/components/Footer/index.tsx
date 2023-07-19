@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import { Wrapper } from "@/styles";
+import { Wrapper } from "../../styles";
 import { useTranslation } from "react-i18next";
 const Footer = () => {
   const { t } = useTranslation();

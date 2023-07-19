@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
-import Header from "@/components/Header";
-import ToggleModalImg from "@/components/ToggleModalImg";
+import Header from "../../../components/Header";
+import ToggleModalImg from "../../../components/ToggleModalImg";
 import { Box, Typography } from "@mui/material";
 import "../Profile.scss";
-import Footer from "@/components/Footer";
+import Footer from "../../../components/Footer";
 
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
@@ -44,12 +44,12 @@ const Profile = () => {
                           alt={`${t(
                             "about-us.the_mcf_council.duong-van-ni.name"
                           )}`}
-                          src="http://localhost:5173/images/people/Duong-Van-Ni.png"
+                          src="/images/people/Duong-Van-Ni.png"
                           title={`${t(
                             "about-us.the_mcf_council.duong-van-ni.name"
                           )}`}
                           sizes="(max-width: 410px) 100vw, 410px"
-                          srcSet="http://localhost:5173/images/people/Duong-Van-Ni.png"
+                          srcSet="/images/people/Duong-Van-Ni.png"
                         ></Box>
                       </Link>
                     </Box>
@@ -285,7 +285,7 @@ const Profile = () => {
       <AnimatePresence>
         {toggleModal && (
           <ToggleModalImg
-            src="http://localhost:5173/images/people/Duong-Van-Ni.png"
+            src="/images/people/Duong-Van-Ni.png"
             setToggleModal={setToggleModal}
           ></ToggleModalImg>
         )}

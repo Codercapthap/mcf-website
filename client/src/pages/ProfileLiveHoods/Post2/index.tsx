@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
-import Header from "@/components/Header";
-import ToggleModalImg from "@/components/ToggleModalImg";
+import Header from "../../../components/Header";
+import ToggleModalImg from "../../../components/ToggleModalImg";
 import {
   Box,
   Typography,
@@ -9,10 +9,9 @@ import {
   TableBody,
   TableCell,
   TableRow,
-  TableHead,
 } from "@mui/material";
 import "../Profile.scss";
-import Footer from "@/components/Footer";
+import Footer from "../../../components/Footer";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
@@ -63,9 +62,9 @@ const Profile = () => {
                         <Box
                           component="img"
                           alt={t("livelihoods.profile.post2.title")}
-                          src="http://localhost:5173/images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-1160x542.jpg"
+                          src="/images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-1160x542.jpg"
                           title={t("livelihoods.profile.post2.title")}
-                          srcSet="http://localhost:5173/images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-1160x542.jpg 1160w, http://localhost:5173/images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-300x140.jpg 300w, http://localhost:5173/images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-1024x478.jpg 1024w, http://localhost:5173/images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-768x359.jpg 768w, http://localhost:5173/images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-1536x718.jpg 1536w, http://localhost:5173/images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-2048x957.jpg 2048w, http://localhost:5173/images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-580x271.jpg 580w, http://localhost:5173/images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-860x402.jpg 860w, http://localhost:5173/images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-1440x673.jpg 1440w, http://localhost:5173/images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-440x206.jpg 440w"
+                          srcSet="/images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-1160x542.jpg 1160w, /images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-300x140.jpg 300w, /images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-1024x478.jpg 1024w, /images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-768x359.jpg 768w, /images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-1536x718.jpg 1536w, /images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-2048x957.jpg 2048w, /images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-580x271.jpg 580w, /images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-860x402.jpg 860w, /images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-1440x673.jpg 1440w, /images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-440x206.jpg 440w"
                           sizes="(max-width: 1160px) 100vw, 1160px"
                         ></Box>
                       </Link>
@@ -483,7 +482,7 @@ const Profile = () => {
       <AnimatePresence>
         {toggleModal && (
           <ToggleModalImg
-            src="http://localhost:5173/images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-1160x542.jpg"
+            src="/images/livelihoods/profile/thanh-lap-cong-ty-co-phan-mcf-viet-nam/sinh-ke_sinh-ke-1160x542.jpg"
             setToggleModal={setToggleModal}
           ></ToggleModalImg>
         )}

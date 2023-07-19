@@ -1,7 +1,7 @@
 import { Box, Typography, styled } from "@mui/material";
 import { Link } from "react-router-dom";
-import { theme } from "@/styles";
-import { Project } from "@/shared";
+import { theme } from "../../styles";
+import { Project } from "../../shared";
 
 const CardTitleTypography = styled(Typography)`
   font-size: 11px;
@@ -16,7 +16,7 @@ const CardTitleTypography = styled(Typography)`
 type Props = {
   project: Project;
   isSearch: boolean;
-  isProject: boolean;
+  isProject?: boolean;
 };
 
 const CategoryCard = ({

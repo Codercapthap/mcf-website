@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
-import Header from "@/components/Header";
-import ToggleModalImg from "@/components/ToggleModalImg";
+import Header from "../../../components/Header";
+import ToggleModalImg from "../../../components/ToggleModalImg";
 import { Box, Typography } from "@mui/material";
 import "../Profile.scss";
-import Footer from "@/components/Footer";
+import Footer from "../../../components/Footer";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 const Profile = () => {
@@ -37,9 +37,9 @@ const Profile = () => {
                           width="100%"
                           height="100%"
                           alt={t("conservation.profile.post1.title")}
-                          src="http://localhost:5173/images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-1160x635.jpg"
+                          src="/images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-1160x635.jpg"
                           title={t("conservation.profile.post1.title")}
-                          srcSet="http://localhost:5173/images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-1160x635.jpg 1160w, http://localhost:5173/images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-300x164.jpg 300w, http://localhost:5173/images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-1024x560.jpg 1024w, http://localhost:5173/images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-768x420.jpg 768w, http://localhost:5173/images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-1536x840.jpg 1536w, http://localhost:5173/images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-2048x1121.jpg 2048w, http://localhost:5173/images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-580x317.jpg 580w, http://localhost:5173/images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-860x471.jpg 860w, http://localhost:5173/images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-1440x788.jpg 1440w, http://localhost:5173/images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-440x241.jpg 440w"
+                          srcSet="/images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-1160x635.jpg 1160w, /images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-300x164.jpg 300w, /images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-1024x560.jpg 1024w, /images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-768x420.jpg 768w, /images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-1536x840.jpg 1536w, /images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-2048x1121.jpg 2048w, /images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-580x317.jpg 580w, /images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-860x471.jpg 860w, /images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-1440x788.jpg 1440w, /images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-440x241.jpg 440w"
                           sizes="(max-width: 1160px) 100vw, 1160px"
                         ></Box>
                       </Link>
@@ -397,7 +397,7 @@ const Profile = () => {
       <AnimatePresence>
         {toggleModal && (
           <ToggleModalImg
-            src="http://localhost:5173/images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-1160x635.jpg"
+            src="/images/conservation/chien-luoc-quan-li-nuoc/chien-luoc-quan-li-nuoc_Bao-ton-1160x635.jpg"
             setToggleModal={setToggleModal}
           ></ToggleModalImg>
         )}

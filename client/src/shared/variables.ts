@@ -1,41 +1,40 @@
-import AboutUs from "@/pages/AboutUs";
-import Home from "@/pages/Home";
-import Conservation from "@/pages/Conservation";
-import Livelihood from "@/pages/Livelihood";
-import Museum from "@/pages/Museum";
-import Contact from "@/pages/Contact";
-import ProfileMuseum from "@/pages/ProfileMuseum";
-import Category from "@/pages/Category";
-import Stories from "@/pages/Stories";
+import AboutUs from "../pages/AboutUs";
+import Home from "../pages/Home";
+import Conservation from "../pages/Conservation";
+import Livelihood from "../pages/Livelihood";
+import Museum from "../pages/Museum";
+import Contact from "../pages/Contact";
+import Category from "../pages/Category";
+import Stories from "../pages/Stories";
 
-import VuVanHieu from "@/pages/Profile/Vu-Van-Hieu";
-import THDan from "@/pages/Profile/Truong-Hoang-Dan";
-import LATuan from "@/pages/Profile/Le-Anh-Tuan";
-import DavidWilmoth from "@/pages/Profile/david-wilmoth";
-import HLKhoa from "@/pages/Profile/Ho-Le-Khoa";
-import NTKVuong from "@/pages/Profile/Nguyen-Thi-Kieu-Vuong";
-import DVNi from "@/pages/Profile/Duong-Van-Ni";
-import NHBao from "@/pages/Profile/Nguyen-Hoai-Bao";
-import LVLoi from "@/pages/Profile/Ly-Van-Loi";
-import NTTung from "@/pages/Profile/Nguyen-Thanh-Tung";
-// import ProfileMuseum from "@/pages/ProfileMuseum";
-import PostConservation1 from "@/pages/ProfileConservation/Post1";
-import PostConservation2 from "@/pages/ProfileConservation/Post2";
-import PostConservation3 from "@/pages/ProfileConservation/Post3";
-import PostConservation4 from "@/pages/ProfileConservation/Post4";
+import VuVanHieu from "../pages/Profile/Vu-Van-Hieu";
+import THDan from "../pages/Profile/Truong-Hoang-Dan";
+import LATuan from "../pages/Profile/Le-Anh-Tuan";
+import DavidWilmoth from "../pages/Profile/david-wilmoth";
+import HLKhoa from "../pages/Profile/Ho-Le-Khoa";
+import NTKVuong from "../pages/Profile/Nguyen-Thi-Kieu-Vuong";
+import DVNi from "../pages/Profile/Duong-Van-Ni";
+import NHBao from "../pages/Profile/Nguyen-Hoai-Bao";
+import LVLoi from "../pages/Profile/Ly-Van-Loi";
+import NTTung from "../pages/Profile/Nguyen-Thanh-Tung";
+// import ProfileMuseum from "../pages/ProfileMuseum";
+import PostConservation1 from "../pages/ProfileConservation/Post1";
+import PostConservation2 from "../pages/ProfileConservation/Post2";
+import PostConservation3 from "../pages/ProfileConservation/Post3";
+import PostConservation4 from "../pages/ProfileConservation/Post4";
 
-import PostLH1 from "@/pages/ProfileLiveHoods/Post1";
-import PostLH2 from "@/pages/ProfileLiveHoods/Post2";
-import PostLH3 from "@/pages/ProfileLiveHoods/Post3";
+import PostLH1 from "../pages/ProfileLiveHoods/Post1";
+import PostLH2 from "../pages/ProfileLiveHoods/Post2";
+import PostLH3 from "../pages/ProfileLiveHoods/Post3";
 
-import PostMuseum1 from "@/pages/ProfileMuseum/Post1";
+import PostMuseum1 from "../pages/ProfileMuseum/Post1";
 
-import PageNotFound from "@/pages/PageNotFound";
+import PageNotFound from "../pages/PageNotFound";
 
-import "@/i18n.tsx";
+import "../i18n.tsx";
 import i18next from "i18next";
 
-import { PageType, Projects, Project } from "@/shared";
+import { PageType, Projects } from "./index.ts";
 
 var mainPages: Array<PageType> = [{}];
 var projects: Projects = {};
@@ -495,13 +494,18 @@ function fill() {
 
   // subPages.concat(
   const pjCategsLinks: Array<PageType> = Object.keys(projects).map(
-    (element: Project) => {
+    (element: any) => {
       return {
         link: `/pj-categs/${element.toLowerCase()}/`,
         title: `Project Category: ${i18next.t(`nav.${element.toLowerCase()}`)}`,
         component: Category,
         props: {
-          resultProjects: projects[element],
+          resultProjects:
+            element == "Conservation"
+              ? projects["Conservation"]
+              : element == "Livelihoods"
+              ? projects["Livelihoods"]
+              : projects["Museums"],
           title: `${i18next.t(`nav.${element.toLowerCase()}`)}`,
         },
       };
@@ -510,7 +514,7 @@ function fill() {
   // );
 
   const plCategsLinks: Array<PageType> = Object.keys(profiles).map(
-    (element: Project) => {
+    (element: string) => {
       return {
         link: `/pl-categs/${element.split(" ").join("-").toLowerCase()}/`,
         title: `Profile Category: ${i18next.t(

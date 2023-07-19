@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
-import Header from "@/components/Header";
-import ToggleModalImg from "@/components/ToggleModalImg";
+import Header from "../../../components/Header";
+import ToggleModalImg from "../../../components/ToggleModalImg";
 import { Box, Typography } from "@mui/material";
 import "../Profile.scss";
-import Footer from "@/components/Footer";
+import Footer from "../../../components/Footer";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
@@ -25,7 +25,7 @@ const Profile = () => {
                   <Box component="div" className="cmsmasters_profile_content">
                     <Box component="figure" className="cmsmasters_img_wrap">
                       <Link
-                        // to="/images/people/Vu-Van-Hieu.png"
+                        to="#"
                         rel="ilightbox[img_12462_647d8bee23d81]"
                         title={t("about-us.the_mcf_council.vu-van-hieu.name")}
                         className="preloader highImg"
@@ -39,10 +39,10 @@ const Profile = () => {
                           width="410px"
                           height="380px"
                           alt={t("about-us.the_mcf_council.vu-van-hieu.name")}
-                          src="http://localhost:5173/images/people/Vu-Van-Hieu.png"
+                          src="/images/people/Vu-Van-Hieu.png"
                           title={t("about-us.the_mcf_council.vu-van-hieu.name")}
                           sizes="(max-width: 410px) 100vw, 410px"
-                          srcSet="http://localhost:5173/images/people/Vu-Van-Hieu.png 410w, https://mcf.com.vn/wp-content/uploads/2015/04/Vu-Van-Hieu-300x278.png 300w"
+                          srcSet="/images/people/Vu-Van-Hieu.png 410w, https://mcf.com.vn/wp-content/uploads/2015/04/Vu-Van-Hieu-300x278.png 300w"
                         ></Box>
                       </Link>
                     </Box>
@@ -264,7 +264,7 @@ const Profile = () => {
       <AnimatePresence>
         {toggleModal && (
           <ToggleModalImg
-            src="http://localhost:5173/images/people/Vu-Van-Hieu.png"
+            src="/images/people/Vu-Van-Hieu.png"
             setToggleModal={setToggleModal}
           ></ToggleModalImg>
         )}

@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
-import Header from "@/components/Header";
-import ToggleModalImg from "@/components/ToggleModalImg";
+import Header from "../../../components/Header";
+import ToggleModalImg from "../../../components/ToggleModalImg";
 import { Box, Typography } from "@mui/material";
 import "../Profile.scss";
-import Footer from "@/components/Footer";
+import Footer from "../../../components/Footer";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 const Profile = () => {
@@ -36,7 +36,7 @@ const Profile = () => {
                         <Box
                           component="img"
                           alt={t("about-us.member_of_mcf.nguyen-hoai-bao.name")}
-                          src="http://localhost:5173/images/people/nguyen-hoai-bao.jpg"
+                          src="/images/people/nguyen-hoai-bao.jpg"
                           title={t(
                             "about-us.member_of_mcf.nguyen-hoai-bao.name"
                           )}
@@ -262,7 +262,7 @@ const Profile = () => {
       <AnimatePresence>
         {toggleModal && (
           <ToggleModalImg
-            src="http://localhost:5173/images/people/nguyen-hoai-bao.jpg"
+            src="/images/people/nguyen-hoai-bao.jpg"
             setToggleModal={setToggleModal}
           ></ToggleModalImg>
         )}

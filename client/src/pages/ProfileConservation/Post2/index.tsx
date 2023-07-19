@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
-import Header from "@/components/Header";
-import ToggleModalImg from "@/components/ToggleModalImg";
+import Header from "../../../components/Header";
+import ToggleModalImg from "../../../components/ToggleModalImg";
 import { Box, Typography } from "@mui/material";
 import "../Profile.scss";
-import Footer from "@/components/Footer";
+import Footer from "../../../components/Footer";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 const Profile = () => {
@@ -38,9 +38,9 @@ const Profile = () => {
                           width="100%"
                           height="100%"
                           alt={t("conservation.profile.post2.title")}
-                          src="http://localhost:5173/images/conservation/dong-chay-cua-van-hoa-va-su-song/flow-of-culture-and-life_conservation-1160x870.jpg"
+                          src="/images/conservation/dong-chay-cua-van-hoa-va-su-song/flow-of-culture-and-life_conservation-1160x870.jpg"
                           title={t("conservation.profile.post2.title")}
-                          srcSet="http://localhost:5173/images/conservation/dong-chay-cua-van-hoa-va-su-song/flow-of-culture-and-life_conservation-1160x870.jpg 1160w, http://localhost:5173/images/conservation/dong-chay-cua-van-hoa-va-su-song/flow-of-culture-and-life_conservation-300x225.jpg 300w, http://localhost:5173/images/conservation/dong-chay-cua-van-hoa-va-su-song/flow-of-culture-and-life_conservation-1024x768.jpg 1024w, http://localhost:5173/images/conservation/dong-chay-cua-van-hoa-va-su-song/flow-of-culture-and-life_conservation-768x576.jpg 768w, http://localhost:5173/images/conservation/dong-chay-cua-van-hoa-va-su-song/flow-of-culture-and-life_conservation-580x435.jpg 580w, http://localhost:5173/images/conservation/dong-chay-cua-van-hoa-va-su-song/flow-of-culture-and-life_conservation-860x645.jpg 860w, http://localhost:5173/images/conservation/dong-chay-cua-van-hoa-va-su-song/flow-of-culture-and-life_conservation-440x330.jpg 440w, http://localhost:5173/images/conservation/dong-chay-cua-van-hoa-va-su-song/flow-of-culture-and-life_conservation.jpg 1190w"
+                          srcSet="/images/conservation/dong-chay-cua-van-hoa-va-su-song/flow-of-culture-and-life_conservation-1160x870.jpg 1160w, /images/conservation/dong-chay-cua-van-hoa-va-su-song/flow-of-culture-and-life_conservation-300x225.jpg 300w, /images/conservation/dong-chay-cua-van-hoa-va-su-song/flow-of-culture-and-life_conservation-1024x768.jpg 1024w, /images/conservation/dong-chay-cua-van-hoa-va-su-song/flow-of-culture-and-life_conservation-768x576.jpg 768w, /images/conservation/dong-chay-cua-van-hoa-va-su-song/flow-of-culture-and-life_conservation-580x435.jpg 580w, /images/conservation/dong-chay-cua-van-hoa-va-su-song/flow-of-culture-and-life_conservation-860x645.jpg 860w, /images/conservation/dong-chay-cua-van-hoa-va-su-song/flow-of-culture-and-life_conservation-440x330.jpg 440w, /images/conservation/dong-chay-cua-van-hoa-va-su-song/flow-of-culture-and-life_conservation.jpg 1190w"
                           sizes="(max-width: 1160px) 100vw, 1160px"
                         ></Box>
                       </Link>
@@ -398,7 +398,7 @@ const Profile = () => {
       <AnimatePresence>
         {toggleModal && (
           <ToggleModalImg
-            src="http://localhost:5173/images/conservation/dong-chay-cua-van-hoa-va-su-song/flow-of-culture-and-life_conservation-1160x870.jpg"
+            src="/images/conservation/dong-chay-cua-van-hoa-va-su-song/flow-of-culture-and-life_conservation-1160x870.jpg"
             setToggleModal={setToggleModal}
           ></ToggleModalImg>
         )}

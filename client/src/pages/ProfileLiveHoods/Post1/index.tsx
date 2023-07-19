@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
-import Header from "@/components/Header";
-import ToggleModalImg from "@/components/ToggleModalImg";
+import Header from "../../../components/Header";
+import ToggleModalImg from "../../../components/ToggleModalImg";
 import { Box, Typography } from "@mui/material";
 import "../Profile.scss";
-import Footer from "@/components/Footer";
+import Footer from "../../../components/Footer";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 const Profile = () => {
@@ -37,9 +37,9 @@ const Profile = () => {
                           width="100%"
                           height="100%"
                           alt={t("livelihoods.profile.post1.title")}
-                          src="http://localhost:5173/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinh-ke.jpg"
+                          src="/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinh-ke.jpg"
                           title={t("livelihoods.profile.post1.title")}
-                          srcSet="http://localhost:5173/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinh-ke-1160x564.jpg 1160w, http://localhost:5173/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinh-ke-300x146.jpg 300w, http://localhost:5173/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinh-ke-1024x498.jpg 1024w, http://localhost:5173/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinh-ke-768x373.jpg 768w, http://localhost:5173/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinh-ke-580x282.jpg 580w, http://localhost:5173/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinh-ke-860x418.jpg 860w, http://localhost:5173/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinh-ke-440x214.jpg 440w, http://localhost:5173/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinh-ke.jpg 1348w"
+                          srcSet="/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinh-ke-1160x564.jpg 1160w, /images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinh-ke-300x146.jpg 300w, /images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinh-ke-1024x498.jpg 1024w, /images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinh-ke-768x373.jpg 768w, /images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinh-ke-580x282.jpg 580w, /images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinh-ke-860x418.jpg 860w, /images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinh-ke-440x214.jpg 440w, /images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinh-ke.jpg 1348w"
                           sizes="(max-width: 1160px) 100vw, 1160px"
                         ></Box>
                       </Link>
@@ -128,8 +128,8 @@ const Profile = () => {
                                         component="img"
                                         loading="lazy"
                                         aria-describedby="gallery-cap"
-                                        src="http://localhost:5173/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinhke_kyket_1-150x150.jpg"
-                                        srcSet="http://localhost:5173/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinhke_kyket_1-150x150.jpg 150w, http://localhost:5173/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinhke_kyket_1-60x60.jpg 60w, http://localhost:5173/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinhke_kyket_1-300x300.jpg 300w, http://localhost:5173/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinhke_kyket_1-320x320.jpg 320w, http://localhost:5173/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinhke_kyket_1-100x100.jpg 100w"
+                                        src="/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinhke_kyket_1-150x150.jpg"
+                                        srcSet="/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinhke_kyket_1-150x150.jpg 150w, /images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinhke_kyket_1-60x60.jpg 60w, /images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinhke_kyket_1-300x300.jpg 300w, /images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinhke_kyket_1-320x320.jpg 320w, /images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinhke_kyket_1-100x100.jpg 100w"
                                         sizes="(max-width: 150px) 100vw, 150px"
                                       ></Box>
                                     </Box>
@@ -153,8 +153,8 @@ const Profile = () => {
                                         component="img"
                                         loading="lazy"
                                         aria-describedby="gallery-cap"
-                                        src="http://localhost:5173/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/hoat-dong-thuc-te_sinh-ke-150x150.jpg"
-                                        srcSet="http://localhost:5173/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/hoat-dong-thuc-te_sinh-ke-150x150.jpg 150w, http://localhost:5173/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/hoat-dong-thuc-te_sinh-ke-60x60.jpg 60w, http://localhost:5173/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/hoat-dong-thuc-te_sinh-ke-300x300.jpg 300w, http://localhost:5173/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/hoat-dong-thuc-te_sinh-ke-320x320.jpg 320w, http://localhost:5173/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/hoat-dong-thuc-te_sinh-ke-100x100.jpg 100w"
+                                        src="/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/hoat-dong-thuc-te_sinh-ke-150x150.jpg"
+                                        srcSet="/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/hoat-dong-thuc-te_sinh-ke-150x150.jpg 150w, /images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/hoat-dong-thuc-te_sinh-ke-60x60.jpg 60w, /images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/hoat-dong-thuc-te_sinh-ke-300x300.jpg 300w, /images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/hoat-dong-thuc-te_sinh-ke-320x320.jpg 320w, /images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/hoat-dong-thuc-te_sinh-ke-100x100.jpg 100w"
                                         sizes="(max-width: 150px) 100vw, 150px"
                                       ></Box>
                                     </Box>
@@ -450,7 +450,7 @@ const Profile = () => {
       <AnimatePresence>
         {toggleModal && (
           <ToggleModalImg
-            src="http://localhost:5173/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinh-ke.jpg"
+            src="/images/livelihoods/profile/ky-ket-dao-tao-sinh-vien-thuc-hanh-ngan-han/sinh-ke.jpg"
             setToggleModal={setToggleModal}
           ></ToggleModalImg>
         )}

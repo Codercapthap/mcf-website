@@ -1,8 +1,8 @@
 import { Routes, Route, Navigate, BrowserRouter } from "react-router-dom";
-import ScrollToTopBtn from "@/components/ScrollToTopBtn";
-import Cookie from "@/components/Cookie";
-import { PageType, mainPages, subPages } from "@/shared";
-import Carousel from "@/components/Carousel";
+import ScrollToTopBtn from "./components/ScrollToTopBtn";
+import Cookie from "./components/Cookie";
+import { PageType, mainPages, subPages } from "./shared";
+import Carousel from "./components/Carousel";
 
 function App() {
   return (

@@ -13,12 +13,10 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { motion, AnimatePresence } from "framer-motion";
 import ReactDOM from "react-dom";
 import { useState } from "react";
-import { IOSSwitch } from "@/styles";
+import { IOSSwitch } from "../../styles";
 import "./Cookie.scss";
 
-type Props = {};
-
-const Cookie = (props: Props) => {
+const Cookie = () => {
   const [toggleCookieModal, setToggleCookieModal] = useState(false);
   return (
     <>
@@ -104,7 +102,7 @@ const CookieModal = ({
   };
 
   const handleChange =
-    (panel: string) => (event: React.SyntheticEvent, newExpanded: boolean) => {
+    (panel: string) => (_event: React.SyntheticEvent, newExpanded: boolean) => {
       setExpanded(newExpanded ? panel : false);
     };
   return ReactDOM.createPortal(
@@ -305,6 +303,11 @@ const CookieModal = ({
                 borderRadius: "0",
                 fontWeight: "400",
                 float: "right",
+                transition: ".5s",
+                ":hover": {
+                  backgroundColor: "rgb(97, 162, 41)",
+                  opacity: ".8",
+                },
               }}
             >
               SAVE & ACCEPT

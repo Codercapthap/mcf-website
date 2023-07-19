@@ -1,11 +1,12 @@
-import Header from "@/components/Header";
+import Header from "../../components/Header";
 import { Box, Typography } from "@mui/material";
+import { Link } from "react-router-dom";
 import "./ProfileMuseum.scss";
 
-// import { useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 const ProfileMuseum = () => {
-  // const { t } = useTranslation();
+  const { t } = useTranslation();
   return (
     <>
       <Header></Header>

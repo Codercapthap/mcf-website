@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
-import Header from "@/components/Header";
-import ToggleModalImg from "@/components/ToggleModalImg";
+import Header from "../../../components/Header";
+import ToggleModalImg from "../../../components/ToggleModalImg";
 import { Box, Typography } from "@mui/material";
 import "../Profile.scss";
-import Footer from "@/components/Footer";
+import Footer from "../../../components/Footer";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 const Profile = () => {
@@ -36,9 +36,9 @@ const Profile = () => {
                         <Box
                           component="img"
                           alt={t("livelihoods.profile.post3.title")}
-                          src="http://localhost:5173/images/livelihoods/profile/bai-viet-sinh-ke-01/sinhke.png"
+                          src="/images/livelihoods/profile/bai-viet-sinh-ke-01/sinhke.png"
                           title={t("livelihoods.profile.post3.title")}
-                          srcSet="http://localhost:5173/images/livelihoods/profile/bai-viet-sinh-ke-01/sinhke.png 679w, http://localhost:5173/images/livelihoods/profile/bai-viet-sinh-ke-01/sinhke-440x318.png 440w, http://localhost:5173/images/livelihoods/profile/bai-viet-sinh-ke-01/sinhke-300x217.png 300w, http://localhost:5173/images/livelihoods/profile/bai-viet-sinh-ke-01/sinhke-580x419.png 580w"
+                          srcSet="/images/livelihoods/profile/bai-viet-sinh-ke-01/sinhke.png 679w, /images/livelihoods/profile/bai-viet-sinh-ke-01/sinhke-440x318.png 440w, /images/livelihoods/profile/bai-viet-sinh-ke-01/sinhke-300x217.png 300w, /images/livelihoods/profile/bai-viet-sinh-ke-01/sinhke-580x419.png 580w"
                           sizes="(max-width: 679px) 100vw, 679px"
                         ></Box>
                       </Link>
@@ -390,7 +390,7 @@ const Profile = () => {
       <AnimatePresence>
         {toggleModal && (
           <ToggleModalImg
-            src="http://localhost:5173/images/livelihoods/profile/bai-viet-sinh-ke-01/sinhke.png"
+            src="/images/livelihoods/profile/bai-viet-sinh-ke-01/sinhke.png"
             setToggleModal={setToggleModal}
           ></ToggleModalImg>
         )}

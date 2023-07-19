@@ -1,12 +1,12 @@
-import { Wrapper, SortingButton } from "@/styles";
+import { Wrapper, SortingButton } from "../../styles";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { Box, Card, CardContent, CardMedia, Typography } from "@mui/material";
 import { useEffect, useRef, useState } from "react";
 import FlipMove from "react-flip-move";
-import { Project } from "@/shared";
+import { Project } from "../../shared";
 import "./CardTemplate.scss";
-import { theme } from "@/styles";
+import { theme } from "../../styles";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 type Props = {
@@ -17,8 +17,8 @@ type Props = {
 const CardTemplate = ({ projectsProp, type }: Props) => {
   const [orderByTitle, setOrderByTitle] = useState("asc");
   const [orderByDate, setOrderByDate] = useState("asc");
-  const allCateButtonRef = useRef();
-  const currentPageButtonRef = useRef();
+  const allCateButtonRef = useRef<any>();
+  const currentPageButtonRef = useRef<any>();
   const [projects, setProjects] = useState<Array<Project>>(projectsProp);
   const { t } = useTranslation();
 
@@ -83,7 +83,7 @@ const CardTemplate = ({ projectsProp, type }: Props) => {
               ref={allCateButtonRef}
               className="active"
               sx={{ marginRight: "12px" }}
-              onClick={(e: MouseEvent) => {
+              onClick={(e: any) => {
                 document
                   .querySelector("#breadcrumb .active")
                   ?.classList.remove("active");
@@ -94,7 +94,7 @@ const CardTemplate = ({ projectsProp, type }: Props) => {
             </SortingButton>
             <SortingButton
               ref={currentPageButtonRef}
-              onClick={(e: MouseEvent) => {
+              onClick={(e: any) => {
                 document
                   .querySelector("#breadcrumb .active")
                   ?.classList.remove("active");
@@ -107,7 +107,7 @@ const CardTemplate = ({ projectsProp, type }: Props) => {
           <Box id="sorting">
             <SortingButton
               sx={{ marginRight: "12px" }}
-              onClick={(e: MouseEvent) => {
+              onClick={(e: any) => {
                 document
                   .querySelector("#sorting .active")
                   ?.classList.remove("active");
@@ -121,7 +121,7 @@ const CardTemplate = ({ projectsProp, type }: Props) => {
               ></KeyboardArrowDownIcon>
             </SortingButton>
             <SortingButton
-              onClick={(e: MouseEvent) => {
+              onClick={(e: any) => {
                 document
                   .querySelector("#sorting .active")
                   ?.classList.remove("active");

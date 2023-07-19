@@ -1,12 +1,12 @@
-import Header from "@/components/Header";
-import Headline from "@/components/Headline";
-import Footer from "@/components/Footer";
-import { Museum as MuseumType } from "@/shared";
-import CardTemplate from "@/components/CardTemplate";
+import Header from "../../components/Header";
+import Headline from "../../components/Headline";
+import Footer from "../../components/Footer";
+import { Museum as MuseumType } from "../../shared";
+import CardTemplate from "../../components/CardTemplate";
 import { useTranslation } from "react-i18next";
 
 type props = {
-  museums: MuseumType;
+  museums: Array<MuseumType>;
 };
 
 const Museum = ({ museums }: props) => {
